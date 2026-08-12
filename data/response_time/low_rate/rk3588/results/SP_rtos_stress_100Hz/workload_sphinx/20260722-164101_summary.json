@@ -1,0 +1,20 @@
+{
+  "platform": "rk3588",
+  "experiment": "SP_rtos_stress_100Hz",
+  "vm_bytes": "sphinx",
+  "stress_ng": false,
+  "started_at": "2026-07-22T16:41:01+0800",
+  "elapsed_seconds": 43.391,
+  "sample_hz": 100,
+  "expected_pmu_samples": 0,
+  "minimum_pmu_samples": 0,
+  "last_pmu_samples": 0,
+  "bogo_ops": null,
+  "stress_pid": null,
+  "stress_exit_code": null,
+  "status": "failed",
+  "error": "KeyboardInterrupt",
+  "post_run_warning": null,
+  "rtos_log": "20260722-164101_rtos.log",
+  "oee_log": "20260722-164101_oee.log"
+}

@@ -1,0 +1,193 @@
+﻿frequency_hz,method,group,ratio,gpos_vmbytes,runs,t2_max,avg_l2_inval,avg_l2_refill,avg_ll_miss_rd
+100,Baseline,Baseline,,128K,1,34.17,0.0,4.49,9.69
+100,Baseline,Baseline,,256K,1,34.17,0.0,4.32,9.63
+100,Baseline,Baseline,,512K,1,34.75,0.03,4.25,9.23
+100,Baseline,Baseline,,1M,1,34.96,3.31,4.4,10.16
+100,Baseline,Baseline,,2M,1,33.92,353.94,7.97,13.88
+100,Baseline,Baseline,,4M,1,35.29,1698.81,18.64,50.18
+100,Baseline,Baseline,,8M,1,42.67,17422.07,64.33,127.56
+100,Baseline,Baseline,,16M,1,42.46,21161.56,71.2,135.54
+100,Baseline,Baseline,,32M,1,47.21,19564.84,70.36,133.4
+100,Baseline,Baseline,,64M,1,47.67,19649.51,71.8,136.09
+100,Baseline,Baseline,,128M,1,46.96,19433.66,71.31,134.24
+100,Baseline,Baseline,,256M,1,47.71,18961.45,70.27,131.99
+100,SP,Set Partition,,128K,1,34.5,0.01,6.17,15.5
+100,SP,Set Partition,,256K,1,34.79,0.01,6.23,15.86
+100,SP,Set Partition,,512K,1,34.67,0.01,6.18,15.8
+100,SP,Set Partition,,1M,1,35.17,0.08,6.21,15.88
+100,SP,Set Partition,,2M,1,35.21,8.04,6.47,16.18
+100,SP,Set Partition,,4M,1,35.33,471.88,14.52,27.7
+100,SP,Set Partition,,8M,1,44.25,3377.6,33.09,78.64
+100,SP,Set Partition,,16M,1,49.5,4643.96,39.78,84.63
+100,SP,Set Partition,,32M,1,49.21,4289.92,38.37,80.3
+100,SP,Set Partition,,64M,1,49.71,4027.38,37.75,80.31
+100,SP,Set Partition,,128M,1,49.25,4216.87,37.91,79.19
+100,SP,Set Partition,,256M,1,49.5,4033.66,37.53,78.5
+100,TaskColoring 1/4,TaskColoring,1/4,128K,1,32.58,0.0,0.54,1.55
+100,TaskColoring 1/4,TaskColoring,1/4,256K,1,32.5,0.0,0.53,1.43
+100,TaskColoring 1/4,TaskColoring,1/4,512K,1,32.54,0.01,0.54,1.52
+100,TaskColoring 1/4,TaskColoring,1/4,1M,1,32.42,0.69,0.54,1.59
+100,TaskColoring 1/4,TaskColoring,1/4,2M,1,33.54,36.47,0.81,1.96
+100,TaskColoring 1/4,TaskColoring,1/4,4M,1,34.25,762.45,5.66,11.97
+100,TaskColoring 1/4,TaskColoring,1/4,8M,1,41.21,15075.34,59.37,111.71
+100,TaskColoring 1/4,TaskColoring,1/4,16M,1,44.63,16627.12,68.18,127.42
+100,TaskColoring 1/4,TaskColoring,1/4,32M,1,45.13,15326.12,67.31,124.19
+100,TaskColoring 1/4,TaskColoring,1/4,64M,1,45.21,15261.39,67.34,123.9
+100,TaskColoring 1/4,TaskColoring,1/4,128M,1,44.46,15292.48,66.48,120.64
+100,TaskColoring 1/4,TaskColoring,1/4,256M,1,44.79,14758.39,65.83,119.64
+100,TaskColoring 2/4,TaskColoring,2/4,128K,1,32.04,0.0,0.42,1.57
+100,TaskColoring 2/4,TaskColoring,2/4,256K,1,32.13,0.0,0.42,1.5
+100,TaskColoring 2/4,TaskColoring,2/4,512K,1,32.29,0.01,0.42,1.56
+100,TaskColoring 2/4,TaskColoring,2/4,1M,1,32.17,0.04,0.42,1.65
+100,TaskColoring 2/4,TaskColoring,2/4,2M,1,33.13,7.28,0.56,2.03
+100,TaskColoring 2/4,TaskColoring,2/4,4M,1,33.5,105.85,2.1,6.61
+100,TaskColoring 2/4,TaskColoring,2/4,8M,1,40.5,10909.09,52.47,101.52
+100,TaskColoring 2/4,TaskColoring,2/4,16M,1,43.5,10692.35,65.85,124.28
+100,TaskColoring 2/4,TaskColoring,2/4,32M,1,42.83,9593.54,59.37,110.65
+100,TaskColoring 2/4,TaskColoring,2/4,64M,1,43.67,9807.43,60.73,111.46
+100,TaskColoring 2/4,TaskColoring,2/4,128M,1,42.33,10051.45,60.32,109.85
+100,TaskColoring 2/4,TaskColoring,2/4,256M,1,46.08,9837.26,61.64,113.0
+100,TaskColoring 3/4,TaskColoring,3/4,128K,1,32.17,0.0,0.89,1.6
+100,TaskColoring 3/4,TaskColoring,3/4,256K,1,32.04,0.0,0.88,1.63
+100,TaskColoring 3/4,TaskColoring,3/4,512K,1,32.13,0.0,0.88,1.6
+100,TaskColoring 3/4,TaskColoring,3/4,1M,1,32.33,0.03,0.88,1.77
+100,TaskColoring 3/4,TaskColoring,3/4,2M,1,32.17,0.27,0.9,2.04
+100,TaskColoring 3/4,TaskColoring,3/4,4M,1,33.08,38.92,2.2,5.8
+100,TaskColoring 3/4,TaskColoring,3/4,8M,1,38.46,5282.83,48.12,92.75
+100,TaskColoring 3/4,TaskColoring,3/4,16M,1,43.42,4241.93,57.1,108.56
+100,TaskColoring 3/4,TaskColoring,3/4,32M,1,42.63,4337.39,55.64,104.57
+100,TaskColoring 3/4,TaskColoring,3/4,64M,1,44.0,4392.44,57.19,106.19
+100,TaskColoring 3/4,TaskColoring,3/4,128M,1,42.71,4832.25,57.8,106.97
+100,TaskColoring 3/4,TaskColoring,3/4,256M,1,42.46,4714.96,53.04,100.55
+100,C3-Partitioning 1/4,C3,1/4,128K,1,32.83,0.0,0.72,2.02
+100,C3-Partitioning 1/4,C3,1/4,256K,1,32.83,0.0,0.73,1.97
+100,C3-Partitioning 1/4,C3,1/4,512K,1,33.0,0.01,0.73,2.02
+100,C3-Partitioning 1/4,C3,1/4,1M,1,32.83,0.04,0.72,2.05
+100,C3-Partitioning 1/4,C3,1/4,2M,1,32.96,7.86,0.8,2.02
+100,C3-Partitioning 1/4,C3,1/4,4M,1,33.42,415.05,2.11,3.22
+100,C3-Partitioning 1/4,C3,1/4,8M,1,37.42,2401.22,5.98,9.83
+100,C3-Partitioning 1/4,C3,1/4,16M,1,38.88,3803.91,8.18,12.76
+100,C3-Partitioning 1/4,C3,1/4,32M,1,38.42,3524.57,7.59,12.12
+100,C3-Partitioning 1/4,C3,1/4,64M,1,39.63,3557.5,7.59,12.13
+100,C3-Partitioning 1/4,C3,1/4,128M,1,38.67,3581.49,7.58,11.84
+100,C3-Partitioning 1/4,C3,1/4,256M,1,38.21,3381.02,7.17,11.14
+100,C3-Partitioning 2/4,C3,2/4,128K,1,32.08,0.0,0.74,2.61
+100,C3-Partitioning 2/4,C3,2/4,256K,1,32.04,0.01,0.75,2.8
+100,C3-Partitioning 2/4,C3,2/4,512K,1,32.04,0.02,0.74,2.77
+100,C3-Partitioning 2/4,C3,2/4,1M,1,33.54,0.07,0.74,2.58
+100,C3-Partitioning 2/4,C3,2/4,2M,1,32.08,2.63,0.75,2.63
+100,C3-Partitioning 2/4,C3,2/4,4M,1,32.25,318.5,1.99,3.63
+100,C3-Partitioning 2/4,C3,2/4,8M,1,34.83,2885.88,6.34,11.16
+100,C3-Partitioning 2/4,C3,2/4,16M,1,36.21,3725.25,7.59,13.01
+100,C3-Partitioning 2/4,C3,2/4,32M,1,36.17,3237.51,7.28,12.3
+100,C3-Partitioning 2/4,C3,2/4,64M,1,36.21,3496.25,7.03,12.2
+100,C3-Partitioning 2/4,C3,2/4,128M,1,36.88,3521.36,6.95,12.02
+100,C3-Partitioning 2/4,C3,2/4,256M,1,35.96,3498.88,6.99,11.91
+100,C3-Partitioning 3/4,C3,3/4,128K,1,32.17,0.01,1.82,1.94
+100,C3-Partitioning 3/4,C3,3/4,256K,1,32.17,0.01,1.82,2.03
+100,C3-Partitioning 3/4,C3,3/4,512K,1,32.13,0.01,1.83,1.92
+100,C3-Partitioning 3/4,C3,3/4,1M,1,32.04,0.04,1.83,1.99
+100,C3-Partitioning 3/4,C3,3/4,2M,1,32.17,1.73,1.84,1.96
+100,C3-Partitioning 3/4,C3,3/4,4M,1,32.29,108.38,2.45,2.63
+100,C3-Partitioning 3/4,C3,3/4,8M,1,34.38,2231.74,7.77,11.7
+100,C3-Partitioning 3/4,C3,3/4,16M,1,35.88,2887.09,8.52,12.55
+100,C3-Partitioning 3/4,C3,3/4,32M,1,35.71,2462.58,8.13,12.18
+100,C3-Partitioning 3/4,C3,3/4,64M,1,35.67,2418.33,7.99,12.16
+100,C3-Partitioning 3/4,C3,3/4,128M,1,36.67,2421.1,7.91,11.53
+100,C3-Partitioning 3/4,C3,3/4,256M,1,36.13,2394.43,7.95,11.72
+10,Baseline,Baseline,,128K,1,35.67,0.01,29.15,67.69
+10,Baseline,Baseline,,256K,1,35.92,0.02,29.1,67.6
+10,Baseline,Baseline,,512K,1,35.33,0.1,29.16,67.77
+10,Baseline,Baseline,,1M,1,35.96,2.42,29.08,67.53
+10,Baseline,Baseline,,2M,1,36.13,519.45,33.98,74.01
+10,Baseline,Baseline,,4M,1,38.0,20230.59,82.88,138.81
+10,Baseline,Baseline,,8M,1,47.5,186961.59,97.11,153.88
+10,Baseline,Baseline,,16M,1,49.38,207790.51,98.26,154.47
+10,Baseline,Baseline,,32M,1,49.96,197753.11,98.2,154.5
+10,Baseline,Baseline,,64M,1,50.88,197427.05,98.79,154.86
+10,Baseline,Baseline,,128M,1,51.17,191454.21,98.86,155.29
+10,Baseline,Baseline,,256M,1,49.42,189435.96,98.65,153.93
+10,SP,Set Partition,,128K,1,37.83,0.02,48.85,91.24
+10,SP,Set Partition,,256K,1,37.38,0.02,49.07,90.58
+10,SP,Set Partition,,512K,1,36.38,0.06,49.03,92.38
+10,SP,Set Partition,,1M,1,37.0,0.33,49.26,91.51
+10,SP,Set Partition,,2M,1,36.5,132.9,51.12,90.62
+10,SP,Set Partition,,4M,1,38.67,3372.49,72.26,104.19
+10,SP,Set Partition,,8M,1,49.21,33637.66,94.23,145.35
+10,SP,Set Partition,,16M,1,50.92,47707.17,98.93,151.13
+10,SP,Set Partition,,32M,1,50.46,42359.68,98.13,149.97
+10,SP,Set Partition,,64M,1,52.29,40696.76,98.09,150.2
+10,SP,Set Partition,,128M,1,50.58,39297.14,97.72,148.64
+10,SP,Set Partition,,256M,1,49.63,38293.89,97.86,148.31
+10,TaskColoring 1/4,TaskColoring,1/4,128K,1,32.54,0.01,5.77,7.74
+10,TaskColoring 1/4,TaskColoring,1/4,256K,1,32.58,0.01,5.79,7.5
+10,TaskColoring 1/4,TaskColoring,1/4,512K,1,32.67,0.03,5.79,7.58
+10,TaskColoring 1/4,TaskColoring,1/4,1M,1,32.88,56.76,6.07,7.8
+10,TaskColoring 1/4,TaskColoring,1/4,2M,1,34.29,1450.08,12.73,13.01
+10,TaskColoring 1/4,TaskColoring,1/4,4M,1,37.21,14197.39,52.99,83.17
+10,TaskColoring 1/4,TaskColoring,1/4,8M,1,41.79,145795.68,95.69,153.31
+10,TaskColoring 1/4,TaskColoring,1/4,16M,1,47.25,168435.76,97.14,156.72
+10,TaskColoring 1/4,TaskColoring,1/4,32M,1,47.42,149437.41,95.18,154.56
+10,TaskColoring 1/4,TaskColoring,1/4,64M,1,48.13,154114.08,95.76,154.96
+10,TaskColoring 1/4,TaskColoring,1/4,128M,1,47.63,148616.06,95.62,154.75
+10,TaskColoring 1/4,TaskColoring,1/4,256M,1,46.08,146969.46,94.59,154.02
+10,TaskColoring 2/4,TaskColoring,2/4,128K,1,32.96,0.01,7.37,9.32
+10,TaskColoring 2/4,TaskColoring,2/4,256K,1,32.79,0.02,7.31,9.12
+10,TaskColoring 2/4,TaskColoring,2/4,512K,1,32.88,0.06,7.34,9.21
+10,TaskColoring 2/4,TaskColoring,2/4,1M,1,33.46,53.54,7.83,9.53
+10,TaskColoring 2/4,TaskColoring,2/4,2M,1,34.42,75.38,8.4,10.59
+10,TaskColoring 2/4,TaskColoring,2/4,4M,1,35.75,2787.61,39.29,61.5
+10,TaskColoring 2/4,TaskColoring,2/4,8M,1,43.54,116565.34,91.93,151.72
+10,TaskColoring 2/4,TaskColoring,2/4,16M,1,48.54,108660.22,93.61,153.48
+10,TaskColoring 2/4,TaskColoring,2/4,32M,1,48.5,96360.07,92.75,152.61
+10,TaskColoring 2/4,TaskColoring,2/4,64M,1,49.08,96043.83,93.22,153.04
+10,TaskColoring 2/4,TaskColoring,2/4,128M,1,47.75,100312.29,91.95,150.39
+10,TaskColoring 2/4,TaskColoring,2/4,256M,1,47.75,95992.56,92.98,152.41
+10,TaskColoring 3/4,TaskColoring,3/4,128K,1,32.75,0.01,7.77,9.02
+10,TaskColoring 3/4,TaskColoring,3/4,256K,1,32.79,0.01,7.93,9.1
+10,TaskColoring 3/4,TaskColoring,3/4,512K,1,32.63,0.04,7.79,8.96
+10,TaskColoring 3/4,TaskColoring,3/4,1M,1,32.96,0.2,7.84,9.22
+10,TaskColoring 3/4,TaskColoring,3/4,2M,1,33.29,2.6,7.79,9.27
+10,TaskColoring 3/4,TaskColoring,3/4,4M,1,34.88,772.87,17.12,25.81
+10,TaskColoring 3/4,TaskColoring,3/4,8M,1,45.29,55823.2,89.03,147.59
+10,TaskColoring 3/4,TaskColoring,3/4,16M,1,47.33,40708.97,93.03,152.21
+10,TaskColoring 3/4,TaskColoring,3/4,32M,1,48.58,42254.82,93.63,154.22
+10,TaskColoring 3/4,TaskColoring,3/4,64M,1,47.75,43156.84,93.67,153.2
+10,TaskColoring 3/4,TaskColoring,3/4,128M,1,48.54,42756.24,93.84,153.39
+10,TaskColoring 3/4,TaskColoring,3/4,256M,1,48.88,45081.11,91.96,149.08
+10,C3-Partitioning 1/4,C3,1/4,128K,1,32.92,0.03,7.65,10.43
+10,C3-Partitioning 1/4,C3,1/4,256K,1,33.0,0.05,7.74,10.43
+10,C3-Partitioning 1/4,C3,1/4,512K,1,32.88,0.05,7.75,10.56
+10,C3-Partitioning 1/4,C3,1/4,1M,1,33.13,0.56,7.73,10.43
+10,C3-Partitioning 1/4,C3,1/4,2M,1,32.71,37.54,7.92,10.5
+10,C3-Partitioning 1/4,C3,1/4,4M,1,33.42,3338.54,16.45,14.62
+10,C3-Partitioning 1/4,C3,1/4,8M,1,38.88,24477.9,24.51,27.98
+10,C3-Partitioning 1/4,C3,1/4,16M,1,38.71,37952.33,25.5,30.06
+10,C3-Partitioning 1/4,C3,1/4,32M,1,39.63,34601.79,24.78,29.06
+10,C3-Partitioning 1/4,C3,1/4,64M,1,38.13,35194.41,24.69,28.96
+10,C3-Partitioning 1/4,C3,1/4,128M,1,38.21,35922.95,24.92,29.02
+10,C3-Partitioning 1/4,C3,1/4,256M,1,37.92,34920.07,24.63,28.69
+10,C3-Partitioning 2/4,C3,2/4,128K,1,32.96,0.05,8.2,10.57
+10,C3-Partitioning 2/4,C3,2/4,256K,1,33.13,0.07,8.16,10.25
+10,C3-Partitioning 2/4,C3,2/4,512K,1,33.08,0.18,8.22,10.29
+10,C3-Partitioning 2/4,C3,2/4,1M,1,32.96,1.13,8.24,10.17
+10,C3-Partitioning 2/4,C3,2/4,2M,1,33.04,51.08,8.51,10.28
+10,C3-Partitioning 2/4,C3,2/4,4M,1,33.33,4341.1,13.2,13.34
+10,C3-Partitioning 2/4,C3,2/4,8M,1,35.13,31217.52,15.55,19.19
+10,C3-Partitioning 2/4,C3,2/4,16M,1,36.58,36140.13,16.13,20.64
+10,C3-Partitioning 2/4,C3,2/4,32M,1,36.29,35013.23,16.11,20.39
+10,C3-Partitioning 2/4,C3,2/4,64M,1,36.38,34708.79,15.79,19.67
+10,C3-Partitioning 2/4,C3,2/4,128M,1,36.0,35858.71,16.02,20.16
+10,C3-Partitioning 2/4,C3,2/4,256M,1,36.08,35002.31,16.05,20.25
+10,C3-Partitioning 3/4,C3,3/4,128K,1,32.54,0.05,7.54,8.9
+10,C3-Partitioning 3/4,C3,3/4,256K,1,32.58,0.07,7.51,9.05
+10,C3-Partitioning 3/4,C3,3/4,512K,1,32.67,0.15,7.5,8.89
+10,C3-Partitioning 3/4,C3,3/4,1M,1,32.54,0.5,7.58,9.0
+10,C3-Partitioning 3/4,C3,3/4,2M,1,32.67,11.24,7.67,9.12
+10,C3-Partitioning 3/4,C3,3/4,4M,1,32.79,1106.28,9.29,9.96
+10,C3-Partitioning 3/4,C3,3/4,8M,1,35.0,21487.4,11.18,15.48
+10,C3-Partitioning 3/4,C3,3/4,16M,1,36.17,27820.18,11.36,15.94
+10,C3-Partitioning 3/4,C3,3/4,32M,1,35.83,25257.05,11.45,15.68
+10,C3-Partitioning 3/4,C3,3/4,64M,1,35.17,24535.72,11.32,15.57
+10,C3-Partitioning 3/4,C3,3/4,128M,1,35.33,24939.59,11.4,15.56
+10,C3-Partitioning 3/4,C3,3/4,256M,1,35.17,23636.54,11.32,15.37

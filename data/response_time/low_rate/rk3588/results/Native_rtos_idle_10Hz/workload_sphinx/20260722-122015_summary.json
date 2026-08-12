@@ -1,0 +1,19 @@
+{
+  "platform": "rk3588",
+  "experiment": "Native_rtos_idle_10Hz",
+  "vm_bytes": "sphinx",
+  "stress_ng": false,
+  "started_at": "2026-07-22T12:20:15+0800",
+  "elapsed_seconds": 912.249,
+  "sample_hz": 10,
+  "expected_pmu_samples": 0,
+  "minimum_pmu_samples": 0,
+  "last_pmu_samples": 0,
+  "bogo_ops": null,
+  "stress_pid": null,
+  "stress_exit_code": null,
+  "status": "failed",
+  "error": "Linux boot did not reach login/shell after 5 attempts (last status=timeout)",
+  "rtos_log": "20260722-122015_rtos.log",
+  "oee_log": "20260722-122015_oee.log"
+}

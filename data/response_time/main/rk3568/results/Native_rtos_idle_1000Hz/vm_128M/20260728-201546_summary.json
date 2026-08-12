@@ -1,0 +1,21 @@
+{
+  "platform": "rk3568",
+  "experiment": "Native_rtos_idle_1000Hz",
+  "vm_bytes": "128M",
+  "stress_ng": true,
+  "workload": "stress-ng",
+  "started_at": "2026-07-28T20:15:46+0800",
+  "elapsed_seconds": 646.036,
+  "sample_hz": 1000,
+  "expected_pmu_samples": 0,
+  "minimum_pmu_samples": 0,
+  "last_pmu_samples": 0,
+  "bogo_ops": null,
+  "stress_pid": 596,
+  "stress_exit_code": null,
+  "status": "failed",
+  "error": "stress-ng PID was returned, but the process is not alive; the OEE shell command may have been corrupted",
+  "post_run_warning": null,
+  "rtos_log": "20260728-201546_rtos.log",
+  "oee_log": "20260728-201546_oee.log"
+}

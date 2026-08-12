@@ -1,0 +1,19 @@
+{
+  "platform": "rk3568",
+  "experiment": "HCP_rtos_idle_1000Hz",
+  "vm_bytes": "256K",
+  "stress_ng": true,
+  "started_at": "2026-07-18T17:08:19+0800",
+  "elapsed_seconds": 650.812,
+  "sample_hz": 1000,
+  "expected_pmu_samples": 0,
+  "minimum_pmu_samples": 0,
+  "last_pmu_samples": 0,
+  "bogo_ops": null,
+  "stress_pid": null,
+  "stress_exit_code": null,
+  "status": "failed",
+  "error": "stress-ng start PID was not returned by the OEE shell",
+  "rtos_log": "20260718-170819_rtos.log",
+  "oee_log": "20260718-170819_oee.log"
+}

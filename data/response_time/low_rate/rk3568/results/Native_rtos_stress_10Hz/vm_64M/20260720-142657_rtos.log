@@ -1,0 +1,4 @@
+Hello, QSemOS-RT 24.03-LTS @ v1.3.4-unknown git time-unknown git ID
+OK3568-C @ Jul 18 2026 08:30:03
+timer_rt_test_demo running ...
+Starting timer_rt_test_demo...sleep 25s

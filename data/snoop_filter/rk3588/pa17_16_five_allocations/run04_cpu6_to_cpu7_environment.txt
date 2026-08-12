@@ -1,0 +1,65 @@
+collected_utc,1970-01-01T05:22:45Z
+uname,Linux tl3588-ab 5.10.0+ #51 SMP PREEMPT_RT Thu Jun 4 15:49:34 CST 2026 aarch64 aarch64 aarch64 GNU/Linux
+kernel_cmdline,earlycon=uart8250,mmio32,0xfeb50000 console=ttyFIQ0 irqchip.gicv3_pseudo_nmi=0 hmp-unsafe=true root=/dev/mmcblk0p5 init=/sbin/init rw rootwait 
+23473be9f7bdfa2f986125046336eca17c64035a63dc04b30978e7bbd9c1f675  /root/rk3588_sf_bitscan.ko
+filename:       /root/rk3588_sf_bitscan.ko
+sfbs_abi:       owned-probe-bitscan-v16
+license:        GPL
+author:         HuaijiGao
+description:    RK3588 owned-page paired probe physical-address bit sensitivity
+depends:        
+name:           rk3588_sf_bitscan
+vermagic:       5.10.0+ SMP preempt_rt mod_unload aarch64
+parm:           pool_pages:4 KiB pages in private pool (393216 = 1.5 GiB, maximum 1048576 = 4 GiB) (uint)
+parm:           probe_cpu:Linux CPU that primes and reloads the final group address (int)
+parm:           stimulus_cpu:Deprecated and ignored; use stimulus_cpus instead (int)
+parm:           stimulus_cpus:CPU list that concurrently accesses the stimulus lines (for example 0-6 or 0,2,4-6) (charp)
+parm:           line_offset:Deprecated 64-byte-aligned offset used only for counter calibration (uint)
+parm:           target_low:Required value of (physical_address & addrmask); omitted means random (ullong)
+parm:           addrmask:Physical-address grouping mask; candidates have identical (address & addrmask); 0 uses legacy match_bits (ullong)
+parm:           match_bits:Legacy low-bit count used only when addrmask is omitted (uint)
+parm:           fill_rounds:Passes each selected stimulus CPU makes over the access_items lines (uint)
+parm:           prefill_wait_us:Busy-wait microseconds between prefill-hot and wait-prefill-hot probe measurements (maximum 10000) (uint)
+parm:           access_items:Addresses touched by every stimulus CPU per pass; group has one additional probe address (uint)
+parm:           baseline_sets:Number of unrelated baseline groups (uint)
+parm:           candidate_sets:Number of same-low-bits candidate groups (uint)
+parm:           cross_retest_threshold:Retest a candidate group when its initial cross reload exceeds this many counter ticks (uint)
+parm:           cross_retest_repetitions:Cross-only repetitions for each candidate group above the threshold; 0 disables retesting (uint)
+parm:           cross_retest_max_groups:Maximum number of above-threshold candidate groups to retest (uint)
+parm:           result_path:Absolute CSV path; parent directory must exist (charp)
+parm:           scan_order:Mode: 1 single, 2 pair, 3 triple, 4 color matrix, 5 joint bit scan, or 6 same/cross attribution (uint)
+parm:           experiment_run_id:Artifact run identifier written into CSV metadata (charp)
+parm:           item_sweep_first:First stimulus count in same/cross attribution sweep (uint)
+parm:           item_sweep_last:Last stimulus count in same/cross attribution sweep (uint)
+parm:           item_sweep_repetitions:Trials per same/cross baseline/candidate item-sweep cell (uint)
+parm:           item_sweep_rounds:Comma-separated fill-round values measured on one held candidate set (array of uint)
+parm:           attribution_control_repetitions:Idle trials per locality and bit in attribution mode (uint)
+parm:           attribution_cross_only_bits:Skip same-core per-bit tests in attribution mode; item sweep still measures same and cross (bool)
+parm:           joint_rescue_mask:Physical-address bits that additionally require whole-group XOR joint rescue in attribution mode (ullong)
+parm:           latency_bin1:Upper bound of latency histogram bin 0 (uint)
+parm:           latency_bin2:Upper bound of latency histogram bin 1 (uint)
+parm:           latency_bin3:Upper bound of latency histogram bin 2 (uint)
+parm:           color_bit0:Low color-selector physical-address bit (uint)
+parm:           color_bit1:High color-selector physical-address bit (uint)
+parm:           color_repetitions:Paired trials for every off-diagonal color-matrix cell (uint)
+parm:           bit_first:First physical-address bit to test (minimum 0) (uint)
+parm:           bit_last:Last physical-address bit to test (maximum 47) (uint)
+parm:           bit_repetitions:Paired original/flipped trials per bit (uint)
+parm:           pair_screen_repetitions:Short original/double-flip trials for every available bit pair (uint)
+parm:           pair_screen_percent:Minimum double-flip success percentage promoted to long validation (uint)
+parm:           single_max_percent:Maximum success percentage allowed for each constituent single flip (uint)
+parm:           triple_screen_repetitions:Short original/triple-flip trials for every available triple (uint)
+parm:           triple_screen_percent:Minimum triple-flip success percentage promoted to long validation (uint)
+parm:           pair_max_percent:Maximum screen percentage allowed for each constituent pair (uint)
+parm:           trigger_threshold:Probe reload threshold in counter ticks (uint)
+parm:           stable_percent:Success percentage used only for CSV stable flag (uint)
+parm:           auto_find_stable:Find and validate a stable candidate group in the current allocation (bool)
+parm:           candidate_items:Initial stimulus addresses in online stable-group search (uint)
+parm:           target_candidate_items:Required final candidate count after greedy deletion (uint)
+parm:           reduction_repetitions:Short trials for each proposed candidate deletion (uint)
+parm:           reduction_validation_repetitions:Long trials required before accepting a candidate deletion (uint)
+parm:           scan_passes:Complete scan passes on the same held pages and final candidate set (uint)
+parm:           search_groups:Maximum random candidate groups tested online (uint)
+parm:           search_repetitions:Short repetitions per online candidate group (uint)
+parm:           baseline_repetitions:Long repetitions required before any bit scan is allowed (uint)
+parm:           stimulus_mask:61-bit fixed stimulus slot mask (ullong)

@@ -1,0 +1,20 @@
+{
+  "platform": "rk3588",
+  "experiment": "WP_rtos_idle_1000Hz",
+  "vm_bytes": "yolov4",
+  "stress_ng": false,
+  "started_at": "2026-07-23T11:49:28+0800",
+  "elapsed_seconds": 901.888,
+  "sample_hz": 1000,
+  "expected_pmu_samples": 600000,
+  "minimum_pmu_samples": 600000,
+  "last_pmu_samples": 600000,
+  "bogo_ops": null,
+  "stress_pid": 688,
+  "stress_exit_code": null,
+  "status": "failed",
+  "error": "YOLOv4 did not return final metrics and shell acknowledgement",
+  "post_run_warning": null,
+  "rtos_log": "20260723-114928_rtos.log",
+  "oee_log": "20260723-114928_oee.log"
+}

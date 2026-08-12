@@ -1,0 +1,4 @@
+﻿platform,scenario,method,source,reason
+RK3568,idle,Native,data/response_time/main/rk3568/results/Native_rtos_idle_1000Hz/vm_16M/20260719-174608_summary.json,summary status=failed
+RK3568,idle,HCP4-16,data/response_time/main/rk3568/results/HCP_rtos_idle_1000Hz/vm_16M/20260718-184849_summary.json,summary status=failed
+RK3568,stress,HCP4-16,data/response_time/main/rk3568/results/HCP_rtos_stress_1000Hz/vm_16M/20260719-060519_summary.json,summary status=failed

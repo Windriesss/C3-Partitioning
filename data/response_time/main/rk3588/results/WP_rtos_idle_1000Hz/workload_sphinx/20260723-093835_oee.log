@@ -1,0 +1,24 @@
+ done
+Abort
+MDIO read didn't complete
+Using ethernet@fe1b0000 device
+TFTP from server 202.197.67.3; our IP address is 202.197.67.50
+Filename 'TL3588-xen/dom0less/xen-uImage.tl3588'.
+Load address: 0x2000000
+Loading: *#################################################################
+	 ###########################
+	 245.1 KiB/s
+done
+Bytes transferred = 1343576 (148058 hex)
+Using ethernet@fe1b0000 device
+TFTP from server 202.197.67.3; our IP address is 202.197.67.50
+Filename 'TL3588-xen/dom0less/tl3588-evm-xen-dom0less.dtb'.
+Load address: 0x1f00000
+Loading: *
+Abort
+Using ethernet@fe1b0000 device
+TFTP from server 202.197.67.3; our IP address is 202.197.67.50
+Filename 'TL3588-xen/dom0less/Image'.
+Load address: 0x3f80000
+Loading: *#################################################################
+	 #################################################

@@ -1,0 +1,24 @@
+,Yf
+I+i,((q*%]qQъ ѯّ-,jja7YȾ_)u]y8ʸQɸ`yوɫWxq̏W/{#rI؆xs2KG76WawFwuKwGm+xCSӗWCcƃ
+
+U-Boot 2024.07-00114-g1fcb78edf1 (Apr 02 2026 - 11:52:05 +0800)
+
+Model: Ncti rk3588 evb
+DRAM:  4 GiB
+Core:  315 devices, 28 uclasses, devicetree: separate
+MMC:   mmc@fe2e0000: 0
+Loading Environment from MMC... Reading from MMC(0)... OK
+In:    serial@feb50000
+Out:   serial@feb50000
+Err:   serial@feb50000
+Model: Ncti rk3588 evb
+lt8912b id: [0xb212]
+Net:   eth0: ethernet@fe1b0000
+Warning: partition logo not found on mmc 0
+Hit any key to stop autoboot:  0 
+ethernet@fe1b0000 Waiting for PHY auto negotiation to complete...... done
+Using ethernet@fe1b0000 device
+TFTP from server 202.197.67.3; our IP address is 202.197.67.50
+Filename 'TL3588-xen/dom0less/xen-uImage.tl3588'.
+Load address: 0x2000000
+Loading: *

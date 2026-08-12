@@ -1,0 +1,19 @@
+{
+  "platform": "rk3568",
+  "experiment": "SP02_rtos_idle_100Hz",
+  "vm_bytes": "128K",
+  "stress_ng": true,
+  "started_at": "2026-07-20T21:03:31+0800",
+  "elapsed_seconds": 697.159,
+  "sample_hz": 100,
+  "expected_pmu_samples": 60000,
+  "minimum_pmu_samples": 60000,
+  "last_pmu_samples": 60000,
+  "bogo_ops": null,
+  "stress_pid": 591,
+  "stress_exit_code": null,
+  "status": "failed",
+  "error": "stress-ng did not stop or emit final metrics before timeout",
+  "rtos_log": "20260720-210331_rtos.log",
+  "oee_log": "20260720-210331_oee.log"
+}

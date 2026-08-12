@@ -1,0 +1,21 @@
+{
+  "platform": "rk3588",
+  "experiment": "Native_rtos_stress_1000Hz",
+  "vm_bytes": "2M",
+  "stress_ng": true,
+  "workload": "stress-ng",
+  "started_at": "2026-07-29T16:17:06+0800",
+  "elapsed_seconds": 261.535,
+  "sample_hz": 1000,
+  "expected_pmu_samples": 600000,
+  "minimum_pmu_samples": 600000,
+  "last_pmu_samples": 0,
+  "bogo_ops": null,
+  "stress_pid": 704,
+  "stress_exit_code": null,
+  "status": "failed",
+  "error": "KeyboardInterrupt",
+  "post_run_warning": null,
+  "rtos_log": "20260729-161706_rtos.log",
+  "oee_log": "20260729-161706_oee.log"
+}

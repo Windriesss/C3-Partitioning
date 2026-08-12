@@ -1,0 +1,21 @@
+{
+  "platform": "rk3588",
+  "experiment": "WP_rtos_idle_1000Hz",
+  "vm_bytes": "4M",
+  "stress_ng": true,
+  "workload": "stress-ng",
+  "started_at": "2026-07-31T22:16:52+0800",
+  "elapsed_seconds": 665.33,
+  "sample_hz": 1000,
+  "expected_pmu_samples": 600000,
+  "minimum_pmu_samples": 600000,
+  "last_pmu_samples": 600000,
+  "bogo_ops": 78732455.0,
+  "stress_pid": 715,
+  "stress_exit_code": 0,
+  "status": "complete",
+  "error": null,
+  "post_run_warning": null,
+  "rtos_log": "20260731-221652_rtos.log",
+  "oee_log": "20260731-221652_oee.log"
+}

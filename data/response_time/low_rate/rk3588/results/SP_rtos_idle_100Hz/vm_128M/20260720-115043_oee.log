@@ -1,0 +1,221 @@
+݋Y-YQ
+,	f
+͝jsQ(*Xo(hˋz,JYYj霜J,Ѷ=xQ{կ#QW,{=͸QmF{..CWōuof[g&[룺c0;g'g4e砣W7C˷$x}tmr.?sO
+
+U-Boot 2024.07-00114-g1fcb78edf1 (Apr 02 2026 - 11:52:05 +0800)
+
+Model: Ncti rk3588 evb
+DRAM:  4 GiB
+Core:  315 devices, 28 uclasses, devicetree: separate
+MMC:   mmc@fe2e0000: 0
+Loading Environment from MMC... Reading from MMC(0)... OK
+In:    serial@feb50000
+Out:   serial@feb50000
+Err:   serial@feb50000
+Model: Ncti rk3588 evb
+lt8912b id: [0xb212]
+Net:   eth0: ethernet@fe1b0000
+Warning: partition logo not found on mmc 0
+Hit any key to stop autoboot:  0 
+ethernet@fe1b0000 Waiting for PHY auto negotiation to complete.... done
+Using ethernet@fe1b0000 device
+TFTP from server 202.197.67.3; our IP address is 202.197.67.50
+Filename 'TL3588-xen/dom0less/xen-uImage.tl3588'.
+Load address: 0x2000000
+Loading: *
+ARP Retry count exceeded; starting again
+Using ethernet@fe1b0000 device
+TFTP from server 202.197.67.3; our IP address is 202.197.67.50
+Filename 'TL3588-xen/dom0less/tl3588-evm-xen-dom0less.dtb'.
+Load address: 0x1f00000
+Loading: *T T T T 
+TFTP error: '  δ  ' (1)
+Not retrying...
+Using ethernet@fe1b0000 device
+TFTP from server 202.197.67.3; our IP address is 202.197.67.50
+Filename 'TL3588-xen/dom0less/Image'.
+Load address: 0x3f80000
+Loading: *
+TFTP error: '  δ  ' (1)
+Not retrying...
+Using ethernet@fe1b0000 device
+TFTP from server 202.197.67.3; our IP address is 202.197.67.50
+Filename 'TL3588-xen/dom0less/qsemos-rt.bin'.
+Load address: 0x7000000
+Loading: *
+TFTP error: '  δ  ' (1)
+Not retrying...
+Using ethernet@fe1b0000 device
+TFTP from server 202.197.67.3; our IP address is 202.197.67.50
+Filename 'TL3588-xen/dom0less/tl3588-evm-uniproton.dtb'.
+Load address: 0xa100000
+Loading: *
+TFTP error: '  δ  ' (1)
+Not retrying...
+Wrong Image Type for bootm command
+ERROR -91: Protocol wrong type for socket: can't get kernel image!
+=> 
+=> 
+=> boot
+Using ethernet@fe1b0000 device
+TFTP from server 202.197.67.3; our IP address is 202.197.67.50
+Filename 'TL3588-xen/dom0less/xen-uImage.tl3588'.
+Load address: 0x2000000
+Loading: *
+TFTP error: '  δ  ' (1)
+Not retrying...
+Using ethernet@fe1b0000 device
+TFTP from server 202.197.67.3; our IP address is 202.197.67.50
+Filename 'TL3588-xen/dom0less/tl3588-evm-xen-dom0less.dtb'.
+Load address: 0x1f00000
+Loading: *
+TFTP error: '  δ  ' (1)
+Not retrying...
+Using ethernet@fe1b0000 device
+TFTP from server 202.197.67.3; our IP address is 202.197.67.50
+Filename 'TL3588-xen/dom0less/Image'.
+Load address: 0x3f80000
+Loading: *
+TFTP error: '  δ  ' (1)
+Not retrying...
+Using ethernet@fe1b0000 device
+TFTP from server 202.197.67.3; our IP address is 202.197.67.50
+Filename 'TL3588-xen/dom0less/qsemos-rt.bin'.
+Load address: 0x7000000
+Loading: *
+TFTP error: '  δ  ' (1)
+Not retrying...
+Using ethernet@fe1b0000 device
+TFTP from server 202.197.67.3; our IP address is 202.197.67.50
+Filename 'TL3588-xen/dom0less/tl3588-evm-uniproton.dtb'.
+Load address: 0xa100000
+Loading: *
+TFTP error: '  δ  ' (1)
+Not retrying...
+Wrong Image Type for bootm command
+ERROR -91: Protocol wrong type for socket: can't get kernel image!
+=> 
+=> 
+=> boot
+Using ethernet@fe1b0000 device
+TFTP from server 202.197.67.3; our IP address is 202.197.67.50
+Filename 'TL3588-xen/dom0less/xen-uImage.tl3588'.
+Load address: 0x2000000
+Loading: *
+TFTP error: '  δ  ' (1)
+Not retrying...
+Using ethernet@fe1b0000 device
+TFTP from server 202.197.67.3; our IP address is 202.197.67.50
+Filename 'TL3588-xen/dom0less/tl3588-evm-xen-dom0less.dtb'.
+Load address: 0x1f00000
+Loading: *
+TFTP error: '  δ  ' (1)
+Not retrying...
+Using ethernet@fe1b0000 device
+TFTP from server 202.197.67.3; our IP address is 202.197.67.50
+Filename 'TL3588-xen/dom0less/Image'.
+Load address: 0x3f80000
+Loading: *
+TFTP error: '  δ  ' (1)
+Not retrying...
+Using ethernet@fe1b0000 device
+TFTP from server 202.197.67.3; our IP address is 202.197.67.50
+Filename 'TL3588-xen/dom0less/qsemos-rt.bin'.
+Load address: 0x7000000
+Loading: *
+TFTP error: '  δ  ' (1)
+Not retrying...
+Using ethernet@fe1b0000 device
+TFTP from server 202.197.67.3; our IP address is 202.197.67.50
+Filename 'TL3588-xen/dom0less/tl3588-evm-uniproton.dtb'.
+Load address: 0xa100000
+Loading: *
+TFTP error: '  δ  ' (1)
+Not retrying...
+Wrong Image Type for bootm command
+ERROR -91: Protocol wrong type for socket: can't get kernel image!
+=> 
+=> 
+=> boot
+Using ethernet@fe1b0000 device
+TFTP from server 202.197.67.3; our IP address is 202.197.67.50
+Filename 'TL3588-xen/dom0less/xen-uImage.tl3588'.
+Load address: 0x2000000
+Loading: *
+TFTP error: '  δ  ' (1)
+Not retrying...
+Using ethernet@fe1b0000 device
+TFTP from server 202.197.67.3; our IP address is 202.197.67.50
+Filename 'TL3588-xen/dom0less/tl3588-evm-xen-dom0less.dtb'.
+Load address: 0x1f00000
+Loading: *
+TFTP error: '  δ  ' (1)
+Not retrying...
+Using ethernet@fe1b0000 device
+TFTP from server 202.197.67.3; our IP address is 202.197.67.50
+Filename 'TL3588-xen/dom0less/Image'.
+Load address: 0x3f80000
+Loading: *
+TFTP error: '  δ  ' (1)
+Not retrying...
+Using ethernet@fe1b0000 device
+TFTP from server 202.197.67.3; our IP address is 202.197.67.50
+Filename 'TL3588-xen/dom0less/qsemos-rt.bin'.
+Load address: 0x7000000
+Loading: *
+TFTP error: '  δ  ' (1)
+Not retrying...
+Using ethernet@fe1b0000 device
+TFTP from server 202.197.67.3; our IP address is 202.197.67.50
+Filename 'TL3588-xen/dom0less/tl3588-evm-uniproton.dtb'.
+Load address: 0xa100000
+Loading: *
+TFTP error: '  δ  ' (1)
+Not retrying...
+Wrong Image Type for bootm command
+ERROR -91: Protocol wrong type for socket: can't get kernel image!
+=> 
+=> 
+=> boot
+Using ethernet@fe1b0000 device
+TFTP from server 202.197.67.3; our IP address is 202.197.67.50
+Filename 'TL3588-xen/dom0less/xen-uImage.tl3588'.
+Load address: 0x2000000
+Loading: *
+TFTP error: '  δ  ' (1)
+Not retrying...
+Using ethernet@fe1b0000 device
+TFTP from server 202.197.67.3; our IP address is 202.197.67.50
+Filename 'TL3588-xen/dom0less/tl3588-evm-xen-dom0less.dtb'.
+Load address: 0x1f00000
+Loading: *
+TFTP error: '  δ  ' (1)
+Not retrying...
+Using ethernet@fe1b0000 device
+TFTP from server 202.197.67.3; our IP address is 202.197.67.50
+Filename 'TL3588-xen/dom0less/Image'.
+Load address: 0x3f80000
+Loading: *
+TFTP error: '  δ  ' (1)
+Not retrying...
+Using ethernet@fe1b0000 device
+TFTP from server 202.197.67.3; our IP address is 202.197.67.50
+Filename 'TL3588-xen/dom0less/qsemos-rt.bin'.
+Load address: 0x7000000
+Loading: *
+TFTP error: '  δ  ' (1)
+Not retrying...
+Using ethernet@fe1b0000 device
+TFTP from server 202.197.67.3; our IP address is 202.197.67.50
+Filename 'TL3588-xen/dom0less/tl3588-evm-uniproton.dtb'.
+Load address: 0xa100000
+Loading: *
+TFTP error: '  δ  ' (1)
+Not retrying...
+Wrong Image Type for bootm command
+ERROR -91: Protocol wrong type for socket: can't get kernel image!
+=> if [ -n "$STRESS_PID" ]; then kill -INT "$STRESS_PID"; fi
+Unknown command '[' - try 'help'
+=> 
+Unknown command '[' - try 'help'
+=> 

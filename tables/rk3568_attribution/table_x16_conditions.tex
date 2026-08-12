@@ -1,0 +1,16 @@
+\begin{table}[t]
+\centering
+\small
+\caption{RK3568 final-reload metrics at $X=16$ across five fresh allocations.}
+\label{tab:rk3568-x16-pmu}
+\begin{tabular}{lrrrr}
+\toprule
+Condition & Cycles & L1D (\%) & TLB (\%) & LL miss (\%) \\
+\midrule
+Same candidate & 355 & 100.0 & 100.0 & 99.8 \\
+Same baseline & 87 & 3.3 & 100.0 & 1.5 \\
+Cross candidate & 291 & 98.6 & 0.0 & 96.9 \\
+Cross baseline & 44 & 42.3 & 0.0 & 0.1 \\
+\bottomrule
+\end{tabular}
+\end{table}

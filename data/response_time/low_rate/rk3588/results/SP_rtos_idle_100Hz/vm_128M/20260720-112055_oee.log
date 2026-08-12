@@ -1,0 +1,94 @@
+[  637.127343] audit: type=1305 audit(636.866:118): auid=4294967295 ses=4294967295op=remove_rule path="/var/log/wtmp" key="session" list=4 res=1
+[  637.127369] audit: type=1305 audit(636.866:119): auid=4294967295 ses=4294967295op=remove_rule path="/var/log/faillog2" key="logins" list=4 res=1
+[  637.127375] audit: type=1305 audit(636.866:120): auid=4294967295 ses=4294967295op=remove_rule path="/var/log/btmp" key="session" list=4 res=1
+[  637.127380] audit: type=1305 audit(636.866:121): auid=4294967295 ses=4294967295op=remove_rule path="/var/log/tallylog" key="logins" list=4 res=1
+[  637.127385] audit: type=1305 audit(636.866:122): auid=4294967295 ses=4294967295op=remove_rule path="/var/log/lastlog" key="logins" list=4 res=1
+[  637.146376] audit: type=1334 audit(636.885:123): prog-id=8 op=UNLOAD
+[  637.146403] audit: type=1334 audit(636.885:124): prog-id=7 op=UNLOAD
+[  637.150438] audit: type=1334 audit(636.889:125): prog-id=6 op=UNLOAD
+[  637.150469] audit: type=1334 audit(636.889:126): prog-id=5 op=UNLOAD
+[  637.151421] audit: type=1334 audit(636.890:127): prog-id=4 op=UNLOAD
+[  637.205979] systemd-shutdown[1]: Syncing filesystems and block devices.
+[  637.221638] systemd-shutdown[1]: Sending SIGTERM to remaining processes...
+[  637.234821] systemd-journald[367]: Received SIGTERM from PID 1 (systemd-shutdow).
+[  637.248534] systemd-shutdown[1]: Sending SIGKILL to remaining processes...
+[  637.299799] systemd-shutdown[1]: Unmounting file systems.
+[  637.301970] (sd-remount)[819]: Remounting '/' read-only with options ''.
+[  637.346248] EXT4-fs (mmcblk0p5): re-mounted. Opts: (null)
+[  637.350951] systemd-shutdown[1]: All filesystems unmounted.
+[  637.350956] systemd-shutdown[1]: Deactivating swaps.
+[  637.351030] systemd-shutdown[1]: All swaps deactivated.
+[  637.351032] systemd-shutdown[1]: Detaching loop devices.
+[  637.352774] systemd-shutdown[1]: All loop devices detached.
+[  637.352779] systemd-shutdown[1]: Stopping MD devices.
+[  637.352945] systemd-shutdown[1]: All MD devices stopped.
+[  637.352947] systemd-shutdown[1]: Detaching DM devices.
+[  637.353091] systemd-shutdown[1]: All DM devices detached.
+[  637.353094] systemd-shutdown[1]: All filesystems, swaps, loop devices, MD devices and DM devices detached.
+[  637.366420] systemd-shutdown[1]: Syncing filesystems and block devices.
+[  637.368805] systemd-shutdown[1]: Rebooting.
+[  637.492689] rk860-regulator 1-0042: rk860..... reset
+[  637.493672] rk860-regulator 1-0042: force rk860x_reset ok!
+[  637.493694] rk860-regulator 0-0043: rk860..... reset
+[  637.494690] rk860-regulator 0-0043: force rk860x_reset ok!
+[  637.494696] rk860-regulator 0-0042: rk860..... reset
+[  637.495676] rk860-regulator 0-0042: force rk860x_reset ok!
+[  637.496280] mpp_av1dec av1d-master: shutdown device
+[  637.496283] mpp_av1dec av1d-master: shutdown success
+[  637.496292] mpp_rkvenc2 fdbe0000.rkvenc-core: shutdown device
+[  637.496294] mpp_rkvenc2 fdbe0000.rkvenc-core: shutdown success
+[  637.496299] mpp_rkvenc2 fdbd0000.rkvenc-core: shutdown device
+[  637.496301] mpp_rkvenc2 fdbd0000.rkvenc-core: shutdown success
+[  637.496307] mpp_rkvdec2 fdc48100.rkvdec-core: shutdown device
+[  637.496308] mpp_rkvdec2 fdc48100.rkvdec-core: shutdown success
+[  637.496313] mpp_rkvdec2 fdc38100.rkvdec-core: shutdown device
+[  637.496314] mpp_rkvdec2 fdc38100.rkvdec-core: shutdown success
+[  637.496321] mpp_jpgdec fdb90000.jpegd: shutdown device
+[  637.496322] mpp_jpgdec fdb90000.jpegd: shutdown success
+[  637.496328] mpp-iep2 fdbb0000.iep: shutdown device
+[  637.496329] mpp-iep2 fdbb0000.iep: shutdown success
+[  637.496334] mpp_vepu2 fdbac000.jpege-core: shutdown device
+[  637.496336] mpp_vepu2 fdbac000.jpege-core: shutdown success
+[  637.496341] mpp_vepu2 fdba8000.jpege-core: shutdown device
+[  637.496342] mpp_vepu2 fdba8000.jpege-core: shutdown success
+[  637.496348] mpp_vepu2 fdba4000.jpege-core: shutdown device
+[  637.496349] mpp_vepu2 fdba4000.jpege-core: shutdown success
+[  637.496353] mpp_vepu2 fdba0000.jpege-core: shutdown device
+[  637.496355] mpp_vepu2 fdba0000.jpege-core: shutdown success
+[  637.496360] mpp_vepu2 fdb50000.vepu: shutdown device
+[  637.496361] mpp_vepu2 fdb50000.vepu: shutdown success
+[  637.496366] mpp_vdpu2 fdb50400.vdpu: shutdown device
+[  637.496367] mpp_vdpu2 fdb50400.vdpu: shutdown success
+[  637.496914] xhci-hcd xhci-hcd.4.auto: remove, state 4
+[  637.496922] usb usb8: USB disconnect, device number 1
+[  637.497565] xhci-hcd xhci-hcd.4.auto: USB bus 8 deregistered
+[  637.497828] xhci-hcd xhci-hcd.4.auto: remove, state 4
+[  637.497833] usb usb7: USB disconnect, device number 1
+[  637.498818] xhci-hcd xhci-hcd.4.auto: USB bus 7 deregistered
+[  637.503544] xhci-hcd xhci-hcd.3.auto: remove, state 4
+[  637.503561] usb usb6: USB disconnect, device number 1
+[  637.504168] xhci-hcd xhci-hcd.3.auto: USB bus 6 deregistered
+[  637.504378] xhci-hcd xhci-hcd.3.auto: remove, state 4
+[  637.504383] usb usb5: USB disconnect, device number 1
+[  637.505336] xhci-hcd xhci-hcd.3.auto: USB bus 5 deregistered
+[  637.509119] reboot: Restarting system
+(XEN) Hardware Dom0 shutdown: rebooting machine
+ѝJ4͉tw^ݝ
+ݪ,(˦<-葁%&J5ыY-ٽ,Y<Y(ٍUiYUI_[ܞadqiѱ͜SW4i4qMS9l7:c3σÃK˥tÇwvvgwFإSC;ڋ#nCgG
+
+U-Boot 2024.07-00114-g1fcb78edf1 (Apr 02 2026 - 11:52:05 +0800)
+
+Model: Ncti rk3588 evb
+DRAM:  4 GiB
+Core:  315 devices, 28 uclasses, devicetree: separate
+MMC:   mmc@fe2e0000: 0
+Loading Environment from MMC... Reading from MMC(0)... OK
+In:    serial@feb50000
+Out:   serial@feb50000
+Err:   serial@feb50000
+Model: Ncti rk3588 evb
+lt8912b id: [0xb212]
+Net:   eth0: ethernet@fe1b0000
+Warning: partition logo not found on mmc 0
+Hit any key to stop autoboot:  0 
+ethernet@fe1b0000 Waiting for PHY auto negotiation to complete....

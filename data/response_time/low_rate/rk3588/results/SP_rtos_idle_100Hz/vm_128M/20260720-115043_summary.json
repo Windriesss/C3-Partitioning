@@ -1,0 +1,19 @@
+{
+  "platform": "rk3588",
+  "experiment": "SP_rtos_idle_100Hz",
+  "vm_bytes": "128M",
+  "stress_ng": true,
+  "started_at": "2026-07-20T11:50:43+0800",
+  "elapsed_seconds": 48.794,
+  "sample_hz": 100,
+  "expected_pmu_samples": 0,
+  "minimum_pmu_samples": 0,
+  "last_pmu_samples": 0,
+  "bogo_ops": null,
+  "stress_pid": null,
+  "stress_exit_code": null,
+  "status": "failed",
+  "error": "Linux boot did not reach login/shell after 5 attempts (last status=boot_error)",
+  "rtos_log": "20260720-115043_rtos.log",
+  "oee_log": "20260720-115043_oee.log"
+}

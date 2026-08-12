@@ -1,0 +1,19 @@
+{
+  "platform": "rk3588",
+  "experiment": "Native_rtos_idle_100Hz",
+  "vm_bytes": "sphinx",
+  "stress_ng": false,
+  "started_at": "2026-07-22T10:06:25+0800",
+  "elapsed_seconds": 726.043,
+  "sample_hz": 100,
+  "expected_pmu_samples": 60000,
+  "minimum_pmu_samples": 60000,
+  "last_pmu_samples": 60000,
+  "bogo_ops": null,
+  "stress_pid": 708,
+  "stress_exit_code": null,
+  "status": "failed",
+  "error": "sphinx stop acknowledgement was not returned by the OEE shell",
+  "rtos_log": "20260722-100625_rtos.log",
+  "oee_log": "20260722-100625_oee.log"
+}

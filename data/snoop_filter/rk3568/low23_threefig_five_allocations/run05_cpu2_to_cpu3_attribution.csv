@@ -1,0 +1,578 @@
+# module,rk3588_sf_bitscan
+# schema_version,18
+# experiment_run_id,run05_cpu2_to_cpu3_attribution_allocation2
+# experiment,owned_same_cross_sf_attribution
+# scan_order,6
+# allocation_scope,one_module_load_one_fresh_owned_page_pool
+# owned_pages_only,true
+# computed_physical_addresses_are_lookup_keys_only,true
+# arbitrary_physical_address_mapping,false
+# counter,pmccntr_cycles
+# counter_calibration_delta,257
+# counter_calibration_method,civac_then_single_touch_of_one_owned_line
+# counter_calibration_usage,counter_sanity_check_only_not_subtracted_from_probe_ticks
+# probe_pmu_events_available,true
+# ll_cache_events_available,true
+# l1d_tlb_refill_event_available,true
+# probe_pmu_event_l1d_tlb_refill,0x05
+# probe_pmu_event_ll_cache_rd,0x36
+# probe_pmu_event_ll_cache_miss_rd,0x37
+# probe_pmu_event_source,Arm_architected_common_event_numbers
+# probe_cpu,3
+# stimulus_cpus,2
+# same_core_binding,probe_and_candidate_accesses_execute_on_probe_cpu
+# cross_core_binding,probe_executes_on_probe_cpu_and_candidate_accesses_execute_on_stimulus_cpus
+# pool_pages,329376
+# candidate_target_masked,0x38e900
+# addrmask,0x7fffff
+# owned_candidate_pool,159
+# stimulus_mask,0xfffff
+# initial_candidate_items,20
+# target_candidate_items,16
+# active_candidates,16
+# candidate_selection,online_random_validated
+# candidate_search_attempt,33
+# search_groups,2000
+# search_repetitions,20
+# baseline_repetitions,1000
+# reduction_repetitions,20
+# reduction_validation_repetitions,200
+# scan_passes,3
+# color_bit0,16
+# color_bit1,17
+# color_repetitions,1000
+# base_probe_pa,0x2a38e900
+# bit_first,0
+# bit_last,22
+# fill_rounds,1000
+# fill_rounds_scope,candidate_search_reduction_validation_and_bit_tests
+# bit_repetitions,1000
+# item_sweep_first,0
+# item_sweep_last,20
+# item_count_definition,stimulus_addresses_excluding_probe
+# item_sweep_repetitions,1000
+# item_sweep_rounds,1000
+# item_sweep_rounds_scope,effective_values_for_item_sweep_each_row_records_one_as_fill_rounds
+# item_sweep_order,descending_from_item_sweep_last_to_item_sweep_first
+# bit_item_sweep_conditions,same_original_matching;same_probe_only_flipped;cross_original_matching;cross_probe_only_flipped
+# bit_item_sweep_candidate_order,one_random_permutation_per_scan_pass_with_nested_prefixes_within_each_pass
+# attribution_control_repetitions,100
+# attribution_cross_only_bits,true
+# joint_rescue_mask,0x6000
+# pair_screen_repetitions,100
+# pair_screen_percent,80
+# single_max_percent,20
+# triple_screen_repetitions,100
+# triple_screen_percent,80
+# pair_max_percent,20
+# trigger_threshold,150
+# stable_percent,95
+# latency_bins,0..89;90..129;130..219;220..inf
+# cache_line_bytes,64
+# intra_line_negative_control_bits,0..5
+# cross_bit_conditions,original_matching;probe_only_flipped
+# joint_bit_conditions,joint_group_flipped_for_joint_rescue_mask
+# selector_rescue_rule,original_and_joint_at_least_stable_percent_and_probe_only_at_most_single_max_percent
+# selection_validation,matching_candidate_set_before_scan
+# unrelated_control,same_owned_page_control_bit_not_in_changed_mask
+# idle_control,stimulus_handshake_with_zero_address_accesses
+record,scan_pass,test_bit,test_bit2,test_bit3,variant,available,lookup_status,active_candidates,fill_rounds,successes,repetitions,success_percent,stable,mean_ticks,median_ticks,p90_ticks,min_ticks,max_ticks,probe_l1d_refill_total,probe_l1d_tlb_refill_total,probe_l2d_refill_total,probe_bus_access_total,probe_l1d_refill_samples,probe_l1d_tlb_refill_samples,probe_l2d_refill_samples,probe_ll_cache_rd_total,probe_ll_cache_miss_total,probe_ll_cache_rd_samples,probe_ll_cache_miss_samples,latency_lt_bin1,latency_bin1_bin2,latency_bin2_bin3,latency_ge_bin3,probe_pa,paired_probe_pa,changed_mask
+candidate_member,0,0,64,64,stimulus,1,owned_exact,16,1000,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0x49b8e900,0x2a38e900,0x0
+candidate_member,0,1,64,64,stimulus,1,owned_exact,16,1000,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0x4938e900,0x2a38e900,0x0
+candidate_member,0,2,64,64,stimulus,1,owned_exact,16,1000,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0x4a38e900,0x2a38e900,0x0
+candidate_member,0,3,64,64,stimulus,1,owned_exact,16,1000,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0x6338e900,0x2a38e900,0x0
+candidate_member,0,4,64,64,stimulus,1,owned_exact,16,1000,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0x2638e900,0x2a38e900,0x0
+candidate_member,0,5,64,64,stimulus,1,owned_exact,16,1000,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0x46b8e900,0x2a38e900,0x0
+candidate_member,0,6,64,64,stimulus,1,owned_exact,16,1000,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0x5538e900,0x2a38e900,0x0
+candidate_member,0,7,64,64,stimulus,1,owned_exact,16,1000,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0x2238e900,0x2a38e900,0x0
+candidate_member,0,8,64,64,stimulus,1,owned_exact,16,1000,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0x5f38e900,0x2a38e900,0x0
+candidate_member,0,9,64,64,stimulus,1,owned_exact,16,1000,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0x48b8e900,0x2a38e900,0x0
+candidate_member,0,10,64,64,stimulus,1,owned_exact,16,1000,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0x1d38e900,0x2a38e900,0x0
+candidate_member,0,11,64,64,stimulus,1,owned_exact,16,1000,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0x3c38e900,0x2a38e900,0x0
+candidate_member,0,12,64,64,stimulus,1,owned_exact,16,1000,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0x3d38e900,0x2a38e900,0x0
+candidate_member,0,13,64,64,stimulus,1,owned_exact,16,1000,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0x4e38e900,0x2a38e900,0x0
+candidate_member,0,14,64,64,stimulus,1,owned_exact,16,1000,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0x4238e900,0x2a38e900,0x0
+candidate_member,0,15,64,64,stimulus,1,owned_exact,16,1000,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0x5238e900,0x2a38e900,0x0
+selection_validation,0,0,64,64,initial_matching,1,owned_exact,20,1000,994,1000,99,1,296,258,274,27,1018,1472,0,992,8376,997,0,992,2032,992,998,992,6,0,0,994,0x2a38e900,0x2a38e900,0x0
+candidate_reduction,0,1,64,64,drop_short_20_to_19,1,removed_owned_candidate,19,1000,20,20,100,1,259,258,263,252,268,31,0,20,230,20,0,20,50,20,20,20,0,0,0,20,0x5b38e900,0x2a38e900,0x0
+candidate_reduction,0,1,64,64,drop_validation_20_to_19,1,removed_owned_candidate,19,1000,200,200,100,1,296,258,269,230,923,297,0,200,1722,200,0,200,419,200,200,200,0,0,0,200,0x5b38e900,0x2a38e900,0x0
+candidate_reduction,0,2,64,64,drop_short_19_to_18,1,removed_owned_candidate,18,1000,20,20,100,1,259,258,263,253,268,29,0,20,191,20,0,20,44,20,20,20,0,0,0,20,0x5fb8e900,0x2a38e900,0x0
+candidate_reduction,0,2,64,64,drop_validation_19_to_18,1,removed_owned_candidate,18,1000,200,200,100,1,282,258,261,237,874,303,0,199,1764,200,0,199,433,199,200,199,0,0,0,200,0x5fb8e900,0x2a38e900,0x0
+candidate_reduction,0,3,64,64,drop_short_18_to_17,1,removed_owned_candidate,17,1000,20,20,100,1,308,258,438,237,922,28,0,20,144,20,0,20,35,20,20,20,0,0,0,20,0x2338e900,0x2a38e900,0x0
+candidate_reduction,0,3,64,64,drop_validation_18_to_17,1,removed_owned_candidate,17,1000,200,200,100,1,304,258,411,229,1015,307,0,200,1694,200,0,200,414,200,200,200,0,0,0,200,0x2338e900,0x2a38e900,0x0
+candidate_reduction,0,4,64,64,drop_short_17_to_16,1,removed_owned_candidate,16,1000,20,20,100,1,273,258,261,254,562,31,0,20,151,20,0,20,37,20,20,20,0,0,0,20,0x19b8e900,0x2a38e900,0x0
+candidate_reduction,0,4,64,64,drop_validation_17_to_16,1,removed_owned_candidate,16,1000,200,200,100,1,279,258,262,230,1006,294,0,200,1385,200,0,200,339,200,200,200,0,0,0,200,0x19b8e900,0x2a38e900,0x0
+selection_validation,0,0,64,64,reduced_matching,1,owned_exact,16,1000,987,1000,98,1,287,258,262,27,1011,1458,0,986,7708,993,0,986,1893,986,997,986,13,0,0,987,0x2a38e900,0x2a38e900,0x0
+item_sweep,0,20,64,64,same_baseline,1,owned_equal_load_noncongruent,20,1000,992,1000,99,1,313,290,293,79,1047,418,2000,987,15488,418,1000,985,3403,987,1000,985,8,0,0,992,0x2a38e900,0x2a38e900,0x40
+item_sweep,0,20,64,64,same_candidate,1,owned_candidate,20,1000,1000,1000,100,1,576,530,539,316,1300,1453,2000,1998,19575,1000,1000,1000,3040,1998,1000,1000,0,0,0,1000,0x2a38e900,0x2a38e900,0x0
+item_sweep,0,20,64,64,cross_baseline,1,owned_equal_load_noncongruent,20,1000,1,1000,0,0,46,34,64,27,295,575,0,5,7992,575,0,1,1840,5,909,1,996,3,0,1,0x2a38e900,0x2a38e900,0x40
+item_sweep,0,20,64,64,cross_candidate,1,owned_candidate,20,1000,1000,1000,100,1,304,259,379,225,1018,1487,0,999,9242,1000,0,998,2193,999,1000,998,0,0,0,1000,0x2a38e900,0x2a38e900,0x0
+item_sweep,0,19,64,64,same_baseline,1,owned_equal_load_noncongruent,19,1000,992,1000,99,1,310,290,293,79,1043,335,2000,994,15689,335,1000,992,3420,994,1000,992,8,0,0,992,0x2a38e900,0x2a38e900,0x40
+item_sweep,0,19,64,64,same_candidate,1,owned_candidate,19,1000,1000,1000,100,1,573,530,539,316,1289,1458,2000,1997,19564,1000,1000,1000,3088,1997,1000,1000,0,0,0,1000,0x2a38e900,0x2a38e900,0x0
+item_sweep,0,19,64,64,cross_baseline,1,owned_equal_load_noncongruent,19,1000,1,1000,0,0,48,59,65,27,266,576,0,2,8403,576,0,2,1984,2,931,2,998,1,0,1,0x2a38e900,0x2a38e900,0x40
+item_sweep,0,19,64,64,cross_candidate,1,owned_candidate,19,1000,997,1000,99,1,301,260,345,27,1040,1485,0,998,9022,999,0,996,2143,998,997,996,3,0,0,997,0x2a38e900,0x2a38e900,0x0
+item_sweep,0,18,64,64,same_baseline,1,owned_equal_load_noncongruent,18,1000,917,1000,91,0,296,289,293,71,1054,337,2000,920,15693,337,1000,915,3364,920,1000,915,83,0,0,917,0x2a38e900,0x2a38e900,0x40
+item_sweep,0,18,64,64,same_candidate,1,owned_candidate,18,1000,1000,1000,100,1,539,527,538,291,1292,1426,2000,1858,19669,1000,1000,1000,3053,1858,1000,1000,0,0,0,1000,0x2a38e900,0x2a38e900,0x0
+item_sweep,0,18,64,64,cross_baseline,1,owned_equal_load_noncongruent,18,1000,0,1000,0,0,47,58,64,27,108,573,0,1,8258,573,0,1,1935,1,927,1,998,2,0,0,0x2a38e900,0x2a38e900,0x40
+item_sweep,0,18,64,64,cross_candidate,1,owned_candidate,18,1000,993,1000,99,1,297,260,325,27,973,1487,0,994,8304,995,0,993,1991,994,998,993,7,0,0,993,0x2a38e900,0x2a38e900,0x0
+item_sweep,0,17,64,64,same_baseline,1,owned_equal_load_noncongruent,17,1000,413,1000,41,0,175,80,291,78,1046,348,2000,413,15411,348,1000,413,3305,413,1000,413,585,2,0,413,0x2a38e900,0x2a38e900,0x40
+item_sweep,0,17,64,64,same_candidate,1,owned_candidate,17,1000,1000,1000,100,1,436,323,535,289,1295,1396,2000,1396,19351,1000,1000,1000,3007,1396,1000,1000,0,0,0,1000,0x2a38e900,0x2a38e900,0x0
+item_sweep,0,17,64,64,cross_baseline,1,owned_equal_load_noncongruent,17,1000,0,1000,0,0,45,34,63,27,74,583,3,4,7571,583,1,2,1797,4,908,2,1000,0,0,0,0x2a38e900,0x2a38e900,0x40
+item_sweep,0,17,64,64,cross_candidate,1,owned_candidate,17,1000,989,1000,98,1,294,260,309,27,940,1498,0,988,7714,995,0,988,1857,988,996,988,11,0,0,989,0x2a38e900,0x2a38e900,0x0
+item_sweep,0,16,64,64,same_baseline,1,owned_equal_load_noncongruent,16,1000,43,1000,4,0,87,79,80,42,971,261,2000,44,13939,261,1000,43,3107,44,999,43,957,0,0,43,0x2a38e900,0x2a38e900,0x40
+item_sweep,0,16,64,64,same_candidate,1,owned_candidate,16,1000,1000,1000,100,1,349,319,326,260,1012,1398,2000,1045,18290,1000,1000,999,2898,1045,1000,999,0,0,0,1000,0x2a38e900,0x2a38e900,0x0
+item_sweep,0,16,64,64,cross_baseline,1,owned_equal_load_noncongruent,16,1000,1,1000,0,0,45,34,63,27,235,608,0,4,7162,608,0,3,1713,4,883,3,995,4,0,1,0x2a38e900,0x2a38e900,0x40
+item_sweep,0,16,64,64,cross_candidate,1,owned_candidate,16,1000,973,1000,97,1,291,260,327,27,1023,1430,0,970,7441,986,0,969,1815,970,989,969,27,0,0,973,0x2a38e900,0x2a38e900,0x0
+item_sweep,0,15,64,64,same_baseline,1,owned_equal_load_noncongruent,15,1000,66,1000,6,0,93,79,80,42,1061,149,2000,68,12843,149,1000,66,2842,68,992,66,934,0,0,66,0x2a38e900,0x2a38e900,0x40
+item_sweep,0,15,64,64,same_candidate,1,owned_candidate,15,1000,1000,1000,100,1,351,319,326,260,1123,1299,2000,1037,18289,1000,1000,995,2910,1037,1000,995,0,0,0,1000,0x2a38e900,0x2a38e900,0x0
+item_sweep,0,15,64,64,cross_baseline,1,owned_equal_load_noncongruent,15,1000,0,1000,0,0,43,34,63,27,73,544,0,2,6355,544,0,1,1520,2,805,1,1000,0,0,0,0x2a38e900,0x2a38e900,0x40
+item_sweep,0,15,64,64,cross_candidate,1,owned_candidate,15,1000,291,1000,29,0,101,27,232,27,1009,653,0,290,3595,564,0,290,870,290,536,290,708,1,0,291,0x2a38e900,0x2a38e900,0x0
+item_sweep,0,14,64,64,same_baseline,1,owned_equal_load_noncongruent,14,1000,4,1000,0,0,66,63,80,30,287,89,2029,6,9641,89,1000,5,2849,6,958,5,996,0,0,4,0x2a38e900,0x2a38e900,0x40
+item_sweep,0,14,64,64,same_candidate,1,owned_candidate,14,1000,997,1000,99,1,331,293,324,50,1094,1323,2135,1001,14754,998,1000,995,2494,1001,999,995,3,0,0,997,0x2a38e900,0x2a38e900,0x0
+item_sweep,0,14,64,64,cross_baseline,1,owned_equal_load_noncongruent,14,1000,0,1000,0,0,43,34,63,27,104,547,0,5,6491,547,0,3,1552,5,827,3,999,1,0,0,0x2a38e900,0x2a38e900,0x40
+item_sweep,0,14,64,64,cross_candidate,1,owned_candidate,14,1000,26,1000,2,0,40,27,62,27,990,408,0,26,2721,392,0,26,648,26,373,26,974,0,0,26,0x2a38e900,0x2a38e900,0x0
+item_sweep,0,13,64,64,same_baseline,1,owned_equal_load_noncongruent,13,1000,4,1000,0,0,64,63,79,30,288,91,2166,4,9067,91,1000,4,2780,4,953,4,995,1,0,4,0x2a38e900,0x2a38e900,0x40
+item_sweep,0,13,64,64,same_candidate,1,owned_candidate,13,1000,990,1000,99,1,331,287,323,42,1051,1294,2059,995,13871,992,1000,986,2373,995,1000,986,10,0,0,990,0x2a38e900,0x2a38e900,0x0
+item_sweep,0,13,64,64,cross_baseline,1,owned_equal_load_noncongruent,13,1000,1,1000,0,0,42,27,63,27,233,541,0,4,5954,541,0,2,1436,4,802,2,999,0,0,1,0x2a38e900,0x2a38e900,0x40
+item_sweep,0,13,64,64,cross_candidate,1,owned_candidate,13,1000,0,1000,0,0,33,27,62,27,71,361,0,0,2592,361,0,0,614,0,363,0,1000,0,0,0,0x2a38e900,0x2a38e900,0x0
+item_sweep,0,12,64,64,same_baseline,1,owned_equal_load_noncongruent,12,1000,0,1000,0,0,55,62,63,27,88,105,1529,1,6845,105,1000,1,2788,1,938,1,1000,0,0,0,0x2a38e900,0x2a38e900,0x40
+item_sweep,0,12,64,64,same_candidate,1,owned_candidate,12,1000,927,1000,92,0,280,263,310,27,1015,1277,1580,928,11518,958,1000,927,2099,928,974,927,71,2,0,927,0x2a38e900,0x2a38e900,0x0
+item_sweep,0,12,64,64,cross_baseline,1,owned_equal_load_noncongruent,12,1000,0,1000,0,0,41,27,63,27,106,579,0,2,5855,579,0,1,1412,2,793,1,999,1,0,0,0x2a38e900,0x2a38e900,0x40
+item_sweep,0,12,64,64,cross_candidate,1,owned_candidate,12,1000,0,1000,0,0,32,27,62,27,105,331,0,0,2175,331,0,0,521,0,280,0,999,1,0,0,0x2a38e900,0x2a38e900,0x0
+item_sweep,0,11,64,64,same_baseline,1,owned_equal_load_noncongruent,11,1000,0,1000,0,0,50,60,63,27,63,77,0,1,6463,77,0,1,2755,1,934,1,1000,0,0,0,0x2a38e900,0x2a38e900,0x40
+item_sweep,0,11,64,64,same_candidate,1,owned_candidate,11,1000,857,1000,85,0,249,259,264,27,1033,1178,0,857,10387,920,0,857,2025,857,949,857,143,0,0,857,0x2a38e900,0x2a38e900,0x0
+item_sweep,0,11,64,64,cross_baseline,1,owned_equal_load_noncongruent,11,1000,0,1000,0,0,42,27,63,27,105,600,0,0,5870,600,0,0,1432,0,803,0,999,1,0,0,0x2a38e900,0x2a38e900,0x40
+item_sweep,0,11,64,64,cross_candidate,1,owned_candidate,11,1000,0,1000,0,0,32,27,61,27,70,307,0,0,2070,307,0,0,501,0,280,0,1000,0,0,0,0x2a38e900,0x2a38e900,0x0
+item_sweep,0,10,64,64,same_baseline,1,owned_equal_load_noncongruent,10,1000,0,1000,0,0,49,59,63,27,63,72,0,4,5790,72,0,2,2667,4,922,2,1000,0,0,0,0x2a38e900,0x2a38e900,0x40
+item_sweep,0,10,64,64,same_candidate,1,owned_candidate,10,1000,817,1000,81,0,242,259,264,27,1024,1129,0,819,10034,886,0,817,1955,819,930,817,183,0,0,817,0x2a38e900,0x2a38e900,0x0
+item_sweep,0,10,64,64,cross_baseline,1,owned_equal_load_noncongruent,10,1000,0,1000,0,0,42,27,63,27,70,551,0,0,5881,551,0,0,1430,0,805,0,1000,0,0,0,0x2a38e900,0x2a38e900,0x40
+item_sweep,0,10,64,64,cross_candidate,1,owned_candidate,10,1000,0,1000,0,0,32,27,62,27,70,303,0,1,2159,303,0,1,516,1,277,1,1000,0,0,0,0x2a38e900,0x2a38e900,0x0
+item_sweep,0,9,64,64,same_baseline,1,owned_equal_load_noncongruent,9,1000,0,1000,0,0,50,59,63,27,63,40,0,2,5999,40,0,2,2564,2,906,2,1000,0,0,0,0x2a38e900,0x2a38e900,0x40
+item_sweep,0,9,64,64,same_candidate,1,owned_candidate,9,1000,850,1000,85,0,254,259,264,27,1023,1119,0,850,10045,901,0,848,1923,850,934,848,150,0,0,850,0x2a38e900,0x2a38e900,0x0
+item_sweep,0,9,64,64,cross_baseline,1,owned_equal_load_noncongruent,9,1000,0,1000,0,0,41,27,63,27,75,511,0,2,5290,511,0,1,1289,2,745,1,1000,0,0,0,0x2a38e900,0x2a38e900,0x40
+item_sweep,0,9,64,64,cross_candidate,1,owned_candidate,9,1000,0,1000,0,0,32,27,61,27,72,296,0,0,2008,296,0,0,490,0,263,0,1000,0,0,0,0x2a38e900,0x2a38e900,0x0
+item_sweep,0,8,64,64,same_baseline,1,owned_equal_load_noncongruent,8,1000,2,1000,0,0,49,59,63,27,256,60,0,3,5845,60,0,3,2277,3,869,3,998,0,0,2,0x2a38e900,0x2a38e900,0x40
+item_sweep,0,8,64,64,same_candidate,1,owned_candidate,8,1000,942,1000,94,0,268,259,264,27,937,1084,0,943,10004,949,0,940,1681,943,958,940,58,0,0,942,0x2a38e900,0x2a38e900,0x0
+item_sweep,0,8,64,64,cross_baseline,1,owned_equal_load_noncongruent,8,1000,0,1000,0,0,37,27,62,27,72,414,0,2,3847,414,0,1,933,2,582,1,1000,0,0,0,0x2a38e900,0x2a38e900,0x40
+item_sweep,0,8,64,64,cross_candidate,1,owned_candidate,8,1000,0,1000,0,0,31,27,58,27,70,244,0,1,1478,244,0,1,361,1,227,1,1000,0,0,0,0x2a38e900,0x2a38e900,0x0
+item_sweep,0,7,64,64,same_baseline,1,owned_equal_load_noncongruent,7,1000,0,1000,0,0,41,27,63,27,67,37,0,1,3803,37,0,1,1611,1,655,1,1000,0,0,0,0x2a38e900,0x2a38e900,0x40
+item_sweep,0,7,64,64,same_candidate,1,owned_candidate,7,1000,1000,1000,100,1,258,231,236,223,1006,1041,0,1000,9488,1000,0,1000,1437,1000,1000,1000,0,0,0,1000,0x2a38e900,0x2a38e900,0x0
+item_sweep,0,7,64,64,cross_baseline,1,owned_equal_load_noncongruent,7,1000,0,1000,0,0,31,27,58,27,70,197,0,0,1410,197,0,0,345,0,227,0,1000,0,0,0,0x2a38e900,0x2a38e900,0x40
+item_sweep,0,7,64,64,cross_candidate,1,owned_candidate,7,1000,0,1000,0,0,29,27,27,27,69,141,0,0,926,141,0,0,223,0,145,0,1000,0,0,0,0x2a38e900,0x2a38e900,0x0
+item_sweep,0,6,64,64,same_baseline,1,owned_equal_load_noncongruent,6,1000,2,1000,0,0,40,27,62,27,262,35,0,3,3441,35,0,3,1279,3,563,3,998,0,0,2,0x2a38e900,0x2a38e900,0x40
+item_sweep,0,6,64,64,same_candidate,1,owned_candidate,6,1000,577,1000,57,0,166,227,234,27,992,993,0,577,8975,967,0,576,1363,577,975,576,423,0,0,577,0x2a38e900,0x2a38e900,0x0
+item_sweep,0,6,64,64,cross_baseline,1,owned_equal_load_noncongruent,6,1000,0,1000,0,0,30,27,34,27,69,166,0,0,1044,166,0,0,254,0,165,0,1000,0,0,0,0x2a38e900,0x2a38e900,0x40
+item_sweep,0,6,64,64,cross_candidate,1,owned_candidate,6,1000,0,1000,0,0,29,27,27,27,70,116,0,0,717,116,0,0,171,0,108,0,1000,0,0,0,0x2a38e900,0x2a38e900,0x0
+item_sweep,0,5,64,64,same_baseline,1,owned_equal_load_noncongruent,5,1000,1,1000,0,0,38,27,62,27,527,33,0,2,3021,33,0,2,1309,2,554,2,999,0,0,1,0x2a38e900,0x2a38e900,0x40
+item_sweep,0,5,64,64,same_candidate,1,owned_candidate,5,1000,29,1000,2,0,55,48,59,27,739,1021,0,29,9012,979,0,29,1432,29,987,29,971,0,0,29,0x2a38e900,0x2a38e900,0x0
+item_sweep,0,5,64,64,cross_baseline,1,owned_equal_load_noncongruent,5,1000,0,1000,0,0,30,27,58,27,70,140,0,0,1159,140,0,0,288,0,185,0,1000,0,0,0,0x2a38e900,0x2a38e900,0x40
+item_sweep,0,5,64,64,cross_candidate,1,owned_candidate,5,1000,0,1000,0,0,29,27,27,27,65,96,0,0,651,96,0,0,156,0,100,0,1000,0,0,0,0x2a38e900,0x2a38e900,0x0
+item_sweep,0,4,64,64,same_baseline,1,owned_equal_load_noncongruent,4,1000,1,1000,0,0,34,27,62,27,255,18,0,1,1809,18,0,1,766,1,342,1,999,0,0,1,0x2a38e900,0x2a38e900,0x40
+item_sweep,0,4,64,64,same_candidate,1,owned_candidate,4,1000,4,1000,0,0,55,60,62,27,250,988,0,7,8589,980,0,5,1287,7,983,5,996,0,0,4,0x2a38e900,0x2a38e900,0x0
+item_sweep,0,4,64,64,cross_baseline,1,owned_equal_load_noncongruent,4,1000,0,1000,0,0,28,27,27,27,69,83,0,1,566,83,0,1,139,1,89,1,1000,0,0,0,0x2a38e900,0x2a38e900,0x40
+item_sweep,0,4,64,64,cross_candidate,1,owned_candidate,4,1000,0,1000,0,0,28,27,27,27,63,83,0,0,534,83,0,0,127,0,85,0,1000,0,0,0,0x2a38e900,0x2a38e900,0x0
+item_sweep,0,3,64,64,same_baseline,1,owned_equal_load_noncongruent,3,1000,1,1000,0,0,32,27,61,27,433,20,0,2,1279,20,0,2,511,2,218,2,999,0,0,1,0x2a38e900,0x2a38e900,0x40
+item_sweep,0,3,64,64,same_candidate,1,owned_candidate,3,1000,1,1000,0,0,60,61,62,27,230,991,0,1,6169,978,0,1,1181,1,988,1,999,0,0,1,0x2a38e900,0x2a38e900,0x0
+item_sweep,0,3,64,64,cross_baseline,1,owned_equal_load_noncongruent,3,1000,0,1000,0,0,28,27,27,27,63,66,0,0,349,66,0,0,82,0,51,0,1000,0,0,0,0x2a38e900,0x2a38e900,0x40
+item_sweep,0,3,64,64,cross_candidate,1,owned_candidate,3,1000,0,1000,0,0,27,27,27,27,62,42,0,0,206,42,0,0,50,0,33,0,1000,0,0,0,0x2a38e900,0x2a38e900,0x0
+item_sweep,0,2,64,64,same_baseline,1,owned_equal_load_noncongruent,2,1000,1,1000,0,0,31,27,58,27,693,13,0,4,869,13,0,2,350,4,162,2,999,0,0,1,0x2a38e900,0x2a38e900,0x40
+item_sweep,0,2,64,64,same_candidate,1,owned_candidate,2,1000,0,1000,0,0,29,27,27,27,76,57,0,0,586,55,0,0,168,0,97,0,1000,0,0,0,0x2a38e900,0x2a38e900,0x0
+item_sweep,0,2,64,64,cross_baseline,1,owned_equal_load_noncongruent,2,1000,0,1000,0,0,27,27,27,27,66,56,0,1,316,56,0,1,73,1,44,1,1000,0,0,0,0x2a38e900,0x2a38e900,0x40
+item_sweep,0,2,64,64,cross_candidate,1,owned_candidate,2,1000,0,1000,0,0,27,27,27,27,63,39,0,0,215,39,0,0,51,0,31,0,1000,0,0,0,0x2a38e900,0x2a38e900,0x0
+item_sweep,0,1,64,64,same_baseline,1,owned_equal_load_noncongruent,1,1000,0,1000,0,0,30,27,27,27,77,3,0,1,764,3,0,1,270,1,130,1,1000,0,0,0,0x2a38e900,0x2a38e900,0x40
+item_sweep,0,1,64,64,same_candidate,1,owned_candidate,1,1000,2,1000,0,0,28,27,27,27,255,27,0,2,403,27,0,2,129,2,64,2,998,0,0,2,0x2a38e900,0x2a38e900,0x0
+item_sweep,0,1,64,64,cross_baseline,1,owned_equal_load_noncongruent,1,1000,2,1000,0,0,28,27,27,27,833,33,0,4,248,33,0,2,58,4,34,2,998,0,0,2,0x2a38e900,0x2a38e900,0x40
+item_sweep,0,1,64,64,cross_candidate,1,owned_candidate,1,1000,0,1000,0,0,27,27,27,27,63,29,0,0,121,29,0,0,27,0,21,0,1000,0,0,0,0x2a38e900,0x2a38e900,0x0
+item_sweep,0,0,64,64,same_baseline,1,owned_equal_load_noncongruent,0,1000,0,1000,0,0,28,27,27,27,76,3,0,2,367,3,0,2,153,2,64,2,1000,0,0,0,0x2a38e900,0x2a38e900,0x40
+item_sweep,0,0,64,64,same_candidate,1,owned_candidate,0,1000,1,1000,0,0,27,27,27,27,296,2,0,1,165,2,0,1,60,1,28,1,999,0,0,1,0x2a38e900,0x2a38e900,0x0
+item_sweep,0,0,64,64,cross_baseline,1,owned_equal_load_noncongruent,0,1000,0,1000,0,0,27,27,27,27,106,22,0,0,180,22,0,0,39,0,19,0,999,1,0,0,0x2a38e900,0x2a38e900,0x40
+item_sweep,0,0,64,64,cross_candidate,1,owned_candidate,0,1000,0,1000,0,0,27,27,27,27,63,10,0,0,100,10,0,0,19,0,12,0,1000,0,0,0,0x2a38e900,0x2a38e900,0x0
+joint_candidate_member,0,13,0,64,stimulus_xor,1,owned_exact,16,1000,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0x49b8c900,0x49b8e900,0x2000
+joint_candidate_member,0,13,1,64,stimulus_xor,1,owned_exact,16,1000,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0x4938c900,0x4938e900,0x2000
+joint_candidate_member,0,13,2,64,stimulus_xor,1,owned_exact,16,1000,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0x4a38c900,0x4a38e900,0x2000
+joint_candidate_member,0,13,3,64,stimulus_xor,1,owned_exact,16,1000,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0x6338c900,0x6338e900,0x2000
+joint_candidate_member,0,13,4,64,stimulus_xor,1,owned_exact,16,1000,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0x2638c900,0x2638e900,0x2000
+joint_candidate_member,0,13,5,64,stimulus_xor,1,owned_exact,16,1000,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0x46b8c900,0x46b8e900,0x2000
+joint_candidate_member,0,13,6,64,stimulus_xor,1,owned_exact,16,1000,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0x5538c900,0x5538e900,0x2000
+joint_candidate_member,0,13,7,64,stimulus_xor,1,owned_exact,16,1000,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0x2238c900,0x2238e900,0x2000
+joint_candidate_member,0,13,8,64,stimulus_xor,1,owned_exact,16,1000,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0x5f38c900,0x5f38e900,0x2000
+joint_candidate_member,0,13,9,64,stimulus_xor,1,owned_exact,16,1000,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0x48b8c900,0x48b8e900,0x2000
+joint_candidate_member,0,13,10,64,stimulus_xor,1,owned_exact,16,1000,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0x1d38c900,0x1d38e900,0x2000
+joint_candidate_member,0,13,11,64,stimulus_xor,1,owned_exact,16,1000,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0x3c38c900,0x3c38e900,0x2000
+joint_candidate_member,0,13,12,64,stimulus_xor,1,owned_exact,16,1000,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0x3d38c900,0x3d38e900,0x2000
+joint_candidate_member,0,13,13,64,stimulus_xor,1,owned_exact,16,1000,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0x4e38c900,0x4e38e900,0x2000
+joint_candidate_member,0,13,14,64,stimulus_xor,1,owned_exact,16,1000,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0x4238c900,0x4238e900,0x2000
+joint_candidate_member,0,13,15,64,stimulus_xor,1,owned_exact,16,1000,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0x5238c900,0x5238e900,0x2000
+joint_candidate_member,0,14,0,64,stimulus_xor,1,owned_exact,16,1000,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0x49b8a900,0x49b8e900,0x4000
+joint_candidate_member,0,14,1,64,stimulus_xor,1,owned_exact,16,1000,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0x4938a900,0x4938e900,0x4000
+joint_candidate_member,0,14,2,64,stimulus_xor,1,owned_exact,16,1000,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0x4a38a900,0x4a38e900,0x4000
+joint_candidate_member,0,14,3,64,stimulus_xor,1,owned_exact,16,1000,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0x6338a900,0x6338e900,0x4000
+joint_candidate_member,0,14,4,64,stimulus_xor,1,owned_exact,16,1000,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0x2638a900,0x2638e900,0x4000
+joint_candidate_member,0,14,5,64,stimulus_xor,1,owned_exact,16,1000,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0x46b8a900,0x46b8e900,0x4000
+joint_candidate_member,0,14,6,64,stimulus_xor,1,owned_exact,16,1000,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0x5538a900,0x5538e900,0x4000
+joint_candidate_member,0,14,7,64,stimulus_xor,1,owned_exact,16,1000,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0x2238a900,0x2238e900,0x4000
+joint_candidate_member,0,14,8,64,stimulus_xor,1,owned_exact,16,1000,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0x5f38a900,0x5f38e900,0x4000
+joint_candidate_member,0,14,9,64,stimulus_xor,1,owned_exact,16,1000,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0x48b8a900,0x48b8e900,0x4000
+joint_candidate_member,0,14,10,64,stimulus_xor,1,owned_exact,16,1000,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0x1d38a900,0x1d38e900,0x4000
+joint_candidate_member,0,14,11,64,stimulus_xor,1,owned_exact,16,1000,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0x3c38a900,0x3c38e900,0x4000
+joint_candidate_member,0,14,12,64,stimulus_xor,1,owned_exact,16,1000,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0x3d38a900,0x3d38e900,0x4000
+joint_candidate_member,0,14,13,64,stimulus_xor,1,owned_exact,16,1000,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0x4e38a900,0x4e38e900,0x4000
+joint_candidate_member,0,14,14,64,stimulus_xor,1,owned_exact,16,1000,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0x4238a900,0x4238e900,0x4000
+joint_candidate_member,0,14,15,64,stimulus_xor,1,owned_exact,16,1000,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0x5238a900,0x5238e900,0x4000
+pass_validation,1,0,64,64,cross_fixed_set_matching,1,owned_exact,16,1000,970,1000,97,1,279,258,262,27,1013,1419,0,970,7209,982,0,969,1768,970,994,969,30,0,0,970,0x2a38e900,0x2a38e900,0x0
+pass_validation,1,0,64,64,same_fixed_set_matching,1,owned_exact,16,1000,1000,1000,100,1,344,319,324,281,1075,1439,2000,1018,16191,1000,1000,1000,2135,1018,1000,1000,0,0,0,1000,0x2a38e900,0x2a38e900,0x0
+cross_bit_test,1,0,64,64,original_matching,1,owned_exact,16,1000,979,1000,97,1,286,259,263,27,1007,1429,0,975,7071,984,0,974,1747,975,995,974,21,0,0,979,0x2a38e900,0x2a38e901,0x1
+cross_bit_test,1,0,64,64,probe_only_flipped,1,owned_exact,16,1000,975,1000,97,1,283,260,264,29,1014,1410,0,975,7176,988,0,969,1768,975,991,969,25,0,0,975,0x2a38e901,0x2a38e900,0x1
+cross_bit_classification,1,0,64,64,probe_only_not_isolated,1,derived_from_cross_pair,16,1000,975,1000,97,1,283,260,264,29,1014,1410,0,975,7176,988,0,969,1768,975,991,969,25,0,0,975,0x2a38e901,0x2a38e900,0x1
+cross_bit_idle,1,0,64,64,original_idle,1,owned_exact,0,1000,0,100,0,0,27,27,27,27,34,2,2,0,34,2,1,0,2,0,1,0,100,0,0,0,0x2a38e900,0x2a38e901,0x1
+cross_bit_idle,1,0,64,64,flipped_idle,1,owned_exact,0,1000,0,100,0,0,29,29,29,29,29,5,0,0,8,5,0,0,0,0,0,0,100,0,0,0,0x2a38e901,0x2a38e900,0x1
+cross_bit_test,1,1,64,64,original_matching,1,owned_exact,16,1000,961,1000,96,1,286,258,278,27,1008,1400,0,959,7059,975,0,959,1737,959,985,959,39,0,0,961,0x2a38e900,0x2a38e902,0x2
+cross_bit_test,1,1,64,64,probe_only_flipped,1,owned_exact,16,1000,965,1000,96,1,292,260,288,29,1020,1382,0,964,7293,979,0,963,1786,964,985,963,35,0,0,965,0x2a38e902,0x2a38e900,0x2
+cross_bit_classification,1,1,64,64,probe_only_not_isolated,1,derived_from_cross_pair,16,1000,965,1000,96,1,292,260,288,29,1020,1382,0,964,7293,979,0,963,1786,964,985,963,35,0,0,965,0x2a38e902,0x2a38e900,0x2
+cross_bit_idle,1,1,64,64,original_idle,1,owned_exact,0,1000,0,100,0,0,27,27,27,27,61,2,2,0,34,2,1,0,7,0,3,0,100,0,0,0,0x2a38e900,0x2a38e902,0x2
+cross_bit_idle,1,1,64,64,flipped_idle,1,owned_exact,0,1000,0,100,0,0,29,29,29,29,29,4,0,0,12,4,0,0,0,0,0,0,100,0,0,0,0x2a38e902,0x2a38e900,0x2
+cross_bit_test,1,2,64,64,original_matching,1,owned_exact,16,1000,964,1000,96,1,283,258,262,27,1010,1382,0,963,7046,978,0,962,1733,963,985,962,36,0,0,964,0x2a38e900,0x2a38e904,0x4
+cross_bit_test,1,2,64,64,probe_only_flipped,1,owned_exact,16,1000,971,1000,97,1,290,260,277,29,1018,1417,0,971,7087,986,0,969,1746,971,987,969,29,0,0,971,0x2a38e904,0x2a38e900,0x4
+cross_bit_classification,1,2,64,64,probe_only_not_isolated,1,derived_from_cross_pair,16,1000,971,1000,97,1,290,260,277,29,1018,1417,0,971,7087,986,0,969,1746,971,987,969,29,0,0,971,0x2a38e904,0x2a38e900,0x4
+cross_bit_idle,1,2,64,64,original_idle,1,owned_exact,0,1000,0,100,0,0,27,27,27,27,60,3,2,0,39,3,1,0,4,0,1,0,100,0,0,0,0x2a38e900,0x2a38e904,0x4
+cross_bit_idle,1,2,64,64,flipped_idle,1,owned_exact,0,1000,0,100,0,0,29,29,29,29,33,3,0,0,20,3,0,0,0,0,0,0,100,0,0,0,0x2a38e904,0x2a38e900,0x4
+cross_bit_test,1,3,64,64,original_matching,1,owned_exact,16,1000,964,1000,96,1,284,258,304,27,921,1412,0,962,6768,980,0,961,1667,962,983,961,36,0,0,964,0x2a38e900,0x2a38e908,0x8
+cross_bit_test,1,3,64,64,probe_only_flipped,1,owned_exact,16,1000,975,1000,97,1,291,258,298,27,1010,1394,0,973,7095,990,0,973,1737,973,984,973,25,0,0,975,0x2a38e908,0x2a38e900,0x8
+cross_bit_classification,1,3,64,64,probe_only_not_isolated,1,derived_from_cross_pair,16,1000,975,1000,97,1,291,258,298,27,1010,1394,0,973,7095,990,0,973,1737,973,984,973,25,0,0,975,0x2a38e908,0x2a38e900,0x8
+cross_bit_idle,1,3,64,64,original_idle,1,owned_exact,0,1000,0,100,0,0,27,27,27,27,34,0,4,0,34,0,2,0,3,0,1,0,100,0,0,0,0x2a38e900,0x2a38e908,0x8
+cross_bit_idle,1,3,64,64,flipped_idle,1,owned_exact,0,1000,0,100,0,0,27,27,27,27,27,6,0,0,39,6,0,0,0,0,0,0,100,0,0,0,0x2a38e908,0x2a38e900,0x8
+cross_bit_test,1,4,64,64,original_matching,1,owned_exact,16,1000,962,1000,96,1,289,258,360,27,1011,1402,0,960,6982,984,0,959,1719,960,985,959,38,0,0,962,0x2a38e900,0x2a38e910,0x10
+cross_bit_test,1,4,64,64,probe_only_flipped,1,owned_exact,16,1000,965,1000,96,1,285,258,263,27,1011,1388,0,962,7036,984,0,962,1729,962,994,962,35,0,0,965,0x2a38e910,0x2a38e900,0x10
+cross_bit_classification,1,4,64,64,probe_only_not_isolated,1,derived_from_cross_pair,16,1000,965,1000,96,1,285,258,263,27,1011,1388,0,962,7036,984,0,962,1729,962,994,962,35,0,0,965,0x2a38e910,0x2a38e900,0x10
+cross_bit_idle,1,4,64,64,original_idle,1,owned_exact,0,1000,0,100,0,0,27,27,27,27,58,4,0,0,28,4,0,0,4,0,2,0,100,0,0,0,0x2a38e900,0x2a38e910,0x10
+cross_bit_idle,1,4,64,64,flipped_idle,1,owned_exact,0,1000,0,100,0,0,27,27,27,27,27,3,2,0,13,3,1,0,0,0,0,0,100,0,0,0,0x2a38e910,0x2a38e900,0x10
+cross_bit_test,1,5,64,64,original_matching,1,owned_exact,16,1000,948,1000,94,0,279,258,263,27,1008,1405,0,945,7176,975,0,945,1771,945,980,945,52,0,0,948,0x2a38e900,0x2a38e920,0x20
+cross_bit_test,1,5,64,64,probe_only_flipped,1,owned_exact,16,1000,966,1000,96,1,280,258,262,27,1009,1389,0,966,7029,983,0,965,1730,966,991,965,34,0,0,966,0x2a38e920,0x2a38e900,0x20
+cross_bit_classification,1,5,64,64,invalid_original_drift,1,derived_from_cross_pair,16,1000,966,1000,96,1,280,258,262,27,1009,1389,0,966,7029,983,0,965,1730,966,991,965,34,0,0,966,0x2a38e920,0x2a38e900,0x20
+cross_bit_idle,1,5,64,64,original_idle,1,owned_exact,0,1000,0,100,0,0,27,27,27,27,71,4,0,1,42,4,0,1,6,1,2,1,100,0,0,0,0x2a38e900,0x2a38e920,0x20
+cross_bit_idle,1,5,64,64,flipped_idle,1,owned_exact,0,1000,0,100,0,0,27,27,27,27,58,5,0,0,13,5,0,0,1,0,1,0,100,0,0,0,0x2a38e920,0x2a38e900,0x20
+cross_bit_test,1,6,64,64,original_matching,1,owned_exact,16,1000,968,1000,96,1,280,258,262,27,923,1398,0,967,6988,984,0,967,1715,967,988,967,32,0,0,968,0x2a38e900,0x2a38e940,0x40
+cross_bit_test,1,6,64,64,probe_only_flipped,1,owned_exact,16,1000,0,1000,0,0,38,27,63,27,69,448,0,0,4028,448,0,0,978,0,591,0,1000,0,0,0,0x2a38e940,0x2a38e900,0x40
+cross_bit_classification,1,6,64,64,probe_only_isolated,1,derived_from_cross_pair,16,1000,0,1000,0,0,38,27,63,27,69,448,0,0,4028,448,0,0,978,0,591,0,1000,0,0,0,0x2a38e940,0x2a38e900,0x40
+cross_bit_idle,1,6,64,64,original_idle,1,owned_exact,0,1000,0,100,0,0,27,27,27,27,63,3,0,0,40,3,0,0,6,0,2,0,100,0,0,0,0x2a38e900,0x2a38e940,0x40
+cross_bit_idle,1,6,64,64,flipped_idle,1,owned_exact,0,1000,0,100,0,0,27,27,27,27,27,0,4,0,6,0,2,0,0,0,0,0,100,0,0,0,0x2a38e940,0x2a38e900,0x40
+cross_bit_test,1,7,64,64,original_matching,1,owned_exact,16,1000,964,1000,96,1,286,258,265,27,1018,1406,0,964,7029,980,0,964,1731,964,987,964,36,0,0,964,0x2a38e900,0x2a38e980,0x80
+cross_bit_test,1,7,64,64,probe_only_flipped,1,owned_exact,16,1000,0,1000,0,0,37,27,62,27,68,449,0,0,3638,449,0,0,885,0,557,0,1000,0,0,0,0x2a38e980,0x2a38e900,0x80
+cross_bit_classification,1,7,64,64,probe_only_isolated,1,derived_from_cross_pair,16,1000,0,1000,0,0,37,27,62,27,68,449,0,0,3638,449,0,0,885,0,557,0,1000,0,0,0,0x2a38e980,0x2a38e900,0x80
+cross_bit_idle,1,7,64,64,original_idle,1,owned_exact,0,1000,0,100,0,0,27,27,27,27,34,3,2,0,30,3,1,0,2,0,1,0,100,0,0,0,0x2a38e900,0x2a38e980,0x80
+cross_bit_idle,1,7,64,64,flipped_idle,1,owned_exact,0,1000,0,100,0,0,27,27,27,27,28,0,2,0,17,0,1,0,0,0,0,0,100,0,0,0,0x2a38e980,0x2a38e900,0x80
+cross_bit_test,1,8,64,64,original_matching,1,owned_exact,16,1000,949,1000,94,0,279,258,263,27,1020,1378,0,950,6928,973,0,949,1707,950,982,949,51,0,0,949,0x2a38e900,0x2a38e800,0x100
+cross_bit_test,1,8,64,64,probe_only_flipped,1,owned_exact,16,1000,0,1000,0,0,39,27,63,27,68,449,0,0,4022,449,0,0,980,0,584,0,1000,0,0,0,0x2a38e800,0x2a38e900,0x100
+cross_bit_classification,1,8,64,64,invalid_original_drift,1,derived_from_cross_pair,16,1000,0,1000,0,0,39,27,63,27,68,449,0,0,4022,449,0,0,980,0,584,0,1000,0,0,0,0x2a38e800,0x2a38e900,0x100
+cross_bit_idle,1,8,64,64,original_idle,1,owned_exact,0,1000,0,100,0,0,27,27,27,27,70,3,0,0,24,3,0,0,4,0,1,0,100,0,0,0,0x2a38e900,0x2a38e800,0x100
+cross_bit_idle,1,8,64,64,flipped_idle,1,owned_exact,0,1000,0,100,0,0,27,27,27,27,27,1,2,0,18,1,1,0,1,0,1,0,100,0,0,0,0x2a38e800,0x2a38e900,0x100
+cross_bit_test,1,9,64,64,original_matching,1,owned_exact,16,1000,962,1000,96,1,282,258,263,27,1012,1374,0,959,7115,979,0,959,1756,959,987,959,38,0,0,962,0x2a38e900,0x2a38eb00,0x200
+cross_bit_test,1,9,64,64,probe_only_flipped,1,owned_exact,16,1000,0,1000,0,0,37,27,62,27,70,427,0,0,3772,427,0,0,919,0,591,0,1000,0,0,0,0x2a38eb00,0x2a38e900,0x200
+cross_bit_classification,1,9,64,64,probe_only_isolated,1,derived_from_cross_pair,16,1000,0,1000,0,0,37,27,62,27,70,427,0,0,3772,427,0,0,919,0,591,0,1000,0,0,0,0x2a38eb00,0x2a38e900,0x200
+cross_bit_idle,1,9,64,64,original_idle,1,owned_exact,0,1000,0,100,0,0,27,27,27,27,69,0,0,0,42,0,0,0,4,0,1,0,100,0,0,0,0x2a38e900,0x2a38eb00,0x200
+cross_bit_idle,1,9,64,64,flipped_idle,1,owned_exact,0,1000,0,100,0,0,27,27,27,27,27,2,4,0,26,2,2,0,1,0,1,0,100,0,0,0,0x2a38eb00,0x2a38e900,0x200
+cross_bit_test,1,10,64,64,original_matching,1,owned_exact,16,1000,959,1000,95,1,282,258,263,27,1010,1407,0,957,7015,978,0,957,1733,957,991,957,41,0,0,959,0x2a38e900,0x2a38ed00,0x400
+cross_bit_test,1,10,64,64,probe_only_flipped,1,owned_exact,16,1000,0,1000,0,0,38,27,63,27,70,446,0,0,4060,446,0,0,993,0,583,0,1000,0,0,0,0x2a38ed00,0x2a38e900,0x400
+cross_bit_classification,1,10,64,64,probe_only_isolated,1,derived_from_cross_pair,16,1000,0,1000,0,0,38,27,63,27,70,446,0,0,4060,446,0,0,993,0,583,0,1000,0,0,0,0x2a38ed00,0x2a38e900,0x400
+cross_bit_idle,1,10,64,64,original_idle,1,owned_exact,0,1000,0,100,0,0,27,27,27,27,70,1,4,0,26,1,2,0,6,0,2,0,100,0,0,0,0x2a38e900,0x2a38ed00,0x400
+cross_bit_idle,1,10,64,64,flipped_idle,1,owned_exact,0,1000,0,100,0,0,27,27,27,27,27,4,2,0,10,4,1,0,1,0,1,0,100,0,0,0,0x2a38ed00,0x2a38e900,0x400
+cross_bit_test,1,11,64,64,original_matching,1,owned_exact,16,1000,950,1000,95,1,279,258,265,27,1016,1385,0,950,6906,978,0,950,1695,950,983,950,50,0,0,950,0x2a38e900,0x2a38e100,0x800
+cross_bit_test,1,11,64,64,probe_only_flipped,1,owned_exact,16,1000,0,1000,0,0,40,27,62,27,75,695,0,1,5455,576,0,1,1107,1,644,1,1000,0,0,0,0x2a38e100,0x2a38e900,0x800
+cross_bit_classification,1,11,64,64,probe_only_isolated,1,derived_from_cross_pair,16,1000,0,1000,0,0,40,27,62,27,75,695,0,1,5455,576,0,1,1107,1,644,1,1000,0,0,0,0x2a38e100,0x2a38e900,0x800
+cross_bit_idle,1,11,64,64,original_idle,1,owned_exact,0,1000,0,100,0,0,27,27,27,27,34,2,2,1,18,2,1,1,4,1,2,1,100,0,0,0,0x2a38e900,0x2a38e100,0x800
+cross_bit_idle,1,11,64,64,flipped_idle,1,owned_exact,0,1000,0,100,0,0,28,27,27,27,58,7,0,0,65,7,0,0,6,0,5,0,100,0,0,0,0x2a38e100,0x2a38e900,0x800
+cross_bit_test,1,12,64,64,original_matching,1,owned_exact,16,1000,955,1000,95,1,288,258,338,27,1023,1418,0,953,6997,974,0,953,1724,953,983,953,45,0,0,955,0x2a38e900,0x2a38f900,0x1000
+cross_bit_test,1,12,64,64,probe_only_flipped,1,owned_exact,16,1000,0,1000,0,0,37,27,62,27,70,437,0,1,3740,437,0,1,912,1,573,1,1000,0,0,0,0x2a38f900,0x2a38e900,0x1000
+cross_bit_classification,1,12,64,64,probe_only_isolated,1,derived_from_cross_pair,16,1000,0,1000,0,0,37,27,62,27,70,437,0,1,3740,437,0,1,912,1,573,1,1000,0,0,0,0x2a38f900,0x2a38e900,0x1000
+cross_bit_idle,1,12,64,64,original_idle,1,owned_exact,0,1000,0,100,0,0,27,27,27,27,70,2,0,0,53,2,0,0,7,0,2,0,100,0,0,0,0x2a38e900,0x2a38f900,0x1000
+cross_bit_idle,1,12,64,64,flipped_idle,1,owned_exact,0,1000,0,100,0,0,27,27,27,27,27,5,0,0,18,5,0,0,0,0,0,0,100,0,0,0,0x2a38f900,0x2a38e900,0x1000
+cross_bit_test,1,13,64,64,original_matching,1,owned_exact,16,1000,955,1000,95,1,280,258,264,27,936,1374,0,954,6701,973,0,954,1650,954,981,954,45,0,0,955,0x2a38e900,0x2a38c900,0x2000
+cross_bit_test,1,13,64,64,probe_only_flipped,1,owned_exact,16,1000,0,1000,0,0,36,27,62,27,66,435,0,0,3658,435,0,0,880,0,535,0,1000,0,0,0,0x2a38c900,0x2a38e900,0x2000
+joint_bit_test,1,13,64,64,joint_group_flipped,1,owned_exact,16,1000,959,1000,95,1,278,258,262,27,1007,1412,0,957,6919,979,0,957,1704,957,982,957,41,0,0,959,0x2a38c900,0x2a38e900,0x2000
+cross_bit_classification,1,13,64,64,selector_rescue,1,derived_from_triplet,16,1000,959,1000,95,1,278,258,262,27,1007,1412,0,957,6919,979,0,957,1704,957,982,957,41,0,0,959,0x2a38c900,0x2a38e900,0x2000
+cross_bit_idle,1,13,64,64,original_idle,1,owned_exact,0,1000,0,100,0,0,27,27,27,27,34,2,0,0,20,2,0,0,2,0,1,0,100,0,0,0,0x2a38e900,0x2a38c900,0x2000
+cross_bit_idle,1,13,64,64,flipped_idle,1,owned_exact,0,1000,0,100,0,0,27,27,27,27,58,4,0,0,28,4,0,0,1,0,1,0,100,0,0,0,0x2a38c900,0x2a38e900,0x2000
+cross_bit_test,1,14,64,64,original_matching,1,owned_exact,16,1000,965,1000,96,1,276,258,262,27,1016,1442,0,964,6904,985,0,963,1696,964,983,963,35,0,0,965,0x2a38e900,0x2a38a900,0x4000
+cross_bit_test,1,14,64,64,probe_only_flipped,1,owned_exact,16,1000,0,1000,0,0,36,27,63,27,70,443,0,0,3564,443,0,0,866,0,552,0,1000,0,0,0,0x2a38a900,0x2a38e900,0x4000
+joint_bit_test,1,14,64,64,joint_group_flipped,1,owned_exact,16,1000,971,1000,97,1,284,258,262,27,1011,1411,0,970,6727,988,0,969,1651,970,986,969,29,0,0,971,0x2a38a900,0x2a38e900,0x4000
+cross_bit_classification,1,14,64,64,selector_rescue,1,derived_from_triplet,16,1000,971,1000,97,1,284,258,262,27,1011,1411,0,970,6727,988,0,969,1651,970,986,969,29,0,0,971,0x2a38a900,0x2a38e900,0x4000
+cross_bit_idle,1,14,64,64,original_idle,1,owned_exact,0,1000,0,100,0,0,27,27,27,27,27,4,0,0,34,4,0,0,4,0,1,0,100,0,0,0,0x2a38e900,0x2a38a900,0x4000
+cross_bit_idle,1,14,64,64,flipped_idle,1,owned_exact,0,1000,0,100,0,0,27,27,27,27,27,2,2,0,29,2,1,0,1,0,1,0,100,0,0,0,0x2a38a900,0x2a38e900,0x4000
+cross_bit_test,1,15,64,64,original_matching,1,owned_exact,16,1000,949,1000,94,0,275,258,262,27,1007,1413,0,948,6859,979,0,948,1697,948,983,948,51,0,0,949,0x2a38e900,0x2a386900,0x8000
+cross_bit_test,1,15,64,64,probe_only_flipped,1,owned_exact,16,1000,0,1000,0,0,38,27,63,27,69,448,0,2,4002,448,0,2,966,2,587,2,1000,0,0,0,0x2a386900,0x2a38e900,0x8000
+cross_bit_classification,1,15,64,64,invalid_original_drift,1,derived_from_cross_pair,16,1000,0,1000,0,0,38,27,63,27,69,448,0,2,4002,448,0,2,966,2,587,2,1000,0,0,0,0x2a386900,0x2a38e900,0x8000
+cross_bit_idle,1,15,64,64,original_idle,1,owned_exact,0,1000,0,100,0,0,27,27,27,27,67,2,4,0,30,2,2,0,4,0,1,0,100,0,0,0,0x2a38e900,0x2a386900,0x8000
+cross_bit_idle,1,15,64,64,flipped_idle,1,owned_exact,0,1000,0,100,0,0,27,27,27,27,27,4,2,0,29,4,1,0,0,0,0,0,100,0,0,0,0x2a386900,0x2a38e900,0x8000
+cross_bit_test,1,16,64,64,original_matching,1,owned_exact,16,1000,971,1000,97,1,285,258,264,27,1017,1405,0,968,7296,989,0,968,1789,968,989,968,29,0,0,971,0x2a38e900,0x2a39e900,0x10000
+cross_bit_test,1,16,64,64,probe_only_flipped,1,owned_exact,16,1000,2,1000,0,0,40,27,63,27,258,454,0,3,4398,454,0,2,1062,3,637,2,998,0,0,2,0x2a39e900,0x2a38e900,0x10000
+cross_bit_classification,1,16,64,64,probe_only_isolated,1,derived_from_cross_pair,16,1000,2,1000,0,0,40,27,63,27,258,454,0,3,4398,454,0,2,1062,3,637,2,998,0,0,2,0x2a39e900,0x2a38e900,0x10000
+cross_bit_idle,1,16,64,64,original_idle,1,owned_exact,0,1000,0,100,0,0,28,27,27,27,70,4,0,0,51,4,0,0,11,0,3,0,100,0,0,0,0x2a38e900,0x2a39e900,0x10000
+cross_bit_idle,1,16,64,64,flipped_idle,1,owned_exact,0,1000,0,100,0,0,27,27,27,27,58,2,2,0,24,2,1,0,1,0,1,0,100,0,0,0,0x2a39e900,0x2a38e900,0x10000
+cross_bit_test,1,17,64,64,original_matching,1,owned_exact,16,1000,988,1000,98,1,290,258,264,27,1010,1446,0,989,7401,994,0,987,1821,989,992,987,12,0,0,988,0x2a38e900,0x2a3ae900,0x20000
+cross_bit_test,1,17,64,64,probe_only_flipped,1,owned_exact,16,1000,0,1000,0,0,38,27,63,27,68,456,0,1,4151,456,0,1,1014,1,631,1,1000,0,0,0,0x2a3ae900,0x2a38e900,0x20000
+cross_bit_classification,1,17,64,64,probe_only_isolated,1,derived_from_cross_pair,16,1000,0,1000,0,0,38,27,63,27,68,456,0,1,4151,456,0,1,1014,1,631,1,1000,0,0,0,0x2a3ae900,0x2a38e900,0x20000
+cross_bit_idle,1,17,64,64,original_idle,1,owned_exact,0,1000,0,100,0,0,27,27,27,27,69,3,4,0,37,3,2,0,5,0,1,0,100,0,0,0,0x2a38e900,0x2a3ae900,0x20000
+cross_bit_idle,1,17,64,64,flipped_idle,1,owned_exact,0,1000,0,100,0,0,27,27,27,27,62,3,0,0,34,3,0,0,4,0,2,0,100,0,0,0,0x2a3ae900,0x2a38e900,0x20000
+cross_bit_test,1,18,64,64,original_matching,1,owned_exact,16,1000,992,1000,99,1,283,258,262,27,1009,1431,0,989,7253,993,0,989,1791,989,1000,989,8,0,0,992,0x2a38e900,0x2a3ce900,0x40000
+cross_bit_test,1,18,64,64,probe_only_flipped,1,owned_exact,16,1000,0,1000,0,0,38,27,63,27,69,482,0,0,4162,482,0,0,1017,0,615,0,1000,0,0,0,0x2a3ce900,0x2a38e900,0x40000
+cross_bit_classification,1,18,64,64,probe_only_isolated,1,derived_from_cross_pair,16,1000,0,1000,0,0,38,27,63,27,69,482,0,0,4162,482,0,0,1017,0,615,0,1000,0,0,0,0x2a3ce900,0x2a38e900,0x40000
+cross_bit_idle,1,18,64,64,original_idle,1,owned_exact,0,1000,0,100,0,0,27,27,27,27,69,3,0,0,34,3,0,0,6,0,2,0,100,0,0,0,0x2a38e900,0x2a3ce900,0x40000
+cross_bit_idle,1,18,64,64,flipped_idle,1,owned_exact,0,1000,0,100,0,0,27,27,27,27,27,1,0,0,12,1,0,0,0,0,0,0,100,0,0,0,0x2a3ce900,0x2a38e900,0x40000
+cross_bit_test,1,19,64,64,original_matching,1,owned_exact,16,1000,986,1000,98,1,293,258,292,27,1017,1450,0,986,7282,992,0,986,1791,986,992,986,14,0,0,986,0x2a38e900,0x2a30e900,0x80000
+cross_bit_test,1,19,64,64,probe_only_flipped,1,owned_exact,16,1000,0,1000,0,0,38,27,62,27,71,440,0,1,3969,440,0,1,972,1,588,1,1000,0,0,0,0x2a30e900,0x2a38e900,0x80000
+cross_bit_classification,1,19,64,64,probe_only_isolated,1,derived_from_cross_pair,16,1000,0,1000,0,0,38,27,62,27,71,440,0,1,3969,440,0,1,972,1,588,1,1000,0,0,0,0x2a30e900,0x2a38e900,0x80000
+cross_bit_idle,1,19,64,64,original_idle,1,owned_exact,0,1000,0,100,0,0,27,27,27,27,70,3,0,1,41,3,0,1,6,1,1,1,100,0,0,0,0x2a38e900,0x2a30e900,0x80000
+cross_bit_idle,1,19,64,64,flipped_idle,1,owned_exact,0,1000,0,100,0,0,27,27,27,27,27,5,2,0,27,5,1,0,1,0,1,0,100,0,0,0,0x2a30e900,0x2a38e900,0x80000
+cross_bit_test,1,20,64,64,original_matching,1,owned_exact,16,1000,993,1000,99,1,293,258,265,27,1019,1451,0,991,7221,995,0,990,1779,991,997,990,7,0,0,993,0x2a38e900,0x2a28e900,0x100000
+cross_bit_test,1,20,64,64,probe_only_flipped,1,owned_exact,16,1000,0,1000,0,0,39,27,63,27,70,472,0,0,4092,472,0,0,1003,0,609,0,1000,0,0,0,0x2a28e900,0x2a38e900,0x100000
+cross_bit_classification,1,20,64,64,probe_only_isolated,1,derived_from_cross_pair,16,1000,0,1000,0,0,39,27,63,27,70,472,0,0,4092,472,0,0,1003,0,609,0,1000,0,0,0,0x2a28e900,0x2a38e900,0x100000
+cross_bit_idle,1,20,64,64,original_idle,1,owned_exact,0,1000,0,100,0,0,27,27,27,27,60,5,0,0,30,5,0,0,8,0,2,0,100,0,0,0,0x2a38e900,0x2a28e900,0x100000
+cross_bit_idle,1,20,64,64,flipped_idle,1,owned_exact,0,1000,0,100,0,0,27,27,27,27,28,5,0,0,2,5,0,0,0,0,0,0,100,0,0,0,0x2a28e900,0x2a38e900,0x100000
+cross_bit_test,1,21,64,64,original_matching,1,owned_exact,16,1000,982,1000,98,1,282,258,262,27,1006,1473,0,983,7443,991,0,982,1820,983,990,982,18,0,0,982,0x2a38e900,0x2a18e900,0x200000
+cross_bit_test,1,21,64,64,probe_only_flipped,1,owned_exact,16,1000,0,1000,0,0,38,27,63,27,69,491,0,1,4076,491,0,1,992,1,615,1,1000,0,0,0,0x2a18e900,0x2a38e900,0x200000
+cross_bit_classification,1,21,64,64,probe_only_isolated,1,derived_from_cross_pair,16,1000,0,1000,0,0,38,27,63,27,69,491,0,1,4076,491,0,1,992,1,615,1,1000,0,0,0,0x2a18e900,0x2a38e900,0x200000
+cross_bit_idle,1,21,64,64,original_idle,1,owned_exact,0,1000,0,100,0,0,27,27,27,27,34,0,0,0,17,0,0,0,2,0,1,0,100,0,0,0,0x2a38e900,0x2a18e900,0x200000
+cross_bit_idle,1,21,64,64,flipped_idle,1,owned_exact,0,1000,0,100,0,0,27,27,27,27,27,2,2,0,18,2,1,0,1,0,1,0,100,0,0,0,0x2a18e900,0x2a38e900,0x200000
+cross_bit_test,1,22,64,64,original_matching,1,owned_exact,16,1000,994,1000,99,1,293,258,293,27,1008,1490,0,994,7445,997,0,993,1834,994,997,993,6,0,0,994,0x2a38e900,0x2a78e900,0x400000
+cross_bit_test,1,22,64,64,probe_only_flipped,1,owned_exact,16,1000,0,1000,0,0,38,27,63,27,70,470,0,0,4038,470,0,0,988,0,606,0,1000,0,0,0,0x2a78e900,0x2a38e900,0x400000
+cross_bit_classification,1,22,64,64,probe_only_isolated,1,derived_from_cross_pair,16,1000,0,1000,0,0,38,27,63,27,70,470,0,0,4038,470,0,0,988,0,606,0,1000,0,0,0,0x2a78e900,0x2a38e900,0x400000
+cross_bit_idle,1,22,64,64,original_idle,1,owned_exact,0,1000,0,100,0,0,27,27,27,27,70,5,0,0,40,5,0,0,7,0,1,0,100,0,0,0,0x2a38e900,0x2a78e900,0x400000
+cross_bit_idle,1,22,64,64,flipped_idle,1,owned_exact,0,1000,0,100,0,0,27,27,27,27,58,2,2,0,22,2,1,0,2,0,2,0,100,0,0,0,0x2a78e900,0x2a38e900,0x400000
+pass_validation,2,0,64,64,cross_fixed_set_matching,1,owned_exact,16,1000,991,1000,99,1,294,258,319,27,1016,1470,0,993,7531,996,0,989,1858,993,997,989,9,0,0,991,0x2a38e900,0x2a38e900,0x0
+pass_validation,2,0,64,64,same_fixed_set_matching,1,owned_exact,16,1000,1000,1000,100,1,339,319,323,281,994,1419,2000,1003,15893,1000,1000,998,2076,1003,1000,998,0,0,0,1000,0x2a38e900,0x2a38e900,0x0
+cross_bit_test,2,0,64,64,original_matching,1,owned_exact,16,1000,985,1000,98,1,290,258,316,27,1010,1455,0,984,7436,989,0,984,1832,984,990,984,15,0,0,985,0x2a38e900,0x2a38e901,0x1
+cross_bit_test,2,0,64,64,probe_only_flipped,1,owned_exact,16,1000,990,1000,99,1,295,260,265,29,1011,1451,0,986,7342,992,0,986,1806,986,996,986,10,0,0,990,0x2a38e901,0x2a38e900,0x1
+cross_bit_classification,2,0,64,64,probe_only_not_isolated,1,derived_from_cross_pair,16,1000,990,1000,99,1,295,260,265,29,1011,1451,0,986,7342,992,0,986,1806,986,996,986,10,0,0,990,0x2a38e901,0x2a38e900,0x1
+cross_bit_idle,2,0,64,64,original_idle,1,owned_exact,0,1000,0,100,0,0,27,27,27,27,69,1,0,0,31,1,0,0,4,0,1,0,100,0,0,0,0x2a38e900,0x2a38e901,0x1
+cross_bit_idle,2,0,64,64,flipped_idle,1,owned_exact,0,1000,0,100,0,0,29,29,29,29,58,3,0,0,16,3,0,0,2,0,2,0,100,0,0,0,0x2a38e901,0x2a38e900,0x1
+cross_bit_test,2,1,64,64,original_matching,1,owned_exact,16,1000,981,1000,98,1,286,258,263,27,1016,1456,0,980,7334,986,0,980,1808,980,989,980,19,0,0,981,0x2a38e900,0x2a38e902,0x2
+cross_bit_test,2,1,64,64,probe_only_flipped,1,owned_exact,16,1000,981,1000,98,1,293,260,307,29,1020,1432,0,981,7448,987,0,981,1832,981,994,981,19,0,0,981,0x2a38e902,0x2a38e900,0x2
+cross_bit_classification,2,1,64,64,probe_only_not_isolated,1,derived_from_cross_pair,16,1000,981,1000,98,1,293,260,307,29,1020,1432,0,981,7448,987,0,981,1832,981,994,981,19,0,0,981,0x2a38e902,0x2a38e900,0x2
+cross_bit_idle,2,1,64,64,original_idle,1,owned_exact,0,1000,0,100,0,0,27,27,27,27,70,2,0,0,38,2,0,0,5,0,2,0,100,0,0,0,0x2a38e900,0x2a38e902,0x2
+cross_bit_idle,2,1,64,64,flipped_idle,1,owned_exact,0,1000,0,100,0,0,29,29,29,29,29,2,2,0,12,2,1,0,0,0,0,0,100,0,0,0,0x2a38e902,0x2a38e900,0x2
+cross_bit_test,2,2,64,64,original_matching,1,owned_exact,16,1000,985,1000,98,1,285,258,262,27,1008,1472,0,985,7260,993,0,985,1787,985,993,985,15,0,0,985,0x2a38e900,0x2a38e904,0x4
+cross_bit_test,2,2,64,64,probe_only_flipped,1,owned_exact,16,1000,984,1000,98,1,288,260,267,29,1018,1449,0,984,7373,994,0,983,1807,984,992,983,16,0,0,984,0x2a38e904,0x2a38e900,0x4
+cross_bit_classification,2,2,64,64,probe_only_not_isolated,1,derived_from_cross_pair,16,1000,984,1000,98,1,288,260,267,29,1018,1449,0,984,7373,994,0,983,1807,984,992,983,16,0,0,984,0x2a38e904,0x2a38e900,0x4
+cross_bit_idle,2,2,64,64,original_idle,1,owned_exact,0,1000,0,100,0,0,27,27,27,27,63,0,0,1,46,0,0,1,5,1,2,1,100,0,0,0,0x2a38e900,0x2a38e904,0x4
+cross_bit_idle,2,2,64,64,flipped_idle,1,owned_exact,0,1000,0,100,0,0,29,29,29,29,58,3,2,0,16,3,1,0,1,0,1,0,100,0,0,0,0x2a38e904,0x2a38e900,0x4
+cross_bit_test,2,3,64,64,original_matching,1,owned_exact,16,1000,988,1000,98,1,294,258,293,27,1017,1474,0,985,7391,995,0,985,1817,985,997,985,12,0,0,988,0x2a38e900,0x2a38e908,0x8
+cross_bit_test,2,3,64,64,probe_only_flipped,1,owned_exact,16,1000,984,1000,98,1,278,258,262,27,1008,1489,0,983,7480,990,0,982,1850,983,996,982,16,0,0,984,0x2a38e908,0x2a38e900,0x8
+cross_bit_classification,2,3,64,64,probe_only_not_isolated,1,derived_from_cross_pair,16,1000,984,1000,98,1,278,258,262,27,1008,1489,0,983,7480,990,0,982,1850,983,996,982,16,0,0,984,0x2a38e908,0x2a38e900,0x8
+cross_bit_idle,2,3,64,64,original_idle,1,owned_exact,0,1000,0,100,0,0,27,27,27,27,53,5,0,0,36,5,0,0,4,0,1,0,100,0,0,0,0x2a38e900,0x2a38e908,0x8
+cross_bit_idle,2,3,64,64,flipped_idle,1,owned_exact,0,1000,0,100,0,0,27,27,27,27,27,6,2,0,8,6,1,0,1,0,1,0,100,0,0,0,0x2a38e908,0x2a38e900,0x8
+cross_bit_test,2,4,64,64,original_matching,1,owned_exact,16,1000,984,1000,98,1,289,258,264,27,1016,1447,0,982,7614,990,0,982,1874,982,995,982,16,0,0,984,0x2a38e900,0x2a38e910,0x10
+cross_bit_test,2,4,64,64,probe_only_flipped,1,owned_exact,16,1000,984,1000,98,1,294,258,366,27,1021,1470,0,981,7371,995,0,980,1815,981,994,980,16,0,0,984,0x2a38e910,0x2a38e900,0x10
+cross_bit_classification,2,4,64,64,probe_only_not_isolated,1,derived_from_cross_pair,16,1000,984,1000,98,1,294,258,366,27,1021,1470,0,981,7371,995,0,980,1815,981,994,980,16,0,0,984,0x2a38e910,0x2a38e900,0x10
+cross_bit_idle,2,4,64,64,original_idle,1,owned_exact,0,1000,0,100,0,0,27,27,27,27,58,2,4,0,37,2,2,0,5,0,4,0,100,0,0,0,0x2a38e900,0x2a38e910,0x10
+cross_bit_idle,2,4,64,64,flipped_idle,1,owned_exact,0,1000,0,100,0,0,27,27,27,27,28,2,0,0,11,2,0,0,0,0,0,0,100,0,0,0,0x2a38e910,0x2a38e900,0x10
+cross_bit_test,2,5,64,64,original_matching,1,owned_exact,16,1000,983,1000,98,1,293,258,353,27,1019,1459,0,981,7329,993,0,980,1800,981,994,980,17,0,0,983,0x2a38e900,0x2a38e920,0x20
+cross_bit_test,2,5,64,64,probe_only_flipped,1,owned_exact,16,1000,986,1000,98,1,285,258,262,27,1008,1450,0,984,7405,991,0,984,1824,984,992,984,14,0,0,986,0x2a38e920,0x2a38e900,0x20
+cross_bit_classification,2,5,64,64,probe_only_not_isolated,1,derived_from_cross_pair,16,1000,986,1000,98,1,285,258,262,27,1008,1450,0,984,7405,991,0,984,1824,984,992,984,14,0,0,986,0x2a38e920,0x2a38e900,0x20
+cross_bit_idle,2,5,64,64,original_idle,1,owned_exact,0,1000,0,100,0,0,27,27,27,27,62,6,2,0,24,6,1,0,4,0,1,0,100,0,0,0,0x2a38e900,0x2a38e920,0x20
+cross_bit_idle,2,5,64,64,flipped_idle,1,owned_exact,0,1000,0,100,0,0,27,27,27,27,27,3,0,0,2,3,0,0,0,0,0,0,100,0,0,0,0x2a38e920,0x2a38e900,0x20
+cross_bit_test,2,6,64,64,original_matching,1,owned_exact,16,1000,982,1000,98,1,286,258,263,27,1015,1408,0,982,7360,992,0,982,1802,982,993,982,18,0,0,982,0x2a38e900,0x2a38e940,0x40
+cross_bit_test,2,6,64,64,probe_only_flipped,1,owned_exact,16,1000,0,1000,0,0,39,27,63,27,70,488,0,0,4155,488,0,0,1008,0,633,0,1000,0,0,0,0x2a38e940,0x2a38e900,0x40
+cross_bit_classification,2,6,64,64,probe_only_isolated,1,derived_from_cross_pair,16,1000,0,1000,0,0,39,27,63,27,70,488,0,0,4155,488,0,0,1008,0,633,0,1000,0,0,0,0x2a38e940,0x2a38e900,0x40
+cross_bit_idle,2,6,64,64,original_idle,1,owned_exact,0,1000,0,100,0,0,27,27,27,27,60,3,0,0,32,3,0,0,5,0,1,0,100,0,0,0,0x2a38e900,0x2a38e940,0x40
+cross_bit_idle,2,6,64,64,flipped_idle,1,owned_exact,0,1000,0,100,0,0,27,27,27,27,27,3,6,0,20,3,3,0,1,0,1,0,100,0,0,0,0x2a38e940,0x2a38e900,0x40
+cross_bit_test,2,7,64,64,original_matching,1,owned_exact,16,1000,974,1000,97,1,290,258,325,27,1020,1460,0,974,7521,985,0,973,1847,974,987,973,26,0,0,974,0x2a38e900,0x2a38e980,0x80
+cross_bit_test,2,7,64,64,probe_only_flipped,1,owned_exact,16,1000,0,1000,0,0,39,27,63,27,66,462,0,1,4201,462,0,1,1024,1,602,1,1000,0,0,0,0x2a38e980,0x2a38e900,0x80
+cross_bit_classification,2,7,64,64,probe_only_isolated,1,derived_from_cross_pair,16,1000,0,1000,0,0,39,27,63,27,66,462,0,1,4201,462,0,1,1024,1,602,1,1000,0,0,0,0x2a38e980,0x2a38e900,0x80
+cross_bit_idle,2,7,64,64,original_idle,1,owned_exact,0,1000,0,100,0,0,27,27,27,27,70,3,0,0,39,3,0,0,8,0,2,0,100,0,0,0,0x2a38e900,0x2a38e980,0x80
+cross_bit_idle,2,7,64,64,flipped_idle,1,owned_exact,0,1000,0,100,0,0,27,27,27,27,27,5,0,0,4,5,0,0,0,0,0,0,100,0,0,0,0x2a38e980,0x2a38e900,0x80
+cross_bit_test,2,8,64,64,original_matching,1,owned_exact,16,1000,987,1000,98,1,290,258,264,27,1015,1422,0,986,7623,995,0,986,1866,986,996,986,13,0,0,987,0x2a38e900,0x2a38e800,0x100
+cross_bit_test,2,8,64,64,probe_only_flipped,1,owned_exact,16,1000,0,1000,0,0,39,27,63,27,70,436,0,0,4421,436,0,0,1064,0,609,0,1000,0,0,0,0x2a38e800,0x2a38e900,0x100
+cross_bit_classification,2,8,64,64,probe_only_isolated,1,derived_from_cross_pair,16,1000,0,1000,0,0,39,27,63,27,70,436,0,0,4421,436,0,0,1064,0,609,0,1000,0,0,0,0x2a38e800,0x2a38e900,0x100
+cross_bit_idle,2,8,64,64,original_idle,1,owned_exact,0,1000,0,100,0,0,27,27,27,27,70,1,0,0,28,1,0,0,5,0,1,0,100,0,0,0,0x2a38e900,0x2a38e800,0x100
+cross_bit_idle,2,8,64,64,flipped_idle,1,owned_exact,0,1000,0,100,0,0,27,27,27,27,62,6,0,0,16,6,0,0,3,0,1,0,100,0,0,0,0x2a38e800,0x2a38e900,0x100
+cross_bit_test,2,9,64,64,original_matching,1,owned_exact,16,1000,984,1000,98,1,288,258,262,27,1006,1437,0,984,7260,991,0,984,1781,984,991,984,16,0,0,984,0x2a38e900,0x2a38eb00,0x200
+cross_bit_test,2,9,64,64,probe_only_flipped,1,owned_exact,16,1000,0,1000,0,0,38,27,63,27,66,474,0,0,4092,474,0,0,994,0,626,0,1000,0,0,0,0x2a38eb00,0x2a38e900,0x200
+cross_bit_classification,2,9,64,64,probe_only_isolated,1,derived_from_cross_pair,16,1000,0,1000,0,0,38,27,63,27,66,474,0,0,4092,474,0,0,994,0,626,0,1000,0,0,0,0x2a38eb00,0x2a38e900,0x200
+cross_bit_idle,2,9,64,64,original_idle,1,owned_exact,0,1000,0,100,0,0,27,27,27,27,69,3,0,0,48,3,0,0,5,0,2,0,100,0,0,0,0x2a38e900,0x2a38eb00,0x200
+cross_bit_idle,2,9,64,64,flipped_idle,1,owned_exact,0,1000,0,100,0,0,27,27,27,27,59,3,0,0,34,3,0,0,3,0,3,0,100,0,0,0,0x2a38eb00,0x2a38e900,0x200
+cross_bit_test,2,10,64,64,original_matching,1,owned_exact,16,1000,976,1000,97,1,291,258,265,27,1079,1459,0,973,7453,989,0,972,1833,973,986,972,24,0,0,976,0x2a38e900,0x2a38ed00,0x400
+cross_bit_test,2,10,64,64,probe_only_flipped,1,owned_exact,16,1000,0,1000,0,0,39,27,63,27,68,452,0,1,4348,452,0,1,1052,1,624,1,1000,0,0,0,0x2a38ed00,0x2a38e900,0x400
+cross_bit_classification,2,10,64,64,probe_only_isolated,1,derived_from_cross_pair,16,1000,0,1000,0,0,39,27,63,27,68,452,0,1,4348,452,0,1,1052,1,624,1,1000,0,0,0,0x2a38ed00,0x2a38e900,0x400
+cross_bit_idle,2,10,64,64,original_idle,1,owned_exact,0,1000,0,100,0,0,27,27,27,27,69,5,0,0,28,5,0,0,6,0,1,0,100,0,0,0,0x2a38e900,0x2a38ed00,0x400
+cross_bit_idle,2,10,64,64,flipped_idle,1,owned_exact,0,1000,0,100,0,0,27,27,27,27,27,3,0,0,28,3,0,0,2,0,1,0,100,0,0,0,0x2a38ed00,0x2a38e900,0x400
+cross_bit_test,2,11,64,64,original_matching,1,owned_exact,16,1000,981,1000,98,1,288,258,305,27,1018,1455,0,982,7483,990,0,981,1838,982,993,981,19,0,0,981,0x2a38e900,0x2a38e100,0x800
+cross_bit_test,2,11,64,64,probe_only_flipped,1,owned_exact,16,1000,0,1000,0,0,41,27,63,27,68,675,0,0,5840,577,0,0,1220,0,680,0,1000,0,0,0,0x2a38e100,0x2a38e900,0x800
+cross_bit_classification,2,11,64,64,probe_only_isolated,1,derived_from_cross_pair,16,1000,0,1000,0,0,41,27,63,27,68,675,0,0,5840,577,0,0,1220,0,680,0,1000,0,0,0,0x2a38e100,0x2a38e900,0x800
+cross_bit_idle,2,11,64,64,original_idle,1,owned_exact,0,1000,0,100,0,0,27,27,27,27,34,3,0,0,16,3,0,0,1,0,1,0,100,0,0,0,0x2a38e900,0x2a38e100,0x800
+cross_bit_idle,2,11,64,64,flipped_idle,1,owned_exact,0,1000,0,100,0,0,27,27,27,27,58,6,2,0,30,6,1,0,2,0,2,0,100,0,0,0,0x2a38e100,0x2a38e900,0x800
+cross_bit_test,2,12,64,64,original_matching,1,owned_exact,16,1000,984,1000,98,1,292,258,274,27,1021,1447,0,981,7307,988,0,981,1802,981,993,981,16,0,0,984,0x2a38e900,0x2a38f900,0x1000
+cross_bit_test,2,12,64,64,probe_only_flipped,1,owned_exact,16,1000,0,1000,0,0,39,27,63,27,69,462,0,0,4166,462,0,0,1012,0,635,0,1000,0,0,0,0x2a38f900,0x2a38e900,0x1000
+cross_bit_classification,2,12,64,64,probe_only_isolated,1,derived_from_cross_pair,16,1000,0,1000,0,0,39,27,63,27,69,462,0,0,4166,462,0,0,1012,0,635,0,1000,0,0,0,0x2a38f900,0x2a38e900,0x1000
+cross_bit_idle,2,12,64,64,original_idle,1,owned_exact,0,1000,0,100,0,0,27,27,27,27,59,4,0,0,35,4,0,0,4,0,2,0,100,0,0,0,0x2a38e900,0x2a38f900,0x1000
+cross_bit_idle,2,12,64,64,flipped_idle,1,owned_exact,0,1000,0,100,0,0,27,27,27,27,27,2,2,0,15,2,1,0,0,0,0,0,100,0,0,0,0x2a38f900,0x2a38e900,0x1000
+cross_bit_test,2,13,64,64,original_matching,1,owned_exact,16,1000,991,1000,99,1,295,258,343,27,1008,1462,0,990,7357,995,0,990,1809,990,998,990,9,0,0,991,0x2a38e900,0x2a38c900,0x2000
+cross_bit_test,2,13,64,64,probe_only_flipped,1,owned_exact,16,1000,0,1000,0,0,36,27,63,27,68,475,0,1,3886,475,0,1,946,1,617,1,1000,0,0,0,0x2a38c900,0x2a38e900,0x2000
+joint_bit_test,2,13,64,64,joint_group_flipped,1,owned_exact,16,1000,979,1000,97,1,293,258,358,27,1017,1445,0,976,7424,991,0,975,1827,976,994,975,21,0,0,979,0x2a38c900,0x2a38e900,0x2000
+cross_bit_classification,2,13,64,64,selector_rescue,1,derived_from_triplet,16,1000,979,1000,97,1,293,258,358,27,1017,1445,0,976,7424,991,0,975,1827,976,994,975,21,0,0,979,0x2a38c900,0x2a38e900,0x2000
+cross_bit_idle,2,13,64,64,original_idle,1,owned_exact,0,1000,0,100,0,0,27,27,27,27,63,2,0,0,26,2,0,0,4,0,2,0,100,0,0,0,0x2a38e900,0x2a38c900,0x2000
+cross_bit_idle,2,13,64,64,flipped_idle,1,owned_exact,0,1000,0,100,0,0,27,27,27,27,27,0,6,0,12,0,3,0,0,0,0,0,100,0,0,0,0x2a38c900,0x2a38e900,0x2000
+cross_bit_test,2,14,64,64,original_matching,1,owned_exact,16,1000,984,1000,98,1,292,258,279,27,1010,1440,0,983,7164,992,0,982,1759,983,993,982,16,0,0,984,0x2a38e900,0x2a38a900,0x4000
+cross_bit_test,2,14,64,64,probe_only_flipped,1,owned_exact,16,1000,0,1000,0,0,37,27,63,27,70,461,0,0,3814,461,0,0,931,0,576,0,1000,0,0,0,0x2a38a900,0x2a38e900,0x4000
+joint_bit_test,2,14,64,64,joint_group_flipped,1,owned_exact,16,1000,985,1000,98,1,289,258,262,27,1018,1438,0,985,7204,993,0,984,1780,985,993,984,15,0,0,985,0x2a38a900,0x2a38e900,0x4000
+cross_bit_classification,2,14,64,64,selector_rescue,1,derived_from_triplet,16,1000,985,1000,98,1,289,258,262,27,1018,1438,0,985,7204,993,0,984,1780,985,993,984,15,0,0,985,0x2a38a900,0x2a38e900,0x4000
+cross_bit_idle,2,14,64,64,original_idle,1,owned_exact,0,1000,0,100,0,0,27,27,27,27,62,2,2,0,39,2,1,0,6,0,3,0,100,0,0,0,0x2a38e900,0x2a38a900,0x4000
+cross_bit_idle,2,14,64,64,flipped_idle,1,owned_exact,0,1000,0,100,0,0,27,27,27,27,27,4,2,0,6,4,1,0,0,0,0,0,100,0,0,0,0x2a38a900,0x2a38e900,0x4000
+cross_bit_test,2,15,64,64,original_matching,1,owned_exact,16,1000,989,1000,98,1,290,258,266,27,1027,1472,0,989,6911,996,0,989,1704,989,993,989,11,0,0,989,0x2a38e900,0x2a386900,0x8000
+cross_bit_test,2,15,64,64,probe_only_flipped,1,owned_exact,16,1000,0,1000,0,0,37,27,63,27,66,400,0,1,3811,400,0,1,924,1,554,1,1000,0,0,0,0x2a386900,0x2a38e900,0x8000
+cross_bit_classification,2,15,64,64,probe_only_isolated,1,derived_from_cross_pair,16,1000,0,1000,0,0,37,27,63,27,66,400,0,1,3811,400,0,1,924,1,554,1,1000,0,0,0,0x2a386900,0x2a38e900,0x8000
+cross_bit_idle,2,15,64,64,original_idle,1,owned_exact,0,1000,0,100,0,0,27,27,27,27,34,0,0,0,24,0,0,0,2,0,1,0,100,0,0,0,0x2a38e900,0x2a386900,0x8000
+cross_bit_idle,2,15,64,64,flipped_idle,1,owned_exact,0,1000,0,100,0,0,27,27,27,27,63,3,2,0,34,3,1,0,3,0,1,0,100,0,0,0,0x2a386900,0x2a38e900,0x8000
+cross_bit_test,2,16,64,64,original_matching,1,owned_exact,16,1000,990,1000,99,1,288,258,262,27,1021,1443,0,988,7442,995,0,988,1834,988,995,988,10,0,0,990,0x2a38e900,0x2a39e900,0x10000
+cross_bit_test,2,16,64,64,probe_only_flipped,1,owned_exact,16,1000,0,1000,0,0,39,27,63,27,70,463,0,1,4439,463,0,1,1075,1,657,1,1000,0,0,0,0x2a39e900,0x2a38e900,0x10000
+cross_bit_classification,2,16,64,64,probe_only_isolated,1,derived_from_cross_pair,16,1000,0,1000,0,0,39,27,63,27,70,463,0,1,4439,463,0,1,1075,1,657,1,1000,0,0,0,0x2a39e900,0x2a38e900,0x10000
+cross_bit_idle,2,16,64,64,original_idle,1,owned_exact,0,1000,0,100,0,0,27,27,27,27,63,6,0,0,36,6,0,0,6,0,3,0,100,0,0,0,0x2a38e900,0x2a39e900,0x10000
+cross_bit_idle,2,16,64,64,flipped_idle,1,owned_exact,0,1000,0,100,0,0,27,27,27,27,27,4,5,0,23,4,3,0,0,0,0,0,100,0,0,0,0x2a39e900,0x2a38e900,0x10000
+cross_bit_test,2,17,64,64,original_matching,1,owned_exact,16,1000,985,1000,98,1,286,258,262,27,1014,1467,0,983,7408,992,0,983,1828,983,995,983,15,0,0,985,0x2a38e900,0x2a3ae900,0x20000
+cross_bit_test,2,17,64,64,probe_only_flipped,1,owned_exact,16,1000,0,1000,0,0,38,27,63,27,70,493,0,0,4189,493,0,0,1016,0,609,0,1000,0,0,0,0x2a3ae900,0x2a38e900,0x20000
+cross_bit_classification,2,17,64,64,probe_only_isolated,1,derived_from_cross_pair,16,1000,0,1000,0,0,38,27,63,27,70,493,0,0,4189,493,0,0,1016,0,609,0,1000,0,0,0,0x2a3ae900,0x2a38e900,0x20000
+cross_bit_idle,2,17,64,64,original_idle,1,owned_exact,0,1000,0,100,0,0,27,27,27,27,27,2,0,0,28,2,0,0,2,0,1,0,100,0,0,0,0x2a38e900,0x2a3ae900,0x20000
+cross_bit_idle,2,17,64,64,flipped_idle,1,owned_exact,0,1000,0,100,0,0,27,27,27,27,62,2,0,0,30,2,0,0,3,0,1,0,100,0,0,0,0x2a3ae900,0x2a38e900,0x20000
+cross_bit_test,2,18,64,64,original_matching,1,owned_exact,16,1000,986,1000,98,1,292,258,269,27,1016,1483,0,985,7509,991,0,985,1851,985,995,985,14,0,0,986,0x2a38e900,0x2a3ce900,0x40000
+cross_bit_test,2,18,64,64,probe_only_flipped,1,owned_exact,16,1000,0,1000,0,0,38,27,63,27,66,454,0,0,4036,454,0,0,978,0,619,0,1000,0,0,0,0x2a3ce900,0x2a38e900,0x40000
+cross_bit_classification,2,18,64,64,probe_only_isolated,1,derived_from_cross_pair,16,1000,0,1000,0,0,38,27,63,27,66,454,0,0,4036,454,0,0,978,0,619,0,1000,0,0,0,0x2a3ce900,0x2a38e900,0x40000
+cross_bit_idle,2,18,64,64,original_idle,1,owned_exact,0,1000,0,100,0,0,27,27,27,27,69,0,0,0,39,0,0,0,5,0,1,0,100,0,0,0,0x2a38e900,0x2a3ce900,0x40000
+cross_bit_idle,2,18,64,64,flipped_idle,1,owned_exact,0,1000,0,100,0,0,27,27,27,27,27,2,2,0,31,2,1,0,0,0,0,0,100,0,0,0,0x2a3ce900,0x2a38e900,0x40000
+cross_bit_test,2,19,64,64,original_matching,1,owned_exact,16,1000,981,1000,98,1,282,258,262,27,1008,1429,0,979,7333,985,0,979,1804,979,994,979,19,0,0,981,0x2a38e900,0x2a30e900,0x80000
+cross_bit_test,2,19,64,64,probe_only_flipped,1,owned_exact,16,1000,0,1000,0,0,39,27,63,27,70,458,0,0,4250,458,0,0,1031,0,626,0,1000,0,0,0,0x2a30e900,0x2a38e900,0x80000
+cross_bit_classification,2,19,64,64,probe_only_isolated,1,derived_from_cross_pair,16,1000,0,1000,0,0,39,27,63,27,70,458,0,0,4250,458,0,0,1031,0,626,0,1000,0,0,0,0x2a30e900,0x2a38e900,0x80000
+cross_bit_idle,2,19,64,64,original_idle,1,owned_exact,0,1000,0,100,0,0,27,27,27,27,63,1,0,0,44,1,0,0,7,0,1,0,100,0,0,0,0x2a38e900,0x2a30e900,0x80000
+cross_bit_idle,2,19,64,64,flipped_idle,1,owned_exact,0,1000,0,100,0,0,27,27,27,27,58,3,2,0,25,3,1,0,1,0,1,0,100,0,0,0,0x2a30e900,0x2a38e900,0x80000
+cross_bit_test,2,20,64,64,original_matching,1,owned_exact,16,1000,988,1000,98,1,295,258,338,27,1018,1452,0,985,7601,993,0,985,1870,985,997,985,12,0,0,988,0x2a38e900,0x2a28e900,0x100000
+cross_bit_test,2,20,64,64,probe_only_flipped,1,owned_exact,16,1000,0,1000,0,0,39,27,63,27,70,502,0,0,4439,502,0,0,1076,0,644,0,1000,0,0,0,0x2a28e900,0x2a38e900,0x100000
+cross_bit_classification,2,20,64,64,probe_only_isolated,1,derived_from_cross_pair,16,1000,0,1000,0,0,39,27,63,27,70,502,0,0,4439,502,0,0,1076,0,644,0,1000,0,0,0,0x2a28e900,0x2a38e900,0x100000
+cross_bit_idle,2,20,64,64,original_idle,1,owned_exact,0,1000,0,100,0,0,27,27,27,27,34,1,0,0,46,1,0,0,4,0,2,0,100,0,0,0,0x2a38e900,0x2a28e900,0x100000
+cross_bit_idle,2,20,64,64,flipped_idle,1,owned_exact,0,1000,0,100,0,0,27,27,27,27,27,4,0,0,20,4,0,0,0,0,0,0,100,0,0,0,0x2a28e900,0x2a38e900,0x100000
+cross_bit_test,2,21,64,64,original_matching,1,owned_exact,16,1000,982,1000,98,1,288,258,265,27,1007,1449,0,982,7375,992,0,981,1813,982,992,981,18,0,0,982,0x2a38e900,0x2a18e900,0x200000
+cross_bit_test,2,21,64,64,probe_only_flipped,1,owned_exact,16,1000,0,1000,0,0,39,27,63,27,68,474,0,0,4506,474,0,0,1096,0,649,0,1000,0,0,0,0x2a18e900,0x2a38e900,0x200000
+cross_bit_classification,2,21,64,64,probe_only_isolated,1,derived_from_cross_pair,16,1000,0,1000,0,0,39,27,63,27,68,474,0,0,4506,474,0,0,1096,0,649,0,1000,0,0,0,0x2a18e900,0x2a38e900,0x200000
+cross_bit_idle,2,21,64,64,original_idle,1,owned_exact,0,1000,0,100,0,0,27,27,27,27,34,1,2,1,40,1,1,1,4,1,2,1,100,0,0,0,0x2a38e900,0x2a18e900,0x200000
+cross_bit_idle,2,21,64,64,flipped_idle,1,owned_exact,0,1000,0,100,0,0,27,27,27,27,59,3,2,0,17,3,1,0,1,0,1,0,100,0,0,0,0x2a18e900,0x2a38e900,0x200000
+cross_bit_test,2,22,64,64,original_matching,1,owned_exact,16,1000,985,1000,98,1,289,258,262,27,1019,1443,0,981,7448,991,0,981,1826,981,996,981,15,0,0,985,0x2a38e900,0x2a78e900,0x400000
+cross_bit_test,2,22,64,64,probe_only_flipped,1,owned_exact,16,1000,0,1000,0,0,39,27,63,27,69,478,0,1,4264,478,0,1,1040,1,625,1,1000,0,0,0,0x2a78e900,0x2a38e900,0x400000
+cross_bit_classification,2,22,64,64,probe_only_isolated,1,derived_from_cross_pair,16,1000,0,1000,0,0,39,27,63,27,69,478,0,1,4264,478,0,1,1040,1,625,1,1000,0,0,0,0x2a78e900,0x2a38e900,0x400000
+cross_bit_idle,2,22,64,64,original_idle,1,owned_exact,0,1000,0,100,0,0,27,27,27,27,70,0,2,0,38,0,1,0,5,0,1,0,100,0,0,0,0x2a38e900,0x2a78e900,0x400000
+cross_bit_idle,2,22,64,64,flipped_idle,1,owned_exact,0,1000,0,100,0,0,27,27,27,27,59,4,2,0,28,4,1,0,2,0,2,0,100,0,0,0,0x2a78e900,0x2a38e900,0x400000
+pass_validation,3,0,64,64,cross_fixed_set_matching,1,owned_exact,16,1000,989,1000,98,1,289,258,262,27,1017,1489,0,989,7703,993,0,989,1886,989,994,989,11,0,0,989,0x2a38e900,0x2a38e900,0x0
+pass_validation,3,0,64,64,same_fixed_set_matching,1,owned_exact,16,1000,1000,1000,100,1,347,319,324,261,1081,1406,2000,1023,16320,1000,1000,999,2155,1023,1000,999,0,0,0,1000,0x2a38e900,0x2a38e900,0x0
+cross_bit_test,3,0,64,64,original_matching,1,owned_exact,16,1000,976,1000,97,1,278,258,262,27,1007,1431,0,974,7394,991,0,974,1815,974,994,974,24,0,0,976,0x2a38e900,0x2a38e901,0x1
+cross_bit_test,3,0,64,64,probe_only_flipped,1,owned_exact,16,1000,978,1000,97,1,294,260,304,29,1009,1431,0,978,7056,990,0,977,1732,978,992,977,22,0,0,978,0x2a38e901,0x2a38e900,0x1
+cross_bit_classification,3,0,64,64,probe_only_not_isolated,1,derived_from_cross_pair,16,1000,978,1000,97,1,294,260,304,29,1009,1431,0,978,7056,990,0,977,1732,978,992,977,22,0,0,978,0x2a38e901,0x2a38e900,0x1
+cross_bit_idle,3,0,64,64,original_idle,1,owned_exact,0,1000,0,100,0,0,27,27,27,27,62,0,0,0,24,0,0,0,4,0,1,0,100,0,0,0,0x2a38e900,0x2a38e901,0x1
+cross_bit_idle,3,0,64,64,flipped_idle,1,owned_exact,0,1000,0,100,0,0,29,29,29,29,59,5,0,0,19,5,0,0,3,0,2,0,100,0,0,0,0x2a38e901,0x2a38e900,0x1
+cross_bit_test,3,1,64,64,original_matching,1,owned_exact,16,1000,987,1000,98,1,288,259,264,27,1013,1430,0,987,7174,994,0,986,1760,987,998,986,13,0,0,987,0x2a38e900,0x2a38e902,0x2
+cross_bit_test,3,1,64,64,probe_only_flipped,1,owned_exact,16,1000,974,1000,97,1,284,260,264,29,1021,1444,0,972,7262,987,0,971,1792,972,993,971,26,0,0,974,0x2a38e902,0x2a38e900,0x2
+cross_bit_classification,3,1,64,64,probe_only_not_isolated,1,derived_from_cross_pair,16,1000,974,1000,97,1,284,260,264,29,1021,1444,0,972,7262,987,0,971,1792,972,993,971,26,0,0,974,0x2a38e902,0x2a38e900,0x2
+cross_bit_idle,3,1,64,64,original_idle,1,owned_exact,0,1000,0,100,0,0,27,27,27,27,69,4,2,1,39,4,1,1,6,1,2,1,100,0,0,0,0x2a38e900,0x2a38e902,0x2
+cross_bit_idle,3,1,64,64,flipped_idle,1,owned_exact,0,1000,0,100,0,0,29,29,29,29,31,0,4,0,18,0,2,0,0,0,0,0,100,0,0,0,0x2a38e902,0x2a38e900,0x2
+cross_bit_test,3,2,64,64,original_matching,1,owned_exact,16,1000,974,1000,97,1,294,258,364,27,1124,1441,0,971,7175,984,0,970,1766,971,991,970,26,0,0,974,0x2a38e900,0x2a38e904,0x4
+cross_bit_test,3,2,64,64,probe_only_flipped,1,owned_exact,16,1000,980,1000,98,1,297,260,365,29,1010,1435,0,979,7177,986,0,978,1757,979,992,978,20,0,0,980,0x2a38e904,0x2a38e900,0x4
+cross_bit_classification,3,2,64,64,probe_only_not_isolated,1,derived_from_cross_pair,16,1000,980,1000,98,1,297,260,365,29,1010,1435,0,979,7177,986,0,978,1757,979,992,978,20,0,0,980,0x2a38e904,0x2a38e900,0x4
+cross_bit_idle,3,2,64,64,original_idle,1,owned_exact,0,1000,0,100,0,0,27,27,27,27,63,2,0,0,37,2,0,0,6,0,2,0,100,0,0,0,0x2a38e900,0x2a38e904,0x4
+cross_bit_idle,3,2,64,64,flipped_idle,1,owned_exact,0,1000,0,100,0,0,29,29,29,29,36,2,0,0,16,2,0,0,0,0,0,0,100,0,0,0,0x2a38e904,0x2a38e900,0x4
+cross_bit_test,3,3,64,64,original_matching,1,owned_exact,16,1000,982,1000,98,1,284,258,263,27,1015,1430,0,981,7140,991,0,981,1758,981,993,981,18,0,0,982,0x2a38e900,0x2a38e908,0x8
+cross_bit_test,3,3,64,64,probe_only_flipped,1,owned_exact,16,1000,977,1000,97,1,289,258,263,27,1008,1456,0,976,7299,989,0,975,1792,976,996,975,23,0,0,977,0x2a38e908,0x2a38e900,0x8
+cross_bit_classification,3,3,64,64,probe_only_not_isolated,1,derived_from_cross_pair,16,1000,977,1000,97,1,289,258,263,27,1008,1456,0,976,7299,989,0,975,1792,976,996,975,23,0,0,977,0x2a38e908,0x2a38e900,0x8
+cross_bit_idle,3,3,64,64,original_idle,1,owned_exact,0,1000,0,100,0,0,27,27,27,27,70,6,0,0,27,6,0,0,4,0,1,0,100,0,0,0,0x2a38e900,0x2a38e908,0x8
+cross_bit_idle,3,3,64,64,flipped_idle,1,owned_exact,0,1000,0,100,0,0,27,27,27,27,62,5,0,0,20,5,0,0,4,0,2,0,100,0,0,0,0x2a38e908,0x2a38e900,0x8
+cross_bit_test,3,4,64,64,original_matching,1,owned_exact,16,1000,971,1000,97,1,285,258,262,27,1006,1416,0,967,7062,984,0,967,1738,967,991,967,29,0,0,971,0x2a38e900,0x2a38e910,0x10
+cross_bit_test,3,4,64,64,probe_only_flipped,1,owned_exact,16,1000,972,1000,97,1,282,258,262,27,1025,1427,0,973,7251,984,0,971,1784,973,992,971,28,0,0,972,0x2a38e910,0x2a38e900,0x10
+cross_bit_classification,3,4,64,64,probe_only_not_isolated,1,derived_from_cross_pair,16,1000,972,1000,97,1,282,258,262,27,1025,1427,0,973,7251,984,0,971,1784,973,992,971,28,0,0,972,0x2a38e910,0x2a38e900,0x10
+cross_bit_idle,3,4,64,64,original_idle,1,owned_exact,0,1000,0,100,0,0,27,27,27,27,60,2,0,0,26,2,0,0,5,0,1,0,100,0,0,0,0x2a38e900,0x2a38e910,0x10
+cross_bit_idle,3,4,64,64,flipped_idle,1,owned_exact,0,1000,0,100,0,0,27,27,27,27,62,3,2,0,31,3,1,0,4,0,2,0,100,0,0,0,0x2a38e910,0x2a38e900,0x10
+cross_bit_test,3,5,64,64,original_matching,1,owned_exact,16,1000,977,1000,97,1,284,258,262,27,1007,1407,0,974,7309,986,0,974,1796,974,991,974,23,0,0,977,0x2a38e900,0x2a38e920,0x20
+cross_bit_test,3,5,64,64,probe_only_flipped,1,owned_exact,16,1000,973,1000,97,1,285,258,262,27,1007,1465,0,972,7193,990,0,970,1763,972,987,970,27,0,0,973,0x2a38e920,0x2a38e900,0x20
+cross_bit_classification,3,5,64,64,probe_only_not_isolated,1,derived_from_cross_pair,16,1000,973,1000,97,1,285,258,262,27,1007,1465,0,972,7193,990,0,970,1763,972,987,970,27,0,0,973,0x2a38e920,0x2a38e900,0x20
+cross_bit_idle,3,5,64,64,original_idle,1,owned_exact,0,1000,0,100,0,0,27,27,27,27,63,2,0,0,50,2,0,0,5,0,2,0,100,0,0,0,0x2a38e900,0x2a38e920,0x20
+cross_bit_idle,3,5,64,64,flipped_idle,1,owned_exact,0,1000,0,100,0,0,27,27,27,27,27,2,4,0,15,2,2,0,0,0,0,0,100,0,0,0,0x2a38e920,0x2a38e900,0x20
+cross_bit_test,3,6,64,64,original_matching,1,owned_exact,16,1000,978,1000,97,1,288,258,321,27,1016,1437,0,976,7153,988,0,975,1754,976,993,975,22,0,0,978,0x2a38e900,0x2a38e940,0x40
+cross_bit_test,3,6,64,64,probe_only_flipped,1,owned_exact,16,1000,0,1000,0,0,39,27,63,27,69,465,0,0,4143,465,0,0,1006,0,620,0,1000,0,0,0,0x2a38e940,0x2a38e900,0x40
+cross_bit_classification,3,6,64,64,probe_only_isolated,1,derived_from_cross_pair,16,1000,0,1000,0,0,39,27,63,27,69,465,0,0,4143,465,0,0,1006,0,620,0,1000,0,0,0,0x2a38e940,0x2a38e900,0x40
+cross_bit_idle,3,6,64,64,original_idle,1,owned_exact,0,1000,0,100,0,0,27,27,27,27,63,2,0,0,33,2,0,0,5,0,1,0,100,0,0,0,0x2a38e900,0x2a38e940,0x40
+cross_bit_idle,3,6,64,64,flipped_idle,1,owned_exact,0,1000,0,100,0,0,27,27,27,27,27,1,2,0,32,1,1,0,1,0,1,0,100,0,0,0,0x2a38e940,0x2a38e900,0x40
+cross_bit_test,3,7,64,64,original_matching,1,owned_exact,16,1000,976,1000,97,1,286,258,266,27,1003,1420,0,977,7410,985,0,976,1816,977,995,976,24,0,0,976,0x2a38e900,0x2a38e980,0x80
+cross_bit_test,3,7,64,64,probe_only_flipped,1,owned_exact,16,1000,0,1000,0,0,37,27,63,27,69,446,0,0,3914,446,0,0,947,0,588,0,1000,0,0,0,0x2a38e980,0x2a38e900,0x80
+cross_bit_classification,3,7,64,64,probe_only_isolated,1,derived_from_cross_pair,16,1000,0,1000,0,0,37,27,63,27,69,446,0,0,3914,446,0,0,947,0,588,0,1000,0,0,0,0x2a38e980,0x2a38e900,0x80
+cross_bit_idle,3,7,64,64,original_idle,1,owned_exact,0,1000,0,100,0,0,27,27,27,27,34,0,2,1,30,0,1,1,2,1,1,1,100,0,0,0,0x2a38e900,0x2a38e980,0x80
+cross_bit_idle,3,7,64,64,flipped_idle,1,owned_exact,0,1000,0,100,0,0,27,27,27,27,34,2,2,0,28,2,1,0,1,0,1,0,100,0,0,0,0x2a38e980,0x2a38e900,0x80
+cross_bit_test,3,8,64,64,original_matching,1,owned_exact,16,1000,977,1000,97,1,284,258,264,27,1007,1427,0,976,7104,987,0,975,1746,976,993,975,23,0,0,977,0x2a38e900,0x2a38e800,0x100
+cross_bit_test,3,8,64,64,probe_only_flipped,1,owned_exact,16,1000,0,1000,0,0,38,27,63,27,70,423,0,0,3852,423,0,0,924,0,543,0,1000,0,0,0,0x2a38e800,0x2a38e900,0x100
+cross_bit_classification,3,8,64,64,probe_only_isolated,1,derived_from_cross_pair,16,1000,0,1000,0,0,38,27,63,27,70,423,0,0,3852,423,0,0,924,0,543,0,1000,0,0,0,0x2a38e800,0x2a38e900,0x100
+cross_bit_idle,3,8,64,64,original_idle,1,owned_exact,0,1000,0,100,0,0,27,27,27,27,63,4,0,0,42,4,0,0,7,0,3,0,100,0,0,0,0x2a38e900,0x2a38e800,0x100
+cross_bit_idle,3,8,64,64,flipped_idle,1,owned_exact,0,1000,0,100,0,0,27,27,27,27,59,3,0,0,10,3,0,0,1,0,1,0,100,0,0,0,0x2a38e800,0x2a38e900,0x100
+cross_bit_test,3,9,64,64,original_matching,1,owned_exact,16,1000,977,1000,97,1,286,258,268,27,1009,1418,0,976,7236,987,0,975,1778,976,993,975,23,0,0,977,0x2a38e900,0x2a38eb00,0x200
+cross_bit_test,3,9,64,64,probe_only_flipped,1,owned_exact,16,1000,0,1000,0,0,38,27,63,27,70,426,0,1,3858,426,0,1,940,1,581,1,1000,0,0,0,0x2a38eb00,0x2a38e900,0x200
+cross_bit_classification,3,9,64,64,probe_only_isolated,1,derived_from_cross_pair,16,1000,0,1000,0,0,38,27,63,27,70,426,0,1,3858,426,0,1,940,1,581,1,1000,0,0,0,0x2a38eb00,0x2a38e900,0x200
+cross_bit_idle,3,9,64,64,original_idle,1,owned_exact,0,1000,0,100,0,0,27,27,27,27,69,6,0,0,34,6,0,0,5,0,1,0,100,0,0,0,0x2a38e900,0x2a38eb00,0x200
+cross_bit_idle,3,9,64,64,flipped_idle,1,owned_exact,0,1000,0,100,0,0,27,27,27,27,59,5,0,0,23,5,0,0,1,0,1,0,100,0,0,0,0x2a38eb00,0x2a38e900,0x200
+cross_bit_test,3,10,64,64,original_matching,1,owned_exact,16,1000,970,1000,97,1,287,258,298,27,1007,1415,0,969,7040,983,0,969,1733,969,990,969,30,0,0,970,0x2a38e900,0x2a38ed00,0x400
+cross_bit_test,3,10,64,64,probe_only_flipped,1,owned_exact,16,1000,0,1000,0,0,39,27,63,27,70,438,0,0,4097,438,0,0,990,0,618,0,1000,0,0,0,0x2a38ed00,0x2a38e900,0x400
+cross_bit_classification,3,10,64,64,probe_only_isolated,1,derived_from_cross_pair,16,1000,0,1000,0,0,39,27,63,27,70,438,0,0,4097,438,0,0,990,0,618,0,1000,0,0,0,0x2a38ed00,0x2a38e900,0x400
+cross_bit_idle,3,10,64,64,original_idle,1,owned_exact,0,1000,0,100,0,0,27,27,27,27,70,2,0,0,61,2,0,0,7,0,2,0,100,0,0,0,0x2a38e900,0x2a38ed00,0x400
+cross_bit_idle,3,10,64,64,flipped_idle,1,owned_exact,0,1000,0,100,0,0,27,27,27,27,27,5,0,0,20,5,0,0,0,0,0,0,100,0,0,0,0x2a38ed00,0x2a38e900,0x400
+cross_bit_test,3,11,64,64,original_matching,1,owned_exact,16,1000,967,1000,96,1,282,258,264,27,1020,1420,0,967,6920,986,0,966,1702,967,988,966,33,0,0,967,0x2a38e900,0x2a38e100,0x800
+cross_bit_test,3,11,64,64,probe_only_flipped,1,owned_exact,16,1000,0,1000,0,0,41,27,63,27,70,657,0,1,5638,563,0,1,1170,1,651,1,1000,0,0,0,0x2a38e100,0x2a38e900,0x800
+cross_bit_classification,3,11,64,64,probe_only_isolated,1,derived_from_cross_pair,16,1000,0,1000,0,0,41,27,63,27,70,657,0,1,5638,563,0,1,1170,1,651,1,1000,0,0,0,0x2a38e100,0x2a38e900,0x800
+cross_bit_idle,3,11,64,64,original_idle,1,owned_exact,0,1000,0,100,0,0,27,27,27,27,62,2,2,0,28,2,1,0,5,0,2,0,100,0,0,0,0x2a38e900,0x2a38e100,0x800
+cross_bit_idle,3,11,64,64,flipped_idle,1,owned_exact,0,1000,0,100,0,0,27,27,27,27,48,6,0,0,36,6,0,0,4,0,3,0,100,0,0,0,0x2a38e100,0x2a38e900,0x800
+cross_bit_test,3,12,64,64,original_matching,1,owned_exact,16,1000,965,1000,96,1,280,258,262,27,1015,1412,0,964,7196,983,0,962,1768,964,985,962,35,0,0,965,0x2a38e900,0x2a38f900,0x1000
+cross_bit_test,3,12,64,64,probe_only_flipped,1,owned_exact,16,1000,0,1000,0,0,38,27,63,27,69,467,0,0,3827,467,0,0,936,0,569,0,1000,0,0,0,0x2a38f900,0x2a38e900,0x1000
+cross_bit_classification,3,12,64,64,probe_only_isolated,1,derived_from_cross_pair,16,1000,0,1000,0,0,38,27,63,27,69,467,0,0,3827,467,0,0,936,0,569,0,1000,0,0,0,0x2a38f900,0x2a38e900,0x1000
+cross_bit_idle,3,12,64,64,original_idle,1,owned_exact,0,1000,0,100,0,0,27,27,27,27,34,2,0,0,13,2,0,0,3,0,2,0,100,0,0,0,0x2a38e900,0x2a38f900,0x1000
+cross_bit_idle,3,12,64,64,flipped_idle,1,owned_exact,0,1000,0,100,0,0,27,27,27,27,28,1,2,0,14,1,1,0,1,0,1,0,100,0,0,0,0x2a38f900,0x2a38e900,0x1000
+cross_bit_test,3,13,64,64,original_matching,1,owned_exact,16,1000,977,1000,97,1,283,258,262,27,1019,1454,0,976,7011,986,0,976,1722,976,989,976,23,0,0,977,0x2a38e900,0x2a38c900,0x2000
+cross_bit_test,3,13,64,64,probe_only_flipped,1,owned_exact,16,1000,0,1000,0,0,37,27,62,27,70,457,0,0,3563,457,0,0,853,0,525,0,1000,0,0,0,0x2a38c900,0x2a38e900,0x2000
+joint_bit_test,3,13,64,64,joint_group_flipped,1,owned_exact,16,1000,975,1000,97,1,280,258,262,27,1017,1418,0,973,6921,988,0,972,1708,973,990,972,25,0,0,975,0x2a38c900,0x2a38e900,0x2000
+cross_bit_classification,3,13,64,64,selector_rescue,1,derived_from_triplet,16,1000,975,1000,97,1,280,258,262,27,1017,1418,0,973,6921,988,0,972,1708,973,990,972,25,0,0,975,0x2a38c900,0x2a38e900,0x2000
+cross_bit_idle,3,13,64,64,original_idle,1,owned_exact,0,1000,0,100,0,0,27,27,27,27,62,2,0,0,45,2,0,0,7,0,2,0,100,0,0,0,0x2a38e900,0x2a38c900,0x2000
+cross_bit_idle,3,13,64,64,flipped_idle,1,owned_exact,0,1000,0,100,0,0,27,27,27,27,27,3,0,0,13,3,0,0,0,0,0,0,100,0,0,0,0x2a38c900,0x2a38e900,0x2000
+cross_bit_test,3,14,64,64,original_matching,1,owned_exact,16,1000,964,1000,96,1,283,258,262,27,1018,1418,0,961,6914,982,0,960,1707,961,985,960,36,0,0,964,0x2a38e900,0x2a38a900,0x4000
+cross_bit_test,3,14,64,64,probe_only_flipped,1,owned_exact,16,1000,0,1000,0,0,36,27,62,27,70,437,0,0,3542,437,0,0,856,0,551,0,1000,0,0,0,0x2a38a900,0x2a38e900,0x4000
+joint_bit_test,3,14,64,64,joint_group_flipped,1,owned_exact,16,1000,977,1000,97,1,294,258,346,27,1016,1407,0,976,6887,991,0,976,1697,976,991,976,23,0,0,977,0x2a38a900,0x2a38e900,0x4000
+cross_bit_classification,3,14,64,64,selector_rescue,1,derived_from_triplet,16,1000,977,1000,97,1,294,258,346,27,1016,1407,0,976,6887,991,0,976,1697,976,991,976,23,0,0,977,0x2a38a900,0x2a38e900,0x4000
+cross_bit_idle,3,14,64,64,original_idle,1,owned_exact,0,1000,0,100,0,0,27,27,27,27,64,4,2,0,44,4,1,0,5,0,1,0,100,0,0,0,0x2a38e900,0x2a38a900,0x4000
+cross_bit_idle,3,14,64,64,flipped_idle,1,owned_exact,0,1000,0,100,0,0,27,27,27,27,28,1,2,0,29,1,1,0,2,0,2,0,100,0,0,0,0x2a38a900,0x2a38e900,0x4000
+cross_bit_test,3,15,64,64,original_matching,1,owned_exact,16,1000,978,1000,97,1,286,258,264,27,1057,1461,0,978,7310,988,0,977,1784,978,989,977,22,0,0,978,0x2a38e900,0x2a386900,0x8000
+cross_bit_test,3,15,64,64,probe_only_flipped,1,owned_exact,16,1000,0,1000,0,0,39,27,63,27,72,463,0,3,4275,463,0,3,1036,3,612,3,1000,0,0,0,0x2a386900,0x2a38e900,0x8000
+cross_bit_classification,3,15,64,64,probe_only_isolated,1,derived_from_cross_pair,16,1000,0,1000,0,0,39,27,63,27,72,463,0,3,4275,463,0,3,1036,3,612,3,1000,0,0,0,0x2a386900,0x2a38e900,0x8000
+cross_bit_idle,3,15,64,64,original_idle,1,owned_exact,0,1000,1,100,1,0,29,27,27,27,233,4,0,2,21,4,0,1,5,2,1,1,99,0,0,1,0x2a38e900,0x2a386900,0x8000
+cross_bit_idle,3,15,64,64,flipped_idle,1,owned_exact,0,1000,0,100,0,0,27,27,27,27,27,3,0,0,5,3,0,0,1,0,1,0,100,0,0,0,0x2a386900,0x2a38e900,0x8000
+cross_bit_test,3,16,64,64,original_matching,1,owned_exact,16,1000,984,1000,98,1,284,258,262,27,1019,1446,0,983,7485,989,0,982,1844,983,992,982,16,0,0,984,0x2a38e900,0x2a39e900,0x10000
+cross_bit_test,3,16,64,64,probe_only_flipped,1,owned_exact,16,1000,0,1000,0,0,40,27,63,27,66,458,0,0,4292,458,0,0,1044,0,626,0,1000,0,0,0,0x2a39e900,0x2a38e900,0x10000
+cross_bit_classification,3,16,64,64,probe_only_isolated,1,derived_from_cross_pair,16,1000,0,1000,0,0,40,27,63,27,66,458,0,0,4292,458,0,0,1044,0,626,0,1000,0,0,0,0x2a39e900,0x2a38e900,0x10000
+cross_bit_idle,3,16,64,64,original_idle,1,owned_exact,0,1000,0,100,0,0,27,27,27,27,63,3,0,0,46,3,0,0,5,0,1,0,100,0,0,0,0x2a38e900,0x2a39e900,0x10000
+cross_bit_idle,3,16,64,64,flipped_idle,1,owned_exact,0,1000,0,100,0,0,27,27,27,27,59,3,2,0,16,3,1,0,2,0,1,0,100,0,0,0,0x2a39e900,0x2a38e900,0x10000
+cross_bit_test,3,17,64,64,original_matching,1,owned_exact,16,1000,989,1000,98,1,293,258,277,27,1008,1472,0,989,7416,992,0,988,1830,989,992,988,11,0,0,989,0x2a38e900,0x2a3ae900,0x20000
+cross_bit_test,3,17,64,64,probe_only_flipped,1,owned_exact,16,1000,0,1000,0,0,38,27,62,27,69,453,0,0,3942,453,0,0,952,0,611,0,1000,0,0,0,0x2a3ae900,0x2a38e900,0x20000
+cross_bit_classification,3,17,64,64,probe_only_isolated,1,derived_from_cross_pair,16,1000,0,1000,0,0,38,27,62,27,69,453,0,0,3942,453,0,0,952,0,611,0,1000,0,0,0,0x2a3ae900,0x2a38e900,0x20000
+cross_bit_idle,3,17,64,64,original_idle,1,owned_exact,0,1000,0,100,0,0,27,27,27,27,60,2,2,0,29,2,1,0,5,0,2,0,100,0,0,0,0x2a38e900,0x2a3ae900,0x20000
+cross_bit_idle,3,17,64,64,flipped_idle,1,owned_exact,0,1000,0,100,0,0,27,27,27,27,28,3,2,0,19,3,1,0,0,0,0,0,100,0,0,0,0x2a3ae900,0x2a38e900,0x20000
+cross_bit_test,3,18,64,64,original_matching,1,owned_exact,16,1000,989,1000,98,1,288,258,262,27,1018,1493,0,989,7415,996,0,988,1820,989,992,988,11,0,0,989,0x2a38e900,0x2a3ce900,0x40000
+cross_bit_test,3,18,64,64,probe_only_flipped,1,owned_exact,16,1000,0,1000,0,0,38,27,63,27,74,477,0,0,4178,477,0,0,1014,0,619,0,1000,0,0,0,0x2a3ce900,0x2a38e900,0x40000
+cross_bit_classification,3,18,64,64,probe_only_isolated,1,derived_from_cross_pair,16,1000,0,1000,0,0,38,27,63,27,74,477,0,0,4178,477,0,0,1014,0,619,0,1000,0,0,0,0x2a3ce900,0x2a38e900,0x40000
+cross_bit_idle,3,18,64,64,original_idle,1,owned_exact,0,1000,0,100,0,0,28,27,27,27,69,2,2,0,42,2,1,0,9,0,3,0,100,0,0,0,0x2a38e900,0x2a3ce900,0x40000
+cross_bit_idle,3,18,64,64,flipped_idle,1,owned_exact,0,1000,0,100,0,0,27,27,27,27,27,2,2,0,22,2,1,0,2,0,1,0,100,0,0,0,0x2a3ce900,0x2a38e900,0x40000
+cross_bit_test,3,19,64,64,original_matching,1,owned_exact,16,1000,988,1000,98,1,290,258,305,27,1013,1465,0,986,7349,993,0,986,1808,986,994,986,12,0,0,988,0x2a38e900,0x2a30e900,0x80000
+cross_bit_test,3,19,64,64,probe_only_flipped,1,owned_exact,16,1000,0,1000,0,0,38,27,63,27,68,454,0,0,4192,454,0,0,1016,0,593,0,1000,0,0,0,0x2a30e900,0x2a38e900,0x80000
+cross_bit_classification,3,19,64,64,probe_only_isolated,1,derived_from_cross_pair,16,1000,0,1000,0,0,38,27,63,27,68,454,0,0,4192,454,0,0,1016,0,593,0,1000,0,0,0,0x2a30e900,0x2a38e900,0x80000
+cross_bit_idle,3,19,64,64,original_idle,1,owned_exact,0,1000,0,100,0,0,27,27,27,27,34,3,0,0,26,3,0,0,3,0,1,0,100,0,0,0,0x2a38e900,0x2a30e900,0x80000
+cross_bit_idle,3,19,64,64,flipped_idle,1,owned_exact,0,1000,0,100,0,0,27,27,27,27,27,3,6,0,35,3,3,0,0,0,0,0,100,0,0,0,0x2a30e900,0x2a38e900,0x80000
+cross_bit_test,3,20,64,64,original_matching,1,owned_exact,16,1000,987,1000,98,1,295,258,332,27,1008,1443,0,981,7437,991,0,981,1839,981,997,981,13,0,0,987,0x2a38e900,0x2a28e900,0x100000
+cross_bit_test,3,20,64,64,probe_only_flipped,1,owned_exact,16,1000,0,1000,0,0,39,27,63,27,69,499,0,0,4221,499,0,0,1022,0,639,0,1000,0,0,0,0x2a28e900,0x2a38e900,0x100000
+cross_bit_classification,3,20,64,64,probe_only_isolated,1,derived_from_cross_pair,16,1000,0,1000,0,0,39,27,63,27,69,499,0,0,4221,499,0,0,1022,0,639,0,1000,0,0,0,0x2a28e900,0x2a38e900,0x100000
+cross_bit_idle,3,20,64,64,original_idle,1,owned_exact,0,1000,0,100,0,0,27,27,27,27,53,1,0,0,29,1,0,0,4,0,1,0,100,0,0,0,0x2a38e900,0x2a28e900,0x100000
+cross_bit_idle,3,20,64,64,flipped_idle,1,owned_exact,0,1000,0,100,0,0,27,27,27,27,27,3,0,0,26,3,0,0,1,0,1,0,100,0,0,0,0x2a28e900,0x2a38e900,0x100000
+cross_bit_test,3,21,64,64,original_matching,1,owned_exact,16,1000,991,1000,99,1,290,258,264,27,1010,1451,0,988,7453,994,0,988,1840,988,997,988,9,0,0,991,0x2a38e900,0x2a18e900,0x200000
+cross_bit_test,3,21,64,64,probe_only_flipped,1,owned_exact,16,1000,0,1000,0,0,40,27,63,27,70,476,0,0,4452,476,0,0,1078,0,635,0,1000,0,0,0,0x2a18e900,0x2a38e900,0x200000
+cross_bit_classification,3,21,64,64,probe_only_isolated,1,derived_from_cross_pair,16,1000,0,1000,0,0,40,27,63,27,70,476,0,0,4452,476,0,0,1078,0,635,0,1000,0,0,0,0x2a18e900,0x2a38e900,0x200000
+cross_bit_idle,3,21,64,64,original_idle,1,owned_exact,0,1000,0,100,0,0,27,27,27,27,69,1,2,0,52,1,1,0,7,0,2,0,100,0,0,0,0x2a38e900,0x2a18e900,0x200000
+cross_bit_idle,3,21,64,64,flipped_idle,1,owned_exact,0,1000,0,100,0,0,27,27,27,27,28,3,0,0,22,3,0,0,0,0,0,0,100,0,0,0,0x2a18e900,0x2a38e900,0x200000
+cross_bit_test,3,22,64,64,original_matching,1,owned_exact,16,1000,988,1000,98,1,288,258,309,27,1009,1460,0,985,7137,990,0,984,1763,985,992,984,12,0,0,988,0x2a38e900,0x2a78e900,0x400000
+cross_bit_test,3,22,64,64,probe_only_flipped,1,owned_exact,16,1000,1,1000,0,0,39,27,63,27,259,458,0,1,4384,458,0,1,1053,1,618,1,999,0,0,1,0x2a78e900,0x2a38e900,0x400000
+cross_bit_classification,3,22,64,64,probe_only_isolated,1,derived_from_cross_pair,16,1000,1,1000,0,0,39,27,63,27,259,458,0,1,4384,458,0,1,1053,1,618,1,999,0,0,1,0x2a78e900,0x2a38e900,0x400000
+cross_bit_idle,3,22,64,64,original_idle,1,owned_exact,0,1000,0,100,0,0,27,27,27,27,70,3,2,0,30,3,1,0,4,0,1,0,100,0,0,0,0x2a38e900,0x2a78e900,0x400000
+cross_bit_idle,3,22,64,64,flipped_idle,1,owned_exact,0,1000,0,100,0,0,27,27,27,27,27,3,0,0,16,3,0,0,0,0,0,0,100,0,0,0,0x2a78e900,0x2a38e900,0x400000

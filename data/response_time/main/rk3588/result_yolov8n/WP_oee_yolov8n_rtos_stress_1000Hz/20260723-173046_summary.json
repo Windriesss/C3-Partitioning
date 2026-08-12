@@ -1,0 +1,21 @@
+{
+  "platform": "rk3588",
+  "experiment": "WP_rtos_stress_1000Hz",
+  "vm_bytes": "yolov8n",
+  "stress_ng": false,
+  "workload": "yolov8n",
+  "started_at": "2026-07-23T17:30:46+0800",
+  "elapsed_seconds": 970.1,
+  "sample_hz": 1000,
+  "expected_pmu_samples": 600000,
+  "minimum_pmu_samples": 600000,
+  "last_pmu_samples": 0,
+  "bogo_ops": null,
+  "stress_pid": 706,
+  "stress_exit_code": null,
+  "status": "failed",
+  "error": "RTOS completion timed out; last PMU sample=72508, expected >= 600000",
+  "post_run_warning": null,
+  "rtos_log": "20260723-173046_rtos.log",
+  "oee_log": "20260723-173046_oee.log"
+}

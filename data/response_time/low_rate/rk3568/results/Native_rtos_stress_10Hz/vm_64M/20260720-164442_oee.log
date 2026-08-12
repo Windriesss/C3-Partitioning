@@ -1,0 +1,52 @@
+(XEN) arch/arm/traps.c:2086:d1v0 HSR=0x00000093010005 pc=0x0000002401bfbc gva=0x60000ac4 gpa=0x00000060000ac4
+(XEN) !!!!!!!!!!!!!set gicv3 interrupt injection
+(XEN) arch/arm/traps.c:2086:d1v0 HSR=0x00000093010005 pc=0x0000002401bfbc gva=0x60000ac4 gpa=0x00000060000ac4
+(XEN) !!!!!!!!!!!!!set gicv3 interrupt injection
+(XEN) arch/arm/traps.c:2086:d1v0 HSR=0x00000093010005 pc=0x0000002401bfbc gva=0x60000ac4 gpa=0x00000060000ac4
+(XEN) !!!!!!!!!!!!!set gicv3 interrupt injection
+(XEN) arch/arm/traps.c:2086:d1v0 HSR=0x00000093010005 pc=0x0000002401bfbc gva=0x60000ac4 gpa=0x00000060000ac4
+(XEN) !!!!!!!!!!!!!set gicv3 interrupt injection
+(XEN) arch/arm/traps.c:2086:d1v0 HSR=0x00000093010005 pc=0x0000002401bfbc gva=0x60000ac4 gpa=0x00000060000ac4
+(XEN) !!!!!!!!!!!!!set gicv3 interrupt injection
+(XEN) arch/arm/traps.c:2086:d1v0 HSR=0x00000093010005 pc=0x0000002401bfbc gva=0x60000ac4 gpa=0x00000060000ac4
+(XEN) !!!!!!!!!!!!!set gicv3 interrupt injection
+(XEN) arch/arm/traps.c:2086:d1v0 HSR=0x00000093010005 pc=0x0000002401bfbc gva=0x60000ac4 gpa=0x00000060000ac4
+(XEN) !!!!!!!!!!!!!set gicv3 interrupt injection
+(XEN) arch/arm/traps.c:2086:d1v0 HSR=0x00000093010005 pc=0x0000002401bfbc gva=0x60000ac4 gpa=0x00000060000ac4
+(XEN) !!!!!!!!!!!!!set gicv3 interrupt injection
+(XEN) arch/arm/traps.c:2086:d1v0 HSR=0x00000093010005 pc=0x0000002401bfbc gva=0x60000ac4 gpa=0x00000060000ac4
+(XEN) !!!!!!!!!!!!!set gicv3 interrupt injection
+(XEN) arch/arm/traps.c:2086:d1v0 HSR=0x00000093010005 pc=0x0000002401bfbc gva=0x60000ac4 gpa=0x00000060000ac4
+(XEN) !!!!!!!!!!!!!set gicv3 interrupt injection
+(XEN) arch/arm/traps.c:2086:d1v0 HSR=0x00000093010005 pc=0x0000002401bfbc gva=0x60000ac4 gpa=0x00000060000ac4
+(XEN) !!!!!!!!!!!!!set gicv3 interrupt injection
+(XEN) arch/arm/traps.c:2086:d1v0 HSR=0x00000093010005 pc=0x0000002401bfbc gva=0x60000ac4 gpa=0x00000060000ac4
+(XEN) !!!!!!!!!!!!!set gicv3 interrupt injection
+(XEN) arch/arm/traps.c:2086:d1v0 HSR=0x00000093010005 pc=0x0000002401bfbc gva=0x60000ac4 gpa=0x00000060000ac4
+(XEN) !!!!!!!!!!!!!set gicv3 interrupt injection
+(XEN) arch/arm/traps.c:2086:d1v0 HSR=0x00000093010005 pc=0x0000002401bfbc gva=0x60000ac4 gpa=0x00000060000ac4
+(XEN) !!!!!!!!!!!!!set gicv3 interrupt injection
+(XEN) arch/arm/traps.c:2086:d1v0 HSR=0x00000093010005 pc=0x0000002401bfbc gva=0x60000ac4 gpa=0x00000060000ac4
+(XEN) !!!!!!!!!!!!!set gicv3 interrupt injection
+(XEN) arch/arm/traps.c:2086:d1v0 HSR=0x00000093010005 pc=0x0000002401bfbc gva=0x60000ac4 gpa=0x00000060000ac4
+(XEN) !!!!!!!!!!!!!set gicv3 interrupt injection
+(XEN) arch/arm/traps.c:2086:d1v0 HSR=0x00000093010005 pc=0x0000002401bfbc gva=0x60000ac4 gpa=0x00000060000ac4
+(XEN) !!!!!!!!!!!!!set gicv3 interrupt injection
+(XEN) arch/arm/traps.c:2086:d1v0 HSR=0x00000093010005 pc=0x0000002401bfbc gva=0x60000ac4 gpa=0x00000060000ac4
+(XEN) !!!!!!!!!!!!!set gicv3 interrupt injection
+(XEN) arch/arm/traps.c:2086:d1v0 HSR=0x00000093010005 pc=0x0000002401bfbc gva=0x60000ac4 gpa=0x00000060000ac4
+(XEN) !!!!!!!!!!!!!set gicv3 interrupt injection
+(XEN) arch/arm/traps.c:2086:d1v0 HSR=0x00000093010005 pc=0x0000002401bfbc gva=0x60000ac4 gpa=0x00000060000ac4
+(XEN) !!!!!!!!!!!!!set gicv3 interrupt injection
+(XEN) arch/arm/traps.c:2086:d1v0 HSR=0x00000093010005 pc=0x0000002401bfbc gva=0x60000ac4 gpa=0x00000060000ac4
+(XEN) !!!!!!!!!!!!!set gicv3 interrupt injection
+(XEN) arch/arm/traps.c:2086:d1v0 HSR=0x00000093010005 pc=0x0000002401bfbc gva=0x60000ac4 gpa=0x00000060000ac4
+(XEN) !!!!!!!!!!!!!set gicv3 interrupt injection
+(XEN) arch/arm/traps.c:2086:d1v0 HSR=0x00000093010005 pc=0x0000002401bfbc gva=0x60000ac4 gpa=0x00000060000ac4
+(XEN) !!!!!!!!!!!!!set gicv3 interrupt injection
+(XEN) arch/arm/traps.c:2086:d1v0 HSR=0x00000093010005 pc=0x0000002401bfbc gva=0x60000ac4 gpa=0x00000060000ac4
+(XEN) !!!!!!!!!!!!!set gicv3 interrupt injection
+(XEN) arch/arm/traps.c:2086:d1v0 HSR=0x00000093010005 pc=0x0000002401bfbc gva=0x60000ac4 gpa=0x00000060000ac4
+(XEN) !!!!!!!!!!!!!set gicv3 interrupt injection
+(XEN) arch/arm/traps.c:2086:d1v0 HSR=0x00000093010005 pc=0x0000002401bfbc gva=0x60000ac4 gpa=0x00000060000ac4
+(XEN) !!!!!!!!!!!!!set gicv3 interrupt injection

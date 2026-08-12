@@ -1,0 +1,21 @@
+{
+  "platform": "rk3588",
+  "experiment": "SP_rtos_idle_1000Hz",
+  "vm_bytes": "1M",
+  "stress_ng": true,
+  "workload": "stress-ng",
+  "started_at": "2026-07-30T02:34:06+0800",
+  "elapsed_seconds": 673.463,
+  "sample_hz": 1000,
+  "expected_pmu_samples": 600000,
+  "minimum_pmu_samples": 600000,
+  "last_pmu_samples": 600000,
+  "bogo_ops": 88436542.0,
+  "stress_pid": 693,
+  "stress_exit_code": 0,
+  "status": "complete",
+  "error": null,
+  "post_run_warning": null,
+  "rtos_log": "20260730-023406_rtos.log",
+  "oee_log": "20260730-023406_oee.log"
+}

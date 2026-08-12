@@ -1,0 +1,7 @@
+﻿condition,method,mean_us,std_us,samples,source
+idle,Native,9932.000,22.390,7,data/response_time/main/rk3588/result_yolov8n_FFT/Native/Native_idle
+idle,WP,11224.857,20.095,7,data/response_time/main/rk3588/result_yolov8n_FFT/WP/WP_idle
+idle,SP,10415.143,13.158,7,data/response_time/main/rk3588/result_yolov8n_FFT/SP/SP_idle
+yolov8n,Native,12434.400,351.666,5,data/response_time/main/rk3588/result_yolov8n_FFT/Native/Native_yolov8n
+yolov8n,WP,11723.286,142.522,7,data/response_time/main/rk3588/result_yolov8n_FFT/WP/WP_yolov8n
+yolov8n,SP,10880.000,139.769,7,data/response_time/main/rk3588/result_yolov8n_FFT/SP/SP_yolov8n

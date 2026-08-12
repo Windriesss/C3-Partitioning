@@ -1,0 +1,19 @@
+{
+  "platform": "rk3588",
+  "experiment": "TaskColoring_8-16_rtos_stress_10Hz",
+  "vm_bytes": "512K",
+  "stress_ng": true,
+  "started_at": "2026-07-21T09:03:10+0800",
+  "elapsed_seconds": 665.674,
+  "sample_hz": 10,
+  "expected_pmu_samples": 6000,
+  "minimum_pmu_samples": 6000,
+  "last_pmu_samples": 6000,
+  "bogo_ops": 96742247.0,
+  "stress_pid": 700,
+  "stress_exit_code": 0,
+  "status": "complete",
+  "error": null,
+  "rtos_log": "20260721-090310_rtos.log",
+  "oee_log": "20260721-090310_oee.log"
+}

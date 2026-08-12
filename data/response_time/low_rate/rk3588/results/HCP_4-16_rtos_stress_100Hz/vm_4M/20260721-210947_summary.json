@@ -1,0 +1,19 @@
+{
+  "platform": "rk3588",
+  "experiment": "HCP_4-16_rtos_stress_100Hz",
+  "vm_bytes": "4M",
+  "stress_ng": true,
+  "started_at": "2026-07-21T21:09:47+0800",
+  "elapsed_seconds": 698.785,
+  "sample_hz": 100,
+  "expected_pmu_samples": 60000,
+  "minimum_pmu_samples": 60000,
+  "last_pmu_samples": 60000,
+  "bogo_ops": 78540301.0,
+  "stress_pid": 698,
+  "stress_exit_code": 0,
+  "status": "complete",
+  "error": null,
+  "rtos_log": "20260721-210947_rtos.log",
+  "oee_log": "20260721-210947_oee.log"
+}

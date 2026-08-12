@@ -1,0 +1,5 @@
+workload,source,entry_point,description
+FFT,fft/fft_cache_test.c,fft_cache_test_demo,Deterministic fixed-point FFT cache benchmark for 32K/64K/128K complex-point inputs
+Franka,franka/demo_timer_task_coloring.c,timer_rt_test_demo,Periodic Franka Cartesian-impedance control workload with cache coloring and PMU measurement
+Franka,franka/franka_cartesian_impedance_kernel.c,FrankaCartesianImpedanceKernelStep,RTOS Cartesian-impedance controller computation
+Franka,franka/franka_cartesian_impedance_kernel.h,FrankaCartesianImpedanceKernelStep,Public data structures and controller interface

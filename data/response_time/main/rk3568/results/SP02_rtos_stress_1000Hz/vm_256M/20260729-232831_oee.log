@@ -1,0 +1,2224 @@
+ 0 
+ethernet@fe010000 Waiting for PHY auto negotiation to complete.. done
+Using ethernet@fe010000 device
+TFTP from server 202.197.68.3; our IP address is 202.197.68.50
+Filename 'OK3568/xen-uImage.ok3568'.
+Load address: 0x2000000
+Loading: *#################################################################
+	 ###########################
+	 253.9 KiB/s
+done
+Bytes transferred = 1343576 (148058 hex)
+Using ethernet@fe010000 device
+TFTP from server 202.197.68.3; our IP address is 202.197.68.50
+Filename 'OK3568/OK3568-C-xen.dtb'.
+Load address: 0x1f00000
+Loading: *############
+	 2.4 MiB/s
+done
+Bytes transferred = 171580 (29e3c hex)
+Using ethernet@fe010000 device
+TFTP from server 202.197.68.3; our IP address is 202.197.68.50
+Filename 'OK3568/Image'.
+Load address: 0x3f80000
+Loading: *#################################################################
+	 #################################################################
+	 #################################################################
+	 #################################################################
+	 #################################################################
+	 #################################################################
+	 #################################################################
+	 #################################################################
+	 #################################################################
+	 #################################################################
+	 #################################################################
+	 #################################################################
+	 #################################################################
+	 #################################################################
+	 #################################################################
+	 #################################################################
+	 #################################################################
+	 #################################################################
+	 #################################################################
+	 #################################################################
+	 #################################################################
+	 #################################################################
+	 #################################################################
+	 #################################################################
+	 #################################################################
+	 #################################################################
+	 #################################################################
+	 #################################################################
+	 #################################################################
+	 #################################################################
+	 #################################################################
+	 #################################################################
+	 #################################################################
+	 #################################################################
+	 #################################################################
+	 #################################################################
+	 #################################################################
+	 ###
+	 13.7 MiB/s
+done
+Bytes transferred = 35340296 (21b4008 hex)
+Using ethernet@fe010000 device
+TFTP from server 202.197.68.3; our IP address is 202.197.68.50
+Filename 'OK3568/qsemos-rt.bin'.
+Load address: 0x7000000
+Loading: *###########################
+	 4 MiB/s
+done
+Bytes transferred = 389584 (5f1d0 hex)
+Using ethernet@fe010000 device
+TFTP from server 202.197.68.3; our IP address is 202.197.68.50
+Filename 'OK3568/OK3568-C-uniproton.dtb'.
+Load address: 0xa100000
+Loading: *#
+	 27.3 KiB/s
+done
+Bytes transferred = 1908 (774 hex)
+Fdt Ramdisk skip relocation
+## Booting kernel from Legacy Image at 02000000 ...
+   Image Name:   
+   Image Type:   AArch64 Linux Kernel Image (uncompressed)
+   Data Size:    1343512 Bytes = 1.3 MiB
+   Load Address: 02000000
+   Entry Point:  02000000
+   Verifying Checksum ... OK
+## Flattened Device Tree blob at 0x01f00000
+   Booting using the fdt blob at 0x01f00000
+   Loading Kernel Image from 0x02000040 to 0x02000000 ... OK
+   kernel loaded at 0x02000000, end = 0x02148018
+images.os.start = 0x2000000, images.os.end = 0x2148058
+images.os.load = 0x2000000, load_end = 0x2148018
+  'reserved-memory' ramoops@110000: addr=110000 size=f0000
+   Using Device Tree in place at 0000000001f00000, end 0000000001f2ce3b
+vp0, plane_mask:0x3f, primary-id:4, curser-id:0
+error: faild to find correct plane as cursor plane
+vp1, plane_mask:0x0, primary-id:0, curser-id:-1
+vp2, plane_mask:0x0, primary-id:0, curser-id:-1
+dsi edp default off
+lvds rgb default off
+Adding bank: 0x00200000 - 0x08400000 (size: 0x08200000)
+Adding bank: 0x09400000 - 0x80000000 (size: 0x76c00000)
+Total: 16361.503 ms
+
+Starting kernel ...
+
+- UART enabled -
+- Boot CPU booting -
+- Current EL 0000000000000008 -
+- Initialize CPU -
+- Turning on paging -
+- Paging turned on -
+- Zero BSS -
+- Ready -
+(XEN) Checking for initrd in /chosen
+(XEN) Checking for "xen,static-mem" in domain node
+(XEN) RAM: 0000000000200000 - 00000000083fffff
+(XEN) RAM: 0000000009400000 - 000000007fffffff
+(XEN) 
+(XEN) MODULE[0]: 0000000002000000 - 0000000002195fff Xen         
+(XEN) MODULE[1]: 0000000001f00000 - 0000000001f2afff Device Tree 
+(XEN) MODULE[2]: 0000000003f80000 - 0000000006f7ffff Kernel      
+(XEN) MODULE[3]: 0000000007000000 - 0000000007ffffff Kernel      
+(XEN) MODULE[4]: 000000000a100000 - 000000000a11ffff DTB         
+(XEN)  RESVD[0]: 000000007df00000 - 000000007dfafe75
+(XEN)  RESVD[1]: 000000007ff00000 - 000000007ff07fff
+(XEN)  RESVD[2]: 0000000000110000 - 00000000001fffff
+(XEN) 
+(XEN) CMDLINE[0000000007000000]:domU1 root=/dev/ram rw console=ttyS0,115200n8
+(XEN) 
+(XEN) Command line: iommu=on llc-coloring=on xen-llc-colors=1 dom0-llc-colors=3-7 llc-size=512K llc-nr-ways=16 dom0_mem=700M dom0_max_vcpus=3 dom0_cpufreq=true dom0_vcpus_pin=true console=dtuart dtuart=serial2 bootscrub=0 flask_enforcing=1 gnttab_max_frames=64 hmp-unsafe=true loglvl=all guest_loglvl=all
+(XEN) parameter "flask_enforcing" unknown!
+(XEN) Placing Xen at 0x000000007f000000-0x000000007fe00000
+(XEN) LLC-COLOR end_boot_allocator v5: enabled=1 nr_bootmem_regions=10 buddy_alloc_size=67108864
+(XEN) LLC-COLOR bootmem[0]: s=0x200 e=0x1f00 pages=7424 nid=0 cpu_node0=0
+(XEN) LLC-COLOR bootmem[1]: s=0x1f2b e=0x3f80 pages=8277 nid=0 cpu_node0=0
+(XEN) LLC-COLOR bootmem[2]: s=0x6f80 e=0x7000 pages=128 nid=0 cpu_node0=0
+(XEN) LLC-COLOR bootmem[3]: s=0x8000 e=0x8400 pages=1024 nid=0 cpu_node0=0
+(XEN) LLC-COLOR bootmem[4]: s=0x9400 e=0xa100 pages=3328 nid=0 cpu_node0=0
+(XEN) LLC-COLOR bootmem[5]: s=0xa120 e=0x7c000 pages=466656 nid=0 cpu_node0=0
+(XEN) LLC-COLOR bootmem[6]: s=0x7dc00 e=0x7df00 pages=768 nid=0 cpu_node0=0
+(XEN) LLC-COLOR bootmem[7]: s=0x7dfb0 e=0x7f000 pages=4176 nid=0 cpu_node0=0
+(XEN) LLC-COLOR bootmem[8]: s=0x7fe00 e=0x7ff00 pages=256 nid=0 cpu_node0=0
+(XEN) LLC-COLOR bootmem[9]: s=0x7ff08 e=0x7fffa pages=242 nid=0 cpu_node0=0
+(XEN) LLC-COLOR init_color_heap_pages: mfn=0x7ff08 nr_pages=242 (968KB) buddy_alloc_size=67108864
+(XEN) LLC-COLOR reserve buddy: mfn=0x7ff08 pages=242 (968KB)
+(XEN) @@@@@@@init_heap_pages: mfn=524040, nr_pages=242
+(XEN) LLC-COLOR allocate color heap arrays: max_nr_colors=8 remaining_pages=0
+(XEN) LLC-COLOR add colored pages: mfn=0x7fffa pages=0 (0KB)
+(XEN) LLC-COLOR init_color_heap_pages: mfn=0x7fe00 nr_pages=256 (1024KB) buddy_alloc_size=66117632
+(XEN) LLC-COLOR reserve buddy: mfn=0x7fe00 pages=256 (1024KB)
+(XEN) @@@@@@@init_heap_pages: mfn=523776, nr_pages=256
+(XEN) LLC-COLOR add colored pages: mfn=0x7ff00 pages=0 (0KB)
+(XEN) LLC-COLOR init_color_heap_pages: mfn=0x7dfb0 nr_pages=4176 (16704KB) buddy_alloc_size=65069056
+(XEN) LLC-COLOR reserve buddy: mfn=0x7dfb0 pages=4176 (16704KB)
+(XEN) @@@@@@@init_heap_pages: mfn=516016, nr_pages=4176
+(XEN) LLC-COLOR add colored pages: mfn=0x7f000 pages=0 (0KB)
+(XEN) LLC-COLOR init_color_heap_pages: mfn=0x7dc00 nr_pages=768 (3072KB) buddy_alloc_size=47964160
+(XEN) LLC-COLOR reserve buddy: mfn=0x7dc00 pages=768 (3072KB)
+(XEN) @@@@@@@init_heap_pages: mfn=515072, nr_pages=768
+(XEN) LLC-COLOR add colored pages: mfn=0x7df00 pages=0 (0KB)
+(XEN) LLC-COLOR init_color_heap_pages: mfn=0xa120 nr_pages=466656 (1866624KB) buddy_alloc_size=44818432
+(XEN) LLC-COLOR reserve buddy: mfn=0xa120 pages=10942 (43768KB)
+(XEN) @@@@@@@init_heap_pages: mfn=41248, nr_pages=10942
+(XEN) LLC-COLOR add colored pages: mfn=0xcbde pages=455714 (1822856KB)
+(XEN) LLC-COLOR init_color_heap_pages: mfn=0x9400 nr_pages=3328 (13312KB) buddy_alloc_size=0
+(XEN) LLC-COLOR add colored pages: mfn=0x9400 pages=3328 (13312KB)
+(XEN) LLC-COLOR init_color_heap_pages: mfn=0x8000 nr_pages=1024 (4096KB) buddy_alloc_size=0
+(XEN) LLC-COLOR add colored pages: mfn=0x8000 pages=1024 (4096KB)
+(XEN) LLC-COLOR init_color_heap_pages: mfn=0x6f80 nr_pages=128 (512KB) buddy_alloc_size=0
+(XEN) LLC-COLOR add colored pages: mfn=0x6f80 pages=128 (512KB)
+(XEN) LLC-COLOR init_color_heap_pages: mfn=0x1f2b nr_pages=8277 (33108KB) buddy_alloc_size=0
+(XEN) LLC-COLOR add colored pages: mfn=0x1f2b pages=8277 (33108KB)
+(XEN) LLC-COLOR init_color_heap_pages: mfn=0x200 nr_pages=7424 (29696KB) buddy_alloc_size=0
+(XEN) LLC-COLOR add colored pages: mfn=0x200 pages=7424 (29696KB)
+(XEN) Dumping color heap info
+(XEN) Color heap[0]: 59486 pages (237944KB)
+(XEN) Color heap[1]: 59486 pages (237944KB)
+(XEN) Color heap[2]: 59486 pages (237944KB)
+(XEN) Color heap[3]: 59487 pages (237948KB)
+(XEN) Color heap[4]: 59487 pages (237948KB)
+(XEN) Color heap[5]: 59487 pages (237948KB)
+(XEN) Color heap[6]: 59488 pages (237952KB)
+(XEN) Color heap[7]: 59488 pages (237952KB)
+(XEN) Domain heap initialised
+(XEN) Booting using Device Tree
+(XEN) Platform: rockchip
+(XEN) Looking for dtuart at "serial2", options ""
+(XEN) Automatic baud rate determination was requested, but a baud rate was not set up
+Xen 4.20-rc
+(XEN) Xen version 4.20-rc (dministrator@localdomain) (aarch64-openeuler-linux-gcc (crosstool-NG 1.26.0) 12.3.1) debug=y Thu Jul 23 17:25:15 CST 2026
+(XEN) Latest ChangeSet: Thu May 21 19:42:04 2026 +0800 git:13c54a8482-dirty
+(XEN) build-id: 47933f6164eb0f59ffb733848436af6e46996bae
+(XEN) Processor: 00000000412fd050: "ARM Limited", variant: 0x2, part 0xd05,rev 0x0
+(XEN) 64-bit Execution:
+(XEN)   Processor Features: 0000000011112222 0000000000000010
+(XEN)     Exception Levels: EL3:64+32 EL2:64+32 EL1:64+32 EL0:64+32
+(XEN)     Extensions: FloatingPoint AdvancedSIMD GICv3-SysReg
+(XEN)   Debug Features: 0000000010305408 0000000000000000
+(XEN)   Auxiliary Features: 0000000000000000 0000000000000000
+(XEN)   Memory Model Features: 0000000000101122 0000000010212122
+(XEN)   ISA Features:  0000100010211120 0000000000100001
+(XEN) 32-bit Execution:
+(XEN)   Processor Features: 0000000010000131:0000000010011011
+(XEN)     Instruction Sets: AArch32 A32 Thumb Thumb-2 Jazelle
+(XEN)     Extensions: GenericTimer Security
+(XEN)   Debug Features: 0000000004010088
+(XEN)   Auxiliary Features: 0000000000000000
+(XEN)   Memory Model Features: 0000000010201105 0000000040000000
+(XEN)                          0000000001260000 0000000002122211
+(XEN)   ISA Features: 0000000002101110 0000000013112111 0000000021232042
+(XEN)                 0000000001112131 0000000000011142 0000000001011121
+(XEN) Using SMC Calling Convention v1.2
+(XEN) Using PSCI v1.1
+(XEN) SMP: Allowing 4 CPUs
+(XEN) enabled workaround for: ARM erratum 1530923
+(XEN) Generic Timer IRQ: phys=30 hyp=26 virt=27 Freq: 24000 KHz
+(XEN) GICv3 initialization:
+(XEN)       gic_dist_addr=0x000000fd400000
+(XEN)       gic_maintenance_irq=25
+(XEN)       gic_rdist_stride=0
+(XEN)       gic_rdist_regions=1
+(XEN)       redistributor regions:
+(XEN)         - region 0: 0x000000fd460000 - 0x000000fd520000
+(XEN) GICv3: using at most 57344 LPIs on the host.
+(XEN) GICv3: 352 lines, (IID 0201743b).
+(XEN) GICv3: Found ITS @0xfd440000
+(XEN) GICv3: enabling workaround for ITS: R-Car Gen4
+(XEN) using non-cacheable ITS command queue
+(XEN) GICv3: CPU0: Found redistributor in region 0 @00000a004001c000
+(XEN) XSM Framework v1.0.1 initialized
+(XEN) Initialising XSM SILO mode
+(XEN) Using scheduler: SMP Credit Scheduler rev2 (credit2)
+(XEN) Initializing Credit2 scheduler
+(XEN)  load_precision_shift: 18
+(XEN)  load_window_shift: 30
+(XEN)  underload_balance_tolerance: 0
+(XEN)  overload_balance_tolerance: -3
+(XEN)  runqueues arrangement: socket
+(XEN)  cap enforcement granularity: 10ms
+(XEN) load tracking window length 1073741824 ns
+(XEN) Allocated console ring of 32 KiB.
+(XEN) CPU0: Guest atomics will try 10 times before pausing the domain
+(XEN) Bringing up CPU1
+I/TC: Secondary CPU 1 initializing
+I/TC: Secondary CPU 1 switching to normal world boot
+- CPU 0000000000000100 booting -
+- Current EL 0000000000000008 -
+- Initialize CPU -
+- Turning on paging -
+- Paging turned on -
+- Ready -
+(XEN) GICv3: CPU1: Found redistributor in region 0 @00000a004003c000
+(XEN) CPU1: Guest atomics will try 12 times before pausing the domain
+(XEN) CPU 1 booted.
+(XEN) Bringing up CPU2
+I/TC: Secondary CPU 2 initializing
+I/TC: Secondary CPU 2 switching to normal world boot
+- CPU 0000000000000200 booting -
+- Current EL 0000000000000008 -
+- Initialize CPU -
+- Turning on paging -
+- Paging turned on -
+- Ready -
+(XEN) GICv3: CPU2: Found redistributor in region 0 @00000a004005c000
+(XEN) CPU2: Guest atomics will try 11 times before pausing the domain
+(XEN) CPU 2 booted.
+(XEN) Bringing up CPU3
+I/TC: Secondary CPU 3 initializing
+I/TC: Secondary CPU 3 switching to normal world boot
+- CPU 0000000000000300 booting -
+- Current EL 0000000000000008 -
+- Initialize CPU -
+- Turning on paging -
+- Paging turned on -
+- Ready -
+(XEN) GICv3: CPU3: Found redistributor in region 0 @00000a004007c000
+(XEN) CPU3: Guest atomics will try 13 times before pausing the domain
+(XEN) Brought up 4 CPUs
+(XEN) CPU 3 booted.
+(XEN) I/O virtualisation disabled
+(XEN) P2M: 40-bit IPA with 40-bit PA and 16-bit VMID
+(XEN) P2M: 3 levels with order-1 root, VTCR 0x00000000800a3558
+(XEN) Scheduling granularity: cpu, 1 CPU per sched-resource
+(XEN) Initializing Credit2 scheduler
+(XEN)  load_precision_shift: 18
+(XEN)  load_window_shift: 30
+(XEN)  underload_balance_tolerance: 0
+(XEN)  overload_balance_tolerance: -3
+(XEN)  runqueues arrangement: socket
+(XEN)  cap enforcement granularity: 10ms
+(XEN) load tracking window length 1073741824 ns
+(XEN) Adding cpu 0 to runqueue 0
+(XEN)  First cpu on runqueue, activating
+(XEN) Adding cpu 1 to runqueue 0
+(XEN) Adding cpu 2 to runqueue 0
+(XEN) Adding cpu 3 to runqueue 0
+(XEN) Using SCMI with SMC ID: 0x82000010
+(XEN) alternatives: Patching with alt table 00000a000030f078 -> 00000a000031089c
+(XEN) *** LOADING DOMAIN 0 ***
+(XEN) Loading d0 kernel from boot module @ 0000000003f80000
+(XEN) Grant table range: 0x0000007f001000-0x0000007f041000
+(XEN) ======mylog====== Using normal memory map for dom0
+(XEN) Allocating mappings totalling 700MB for d0:
+(XEN) ======= mylog ====== bank_start = 0x9400000, bank_size = 0x2bc00000
+(XEN) allocate_bank_memory: d0 bank=0 start=0x9400000 size=0x2bc00000 (716800KB) sgfn=0x9400 llc_coloring=1
+(XEN) 5 LLC colors: { 3-7 }
+(XEN) LLC-FIXCOLOR allocate_domheap_memory: d=d0 tot=0x2bc00000 llc=1 fixed=1 colors=5 cb_guest_map=1
+(XEN) LLC-FIXCOLOR DOM d0 map: order=0 gfn=0x9400 mfn=0x1efe host_color=6 color_idx=3 guest_color=6
+(XEN) LLC-FIXCOLOR DOM d0 map: order=0 gfn=0x9401 mfn=0x1ef7 host_color=7 color_idx=4 guest_color=7
+(XEN) LLC-FIXCOLOR DOM d0 map: order=0 gfn=0x9402 mfn=0x1ef3 host_color=3 color_idx=0 guest_color=3
+(XEN) LLC-FIXCOLOR DOM d0 map: order=0 gfn=0x9403 mfn=0x1efc host_color=4 color_idx=1 guest_color=4
+(XEN) LLC-FIXCOLOR DOM d0 map: order=0 gfn=0x9404 mfn=0x1efd host_color=5 color_idx=2 guest_color=5
+(XEN) LLC-FIXCOLOR DOM d0 map: order=0 gfn=0x9405 mfn=0x1ef6 host_color=6 color_idx=3 guest_color=6
+(XEN) LLC-FIXCOLOR DOM d0 map: order=0 gfn=0x9406 mfn=0x1eef host_color=7 color_idx=4 guest_color=7
+(XEN) LLC-FIXCOLOR DOM d0 map: order=0 gfn=0x9407 mfn=0x1eeb host_color=3 color_idx=0 guest_color=3
+(XEN) LLC-FIXCOLOR DOM d0 map: order=0 gfn=0x9408 mfn=0x1ef4 host_color=4 color_idx=1 guest_color=4
+(XEN) LLC-FIXCOLOR DOM d0 map: order=0 gfn=0x9409 mfn=0x1ef5 host_color=5 color_idx=2 guest_color=5
+(XEN) LLC-FIXCOLOR DOM d0 map: order=0 gfn=0x940a mfn=0x1eee host_color=6 color_idx=3 guest_color=6
+(XEN) LLC-FIXCOLOR DOM d0 map: order=0 gfn=0x940b mfn=0x1ee7 host_color=7 color_idx=4 guest_color=7
+(XEN) LLC-FIXCOLOR DOM d0 map: order=0 gfn=0x940c mfn=0x1ee3 host_color=3 color_idx=0 guest_color=3
+(XEN) LLC-FIXCOLOR DOM d0 map: order=0 gfn=0x940d mfn=0x1eec host_color=4 color_idx=1 guest_color=4
+(XEN) LLC-FIXCOLOR DOM d0 map: order=0 gfn=0x940e mfn=0x1eed host_color=5 color_idx=2 guest_color=5
+(XEN) LLC-FIXCOLOR DOM d0 map: order=0 gfn=0x940f mfn=0x1ee6 host_color=6 color_idx=3 guest_color=6
+(XEN) LLC-FIXCOLOR DOM d0 map: order=0 gfn=0x9410 mfn=0x1edf host_color=7 color_idx=4 guest_color=7
+(XEN) LLC-FIXCOLOR DOM d0 map: order=0 gfn=0x9411 mfn=0x1edb host_color=3 color_idx=0 guest_color=3
+(XEN) LLC-FIXCOLOR DOM d0 map: order=0 gfn=0x9412 mfn=0x1ee4 host_color=4 color_idx=1 guest_color=4
+(XEN) LLC-FIXCOLOR DOM d0 map: order=0 gfn=0x9413 mfn=0x1ee5 host_color=5 color_idx=2 guest_color=5
+(XEN) LLC-FIXCOLOR DOM d0 map: order=0 gfn=0x9414 mfn=0x1ede host_color=6 color_idx=3 guest_color=6
+(XEN) LLC-FIXCOLOR DOM d0 map: order=0 gfn=0x9415 mfn=0x1ed7 host_color=7 color_idx=4 guest_color=7
+(XEN) LLC-FIXCOLOR DOM d0 map: order=0 gfn=0x9416 mfn=0x1ed3 host_color=3 color_idx=0 guest_color=3
+(XEN) LLC-FIXCOLOR DOM d0 map: order=0 gfn=0x9417 mfn=0x1edc host_color=4 color_idx=1 guest_color=4
+(XEN) LLC-FIXCOLOR DOM d0 map: order=0 gfn=0x9418 mfn=0x1edd host_color=5 color_idx=2 guest_color=5
+(XEN) LLC-FIXCOLOR DOM d0 map: order=0 gfn=0x9419 mfn=0x1ed6 host_color=6 color_idx=3 guest_color=6
+(XEN) LLC-FIXCOLOR DOM d0 map: order=0 gfn=0x941a mfn=0x1ecf host_color=7 color_idx=4 guest_color=7
+(XEN) LLC-FIXCOLOR DOM d0 map: order=0 gfn=0x941b mfn=0x1ecb host_color=3 color_idx=0 guest_color=3
+(XEN) LLC-FIXCOLOR DOM d0 map: order=0 gfn=0x941c mfn=0x1ed4 host_color=4 color_idx=1 guest_color=4
+(XEN) LLC-FIXCOLOR DOM d0 map: order=0 gfn=0x941d mfn=0x1ed5 host_color=5 color_idx=2 guest_color=5
+(XEN) LLC-FIXCOLOR DOM d0 map: order=0 gfn=0x941e mfn=0x1ece host_color=6 color_idx=3 guest_color=6
+(XEN) LLC-FIXCOLOR DOM d0 map: order=0 gfn=0x941f mfn=0x1ec7 host_color=7 color_idx=4 guest_color=7
+(XEN) LLC-FIXCOLOR DOM d0 map: order=0 gfn=0x9420 mfn=0x1ec3 host_color=3 color_idx=0 guest_color=3
+(XEN) LLC-FIXCOLOR DOM d0 map: order=0 gfn=0x9421 mfn=0x1ecc host_color=4 color_idx=1 guest_color=4
+(XEN) LLC-FIXCOLOR DOM d0 map: order=0 gfn=0x9422 mfn=0x1ecd host_color=5 color_idx=2 guest_color=5
+(XEN) LLC-FIXCOLOR DOM d0 map: order=0 gfn=0x9423 mfn=0x1ec6 host_color=6 color_idx=3 guest_color=6
+(XEN) LLC-FIXCOLOR DOM d0 map: order=0 gfn=0x9424 mfn=0x1ebf host_color=7 color_idx=4 guest_color=7
+(XEN) LLC-FIXCOLOR DOM d0 map: order=0 gfn=0x9425 mfn=0x1ebb host_color=3 color_idx=0 guest_color=3
+(XEN) LLC-FIXCOLOR DOM d0 map: order=0 gfn=0x9426 mfn=0x1ec4 host_color=4 color_idx=1 guest_color=4
+(XEN) LLC-FIXCOLOR DOM d0 map: order=0 gfn=0x9427 mfn=0x1ec5 host_color=5 color_idx=2 guest_color=5
+(XEN) LLC-FIXCOLOR DOM d0 map: order=0 gfn=0x9428 mfn=0x1ebe host_color=6 color_idx=3 guest_color=6
+(XEN) LLC-FIXCOLOR DOM d0 map: order=0 gfn=0x9429 mfn=0x1eb7 host_color=7 color_idx=4 guest_color=7
+(XEN) LLC-FIXCOLOR DOM d0 map: order=0 gfn=0x942a mfn=0x1eb3 host_color=3 color_idx=0 guest_color=3
+(XEN) LLC-FIXCOLOR DOM d0 map: order=0 gfn=0x942b mfn=0x1ebc host_color=4 color_idx=1 guest_color=4
+(XEN) LLC-FIXCOLOR DOM d0 map: order=0 gfn=0x942c mfn=0x1ebd host_color=5 color_idx=2 guest_color=5
+(XEN) LLC-FIXCOLOR DOM d0 map: order=0 gfn=0x942d mfn=0x1eb6 host_color=6 color_idx=3 guest_color=6
+(XEN) LLC-FIXCOLOR DOM d0 map: order=0 gfn=0x942e mfn=0x1eaf host_color=7 color_idx=4 guest_color=7
+(XEN) LLC-FIXCOLOR DOM d0 map: order=0 gfn=0x942f mfn=0x1eab host_color=3 color_idx=0 guest_color=3
+(XEN) LLC-FIXCOLOR DOM d0 map: order=0 gfn=0x9430 mfn=0x1eb4 host_color=4 color_idx=1 guest_color=4
+(XEN) LLC-FIXCOLOR DOM d0 map: order=0 gfn=0x9431 mfn=0x1eb5 host_color=5 color_idx=2 guest_color=5
+(XEN) LLC-FIXCOLOR DOM d0 map: order=0 gfn=0x9432 mfn=0x1eae host_color=6 color_idx=3 guest_color=6
+(XEN) LLC-FIXCOLOR DOM d0 map: order=0 gfn=0x9433 mfn=0x1ea7 host_color=7 color_idx=4 guest_color=7
+(XEN) LLC-FIXCOLOR DOM d0 map: order=0 gfn=0x9434 mfn=0x1ea3 host_color=3 color_idx=0 guest_color=3
+(XEN) LLC-FIXCOLOR DOM d0 map: order=0 gfn=0x9435 mfn=0x1eac host_color=4 color_idx=1 guest_color=4
+(XEN) LLC-FIXCOLOR DOM d0 map: order=0 gfn=0x9436 mfn=0x1ead host_color=5 color_idx=2 guest_color=5
+(XEN) LLC-FIXCOLOR DOM d0 map: order=0 gfn=0x9437 mfn=0x1ea6 host_color=6 color_idx=3 guest_color=6
+(XEN) LLC-FIXCOLOR DOM d0 map: order=0 gfn=0x9438 mfn=0x1e9f host_color=7 color_idx=4 guest_color=7
+(XEN) LLC-FIXCOLOR DOM d0 map: order=0 gfn=0x9439 mfn=0x1e9b host_color=3 color_idx=0 guest_color=3
+(XEN) LLC-FIXCOLOR DOM d0 map: order=0 gfn=0x943a mfn=0x1ea4 host_color=4 color_idx=1 guest_color=4
+(XEN) LLC-FIXCOLOR DOM d0 map: order=0 gfn=0x943b mfn=0x1ea5 host_color=5 color_idx=2 guest_color=5
+(XEN) LLC-FIXCOLOR DOM d0 map: order=0 gfn=0x943c mfn=0x1e9e host_color=6 color_idx=3 guest_color=6
+(XEN) LLC-FIXCOLOR DOM d0 map: order=0 gfn=0x943d mfn=0x1e97 host_color=7 color_idx=4 guest_color=7
+(XEN) LLC-FIXCOLOR DOM d0 map: order=0 gfn=0x943e mfn=0x1e93 host_color=3 color_idx=0 guest_color=3
+(XEN) LLC-FIXCOLOR DOM d0 map: order=0 gfn=0x943f mfn=0x1e9c host_color=4 color_idx=1 guest_color=4
+(XEN) LLC-FIXCOLOR DOM d0 map: order=0 gfn=0x9440 mfn=0x1e9d host_color=5 color_idx=2 guest_color=5
+(XEN) LLC-FIXCOLOR DOM d0 map: order=0 gfn=0x9441 mfn=0x1e96 host_color=6 color_idx=3 guest_color=6
+(XEN) LLC-FIXCOLOR DOM d0 map: order=0 gfn=0x9442 mfn=0x1e8f host_color=7 color_idx=4 guest_color=7
+(XEN) LLC-FIXCOLOR DOM d0 map: order=0 gfn=0x9443 mfn=0x1e8b host_color=3 color_idx=0 guest_color=3
+(XEN) LLC-FIXCOLOR DOM d0 map: order=0 gfn=0x9444 mfn=0x1e94 host_color=4 color_idx=1 guest_color=4
+(XEN) LLC-FIXCOLOR DOM d0 map: order=0 gfn=0x9445 mfn=0x1e95 host_color=5 color_idx=2 guest_color=5
+(XEN) LLC-FIXCOLOR DOM d0 map: order=0 gfn=0x9446 mfn=0x1e8e host_color=6 color_idx=3 guest_color=6
+(XEN) LLC-FIXCOLOR DOM d0 map: order=0 gfn=0x9447 mfn=0x1e87 host_color=7 color_idx=4 guest_color=7
+(XEN) LLC-FIXCOLOR DOM d0 map: order=0 gfn=0x9448 mfn=0x1e83 host_color=3 color_idx=0 guest_color=3
+(XEN) LLC-FIXCOLOR DOM d0 map: order=0 gfn=0x9449 mfn=0x1e8c host_color=4 color_idx=1 guest_color=4
+(XEN) LLC-FIXCOLOR DOM d0 map: order=0 gfn=0x944a mfn=0x1e8d host_color=5 color_idx=2 guest_color=5
+(XEN) LLC-FIXCOLOR DOM d0 map: order=0 gfn=0x944b mfn=0x1e86 host_color=6 color_idx=3 guest_color=6
+(XEN) LLC-FIXCOLOR DOM d0 map: order=0 gfn=0x944c mfn=0x1e7f host_color=7 color_idx=4 guest_color=7
+(XEN) LLC-FIXCOLOR DOM d0 map: order=0 gfn=0x944d mfn=0x1e7b host_color=3 color_idx=0 guest_color=3
+(XEN) LLC-FIXCOLOR DOM d0 map: order=0 gfn=0x944e mfn=0x1e84 host_color=4 color_idx=1 guest_color=4
+(XEN) LLC-FIXCOLOR DOM d0 map: order=0 gfn=0x944f mfn=0x1e85 host_color=5 color_idx=2 guest_color=5
+(XEN) LLC-FIXCOLOR DOM d0 map: order=0 gfn=0x9450 mfn=0x1e7e host_color=6 color_idx=3 guest_color=6
+(XEN) LLC-FIXCOLOR DOM d0 map: order=0 gfn=0x9451 mfn=0x1e77 host_color=7 color_idx=4 guest_color=7
+(XEN) LLC-FIXCOLOR DOM d0 map: order=0 gfn=0x9452 mfn=0x1e73 host_color=3 color_idx=0 guest_color=3
+(XEN) LLC-FIXCOLOR DOM d0 map: order=0 gfn=0x9453 mfn=0x1e7c host_color=4 color_idx=1 guest_color=4
+(XEN) LLC-FIXCOLOR DOM d0 map: order=0 gfn=0x9454 mfn=0x1e7d host_color=5 color_idx=2 guest_color=5
+(XEN) LLC-FIXCOLOR DOM d0 map: order=0 gfn=0x9455 mfn=0x1e76 host_color=6 color_idx=3 guest_color=6
+(XEN) LLC-FIXCOLOR DOM d0 map: order=0 gfn=0x9456 mfn=0x1e6f host_color=7 color_idx=4 guest_color=7
+(XEN) LLC-FIXCOLOR DOM d0 map: order=0 gfn=0x9457 mfn=0x1e6b host_color=3 color_idx=0 guest_color=3
+(XEN) LLC-FIXCOLOR DOM d0 map: order=0 gfn=0x9458 mfn=0x1e74 host_color=4 color_idx=1 guest_color=4
+(XEN) LLC-FIXCOLOR DOM d0 map: order=0 gfn=0x9459 mfn=0x1e75 host_color=5 color_idx=2 guest_color=5
+(XEN) LLC-FIXCOLOR DOM d0 map: order=0 gfn=0x945a mfn=0x1e6e host_color=6 color_idx=3 guest_color=6
+(XEN) LLC-FIXCOLOR DOM d0 map: order=0 gfn=0x945b mfn=0x1e67 host_color=7 color_idx=4 guest_color=7
+(XEN) LLC-FIXCOLOR DOM d0 map: order=0 gfn=0x945c mfn=0x1e63 host_color=3 color_idx=0 guest_color=3
+(XEN) LLC-FIXCOLOR DOM d0 map: order=0 gfn=0x945d mfn=0x1e6c host_color=4 color_idx=1 guest_color=4
+(XEN) LLC-FIXCOLOR DOM d0 map: order=0 gfn=0x945e mfn=0x1e6d host_color=5 color_idx=2 guest_color=5
+(XEN) LLC-FIXCOLOR DOM d0 map: order=0 gfn=0x945f mfn=0x1e66 host_color=6 color_idx=3 guest_color=6
+(XEN) LLC-FIXCOLOR DOM d0 map: order=0 gfn=0x9460 mfn=0x1e5f host_color=7 color_idx=4 guest_color=7
+(XEN) LLC-FIXCOLOR DOM d0 map: order=0 gfn=0x9461 mfn=0x1e5b host_color=3 color_idx=0 guest_color=3
+(XEN) LLC-FIXCOLOR DOM d0 map: order=0 gfn=0x9462 mfn=0x1e64 host_color=4 color_idx=1 guest_color=4
+(XEN) LLC-FIXCOLOR DOM d0 map: order=0 gfn=0x9463 mfn=0x1e65 host_color=5 color_idx=2 guest_color=5
+(XEN) LLC-FIXCOLOR DOM d0 map: order=0 gfn=0x9464 mfn=0x1e5e host_color=6 color_idx=3 guest_color=6
+(XEN) LLC-FIXCOLOR DOM d0 map: order=0 gfn=0x9465 mfn=0x1e57 host_color=7 color_idx=4 guest_color=7
+(XEN) LLC-FIXCOLOR DOM d0 map: order=0 gfn=0x9466 mfn=0x1e53 host_color=3 color_idx=0 guest_color=3
+(XEN) LLC-FIXCOLOR DOM d0 map: order=0 gfn=0x9467 mfn=0x1e5c host_color=4 color_idx=1 guest_color=4
+(XEN) LLC-FIXCOLOR DOM d0 map: order=0 gfn=0x9468 mfn=0x1e5d host_color=5 color_idx=2 guest_color=5
+(XEN) LLC-FIXCOLOR DOM d0 map: order=0 gfn=0x9469 mfn=0x1e56 host_color=6 color_idx=3 guest_color=6
+(XEN) LLC-FIXCOLOR DOM d0 map: order=0 gfn=0x946a mfn=0x1e4f host_color=7 color_idx=4 guest_color=7
+(XEN) LLC-FIXCOLOR DOM d0 map: order=0 gfn=0x946b mfn=0x1e4b host_color=3 color_idx=0 guest_color=3
+(XEN) LLC-FIXCOLOR DOM d0 map: order=0 gfn=0x946c mfn=0x1e54 host_color=4 color_idx=1 guest_color=4
+(XEN) LLC-FIXCOLOR DOM d0 map: order=0 gfn=0x946d mfn=0x1e55 host_color=5 color_idx=2 guest_color=5
+(XEN) LLC-FIXCOLOR DOM d0 map: order=0 gfn=0x946e mfn=0x1e4e host_color=6 color_idx=3 guest_color=6
+(XEN) LLC-FIXCOLOR DOM d0 map: order=0 gfn=0x946f mfn=0x1e47 host_color=7 color_idx=4 guest_color=7
+(XEN) LLC-FIXCOLOR DOM d0 map: order=0 gfn=0x9470 mfn=0x1e43 host_color=3 color_idx=0 guest_color=3
+(XEN) LLC-FIXCOLOR DOM d0 map: order=0 gfn=0x9471 mfn=0x1e4c host_color=4 color_idx=1 guest_color=4
+(XEN) LLC-FIXCOLOR DOM d0 map: order=0 gfn=0x9472 mfn=0x1e4d host_color=5 color_idx=2 guest_color=5
+(XEN) LLC-FIXCOLOR DOM d0 map: order=0 gfn=0x9473 mfn=0x1e46 host_color=6 color_idx=3 guest_color=6
+(XEN) LLC-FIXCOLOR DOM d0 map: order=0 gfn=0x9474 mfn=0x1e3f host_color=7 color_idx=4 guest_color=7
+(XEN) LLC-FIXCOLOR DOM d0 map: order=0 gfn=0x9475 mfn=0x1e3b host_color=3 color_idx=0 guest_color=3
+(XEN) LLC-FIXCOLOR DOM d0 map: order=0 gfn=0x9476 mfn=0x1e44 host_color=4 color_idx=1 guest_color=4
+(XEN) LLC-FIXCOLOR DOM d0 map: order=0 gfn=0x9477 mfn=0x1e45 host_color=5 color_idx=2 guest_color=5
+(XEN) LLC-FIXCOLOR DOM d0 map: order=0 gfn=0x9478 mfn=0x1e3e host_color=6 color_idx=3 guest_color=6
+(XEN) LLC-FIXCOLOR DOM d0 map: order=0 gfn=0x9479 mfn=0x1e37 host_color=7 color_idx=4 guest_color=7
+(XEN) LLC-FIXCOLOR DOM d0 map: order=0 gfn=0x947a mfn=0x1e33 host_color=3 color_idx=0 guest_color=3
+(XEN) LLC-FIXCOLOR DOM d0 map: order=0 gfn=0x947b mfn=0x1e3c host_color=4 color_idx=1 guest_color=4
+(XEN) LLC-FIXCOLOR DOM d0 map: order=0 gfn=0x947c mfn=0x1e3d host_color=5 color_idx=2 guest_color=5
+(XEN) LLC-FIXCOLOR DOM d0 map: order=0 gfn=0x947d mfn=0x1e36 host_color=6 color_idx=3 guest_color=6
+(XEN) LLC-FIXCOLOR DOM d0 map: order=0 gfn=0x947e mfn=0x1e2f host_color=7 color_idx=4 guest_color=7
+(XEN) LLC-FIXCOLOR DOM d0 map: order=0 gfn=0x947f mfn=0x1e2b host_color=3 color_idx=0 guest_color=3
+(XEN) LLC-FIXCOLOR DOM d0 map: order=0 gfn=0x9480 mfn=0x1e34 host_color=4 color_idx=1 guest_color=4
+(XEN) LLC-FIXCOLOR DOM d0 map: order=0 gfn=0x9481 mfn=0x1e35 host_color=5 color_idx=2 guest_color=5
+(XEN) LLC-FIXCOLOR DOM d0 map: order=0 gfn=0x9482 mfn=0x1e2e host_color=6 color_idx=3 guest_color=6
+(XEN) LLC-FIXCOLOR DOM d0 map: order=0 gfn=0x9483 mfn=0x1e27 host_color=7 color_idx=4 guest_color=7
+(XEN) LLC-FIXCOLOR DOM d0 map: order=0 gfn=0x9484 mfn=0x1e23 host_color=3 color_idx=0 guest_color=3
+(XEN) LLC-FIXCOLOR DOM d0 map: order=0 gfn=0x9485 mfn=0x1e2c host_color=4 color_idx=1 guest_color=4
+(XEN) LLC-FIXCOLOR DOM d0 map: order=0 gfn=0x9486 mfn=0x1e2d host_color=5 color_idx=2 guest_color=5
+(XEN) LLC-FIXCOLOR DOM d0 map: order=0 gfn=0x9487 mfn=0x1e26 host_color=6 color_idx=3 guest_color=6
+(XEN) LLC-FIXCOLOR DOM d0 map: order=0 gfn=0x9488 mfn=0x1e1f host_color=7 color_idx=4 guest_color=7
+(XEN) LLC-FIXCOLOR DOM d0 map: order=0 gfn=0x9489 mfn=0x1e1b host_color=3 color_idx=0 guest_color=3
+(XEN) LLC-FIXCOLOR DOM d0 map: order=0 gfn=0x948a mfn=0x1e24 host_color=4 color_idx=1 guest_color=4
+(XEN) LLC-FIXCOLOR DOM d0 map: order=0 gfn=0x948b mfn=0x1e25 host_color=5 color_idx=2 guest_color=5
+(XEN) LLC-FIXCOLOR DOM d0 map: order=0 gfn=0x948c mfn=0x1e1e host_color=6 color_idx=3 guest_color=6
+(XEN) LLC-FIXCOLOR DOM d0 map: order=0 gfn=0x948d mfn=0x1e17 host_color=7 color_idx=4 guest_color=7
+(XEN) LLC-FIXCOLOR DOM d0 map: order=0 gfn=0x948e mfn=0x1e13 host_color=3 color_idx=0 guest_color=3
+(XEN) LLC-FIXCOLOR DOM d0 map: order=0 gfn=0x948f mfn=0x1e1c host_color=4 color_idx=1 guest_color=4
+(XEN) LLC-FIXCOLOR DOM d0 map: order=0 gfn=0x9490 mfn=0x1e1d host_color=5 color_idx=2 guest_color=5
+(XEN) LLC-FIXCOLOR DOM d0 map: order=0 gfn=0x9491 mfn=0x1e16 host_color=6 color_idx=3 guest_color=6
+(XEN) LLC-FIXCOLOR DOM d0 map: order=0 gfn=0x9492 mfn=0x1e0f host_color=7 color_idx=4 guest_color=7
+(XEN) LLC-FIXCOLOR DOM d0 map: order=0 gfn=0x9493 mfn=0x1e0b host_color=3 color_idx=0 guest_color=3
+(XEN) LLC-FIXCOLOR DOM d0 map: order=0 gfn=0x9494 mfn=0x1e14 host_color=4 color_idx=1 guest_color=4
+(XEN) LLC-FIXCOLOR DOM d0 map: order=0 gfn=0x9495 mfn=0x1e15 host_color=5 color_idx=2 guest_color=5
+(XEN) LLC-FIXCOLOR DOM d0 map: order=0 gfn=0x9496 mfn=0x1e0e host_color=6 color_idx=3 guest_color=6
+(XEN) LLC-FIXCOLOR DOM d0 map: order=0 gfn=0x9497 mfn=0x1e07 host_color=7 color_idx=4 guest_color=7
+(XEN) LLC-FIXCOLOR DOM d0 map: order=0 gfn=0x9498 mfn=0x1e03 host_color=3 color_idx=0 guest_color=3
+(XEN) LLC-FIXCOLOR DOM d0 map: order=0 gfn=0x9499 mfn=0x1e0c host_color=4 color_idx=1 guest_color=4
+(XEN) LLC-FIXCOLOR DOM d0 map: order=0 gfn=0x949a mfn=0x1e0d host_color=5 color_idx=2 guest_color=5
+(XEN) LLC-FIXCOLOR DOM d0 map: order=0 gfn=0x949b mfn=0x1e06 host_color=6 color_idx=3 guest_color=6
+(XEN) LLC-FIXCOLOR DOM d0 map: order=0 gfn=0x949c mfn=0x1dff host_color=7 color_idx=4 guest_color=7
+(XEN) LLC-FIXCOLOR DOM d0 map: order=0 gfn=0x949d mfn=0x1dfb host_color=3 color_idx=0 guest_color=3
+(XEN) LLC-FIXCOLOR DOM d0 map: order=0 gfn=0x949e mfn=0x1e04 host_color=4 color_idx=1 guest_color=4
+(XEN) LLC-FIXCOLOR DOM d0 map: order=0 gfn=0x949f mfn=0x1e05 host_color=5 color_idx=2 guest_color=5
+(XEN) LLC-FIXCOLOR DOM d0 map: order=0 gfn=0x94a0 mfn=0x1dfe host_color=6 color_idx=3 guest_color=6
+(XEN) LLC-FIXCOLOR DOM d0 map: order=0 gfn=0x94a1 mfn=0x1df7 host_color=7 color_idx=4 guest_color=7
+(XEN) LLC-FIXCOLOR DOM d0 map: order=0 gfn=0x94a2 mfn=0x1df3 host_color=3 color_idx=0 guest_color=3
+(XEN) LLC-FIXCOLOR DOM d0 map: order=0 gfn=0x94a3 mfn=0x1dfc host_color=4 color_idx=1 guest_color=4
+(XEN) LLC-FIXCOLOR DOM d0 map: order=0 gfn=0x94a4 mfn=0x1dfd host_color=5 color_idx=2 guest_color=5
+(XEN) LLC-FIXCOLOR DOM d0 map: order=0 gfn=0x94a5 mfn=0x1df6 host_color=6 color_idx=3 guest_color=6
+(XEN) LLC-FIXCOLOR DOM d0 map: order=0 gfn=0x94a6 mfn=0x1def host_color=7 color_idx=4 guest_color=7
+(XEN) LLC-FIXCOLOR DOM d0 map: order=0 gfn=0x94a7 mfn=0x1deb host_color=3 color_idx=0 guest_color=3
+(XEN) LLC-FIXCOLOR DOM d0 map: order=0 gfn=0x94a8 mfn=0x1df4 host_color=4 color_idx=1 guest_color=4
+(XEN) LLC-FIXCOLOR DOM d0 map: order=0 gfn=0x94a9 mfn=0x1df5 host_color=5 color_idx=2 guest_color=5
+(XEN) LLC-FIXCOLOR DOM d0 map: order=0 gfn=0x94aa mfn=0x1dee host_color=6 color_idx=3 guest_color=6
+(XEN) LLC-FIXCOLOR DOM d0 map: order=0 gfn=0x94ab mfn=0x1de7 host_color=7 color_idx=4 guest_color=7
+(XEN) LLC-FIXCOLOR DOM d0 map: order=0 gfn=0x94ac mfn=0x1de3 host_color=3 color_idx=0 guest_color=3
+(XEN) LLC-FIXCOLOR DOM d0 map: order=0 gfn=0x94ad mfn=0x1dec host_color=4 color_idx=1 guest_color=4
+(XEN) LLC-FIXCOLOR DOM d0 map: order=0 gfn=0x94ae mfn=0x1ded host_color=5 color_idx=2 guest_color=5
+(XEN) LLC-FIXCOLOR DOM d0 map: order=0 gfn=0x94af mfn=0x1de6 host_color=6 color_idx=3 guest_color=6
+(XEN) LLC-FIXCOLOR DOM d0 map: order=0 gfn=0x94b0 mfn=0x1ddf host_color=7 color_idx=4 guest_color=7
+(XEN) LLC-FIXCOLOR DOM d0 map: order=0 gfn=0x94b1 mfn=0x1ddb host_color=3 color_idx=0 guest_color=3
+(XEN) LLC-FIXCOLOR DOM d0 map: order=0 gfn=0x94b2 mfn=0x1de4 host_color=4 color_idx=1 guest_color=4
+(XEN) LLC-FIXCOLOR DOM d0 map: order=0 gfn=0x94b3 mfn=0x1de5 host_color=5 color_idx=2 guest_color=5
+(XEN) LLC-FIXCOLOR DOM d0 map: order=0 gfn=0x94b4 mfn=0x1dde host_color=6 color_idx=3 guest_color=6
+(XEN) LLC-FIXCOLOR DOM d0 map: order=0 gfn=0x94b5 mfn=0x1dd7 host_color=7 color_idx=4 guest_color=7
+(XEN) LLC-FIXCOLOR DOM d0 map: order=0 gfn=0x94b6 mfn=0x1dd3 host_color=3 color_idx=0 guest_color=3
+(XEN) LLC-FIXCOLOR DOM d0 map: order=0 gfn=0x94b7 mfn=0x1ddc host_color=4 color_idx=1 guest_color=4
+(XEN) LLC-FIXCOLOR DOM d0 map: order=0 gfn=0x94b8 mfn=0x1ddd host_color=5 color_idx=2 guest_color=5
+(XEN) LLC-FIXCOLOR DOM d0 map: order=0 gfn=0x94b9 mfn=0x1dd6 host_color=6 color_idx=3 guest_color=6
+(XEN) LLC-FIXCOLOR DOM d0 map: order=0 gfn=0x94ba mfn=0x1dcf host_color=7 color_idx=4 guest_color=7
+(XEN) LLC-FIXCOLOR DOM d0 map: order=0 gfn=0x94bb mfn=0x1dcb host_color=3 color_idx=0 guest_color=3
+(XEN) LLC-FIXCOLOR DOM d0 map: order=0 gfn=0x94bc mfn=0x1dd4 host_color=4 color_idx=1 guest_color=4
+(XEN) LLC-FIXCOLOR DOM d0 map: order=0 gfn=0x94bd mfn=0x1dd5 host_color=5 color_idx=2 guest_color=5
+(XEN) LLC-FIXCOLOR DOM d0 map: order=0 gfn=0x94be mfn=0x1dce host_color=6 color_idx=3 guest_color=6
+(XEN) LLC-FIXCOLOR DOM d0 map: order=0 gfn=0x94bf mfn=0x1dc7 host_color=7 color_idx=4 guest_color=7
+(XEN) LLC-FIXCOLOR DOM d0 map: order=0 gfn=0x94c0 mfn=0x1dc3 host_color=3 color_idx=0 guest_color=3
+(XEN) LLC-FIXCOLOR DOM d0 map: order=0 gfn=0x94c1 mfn=0x1dcc host_color=4 color_idx=1 guest_color=4
+(XEN) LLC-FIXCOLOR DOM d0 map: order=0 gfn=0x94c2 mfn=0x1dcd host_color=5 color_idx=2 guest_color=5
+(XEN) LLC-FIXCOLOR DOM d0 map: order=0 gfn=0x94c3 mfn=0x1dc6 host_color=6 color_idx=3 guest_color=6
+(XEN) LLC-FIXCOLOR DOM d0 map: order=0 gfn=0x94c4 mfn=0x1dbf host_color=7 color_idx=4 guest_color=7
+(XEN) LLC-FIXCOLOR DOM d0 map: order=0 gfn=0x94c5 mfn=0x1dbb host_color=3 color_idx=0 guest_color=3
+(XEN) LLC-FIXCOLOR DOM d0 map: order=0 gfn=0x94c6 mfn=0x1dc4 host_color=4 color_idx=1 guest_color=4
+(XEN) LLC-FIXCOLOR DOM d0 map: order=0 gfn=0x94c7 mfn=0x1dc5 host_color=5 color_idx=2 guest_color=5
+(XEN) LLC-FIXCOLOR DOM d0 map: order=0 gfn=0x94c8 mfn=0x1dbe host_color=6 color_idx=3 guest_color=6
+(XEN) LLC-FIXCOLOR DOM d0 map: order=0 gfn=0x94c9 mfn=0x1db7 host_color=7 color_idx=4 guest_color=7
+(XEN) LLC-FIXCOLOR DOM d0 map: order=0 gfn=0x94ca mfn=0x1db3 host_color=3 color_idx=0 guest_color=3
+(XEN) LLC-FIXCOLOR DOM d0 map: order=0 gfn=0x94cb mfn=0x1dbc host_color=4 color_idx=1 guest_color=4
+(XEN) LLC-FIXCOLOR DOM d0 map: order=0 gfn=0x94cc mfn=0x1dbd host_color=5 color_idx=2 guest_color=5
+(XEN) LLC-FIXCOLOR DOM d0 map: order=0 gfn=0x94cd mfn=0x1db6 host_color=6 color_idx=3 guest_color=6
+(XEN) LLC-FIXCOLOR DOM d0 map: order=0 gfn=0x94ce mfn=0x1daf host_color=7 color_idx=4 guest_color=7
+(XEN) LLC-FIXCOLOR DOM d0 map: order=0 gfn=0x94cf mfn=0x1dab host_color=3 color_idx=0 guest_color=3
+(XEN) LLC-FIXCOLOR DOM d0 map: order=0 gfn=0x94d0 mfn=0x1db4 host_color=4 color_idx=1 guest_color=4
+(XEN) LLC-FIXCOLOR DOM d0 map: order=0 gfn=0x94d1 mfn=0x1db5 host_color=5 color_idx=2 guest_color=5
+(XEN) LLC-FIXCOLOR DOM d0 map: order=0 gfn=0x94d2 mfn=0x1dae host_color=6 color_idx=3 guest_color=6
+(XEN) LLC-FIXCOLOR DOM d0 map: order=0 gfn=0x94d3 mfn=0x1da7 host_color=7 color_idx=4 guest_color=7
+(XEN) LLC-FIXCOLOR DOM d0 map: order=0 gfn=0x94d4 mfn=0x1da3 host_color=3 color_idx=0 guest_color=3
+(XEN) LLC-FIXCOLOR DOM d0 map: order=0 gfn=0x94d5 mfn=0x1dac host_color=4 color_idx=1 guest_color=4
+(XEN) LLC-FIXCOLOR DOM d0 map: order=0 gfn=0x94d6 mfn=0x1dad host_color=5 color_idx=2 guest_color=5
+(XEN) LLC-FIXCOLOR DOM d0 map: order=0 gfn=0x94d7 mfn=0x1da6 host_color=6 color_idx=3 guest_color=6
+(XEN) LLC-FIXCOLOR DOM d0 map: order=0 gfn=0x94d8 mfn=0x1d9f host_color=7 color_idx=4 guest_color=7
+(XEN) LLC-FIXCOLOR DOM d0 map: order=0 gfn=0x94d9 mfn=0x1d9b host_color=3 color_idx=0 guest_color=3
+(XEN) LLC-FIXCOLOR DOM d0 map: order=0 gfn=0x94da mfn=0x1da4 host_color=4 color_idx=1 guest_color=4
+(XEN) LLC-FIXCOLOR DOM d0 map: order=0 gfn=0x94db mfn=0x1da5 host_color=5 color_idx=2 guest_color=5
+(XEN) LLC-FIXCOLOR DOM d0 map: order=0 gfn=0x94dc mfn=0x1d9e host_color=6 color_idx=3 guest_color=6
+(XEN) LLC-FIXCOLOR DOM d0 map: order=0 gfn=0x94dd mfn=0x1d97 host_color=7 color_idx=4 guest_color=7
+(XEN) LLC-FIXCOLOR DOM d0 map: order=0 gfn=0x94de mfn=0x1d93 host_color=3 color_idx=0 guest_color=3
+(XEN) LLC-FIXCOLOR DOM d0 map: order=0 gfn=0x94df mfn=0x1d9c host_color=4 color_idx=1 guest_color=4
+(XEN) LLC-FIXCOLOR DOM d0 map: order=0 gfn=0x94e0 mfn=0x1d9d host_color=5 color_idx=2 guest_color=5
+(XEN) LLC-FIXCOLOR DOM d0 map: order=0 gfn=0x94e1 mfn=0x1d96 host_color=6 color_idx=3 guest_color=6
+(XEN) LLC-FIXCOLOR DOM d0 map: order=0 gfn=0x94e2 mfn=0x1d8f host_color=7 color_idx=4 guest_color=7
+(XEN) LLC-FIXCOLOR DOM d0 map: order=0 gfn=0x94e3 mfn=0x1d8b host_color=3 color_idx=0 guest_color=3
+(XEN) LLC-FIXCOLOR DOM d0 map: order=0 gfn=0x94e4 mfn=0x1d94 host_color=4 color_idx=1 guest_color=4
+(XEN) LLC-FIXCOLOR DOM d0 map: order=0 gfn=0x94e5 mfn=0x1d95 host_color=5 color_idx=2 guest_color=5
+(XEN) LLC-FIXCOLOR DOM d0 map: order=0 gfn=0x94e6 mfn=0x1d8e host_color=6 color_idx=3 guest_color=6
+(XEN) LLC-FIXCOLOR DOM d0 map: order=0 gfn=0x94e7 mfn=0x1d87 host_color=7 color_idx=4 guest_color=7
+(XEN) LLC-FIXCOLOR DOM d0 map: order=0 gfn=0x94e8 mfn=0x1d83 host_color=3 color_idx=0 guest_color=3
+(XEN) LLC-FIXCOLOR DOM d0 map: order=0 gfn=0x94e9 mfn=0x1d8c host_color=4 color_idx=1 guest_color=4
+(XEN) LLC-FIXCOLOR DOM d0 map: order=0 gfn=0x94ea mfn=0x1d8d host_color=5 color_idx=2 guest_color=5
+(XEN) LLC-FIXCOLOR DOM d0 map: order=0 gfn=0x94eb mfn=0x1d86 host_color=6 color_idx=3 guest_color=6
+(XEN) LLC-FIXCOLOR DOM d0 map: order=0 gfn=0x94ec mfn=0x1d7f host_color=7 color_idx=4 guest_color=7
+(XEN) LLC-FIXCOLOR DOM d0 map: order=0 gfn=0x94ed mfn=0x1d7b host_color=3 color_idx=0 guest_color=3
+(XEN) LLC-FIXCOLOR DOM d0 map: order=0 gfn=0x94ee mfn=0x1d84 host_color=4 color_idx=1 guest_color=4
+(XEN) LLC-FIXCOLOR DOM d0 map: order=0 gfn=0x94ef mfn=0x1d85 host_color=5 color_idx=2 guest_color=5
+(XEN) LLC-FIXCOLOR DOM d0 map: order=0 gfn=0x94f0 mfn=0x1d7e host_color=6 color_idx=3 guest_color=6
+(XEN) LLC-FIXCOLOR DOM d0 map: order=0 gfn=0x94f1 mfn=0x1d77 host_color=7 color_idx=4 guest_color=7
+(XEN) LLC-FIXCOLOR DOM d0 map: order=0 gfn=0x94f2 mfn=0x1d73 host_color=3 color_idx=0 guest_color=3
+(XEN) LLC-FIXCOLOR DOM d0 map: order=0 gfn=0x94f3 mfn=0x1d7c host_color=4 color_idx=1 guest_color=4
+(XEN) LLC-FIXCOLOR DOM d0 map: order=0 gfn=0x94f4 mfn=0x1d7d host_color=5 color_idx=2 guest_color=5
+(XEN) LLC-FIXCOLOR DOM d0 map: order=0 gfn=0x94f5 mfn=0x1d76 host_color=6 color_idx=3 guest_color=6
+(XEN) LLC-FIXCOLOR DOM d0 map: order=0 gfn=0x94f6 mfn=0x1d6f host_color=7 color_idx=4 guest_color=7
+(XEN) LLC-FIXCOLOR DOM d0 map: order=0 gfn=0x94f7 mfn=0x1d6b host_color=3 color_idx=0 guest_color=3
+(XEN) LLC-FIXCOLOR DOM d0 map: order=0 gfn=0x94f8 mfn=0x1d74 host_color=4 color_idx=1 guest_color=4
+(XEN) LLC-FIXCOLOR DOM d0 map: order=0 gfn=0x94f9 mfn=0x1d75 host_color=5 color_idx=2 guest_color=5
+(XEN) LLC-FIXCOLOR DOM d0 map: order=0 gfn=0x94fa mfn=0x1d6e host_color=6 color_idx=3 guest_color=6
+(XEN) LLC-FIXCOLOR DOM d0 map: order=0 gfn=0x94fb mfn=0x1d67 host_color=7 color_idx=4 guest_color=7
+(XEN) LLC-FIXCOLOR DOM d0 map: order=0 gfn=0x94fc mfn=0x1d63 host_color=3 color_idx=0 guest_color=3
+(XEN) LLC-FIXCOLOR DOM d0 map: order=0 gfn=0x94fd mfn=0x1d6c host_color=4 color_idx=1 guest_color=4
+(XEN) LLC-FIXCOLOR DOM d0 map: order=0 gfn=0x94fe mfn=0x1d6d host_color=5 color_idx=2 guest_color=5
+(XEN) LLC-FIXCOLOR DOM d0 map: order=0 gfn=0x94ff mfn=0x1d66 host_color=6 color_idx=3 guest_color=6
+(XEN) LLC-FIXCOLOR DOM d0 map: order=0 gfn=0x9500 mfn=0x1d5f host_color=7 color_idx=4 guest_color=7
+(XEN) LLC-FIXCOLOR DOM d0 map: order=0 gfn=0x9501 mfn=0x1d5b host_color=3 color_idx=0 guest_color=3
+(XEN) LLC-FIXCOLOR DOM d0 map: order=0 gfn=0x9502 mfn=0x1d64 host_color=4 color_idx=1 guest_color=4
+(XEN) LLC-FIXCOLOR DOM d0 map: order=0 gfn=0x9503 mfn=0x1d65 host_color=5 color_idx=2 guest_color=5
+(XEN) LLC-FIXCOLOR DOM d0 map: order=0 gfn=0x9504 mfn=0x1d5e host_color=6 color_idx=3 guest_color=6
+(XEN) LLC-FIXCOLOR DOM d0 map: order=0 gfn=0x9505 mfn=0x1d57 host_color=7 color_idx=4 guest_color=7
+(XEN) LLC-FIXCOLOR DOM d0 map: order=0 gfn=0x9506 mfn=0x1d53 host_color=3 color_idx=0 guest_color=3
+(XEN) LLC-FIXCOLOR DOM d0 map: order=0 gfn=0x9507 mfn=0x1d5c host_color=4 color_idx=1 guest_color=4
+(XEN) LLC-FIXCOLOR DOM d0 map: order=0 gfn=0x9508 mfn=0x1d5d host_color=5 color_idx=2 guest_color=5
+(XEN) LLC-FIXCOLOR DOM d0 map: order=0 gfn=0x9509 mfn=0x1d56 host_color=6 color_idx=3 guest_color=6
+(XEN) LLC-FIXCOLOR DOM d0 map: order=0 gfn=0x950a mfn=0x1d4f host_color=7 color_idx=4 guest_color=7
+(XEN) LLC-FIXCOLOR DOM d0 map: order=0 gfn=0x950b mfn=0x1d4b host_color=3 color_idx=0 guest_color=3
+(XEN) LLC-FIXCOLOR DOM d0 map: order=0 gfn=0x950c mfn=0x1d54 host_color=4 color_idx=1 guest_color=4
+(XEN) LLC-FIXCOLOR DOM d0 map: order=0 gfn=0x950d mfn=0x1d55 host_color=5 color_idx=2 guest_color=5
+(XEN) LLC-FIXCOLOR DOM d0 map: order=0 gfn=0x950e mfn=0x1d4e host_color=6 color_idx=3 guest_color=6
+(XEN) LLC-FIXCOLOR DOM d0 map: order=0 gfn=0x950f mfn=0x1d47 host_color=7 color_idx=4 guest_color=7
+(XEN) LLC-FIXCOLOR DOM d0 map: order=0 gfn=0x9510 mfn=0x1d43 host_color=3 color_idx=0 guest_color=3
+(XEN) LLC-FIXCOLOR DOM d0 map: order=0 gfn=0x9511 mfn=0x1d4c host_color=4 color_idx=1 guest_color=4
+(XEN) LLC-FIXCOLOR DOM d0 map: order=0 gfn=0x9512 mfn=0x1d4d host_color=5 color_idx=2 guest_color=5
+(XEN) LLC-FIXCOLOR DOM d0 map: order=0 gfn=0x9513 mfn=0x1d46 host_color=6 color_idx=3 guest_color=6
+(XEN) LLC-FIXCOLOR DOM d0 map: order=0 gfn=0x9514 mfn=0x1d3f host_color=7 color_idx=4 guest_color=7
+(XEN) LLC-FIXCOLOR DOM d0 map: order=0 gfn=0x9515 mfn=0x1d3b host_color=3 color_idx=0 guest_color=3
+(XEN) LLC-FIXCOLOR DOM d0 map: order=0 gfn=0x9516 mfn=0x1d44 host_color=4 color_idx=1 guest_color=4
+(XEN) LLC-FIXCOLOR DOM d0 map: order=0 gfn=0x9517 mfn=0x1d45 host_color=5 color_idx=2 guest_color=5
+(XEN) LLC-FIXCOLOR DOM d0 map: order=0 gfn=0x9518 mfn=0x1d3e host_color=6 color_idx=3 guest_color=6
+(XEN) LLC-FIXCOLOR DOM d0 map: order=0 gfn=0x9519 mfn=0x1d37 host_color=7 color_idx=4 guest_color=7
+(XEN) LLC-FIXCOLOR DOM d0 map: order=0 gfn=0x951a mfn=0x1d33 host_color=3 color_idx=0 guest_color=3
+(XEN) LLC-FIXCOLOR DOM d0 map: order=0 gfn=0x951b mfn=0x1d3c host_color=4 color_idx=1 guest_color=4
+(XEN) LLC-FIXCOLOR DOM d0 map: order=0 gfn=0x951c mfn=0x1d3d host_color=5 color_idx=2 guest_color=5
+(XEN) LLC-FIXCOLOR DOM d0 map: order=0 gfn=0x951d mfn=0x1d36 host_color=6 color_idx=3 guest_color=6
+(XEN) LLC-FIXCOLOR DOM d0 map: order=0 gfn=0x951e mfn=0x1d2f host_color=7 color_idx=4 guest_color=7
+(XEN) LLC-FIXCOLOR DOM d0 map: order=0 gfn=0x951f mfn=0x1d2b host_color=3 color_idx=0 guest_color=3
+(XEN) LLC-FIXCOLOR DOM d0 map: order=0 gfn=0x9520 mfn=0x1d34 host_color=4 color_idx=1 guest_color=4
+(XEN) LLC-FIXCOLOR DOM d0 map: order=0 gfn=0x9521 mfn=0x1d35 host_color=5 color_idx=2 guest_color=5
+(XEN) LLC-FIXCOLOR DOM d0 map: order=0 gfn=0x9522 mfn=0x1d2e host_color=6 color_idx=3 guest_color=6
+(XEN) LLC-FIXCOLOR DOM d0 map: order=0 gfn=0x9523 mfn=0x1d27 host_color=7 color_idx=4 guest_color=7
+(XEN) LLC-FIXCOLOR DOM d0 map: order=0 gfn=0x9524 mfn=0x1d23 host_color=3 color_idx=0 guest_color=3
+(XEN) LLC-FIXCOLOR DOM d0 map: order=0 gfn=0x9525 mfn=0x1d2c host_color=4 color_idx=1 guest_color=4
+(XEN) LLC-FIXCOLOR DOM d0 map: order=0 gfn=0x9526 mfn=0x1d2d host_color=5 color_idx=2 guest_color=5
+(XEN) LLC-FIXCOLOR DOM d0 map: order=0 gfn=0x9527 mfn=0x1d26 host_color=6 color_idx=3 guest_color=6
+(XEN) LLC-FIXCOLOR DOM d0 map: order=0 gfn=0x9528 mfn=0x1d1f host_color=7 color_idx=4 guest_color=7
+(XEN) LLC-FIXCOLOR DOM d0 map: order=0 gfn=0x9529 mfn=0x1d1b host_color=3 color_idx=0 guest_color=3
+(XEN) LLC-FIXCOLOR DOM d0 map: order=0 gfn=0x952a mfn=0x1d24 host_color=4 color_idx=1 guest_color=4
+(XEN) LLC-FIXCOLOR DOM d0 map: order=0 gfn=0x952b mfn=0x1d25 host_color=5 color_idx=2 guest_color=5
+(XEN) LLC-FIXCOLOR DOM d0 map: order=0 gfn=0x952c mfn=0x1d1e host_color=6 color_idx=3 guest_color=6
+(XEN) LLC-FIXCOLOR DOM d0 map: order=0 gfn=0x952d mfn=0x1d17 host_color=7 color_idx=4 guest_color=7
+(XEN) LLC-FIXCOLOR DOM d0 map: order=0 gfn=0x952e mfn=0x1d13 host_color=3 color_idx=0 guest_color=3
+(XEN) LLC-FIXCOLOR DOM d0 map: order=0 gfn=0x952f mfn=0x1d1c host_color=4 color_idx=1 guest_color=4
+(XEN) LLC-FIXCOLOR DOM d0 map: order=0 gfn=0x9530 mfn=0x1d1d host_color=5 color_idx=2 guest_color=5
+(XEN) LLC-FIXCOLOR DOM d0 map: order=0 gfn=0x9531 mfn=0x1d16 host_color=6 color_idx=3 guest_color=6
+(XEN) LLC-FIXCOLOR DOM d0 map: order=0 gfn=0x9532 mfn=0x1d0f host_color=7 color_idx=4 guest_color=7
+(XEN) LLC-FIXCOLOR DOM d0 map: order=0 gfn=0x9533 mfn=0x1d0b host_color=3 color_idx=0 guest_color=3
+(XEN) LLC-FIXCOLOR DOM d0 map: order=0 gfn=0x9534 mfn=0x1d14 host_color=4 color_idx=1 guest_color=4
+(XEN) LLC-FIXCOLOR DOM d0 map: order=0 gfn=0x9535 m(XEN) LLC-FIXCOLOR DOM d0 map: order=0 gfn=0x213f0 mfn=0x5a754 host_color=4 color_idx=1 guest_color=4
+(XEN) LLC-FIXCOLOR DOM d0 map: order=0 gfn=0x213f1 mfn=0x5a755 host_color=5 color_idx=2 guest_color=5
+(XEN) LLC-FIXCOLOR DOM d0 map: order=0 gfn=0x213f2 mfn=0x5a756 host_color=6 color_idx=3 guest_color=6
+(XEN) LLC-FIXCOLOR DOM d0 map: order=0 gfn=0x213f3 mfn=0x5a74f host_color=7 color_idx=4 guest_color=7
+(XEN) LLC-FIXCOLOR DOM d0 map: order=0 gfn=0x213f4 mfn=0x5a753 host_color=3 color_idx=0 guest_color=3
+(XEN) LLC-FIXCOLOR DOM d0 map: order=0 gfn=0x213f5 mfn=0x5a74c host_color=4 color_idx=1 guest_color=4
+(XEN) LLC-FIXCOLOR DOM d0 map: order=0 gfn=0x213f6 mfn=0x5a74d host_color=5 color_idx=2 guest_color=5
+(XEN) LLC-FIXCOLOR DOM d0 map: order=0 gfn=0x213f7 mfn=0x5a74e host_color=6 color_idx=3 guest_color=6
+(XEN) LLC-FIXCOLOR DOM d0 map: order=0 gfn=0x213f8 mfn=0x5a747 host_color=7 color_idx=4 guest_color=7
+(XEN) LLC-FIXCOLOR DOM d0 map: order=0 gfn=0x213f9 mfn=0x5a74b host_color=3 color_idx=0 guest_color=3
+(XEN) LLC-FIXCOLOR DOM d0 map: order=0 gfn=0x213fa mfn=0x5a744 host_color=4 color_idx=1 guest_color=4
+(XEN) LLC-FIXCOLOR DOM d0 map: order=0 gfn=0x213fb mfn=0x5a745 host_color=5 color_idx=2 guest_color=5
+(XEN) LLC-FIXCOLOR DOM d0 map: order=0 gfn=0x213fc mfn=0x5a746 host_color=6 color_idx=3 guest_color=6
+(XEN) LLC-FIXCOLOR DOM d0 map: order=0 gfn=0x213fd mfn=0x5a73f host_color=7 color_idx=4 guest_color=7
+(XEN) LLC-FIXCOLOR DOM d0 map: order=0 gfn=0x213fe mfn=0x5a743 host_color=3 color_idx=0 guest_color=3
+(XEN) LLC-FIXCOLOR DOM d0 map: order=0 gfn=0x213ff mfn=0x5a73c host_color=4 color_idx=1 guest_color=4
+(XEN) LLC-FIXCOLOR DOM d0 map: order=0 gfn=0x21400 mfn=0x5a73d host_color=5 color_idx=2 guest_color=5
+(XEN) LLC-FIXCOLOR DOM d0 map: order=0 gfn=0x21401 mfn=0x5a736 host_color=6 color_idx=3 guest_color=6
+(XEN) LLC-FIXCOLOR DOM d0 map: order=0 gfn=0x21402 mfn=0x5a737 host_color=7 color_idx=4 guest_color=7
+(XEN) LLC-FIXCOLOR DOM d0 map: order=0 gfn=0x21403 mfn=0x5a73b host_color=3 color_idx=0 guest_color=3
+(XEN) LLC-FIXCOLOR DOM d0 map: order=0 gfn=0x21404 mfn=0x5a734 host_color=4 color_idx=1 guest_color=4
+(XEN) LLC-FIXCOLOR DOM d0 map: order=0 gfn=0x21405 mfn=0x5a735 host_color=5 color_idx=2 guest_color=5
+(XEN) LLC-FIXCOLOR DOM d0 map: order=0 gfn=0x21406 mfn=0x5a72e host_color=6 color_idx=3 guest_color=6
+(XEN) LLC-FIXCOLOR DOM d0 map: order=0 gfn=0x21407 mfn=0x5a72f host_color=7 color_idx=4 guest_color=7
+(XEN) LLC-FIXCOLOR DOM d0 map: order=0 gfn=0x21408 mfn=0x5a733 host_color=3 color_idx=0 guest_color=3
+(XEN) LLC-FIXCOLOR DOM d0 map: order=0 gfn=0x21409 mfn=0x5a72c host_color=4 color_idx=1 guest_color=4
+(XEN) LLC-FIXCOLOR DOM d0 map: order=0 gfn=0x2140a mfn=0x5a72d host_color=5 color_idx=2 guest_color=5
+(XEN) LLC-FIXCOLOR DOM d0 map: order=0 gfn=0x2140b mfn=0x5a726 host_color=6 color_idx=3 guest_color=6
+(XEN) LLC-FIXCOLOR DOM d0 map: order=0 gfn=0x2140c mfn=0x5a727 host_color=7 color_idx=4 guest_color=7
+(XEN) LLC-FIXCOLOR DOM d0 map: order=0 gfn=0x2140d mfn=0x5a72b host_color=3 color_idx=0 guest_color=3
+(XEN) LLC-FIXCOLOR DOM d0 map: order=0 gfn=0x2140e mfn=0x5a724 host_color=4 color_idx=1 guest_color=4
+(XEN) LLC-FIXCOLOR DOM d0 map: order=0 gfn=0x2140f mfn=0x5a725 host_color=5 color_idx=2 guest_color=5
+(XEN) LLC-FIXCOLOR DOM d0 map: order=0 gfn=0x21410 mfn=0x5a71e host_color=6 color_idx=3 guest_color=6
+(XEN) LLC-FIXCOLOR DOM d0 map: order=0 gfn=0x21411 mfn=0x5a71f host_color=7 color_idx=4 guest_color=7
+(XEN) LLC-FIXCOLOR DOM d0 map: order=0 gfn=0x21412 mfn=0x5a723 host_color=3 color_idx=0 guest_color=3
+(XEN) LLC-FIXCOLOR DOM d0 map: order=0 gfn=0x21413 mfn=0x5a71c host_color=4 color_idx=1 guest_color=4
+(XEN) LLC-FIXCOLOR DOM d0 map: order=0 gfn=0x21414 mfn=0x5a71d host_color=5 color_idx=2 guest_color=5
+(XEN) LLC-FIXCOLOR DOM d0 map: order=0 gfn=0x21415 mfn=0x5a716 host_color=6 color_idx=3 guest_color=6
+(XEN) LLC-FIXCOLOR DOM d0 map: order=0 gfn=0x21416 mfn=0x5a717 host_color=7 color_idx=4 guest_color=7
+(XEN) LLC-FIXCOLOR DOM d0 map: order=0 gfn=0x21417 mfn=0x5a71b host_color=3 color_idx=0 guest_color=3
+(XEN) LLC-FIXCOLOR DOM d0 map: order=0 gfn=0x21418 mfn=0x5a714 host_color=4 color_idx=1 guest_color=4
+(XEN) LLC-FIXCOLOR DOM d0 map: order=0 gfn=0x21419 mfn=0x5a715 host_color=5 color_idx=2 guest_color=5
+(XEN) LLC-FIXCOLOR DOM d0 map: order=0 gfn=0x2141a mfn=0x5a70e host_color=6 color_idx=3 guest_color=6
+(XEN) LLC-FIXCOLOR DOM d0 map: order=0 gfn=0x2141b mfn=0x5a70f host_color=7 color_idx=4 guest_color=7
+(XEN) LLC-FIXCOLOR DOM d0 map: order=0 gfn=0x2141c mfn=0x5a713 host_color=3 color_idx=0 guest_color=3
+(XEN) LLC-FIXCOLOR DOM d0 map: order=0 gfn=0x2141d mfn=0x5a70c host_color=4 color_idx=1 guest_color=4
+(XEN) LLC-FIXCOLOR DOM d0 map: order=0 gfn=0x2141e mfn=0x5a70d host_color=5 color_idx=2 guest_color=5
+(XEN) LLC-FIXCOLOR DOM d0 map: order=0 gfn=0x2141f mfn=0x5a706 host_color=6 color_idx=3 guest_color=6
+(XEN) LLC-FIXCOLOR DOM d0 map: order=0 gfn=0x21420 mfn=0x5a707 host_color=7 color_idx=4 guest_color=7
+(XEN) LLC-FIXCOLOR DOM d0 map: order=0 gfn=0x21421 mfn=0x5a70b host_color=3 color_idx=0 guest_color=3
+(XEN) LLC-FIXCOLOR DOM d0 map: order=0 gfn=0x21422 mfn=0x5a704 host_color=4 color_idx=1 guest_color=4
+(XEN) LLC-FIXCOLOR DOM d0 map: order=0 gfn=0x21423 mfn=0x5a705 host_color=5 color_idx=2 guest_color=5
+(XEN) LLC-FIXCOLOR DOM d0 map: order=0 gfn=0x21424 mfn=0x5a6fe host_color=6 color_idx=3 guest_color=6
+(XEN) LLC-FIXCOLOR DOM d0 map: order=0 gfn=0x21425 mfn=0x5a6ff host_color=7 color_idx=4 guest_color=7
+(XEN) LLC-FIXCOLOR DOM d0 map: order=0 gfn=0x21426 mfn=0x5a703 host_color=3 color_idx=0 guest_color=3
+(XEN) LLC-FIXCOLOR DOM d0 map: order=0 gfn=0x21427 mfn=0x5a6fc host_color=4 color_idx=1 guest_color=4
+(XEN) LLC-FIXCOLOR DOM d0 map: order=0 gfn=0x21428 mfn=0x5a6fd host_color=5 color_idx=2 guest_color=5
+(XEN) LLC-FIXCOLOR DOM d0 map: order=0 gfn=0x21429 mfn=0x5a6f6 host_color=6 color_idx=3 guest_color=6
+(XEN) LLC-FIXCOLOR DOM d0 map: order=0 gfn=0x2142a mfn=0x5a6f7 host_color=7 color_idx=4 guest_color=7
+(XEN) LLC-FIXCOLOR DOM d0 map: order=0 gfn=0x2142b mfn=0x5a6fb host_color=3 color_idx=0 guest_color=3
+(XEN) LLC-FIXCOLOR DOM d0 map: order=0 gfn=0x2142c mfn=0x5a6f4 host_color=4 color_idx=1 guest_color=4
+(XEN) LLC-FIXCOLOR DOM d0 map: order=0 gfn=0x2142d mfn=0x5a6f5 host_color=5 color_idx=2 guest_color=5
+(XEN) LLC-FIXCOLOR DOM d0 map: order=0 gfn=0x2142e mfn=0x5a6ee host_color=6 color_idx=3 guest_color=6
+(XEN) LLC-FIXCOLOR DOM d0 map: order=0 gfn=0x2142f mfn=0x5a6ef host_color=7 color_idx=4 guest_color=7
+(XEN) LLC-FIXCOLOR DOM d0 map: order=0 gfn=0x21430 mfn=0x5a6f3 host_color=3 color_idx=0 guest_color=3
+(XEN) LLC-FIXCOLOR DOM d0 map: order=0 gfn=0x21431 mfn=0x5a6ec host_color=4 color_idx=1 guest_color=4
+(XEN) LLC-FIXCOLOR DOM d0 map: order=0 gfn=0x21432 mfn=0x5a6ed host_color=5 color_idx=2 guest_color=5
+(XEN) LLC-FIXCOLOR DOM d0 map: order=0 gfn=0x21433 mfn=0x5a6e6 host_color=6 color_idx=3 guest_color=6
+(XEN) LLC-FIXCOLOR DOM d0 map: order=0 gfn=0x21434 mfn=0x5a6e7 host_color=7 color_idx=4 guest_color=7
+(XEN) LLC-FIXCOLOR DOM d0 map: order=0 gfn=0x21435 mfn=0x5a6eb host_color=3 color_idx=0 guest_color=3
+(XEN) LLC-FIXCOLOR DOM d0 map: order=0 gfn=0x21436 mfn=0x5a6e4 host_color=4 color_idx=1 guest_color=4
+(XEN) LLC-FIXCOLOR DOM d0 map: order=0 gfn=0x21437 mfn=0x5a6e5 host_color=5 color_idx=2 guest_color=5
+(XEN) LLC-FIXCOLOR DOM d0 map: order=0 gfn=0x21438 mfn=0x5a6de host_color=6 color_idx=3 guest_color=6
+(XEN) LLC-FIXCOLOR DOM d0 map: order=0 gfn=0x21439 mfn=0x5a6df host_color=7 color_idx=4 guest_color=7
+(XEN) LLC-FIXCOLOR DOM d0 map: order=0 gfn=0x2143a mfn=0x5a6e3 host_color=3 color_idx=0 guest_color=3
+(XEN) LLC-FIXCOLOR DOM d0 map: order=0 gfn=0x2143b mfn=0x5a6dc host_color=4 color_idx=1 guest_color=4
+(XEN) LLC-FIXCOLOR DOM d0 map: order=0 gfn=0x2143c mfn=0x5a6dd host_color=5 color_idx=2 guest_color=5
+(XEN) LLC-FIXCOLOR DOM d0 map: order=0 gfn=0x2143d mfn=0x5a6d6 host_color=6 color_idx=3 guest_color=6
+(XEN) LLC-FIXCOLOR DOM d0 map: order=0 gfn=0x2143e mfn=0x5a6d7 host_color=7 color_idx=4 guest_color=7
+(XEN) LLC-FIXCOLOR DOM d0 map: order=0 gfn=0x2143f mfn=0x5a6db host_color=3 color_idx=0 guest_color=3
+(XEN) LLC-FIXCOLOR DOM d0 map: order=0 gfn=0x21440 mfn=0x5a6d4 host_color=4 color_idx=1 guest_color=4
+(XEN) LLC-FIXCOLOR DOM d0 map: order=0 gfn=0x21441 mfn=0x5a6d5 host_color=5 color_idx=2 guest_color=5
+(XEN) LLC-FIXCOLOR DOM d0 map: order=0 gfn=0x21442 mfn=0x5a6ce host_color=6 color_idx=3 guest_color=6
+(XEN) LLC-FIXCOLOR DOM d0 map: order=0 gfn=0x21443 mfn=0x5a6cf host_color=7 color_idx=4 guest_color=7
+(XEN) LLC-FIXCOLOR DOM d0 map: order=0 gfn=0x21444 mfn=0x5a6d3 host_color=3 color_idx=0 guest_color=3
+(XEN) LLC-FIXCOLOR DOM d0 map: order=0 gfn=0x21445 mfn=0x5a6cc host_color=4 color_idx=1 guest_color=4
+(XEN) LLC-FIXCOLOR DOM d0 map: order=0 gfn=0x21446 mfn=0x5a6cd host_color=5 color_idx=2 guest_color=5
+(XEN) LLC-FIXCOLOR DOM d0 map: order=0 gfn=0x21447 mfn=0x5a6c6 host_color=6 color_idx=3 guest_color=6
+(XEN) LLC-FIXCOLOR DOM d0 map: order=0 gfn=0x21448 mfn=0x5a6c7 host_color=7 color_idx=4 guest_color=7
+(XEN) LLC-FIXCOLOR DOM d0 map: order=0 gfn=0x21449 mfn=0x5a6cb host_color=3 color_idx=0 guest_color=3
+(XEN) LLC-FIXCOLOR DOM d0 map: order=0 gfn=0x2144a mfn=0x5a6c4 host_color=4 color_idx=1 guest_color=4
+(XEN) LLC-FIXCOLOR DOM d0 map: order=0 gfn=0x2144b mfn=0x5a6c5 host_color=5 color_idx=2 guest_color=5
+(XEN) LLC-FIXCOLOR DOM d0 map: order=0 gfn=0x2144c mfn=0x5a6be host_color=6 color_idx=3 guest_color=6
+(XEN) LLC-FIXCOLOR DOM d0 map: order=0 gfn=0x2144d mfn=0x5a6bf host_color=7 color_idx=4 guest_color=7
+(XEN) LLC-FIXCOLOR DOM d0 map: order=0 gfn=0x2144e mfn=0x5a6c3 host_color=3 color_idx=0 guest_color=3
+(XEN) LLC-FIXCOLOR DOM d0 map: order=0 gfn=0x2144f mfn=0x5a6bc host_color=4 color_idx=1 guest_color=4
+(XEN) LLC-FIXCOLOR DOM d0 map: order=0 gfn=0x21450 mfn=0x5a6bd host_color=5 color_idx=2 guest_color=5
+(XEN) LLC-FIXCOLOR DOM d0 map: order=0 gfn=0x21451 mfn=0x5a6b6 host_color=6 color_idx=3 guest_color=6
+(XEN) LLC-FIXCOLOR DOM d0 map: order=0 gfn=0x21452 mfn=0x5a6b7 host_color=7 color_idx=4 guest_color=7
+(XEN) LLC-FIXCOLOR DOM d0 map: order=0 gfn=0x21453 mfn=0x5a6bb host_color=3 color_idx=0 guest_color=3
+(XEN) LLC-FIXCOLOR DOM d0 map: order=0 gfn=0x21454 mfn=0x5a6b4 host_color=4 color_idx=1 guest_color=4
+(XEN) LLC-FIXCOLOR DOM d0 map: order=0 gfn=0x21455 mfn=0x5a6b5 host_color=5 color_idx=2 guest_color=5
+(XEN) LLC-FIXCOLOR DOM d0 map: order=0 gfn=0x21456 mfn=0x5a6ae host_color=6 color_idx=3 guest_color=6
+(XEN) LLC-FIXCOLOR DOM d0 map: order=0 gfn=0x21457 mfn=0x5a6af host_color=7 color_idx=4 guest_color=7
+(XEN) LLC-FIXCOLOR DOM d0 map: order=0 gfn=0x21458 mfn=0x5a6b3 host_color=3 color_idx=0 guest_color=3
+(XEN) LLC-FIXCOLOR DOM d0 map: order=0 gfn=0x21459 mfn=0x5a6ac host_color=4 color_idx=1 guest_color=4
+(XEN) LLC-FIXCOLOR DOM d0 map: order=0 gfn=0x2145a mfn=0x5a6ad host_color=5 color_idx=2 guest_color=5
+(XEN) LLC-FIXCOLOR DOM d0 map: order=0 gfn=0x2145b mfn=0x5a6a6 host_color=6 color_idx=3 guest_color=6
+(XEN) LLC-FIXCOLOR DOM d0 map: order=0 gfn=0x2145c mfn=0x5a6a7 host_color=7 color_idx=4 guest_color=7
+(XEN) LLC-FIXCOLOR DOM d0 map: order=0 gfn=0x2145d mfn=0x5a6ab host_color=3 color_idx=0 guest_color=3
+(XEN) LLC-FIXCOLOR DOM d0 map: order=0 gfn=0x2145e mfn=0x5a6a4 host_color=4 color_idx=1 guest_color=4
+(XEN) LLC-FIXCOLOR DOM d0 map: order=0 gfn=0x2145f mfn=0x5a6a5 host_color=5 color_idx=2 guest_color=5
+(XEN) LLC-FIXCOLOR DOM d0 map: order=0 gfn=0x21460 mfn=0x5a69e host_color=6 color_idx=3 guest_color=6
+(XEN) LLC-FIXCOLOR DOM d0 map: order=0 gfn=0x21461 mfn=0x5a69f host_color=7 color_idx=4 guest_color=7
+(XEN) LLC-FIXCOLOR DOM d0 map: order=0 gfn=0x21462 mfn=0x5a6a3 host_color=3 color_idx=0 guest_color=3
+(XEN) LLC-FIXCOLOR DOM d0 map: order=0 gfn=0x21463 mfn=0x5a69c host_color=4 color_idx=1 guest_color=4
+(XEN) LLC-FIXCOLOR DOM d0 map: order=0 gfn=0x21464 mfn=0x5a69d host_color=5 color_idx=2 guest_color=5
+(XEN) LLC-FIXCOLOR DOM d0 map: order=0 gfn=0x21465 mfn=0x5a696 host_color=6 color_idx=3 guest_color=6
+(XEN) LLC-FIXCOLOR DOM d0 map: order=0 gfn=0x21466 mfn=0x5a697 host_color=7 color_idx=4 guest_color=7
+(XEN) LLC-FIXCOLOR DOM d0 map: order=0 gfn=0x21467 mfn=0x5a69b host_color=3 color_idx=0 guest_color=3
+(XEN) LLC-FIXCOLOR DOM d0 map: order=0 gfn=0x21468 mfn=0x5a694 host_color=4 color_idx=1 guest_color=4
+(XEN) LLC-FIXCOLOR DOM d0 map: order=0 gfn=0x21469 mfn=0x5a695 host_color=5 color_idx=2 guest_color=5
+(XEN) LLC-FIXCOLOR DOM d0 map: order=0 gfn=0x2146a mfn=0x5a68e host_color=6 color_idx=3 guest_color=6
+(XEN) LLC-FIXCOLOR DOM d0 map: order=0 gfn=0x2146b mfn=0x5a68f host_color=7 color_idx=4 guest_color=7
+(XEN) LLC-FIXCOLOR DOM d0 map: order=0 gfn=0x2146c mfn=0x5a693 host_color=3 color_idx=0 guest_color=3
+(XEN) LLC-FIXCOLOR DOM d0 map: order=0 gfn=0x2146d mfn=0x5a68c host_color=4 color_idx=1 guest_color=4
+(XEN) LLC-FIXCOLOR DOM d0 map: order=0 gfn=0x2146e mfn=0x5a68d host_color=5 color_idx=2 guest_color=5
+(XEN) LLC-FIXCOLOR DOM d0 map: order=0 gfn=0x2146f mfn=0x5a686 host_color=6 color_idx=3 guest_color=6
+(XEN) LLC-FIXCOLOR DOM d0 map: order=0 gfn=0x21470 mfn=0x5a687 host_color=7 color_idx=4 guest_color=7
+(XEN) LLC-FIXCOLOR DOM d0 map: order=0 gfn=0x21471 mfn=0x5a68b host_color=3 color_idx=0 guest_color=3
+(XEN) LLC-FIXCOLOR DOM d0 map: order=0 gfn=0x21472 mfn=0x5a684 host_color=4 color_idx=1 guest_color=4
+(XEN) LLC-FIXCOLOR DOM d0 map: order=0 gfn=0x21473 mfn=0x5a685 host_color=5 color_idx=2 guest_color=5
+(XEN) LLC-FIXCOLOR DOM d0 map: order=0 gfn=0x21474 mfn=0x5a67e host_color=6 color_idx=3 guest_color=6
+(XEN) LLC-FIXCOLOR DOM d0 map: order=0 gfn=0x21475 mfn=0x5a67f host_color=7 color_idx=4 guest_color=7
+(XEN) LLC-FIXCOLOR DOM d0 map: order=0 gfn=0x21476 mfn=0x5a683 host_color=3 color_idx=0 guest_color=3
+(XEN) LLC-FIXCOLOR DOM d0 map: order=0 gfn=0x21477 mfn=0x5a67c host_color=4 color_idx=1 guest_color=4
+(XEN) LLC-FIXCOLOR DOM d0 map: order=0 gfn=0x21478 mfn=0x5a67d host_color=5 color_idx=2 guest_color=5
+(XEN) LLC-FIXCOLOR DOM d0 map: order=0 gfn=0x21479 mfn=0x5a676 host_color=6 color_idx=3 guest_color=6
+(XEN) LLC-FIXCOLOR DOM d0 map: order=0 gfn=0x2147a mfn=0x5a677 host_color=7 color_idx=4 guest_color=7
+(XEN) LLC-FIXCOLOR DOM d0 map: order=0 gfn=0x2147b mfn=0x5a67b host_color=3 color_idx=0 guest_color=3
+(XEN) LLC-FIXCOLOR DOM d0 map: order=0 gfn=0x2147c mfn=0x5a674 host_color=4 color_idx=1 guest_color=4
+(XEN) LLC-FIXCOLOR DOM d0 map: order=0 gfn=0x2147d mfn=0x5a675 host_color=5 color_idx=2 guest_color=5
+(XEN) LLC-FIXCOLOR DOM d0 map: order=0 gfn=0x2147e mfn=0x5a66e host_color=6 color_idx=3 guest_color=6
+(XEN) LLC-FIXCOLOR DOM d0 map: order=0 gfn=0x2147f mfn=0x5a66f host_color=7 color_idx=4 guest_color=7
+(XEN) LLC-FIXCOLOR DOM d0 map: order=0 gfn=0x21480 mfn=0x5a673 host_color=3 color_idx=0 guest_color=3
+(XEN) LLC-FIXCOLOR DOM d0 map: order=0 gfn=0x21481 mfn=0x5a66c host_color=4 color_idx=1 guest_color=4
+(XEN) LLC-FIXCOLOR DOM d0 map: order=0 gfn=0x21482 mfn=0x5a66d host_color=5 color_idx=2 guest_color=5
+(XEN) LLC-FIXCOLOR DOM d0 map: order=0 gfn=0x21483 mfn=0x5a666 host_color=6 color_idx=3 guest_color=6
+(XEN) LLC-FIXCOLOR DOM d0 map: order=0 gfn=0x21484 mfn=0x5a667 host_color=7 color_idx=4 guest_color=7
+(XEN) LLC-FIXCOLOR DOM d0 map: order=0 gfn=0x21485 mfn=0x5a66b host_color=3 color_idx=0 guest_color=3
+(XEN) LLC-FIXCOLOR DOM d0 map: order=0 gfn=0x21486 mfn=0x5a664 host_color=4 color_idx=1 guest_color=4
+(XEN) LLC-FIXCOLOR DOM d0 map: order=0 gfn=0x21487 mfn=0x5a665 host_color=5 color_idx=2 guest_color=5
+(XEN) LLC-FIXCOLOR DOM d0 map: order=0 gfn=0x21488 mfn=0x5a65e host_color=6 color_idx=3 guest_color=6
+(XEN) LLC-FIXCOLOR DOM d0 map: order=0 gfn=0x21489 mfn=0x5a65f host_color=7 color_idx=4 guest_color=7
+(XEN) LLC-FIXCOLOR DOM d0 map: order=0 gfn=0x2148a mfn=0x5a663 host_color=3 color_idx=0 guest_color=3
+(XEN) LLC-FIXCOLOR DOM d0 map: order=0 gfn=0x2148b mfn=0x5a65c host_color=4 color_idx=1 guest_color=4
+(XEN) LLC-FIXCOLOR DOM d0 map: order=0 gfn=0x2148c mfn=0x5a65d host_color=5 color_idx=2 guest_color=5
+(XEN) LLC-FIXCOLOR DOM d0 map: order=0 gfn=0x2148d mfn=0x5a656 host_color=6 color_idx=3 guest_color=6
+(XEN) LLC-FIXCOLOR DOM d0 map: order=0 gfn=0x2148e mfn=0x5a657 host_color=7 color_idx=4 guest_color=7
+(XEN) LLC-FIXCOLOR DOM (XEN) Allocating PPI 16 for event channel interrupt
+(XEN) d0: extended region 0: 0x200000->0x8200000
+(XEN) d0: extended region 1: 0x35000000->0x7de00000
+(XEN) Loading zImage from 0000000003f80000 to 0000000009400000-000000000c400000
+(XEN) Loading d0 DTB to 0x0000000011400000-0x0000000011429da4
+(XEN) *** LOADING DOMU cpus=1 memory=0x40000KB ***
+(XEN) Loading d1 kernel from boot module @ 0000000007000000
+(XEN) Allocating mappings totalling 256MB for d1:
+(XEN) ======= mylog ====== bank_start = 0x24000000, bank_size = 0x10000000
+(XEN) allocate_bank_memory: d1 bank=0 start=0x24000000 size=0x10000000 (262144KB) sgfn=0x24000 llc_coloring=1
+(XEN) 2 LLC colors: { 0, 2 }
+(XEN) LLC-FIXCOLOR allocate_domheap_memory: d=d1 tot=0x10000000 llc=1 fixed=1 colors=2 cb_guest_map=1
+(XEN) LLC-FIXCOLOR DOM d1 map: order=0 gfn=0x24000 mfn=0x12f8 host_color=0 color_idx=0 guest_color=0
+(XEN) LLC-FIXCOLOR DOM d1 map: order=0 gfn=0x24001 mfn=0x12fa host_color=2 color_idx=1 guest_color=2
+(XEN) LLC-FIXCOLOR DOM d1 map: order=0 gfn=0x24002 mfn=0x12f0 host_color=0 color_idx=0 guest_color=0
+(XEN) LLC-FIXCOLOR DOM d1 map: order=0 gfn=0x24003 mfn=0x12f2 host_color=2 color_idx=1 guest_color=2
+(XEN) LLC-FIXCOLOR DOM d1 map: order=0 gfn=0x24004 mfn=0x12e8 host_color=0 color_idx=0 guest_color=0
+(XEN) LLC-FIXCOLOR DOM d1 map: order=0 gfn=0x24005 mfn=0x12ea host_color=2 color_idx=1 guest_color=2
+(XEN) LLC-FIXCOLOR DOM d1 map: order=0 gfn=0x24006 mfn=0x12e0 host_color=0 color_idx=0 guest_color=0
+(XEN) LLC-FIXCOLOR DOM d1 map: order=0 gfn=0x24007 mfn=0x12e2 host_color=2 color_idx=1 guest_color=2
+(XEN) LLC-FIXCOLOR DOM d1 map: order=0 gfn=0x24008 mfn=0x12d8 host_color=0 color_idx=0 guest_color=0
+(XEN) LLC-FIXCOLOR DOM d1 map: order=0 gfn=0x24009 mfn=0x12da host_color=2 color_idx=1 guest_color=2
+(XEN) LLC-FIXCOLOR DOM d1 map: order=0 gfn=0x2400a mfn=0x12d0 host_color=0 color_idx=0 guest_color=0
+(XEN) LLC-FIXCOLOR DOM d1 map: order=0 gfn=0x2400b mfn=0x12d2 host_color=2 color_idx=1 guest_color=2
+(XEN) LLC-FIXCOLOR DOM d1 map: order=0 gfn=0x2400c mfn=0x12c8 host_color=0 color_idx=0 guest_color=0
+(XEN) LLC-FIXCOLOR DOM d1 map: order=0 gfn=0x2400d mfn=0x12ca host_color=2 color_idx=1 guest_color=2
+(XEN) LLC-FIXCOLOR DOM d1 map: order=0 gfn=0x2400e mfn=0x12c0 host_color=0 color_idx=0 guest_color=0
+(XEN) LLC-FIXCOLOR DOM d1 map: order=0 gfn=0x2400f mfn=0x12c2 host_color=2 color_idx=1 guest_color=2
+(XEN) LLC-FIXCOLOR DOM d1 map: order=0 gfn=0x24010 mfn=0x12b8 host_color=0 color_idx=0 guest_color=0
+(XEN) LLC-FIXCOLOR DOM d1 map: order=0 gfn=0x24011 mfn=0x12ba host_color=2 color_idx=1 guest_color=2
+(XEN) LLC-FIXCOLOR DOM d1 map: order=0 gfn=0x24012 mfn=0x12b0 host_color=0 color_idx=0 guest_color=0
+(XEN) LLC-FIXCOLOR DOM d1 map: order=0 gfn=0x24013 mfn=0x12b2 host_color=2 color_idx=1 guest_color=2
+(XEN) LLC-FIXCOLOR DOM d1 map: order=0 gfn=0x24014 mfn=0x12a8 host_color=0 color_idx=0 guest_color=0
+(XEN) LLC-FIXCOLOR DOM d1 map: order=0 gfn=0x24015 mfn=0x12aa host_color=2 color_idx=1 guest_color=2
+(XEN) LLC-FIXCOLOR DOM d1 map: order=0 gfn=0x24016 mfn=0x12a0 host_color=0 color_idx=0 guest_color=0
+(XEN) LLC-FIXCOLOR DOM d1 map: order=0 gfn=0x24017 mfn=0x12a2 host_color=2 color_idx=1 guest_color=2
+(XEN) LLC-FIXCOLOR DOM d1 map: order=0 gfn=0x24018 mfn=0x1298 host_color=0 color_idx=0 guest_color=0
+(XEN) LLC-FIXCOLOR DOM d1 map: order=0 gfn=0x24019 mfn=0x129a host_color=2 color_idx=1 guest_color=2
+(XEN) LLC-FIXCOLOR DOM d1 map: order=0 gfn=0x2401a mfn=0x1290 host_color=0 color_idx=0 guest_color=0
+(XEN) LLC-FIXCOLOR DOM d1 map: order=0 gfn=0x2401b mfn=0x1292 host_color=2 color_idx=1 guest_color=2
+(XEN) LLC-FIXCOLOR DOM d1 map: order=0 gfn=0x2401c mfn=0x1288 host_color=0 color_idx=0 guest_color=0
+(XEN) LLC-FIXCOLOR DOM d1 map: order=0 gfn=0x2401d mfn=0x128a host_color=2 color_idx=1 guest_color=2
+(XEN) LLC-FIXCOLOR DOM d1 map: order=0 gfn=0x2401e mfn=0x1280 host_color=0 color_idx=0 guest_color=0
+(XEN) LLC-FIXCOLOR DOM d1 map: order=0 gfn=0x2401f mfn=0x1282 host_color=2 color_idx=1 guest_color=2
+(XEN) LLC-FIXCOLOR DOM d1 map: order=0 gfn=0x24020 mfn=0x1278 host_color=0 color_idx=0 guest_color=0
+(XEN) LLC-FIXCOLOR DOM d1 map: order=0 gfn=0x24021 mfn=0x127a host_color=2 color_idx=1 guest_color=2
+(XEN) LLC-FIXCOLOR DOM d1 map: order=0 gfn=0x24022 mfn=0x1270 host_color=0 color_idx=0 guest_color=0
+(XEN) LLC-FIXCOLOR DOM d1 map: order=0 gfn=0x24023 mfn=0x1272 host_color=2 color_idx=1 guest_color=2
+(XEN) LLC-FIXCOLOR DOM d1 map: order=0 gfn=0x24024 mfn=0x1268 host_color=0 color_idx=0 guest_color=0
+(XEN) LLC-FIXCOLOR DOM d1 map: order=0 gfn=0x24025 mfn=0x126a host_color=2 color_idx=1 guest_color=2
+(XEN) LLC-FIXCOLOR DOM d1 map: order=0 gfn=0x24026 mfn=0x1260 host_color=0 color_idx=0 guest_color=0
+(XEN) LLC-FIXCOLOR DOM d1 map: order=0 gfn=0x24027 mfn=0x1262 host_color=2 color_idx=1 guest_color=2
+(XEN) LLC-FIXCOLOR DOM d1 map: order=0 gfn=0x24028 mfn=0x1258 host_color=0 color_idx=0 guest_color=0
+(XEN) LLC-FIXCOLOR DOM d1 map: order=0 gfn=0x24029 mfn=0x125a host_color=2 color_idx=1 guest_color=2
+(XEN) LLC-FIXCOLOR DOM d1 map: order=0 gfn=0x2402a mfn=0x1250 host_color=0 color_idx=0 guest_color=0
+(XEN) LLC-FIXCOLOR DOM d1 map: order=0 gfn=0x2402b mfn=0x1252 host_color=2 color_idx=1 guest_color=2
+(XEN) LLC-FIXCOLOR DOM d1 map: order=0 gfn=0x2402c mfn=0x1248 host_color=0 color_idx=0 guest_color=0
+(XEN) LLC-FIXCOLOR DOM d1 map: order=0 gfn=0x2402d mfn=0x124a host_color=2 color_idx=1 guest_color=2
+(XEN) LLC-FIXCOLOR DOM d1 map: order=0 gfn=0x2402e mfn=0x1240 host_color=0 color_idx=0 guest_color=0
+(XEN) LLC-FIXCOLOR DOM d1 map: order=0 gfn=0x2402f mfn=0x1242 host_color=2 color_idx=1 guest_color=2
+(XEN) LLC-FIXCOLOR DOM d1 map: order=0 gfn=0x24030 mfn=0x1238 host_color=0 color_idx=0 guest_color=0
+(XEN) LLC-FIXCOLOR DOM d1 map: order=0 gfn=0x24031 mfn=0x123a host_color=2 color_idx=1 guest_color=2
+(XEN) LLC-FIXCOLOR DOM d1 map: order=0 gfn=0x24032 mfn=0x1230 host_color=0 color_idx=0 guest_color=0
+(XEN) LLC-FIXCOLOR DOM d1 map: order=0 gfn=0x24033 mfn=0x1232 host_color=2 color_idx=1 guest_color=2
+(XEN) LLC-FIXCOLOR DOM d1 map: order=0 gfn=0x24034 mfn=0x1228 host_color=0 color_idx=0 guest_color=0
+(XEN) LLC-FIXCOLOR DOM d1 map: order=0 gfn=0x24035 mfn=0x122a host_color=2 color_idx=1 guest_color=2
+(XEN) LLC-FIXCOLOR DOM d1 map: order=0 gfn=0x24036 mfn=0x1220 host_color=0 color_idx=0 guest_color=0
+(XEN) LLC-FIXCOLOR DOM d1 map: order=0 gfn=0x24037 mfn=0x1222 host_color=2 color_idx=1 guest_color=2
+(XEN) LLC-FIXCOLOR DOM d1 map: order=0 gfn=0x24038 mfn=0x1218 host_color=0 color_idx=0 guest_color=0
+(XEN) LLC-FIXCOLOR DOM d1 map: order=0 gfn=0x24039 mfn=0x121a host_color=2 color_idx=1 guest_color=2
+(XEN) LLC-FIXCOLOR DOM d1 map: order=0 gfn=0x2403a mfn=0x1210 host_color=0 color_idx=0 guest_color=0
+(XEN) LLC-FIXCOLOR DOM d1 map: order=0 gfn=0x2403b mfn=0x1212 host_color=2 color_idx=1 guest_color=2
+(XEN) LLC-FIXCOLOR DOM d1 map: order=0 gfn=0x2403c mfn=0x1208 host_color=0 color_idx=0 guest_color=0
+(XEN) LLC-FIXCOLOR DOM d1 map: order=0 gfn=0x2403d mfn=0x120a host_color=2 color_idx=1 guest_color=2
+(XEN) LLC-FIXCOLOR DOM d1 map: order=0 gfn=0x2403e mfn=0x1200 host_color=0 color_idx=0 guest_color=0
+(XEN) LLC-FIXCOLOR DOM d1 map: order=0 gfn=0x2403f mfn=0x1202 host_color=2 color_idx=1 guest_color=2
+(XEN) LLC-FIXCOLOR DOM d1 map: order=0 gfn=0x24040 mfn=0x11f8 host_color=0 color_idx=0 guest_color=0
+(XEN) LLC-FIXCOLOR DOM d1 map: order=0 gfn=0x24041 mfn=0x11fa host_color=2 color_idx=1 guest_color=2
+(XEN) LLC-FIXCOLOR DOM d1 map: order=0 gfn=0x24042 mfn=0x11f0 host_color=0 color_idx=0 guest_color=0
+(XEN) LLC-FIXCOLOR DOM d1 map: order=0 gfn=0x24043 mfn=0x11f2 host_color=2 color_idx=1 guest_color=2
+(XEN) LLC-FIXCOLOR DOM d1 map: order=0 gfn=0x24044 mfn=0x11e8 host_color=0 color_idx=0 guest_color=0
+(XEN) LLC-FIXCOLOR DOM d1 map: order=0 gfn=0x24045 mfn=0x11ea host_color=2 color_idx=1 guest_color=2
+(XEN) LLC-FIXCOLOR DOM d1 map: order=0 gfn=0x24046 mfn=0x11e0 host_color=0 color_idx=0 guest_color=0
+(XEN) LLC-FIXCOLOR DOM d1 map: order=0 gfn=0x24047 mfn=0x11e2 host_color=2 color_idx=1 guest_color=2
+(XEN) LLC-FIXCOLOR DOM d1 map: order=0 gfn=0x24048 mfn=0x11d8 host_color=0 color_idx=0 guest_color=0
+(XEN) LLC-FIXCOLOR DOM d1 map: order=0 gfn=0x24049 mfn=0x11da host_color=2 color_idx=1 guest_color=2
+(XEN) LLC-FIXCOLOR DOM d1 map: order=0 gfn=0x2404a mfn=0x11d0 host_color=0 color_idx=0 guest_color=0
+(XEN) LLC-FIXCOLOR DOM d1 map: order=0 gfn=0x2404b mfn=0x11d2 host_color=2 color_idx=1 guest_color=2
+(XEN) LLC-FIXCOLOR DOM d1 map: order=0 gfn=0x2404c mfn=0x11c8 host_color=0 color_idx=0 guest_color=0
+(XEN) LLC-FIXCOLOR DOM d1 map: order=0 gfn=0x2404d mfn=0x11ca host_color=2 color_idx=1 guest_color=2
+(XEN) LLC-FIXCOLOR DOM d1 map: order=0 gfn=0x2404e mfn=0x11c0 host_color=0 color_idx=0 guest_color=0
+(XEN) LLC-FIXCOLOR DOM d1 map: order=0 gfn=0x2404f mfn=0x11c2 host_color=2 color_idx=1 guest_color=2
+(XEN) LLC-FIXCOLOR DOM d1 map: order=0 gfn=0x24050 mfn=0x11b8 host_color=0 color_idx=0 guest_color=0
+(XEN) LLC-FIXCOLOR DOM d1 map: order=0 gfn=0x24051 mfn=0x11ba host_color=2 color_idx=1 guest_color=2
+(XEN) LLC-FIXCOLOR DOM d1 map: order=0 gfn=0x24052 mfn=0x11b0 host_color=0 color_idx=0 guest_color=0
+(XEN) LLC-FIXCOLOR DOM d1 map: order=0 gfn=0x24053 mfn=0x11b2 host_color=2 color_idx=1 guest_color=2
+(XEN) LLC-FIXCOLOR DOM d1 map: order=0 gfn=0x24054 mfn=0x11a8 host_color=0 color_idx=0 guest_color=0
+(XEN) LLC-FIXCOLOR DOM d1 map: order=0 gfn=0x24055 mfn=0x11aa host_color=2 color_idx=1 guest_color=2
+(XEN) LLC-FIXCOLOR DOM d1 map: order=0 gfn=0x24056 mfn=0x11a0 host_color=0 color_idx=0 guest_color=0
+(XEN) LLC-FIXCOLOR DOM d1 map: order=0 gfn=0x24057 mfn=0x11a2 host_color=2 color_idx=1 guest_color=2
+(XEN) LLC-FIXCOLOR DOM d1 map: order=0 gfn=0x24058 mfn=0x1198 host_color=0 color_idx=0 guest_color=0
+(XEN) LLC-FIXCOLOR DOM d1 map: order=0 gfn=0x24059 mfn=0x119a host_color=2 color_idx=1 guest_color=2
+(XEN) LLC-FIXCOLOR DOM d1 map: order=0 gfn=0x2405a mfn=0x1190 host_color=0 color_idx=0 guest_color=0
+(XEN) LLC-FIXCOLOR DOM d1 map: order=0 gfn=0x2405b mfn=0x1192 host_color=2 color_idx=1 guest_color=2
+(XEN) LLC-FIXCOLOR DOM d1 map: order=0 gfn=0x2405c mfn=0x1188 host_color=0 color_idx=0 guest_color=0
+(XEN) LLC-FIXCOLOR DOM d1 map: order=0 gfn=0x2405d mfn=0x118a host_color=2 color_idx=1 guest_color=2
+(XEN) LLC-FIXCOLOR DOM d1 map: order=0 gfn=0x2405e mfn=0x1180 host_color=0 color_idx=0 guest_color=0
+(XEN) LLC-FIXCOLOR DOM d1 map: order=0 gfn=0x2405f mfn=0x1182 host_color=2 color_idx=1 guest_color=2
+(XEN) LLC-FIXCOLOR DOM d1 map: order=0 gfn=0x24060 mfn=0x1178 host_color=0 color_idx=0 guest_color=0
+(XEN) LLC-FIXCOLOR DOM d1 map: order=0 gfn=0x24061 mfn=0x117a host_color=2 color_idx=1 guest_color=2
+(XEN) LLC-FIXCOLOR DOM d1 map: order=0 gfn=0x24062 mfn=0x1170 host_color=0 color_idx=0 guest_color=0
+(XEN) LLC-FIXCOLOR DOM d1 map: order=0 gfn=0x24063 mfn=0x1172 host_color=2 color_idx=1 guest_color=2
+(XEN) LLC-FIXCOLOR DOM d1 map: order=0 gfn=0x24064 mfn=0x1168 host_color=0 color_idx=0 guest_color=0
+(XEN) LLC-FIXCOLOR DOM d1 map: order=0 gfn=0x24065 mfn=0x116a host_color=2 color_idx=1 guest_color=2
+(XEN) LLC-FIXCOLOR DOM d1 map: order=0 gfn=0x24066 mfn=0x1160 host_color=0 color_idx=0 guest_color=0
+(XEN) LLC-FIXCOLOR DOM d1 map: order=0 gfn=0x24067 mfn=0x1162 host_color=2 color_idx=1 guest_color=2
+(XEN) LLC-FIXCOLOR DOM d1 map: order=0 gfn=0x24068 mfn=0x1158 host_color=0 color_idx=0 guest_color=0
+(XEN) LLC-FIXCOLOR DOM d1 map: order=0 gfn=0x24069 mfn=0x115a host_color=2 color_idx=1 guest_color=2
+(XEN) LLC-FIXCOLOR DOM d1 map: order=0 gfn=0x2406a mfn=0x1150 host_color=0 color_idx=0 guest_color=0
+(XEN) LLC-FIXCOLOR DOM d1 map: order=0 gfn=0x2406b mfn=0x1152 host_color=2 color_idx=1 guest_color=2
+(XEN) LLC-FIXCOLOR DOM d1 map: order=0 gfn=0x2406c mfn=0x1148 host_color=0 color_idx=0 guest_color=0
+(XEN) LLC-FIXCOLOR DOM d1 map: order=0 gfn=0x2406d mfn=0x114a host_color=2 color_idx=1 guest_color=2
+(XEN) LLC-FIXCOLOR DOM d1 map: order=0 gfn=0x2406e mfn=0x1140 host_color=0 color_idx=0 guest_color=0
+(XEN) LLC-FIXCOLOR DOM d1 map: order=0 gfn=0x2406f mfn=0x1142 host_color=2 color_idx=1 guest_color=2
+(XEN) LLC-FIXCOLOR DOM d1 map: order=0 gfn=0x24070 mfn=0x1138 host_color=0 color_idx=0 guest_color=0
+(XEN) LLC-FIXCOLOR DOM d1 map: order=0 gfn=0x24071 mfn=0x113a host_color=2 color_idx=1 guest_color=2
+(XEN) LLC-FIXCOLOR DOM d1 map: order=0 gfn=0x24072 mfn=0x1130 host_color=0 color_idx=0 guest_color=0
+(XEN) LLC-FIXCOLOR DOM d1 map: order=0 gfn=0x24073 mfn=0x1132 host_color=2 color_idx=1 guest_color=2
+(XEN) LLC-FIXCOLOR DOM d1 map: order=0 gfn=0x24074 mfn=0x1128 host_color=0 color_idx=0 guest_color=0
+(XEN) LLC-FIXCOLOR DOM d1 map: order=0 gfn=0x24075 mfn=0x112a host_color=2 color_idx=1 guest_color=2
+(XEN) LLC-FIXCOLOR DOM d1 map: order=0 gfn=0x24076 mfn=0x1120 host_color=0 color_idx=0 guest_color=0
+(XEN) LLC-FIXCOLOR DOM d1 map: order=0 gfn=0x24077 mfn=0x1122 host_color=2 color_idx=1 guest_color=2
+(XEN) LLC-FIXCOLOR DOM d1 map: order=0 gfn=0x24078 mfn=0x1118 host_color=0 color_idx=0 guest_color=0
+(XEN) LLC-FIXCOLOR DOM d1 map: order=0 gfn=0x24079 mfn=0x111a host_color=2 color_idx=1 guest_color=2
+(XEN) LLC-FIXCOLOR DOM d1 map: order=0 gfn=0x2407a mfn=0x1110 host_color=0 color_idx=0 guest_color=0
+(XEN) LLC-FIXCOLOR DOM d1 map: order=0 gfn=0x2407b mfn=0x1112 host_color=2 color_idx=1 guest_color=2
+(XEN) LLC-FIXCOLOR DOM d1 map: order=0 gfn=0x2407c mfn=0x1108 host_color=0 color_idx=0 guest_color=0
+(XEN) LLC-FIXCOLOR DOM d1 map: order=0 gfn=0x2407d mfn=0x110a host_color=2 color_idx=1 guest_color=2
+(XEN) LLC-FIXCOLOR DOM d1 map: order=0 gfn=0x2407e mfn=0x1100 host_color=0 color_idx=0 guest_color=0
+(XEN) LLC-FIXCOLOR DOM d1 map: order=0 gfn=0x2407f mfn=0x1102 host_color=2 color_idx=1 guest_color=2
+(XEN) LLC-FIXCOLOR DOM d1 map: order=0 gfn=0x24080 mfn=0x10f8 host_color=0 color_idx=0 guest_color=0
+(XEN) LLC-FIXCOLOR DOM d1 map: order=0 gfn=0x24081 mfn=0x10fa host_color=2 color_idx=1 guest_color=2
+(XEN) LLC-FIXCOLOR DOM d1 map: order=0 gfn=0x24082 mfn=0x10f0 host_color=0 color_idx=0 guest_color=0
+(XEN) LLC-FIXCOLOR DOM d1 map: order=0 gfn=0x24083 mfn=0x10f2 host_color=2 color_idx=1 guest_color=2
+(XEN) LLC-FIXCOLOR DOM d1 map: order=0 gfn=0x24084 mfn=0x10e8 host_color=0 color_idx=0 guest_color=0
+(XEN) LLC-FIXCOLOR DOM d1 map: order=0 gfn=0x24085 mfn=0x10ea host_color=2 color_idx=1 guest_color=2
+(XEN) LLC-FIXCOLOR DOM d1 map: order=0 gfn=0x24086 mfn=0x10e0 host_color=0 color_idx=0 guest_color=0
+(XEN) LLC-FIXCOLOR DOM d1 map: order=0 gfn=0x24087 mfn=0x10e2 host_color=2 color_idx=1 guest_color=2
+(XEN) LLC-FIXCOLOR DOM d1 map: order=0 gfn=0x24088 mfn=0x10d8 host_color=0 color_idx=0 guest_color=0
+(XEN) LLC-FIXCOLOR DOM d1 map: order=0 gfn=0x24089 mfn=0x10da host_color=2 color_idx=1 guest_color=2
+(XEN) LLC-FIXCOLOR DOM d1 map: order=0 gfn=0x2408a mfn=0x10d0 host_color=0 color_idx=0 guest_color=0
+(XEN) LLC-FIXCOLOR DOM d1 map: order=0 gfn=0x2408b mfn=0x10d2 host_color=2 color_idx=1 guest_color=2
+(XEN) LLC-FIXCOLOR DOM d1 map: order=0 gfn=0x2408c mfn=0x10c8 host_color=0 color_idx=0 guest_color=0
+(XEN) LLC-FIXCOLOR DOM d1 map: order=0 gfn=0x2408d mfn=0x10ca host_color=2 color_idx=1 guest_color=2
+(XEN) LLC-FIXCOLOR DOM d1 map: order=0 gfn=0x2408e mfn=0x10c0 host_color=0 color_idx=0 guest_color=0
+(XEN) LLC-FIXCOLOR DOM d1 map: order=0 gfn=0x2408f mfn=0x10c2 host_color=2 color_idx=1 guest_color=2
+(XEN) LLC-FIXCOLOR DOM d1 map: order=0 gfn=0x24090 mfn=0x10b8 host_color=0 color_idx=0 guest_color=0
+(XEN) LLC-FIXCOLOR DOM d1 map: order=0 gfn=0x24091 mfn=0x10ba host_color=2 color_idx=1 guest_color=2
+(XEN) LLC-FIXCOLOR DOM d1 map: order=0 gfn=0x24092 mfn=0x10b0 host_color=0 color_idx=0 guest_color=0
+(XEN) LLC-FIXCOLOR DOM d1 map: order=0 gfn=0x24093 mfn=0x10b2 host_color=2 color_idx=1 guest_color=2
+(XEN) LLC-FIXCOLOR DOM d1 map: order=0 gfn=0x24094 mfn=0x10a8 host_color=0 color_idx=0 guest_color=0
+(XEN) LLC-FIXCOLOR DOM d1 map: order=0 gfn=0x24095 mfn=0x10aa host_color=2 color_idx=1 guest_color=2
+(XEN) LLC-FIXCOLOR DOM d1 map: order=0 gfn=0x24096 mfn=0x10a0 host_color=0 color_idx=0 guest_color=0
+(XEN) LLC-FIXCOLOR DOM d1 map: order=0 gfn=0x24097 mfn=0x10a2 host_color=2 color_idx=1 guest_color=2
+(XEN) LLC-FIXCOLOR DOM d1 map: order=0 gfn=0x24098 mfn=0x1098 host_color=0 color_idx=0 guest_color=0
+(XEN) LLC-FIXCOLOR DOM d1 map: order=0 gfn=0x24099 mfn=0x109a host_color=2 color_idx=1 guest_color=2
+(XEN) LLC-FIXCOLOR DOM d1 map: order=0 gfn=0x2409a mfn=0x1090 host_color=0 color_idx=0 guest_color=0
+(XEN) LLC-FIXCOLOR DOM d1 map: order=0 gfn=0x2409b mfn=0x1092 host_color=2 color_idx=1 guest_color=2
+(XEN) LLC-FIXCOLOR DOM d1 map: order=0 gfn=0x2409c mfn=0x1088 host_color=0 color_idx=0 guest_color=0
+(XEN) LLC-FIXCOLOR DOM d1 map: order=0 gfn=0x2409d mfn=0x108a host_color=2 color_idx=1 guest_color=2
+(XEN) LLC-FIXCOLOR DOM d1 map: order=0 gfn=0x2409e mfn=0x1080 host_color=0 color_idx=0 guest_color=0
+(XEN) LLC-FIXCOLOR DOM d1 map: order=0 gfn=0x2409f mfn=0x1082 host_color=2 color_idx=1 guest_color=2
+(XEN) LLC-FIXCOLOR DOM d1 map: order=0 gfn=0x240a0 mfn=0x1078 host_color=0 color_idx=0 guest_color=0
+(XEN) LLC-FIXCOLOR DOM d1 map: order=0 gfn=0x240a1 mfn=0x107a host_color=2 color_idx=1 guest_color=2
+(XEN) LLC-FIXCOLOR DOM d1 map: order=0 gfn=0x240a2 mfn=0x1070 host_color=0 color_idx=0 guest_color=0
+(XEN) LLC-FIXCOLOR DOM d1 map: order=0 gfn=0x240a3 mfn=0x1072 host_color=2 color_idx=1 guest_color=2
+(XEN) LLC-FIXCOLOR DOM d1 map: order=0 gfn=0x240a4 mfn=0x1068 host_color=0 color_idx=0 guest_color=0
+(XEN) LLC-FIXCOLOR DOM d1 map: order=0 gfn=0x240a5 mfn=0x106a host_color=2 color_idx=1 guest_color=2
+(XEN) LLC-FIXCOLOR DOM d1 map: order=0 gfn=0x240a6 mfn=0x1060 host_color=0 color_idx=0 guest_color=0
+(XEN) LLC-FIXCOLOR DOM d1 map: order=0 gfn=0x240a7 mfn=0x1062 host_color=2 color_idx=1 guest_color=2
+(XEN) LLC-FIXCOLOR DOM d1 map: order=0 gfn=0x240a8 mfn=0x1058 host_color=0 color_idx=0 guest_color=0
+(XEN) LLC-FIXCOLOR DOM d1 map: order=0 gfn=0x240a9 mfn=0x105a host_color=2 color_idx=1 guest_color=2
+(XEN) LLC-FIXCOLOR DOM d1 map: order=0 gfn=0x240aa mfn=0x1050 host_color=0 color_idx=0 guest_color=0
+(XEN) LLC-FIXCOLOR DOM d1 map: order=0 gfn=0x240ab mfn=0x1052 host_color=2 color_idx=1 guest_color=2
+(XEN) LLC-FIXCOLOR DOM d1 map: order=0 gfn=0x240ac mfn=0x1048 host_color=0 color_idx=0 guest_color=0
+(XEN) LLC-FIXCOLOR DOM d1 map: order=0 gfn=0x240ad mfn=0x104a host_color=2 color_idx=1 guest_color=2
+(XEN) LLC-FIXCOLOR DOM d1 map: order=0 gfn=0x240ae mfn=0x1040 host_color=0 color_idx=0 guest_color=0
+(XEN) LLC-FIXCOLOR DOM d1 map: order=0 gfn=0x240af mfn=0x1042 host_color=2 color_idx=1 guest_color=2
+(XEN) LLC-FIXCOLOR DOM d1 map: order=0 gfn=0x240b0 mfn=0x1038 host_color=0 color_idx=0 guest_color=0
+(XEN) LLC-FIXCOLOR DOM d1 map: order=0 gfn=0x240b1 mfn=0x103a host_color=2 color_idx=1 guest_color=2
+(XEN) LLC-FIXCOLOR DOM d1 map: order=0 gfn=0x240b2 mfn=0x1030 host_color=0 color_idx=0 guest_color=0
+(XEN) LLC-FIXCOLOR DOM d1 map: order=0 gfn=0x240b3 mfn=0x1032 host_color=2 color_idx=1 guest_color=2
+(XEN) LLC-FIXCOLOR DOM d1 map: order=0 gfn=0x240b4 mfn=0x1028 host_color=0 color_idx=0 guest_color=0
+(XEN) LLC-FIXCOLOR DOM d1 map: order=0 gfn=0x240b5 mfn=0x102a host_color=2 color_idx=1 guest_color=2
+(XEN) LLC-FIXCOLOR DOM d1 map: order=0 gfn=0x240b6 mfn=0x1020 host_color=0 color_idx=0 guest_color=0
+(XEN) LLC-FIXCOLOR DOM d1 map: order=0 gfn=0x240b7 mfn=0x1022 host_color=2 color_idx=1 guest_color=2
+(XEN) LLC-FIXCOLOR DOM d1 map: order=0 gfn=0x240b8 mfn=0x1018 host_color=0 color_idx=0 guest_color=0
+(XEN) LLC-FIXCOLOR DOM d1 map: order=0 gfn=0x240b9 mfn=0x101a host_color=2 color_idx=1 guest_color=2
+(XEN) LLC-FIXCOLOR DOM d1 map: order=0 gfn=0x240ba mfn=0x1010 host_color=0 color_idx=0 guest_color=0
+(XEN) LLC-FIXCOLOR DOM d1 map: order=0 gfn=0x240bb mfn=0x1012 host_color=2 color_idx=1 guest_color=2
+(XEN) LLC-FIXCOLOR DOM d1 map: order=0 gfn=0x240bc mfn=0x1008 host_color=0 color_idx=0 guest_color=0
+(XEN) LLC-FIXCOLOR DOM d1 map: order=0 gfn=0x240bd mfn=0x100a host_color=2 color_idx=1 guest_color=2
+(XEN) LLC-FIXCOLOR DOM d1 map: order=0 gfn=0x240be mfn=0x1000 host_color=0 color_idx=0 guest_color=0
+(XEN) LLC-FIXCOLOR DOM d1 map: order=0 gfn=0x240bf mfn=0x1002 host_color=2 color_idx=1 guest_color=2
+(XEN) LLC-FIXCOLOR DOM d1 map: order=0 gfn=0x240c0 mfn=0xff8 host_color=0 color_idx=0 guest_color=0
+(XEN) LLC-FIXCOLOR DOM d1 map: order=0 gfn=0x240c1 mfn=0xffa host_color=2 color_idx=1 guest_color=2
+(XEN) LLC-FIXCOLOR DOM d1 map: order=0 gfn=0x240c2 mfn=0xff0 host_color=0 color_idx=0 guest_color=0
+(XEN) LLC-FIXCOLOR DOM d1 map: order=0 gfn=0x240c3 mfn=0xff2 host_color=2 color_idx=1 guest_color=2
+(XEN) LLC-FIXCOLOR DOM d1 map: order=0 gfn=0x240c4 mfn=0xfe8 host_color=0 color_idx=0 guest_color=0
+(XEN) LLC-FIXCOLOR DOM d1 map: order=0 gfn=0x240c5 mfn=0xfea host_color=2 color_idx=1 guest_color=2
+(XEN) LLC-FIXCOLOR DOM d1 map: order=0 gfn=0x240c6 mfn=0xfe0 host_color=0 color_idx=0 guest_color=0
+(XEN) LLC-FIXCOLOR DOM d1 map: order=0 gfn=0x240c7 mfn=0xfe2 host_color=2 color_idx=1 guest_color=2
+(XEN) LLC-FIXCOLOR DOM d1 map: order=0 gfn=0x240c8 mfn=0xfd8 host_color=0 color_idx=0 guest_color=0
+(XEN) LLC-FIXCOLOR DOM d1 map: order=0 gfn=0x240c9 mfn=0xfda host_color=2 color_idx=1 guest_color=2
+(XEN) LLC-FIXCOLOR DOM d1 map: order=0 gfn=0x240ca mfn=0xfd0 host_color=0 color_idx=0 guest_color=0
+(XEN) LLC-FIXCOLOR DOM d1 map: order=0 gfn=0x240cb mfn=0xfd2 host_color=2 color_idx=1 guest_color=2
+(XEN) LLC-FIXCOLOR DOM d1 map: order=0 gfn=0x240cc mfn=0xfc8 host_color=0 color_idx=0 guest_color=0
+(XEN) LLC-FIXCOLOR DOM d1 map: order=0 gfn=0x240cd mfn=0xfca host_color=2 color_idx=1 guest_color=2
+(XEN) LLC-FIXCOLOR DOM d1 map: order=0 gfn=0x240ce mfn=0xfc0 host_color=0 color_idx=0 guest_color=0
+(XEN) LLC-FIXCOLOR DOM d1 map: order=0 gfn=0x240cf mfn=0xfc2 host_color=2 color_idx=1 guest_color=2
+(XEN) LLC-FIXCOLOR DOM d1 map: order=0 gfn=0x240d0 mfn=0xfb8 host_color=0 color_idx=0 guest_color=0
+(XEN) LLC-FIXCOLOR DOM d1 map: order=0 gfn=0x240d1 mfn=0xfba host_color=2 color_idx=1 guest_color=2
+(XEN) LLC-FIXCOLOR DOM d1 map: order=0 gfn=0x240d2 mfn=0xfb0 host_color=0 color_idx=0 guest_color=0
+(XEN) LLC-FIXCOLOR DOM d1 map: order=0 gfn=0x240d3 mfn=0xfb2 host_color=2 color_idx=1 guest_color=2
+(XEN) LLC-FIXCOLOR DOM d1 map: order=0 gfn=0x240d4 mfn=0xfa8 host_color=0 color_idx=0 guest_color=0
+(XEN) LLC-FIXCOLOR DOM d1 map: order=0 gfn=0x240d5 mfn=0xfaa host_color=2 color_idx=1 guest_color=2
+(XEN) LLC-FIXCOLOR DOM d1 map: order=0 gfn=0x240d6 mfn=0xfa0 host_color=0 color_idx=0 guest_color=0
+(XEN) LLC-FIXCOLOR DOM d1 map: order=0 gfn=0x240d7 mfn=0xfa2 host_color=2 color_idx=1 guest_color=2
+(XEN) LLC-FIXCOLOR DOM d1 map: order=0 gfn=0x240d8 mfn=0xf98 host_color=0 color_idx=0 guest_color=0
+(XEN) LLC-FIXCOLOR DOM d1 map: order=0 gfn=0x240d9 mfn=0xf9a host_color=2 color_idx2... 1... 
+(XEN) *** Serial input to DOM0 (type 'CTRL-a' three times to switch input)
+(XEN) @@@@@@@init_heap_pages: mfn=521977, nr_pages=113
+(XEN) Freed 452kB init memory.
+[    0.000000] Booting Linux on physical CPU 0x0000000000 [0x412fd050]
+[    0.000000] Linux version 5.10.0+ (gaohuaiji@os-build-machine) (aarch64-openeuler-linux-gcc (crosstool-NG 1.26.0) 12.3.1, GNU ld (crosstool-NG 1.26.0) 2.41) #5 SMP PREEMPT_RT Wed Jul 8 09:38:13 CST 2026
+[    0.000000] Machine model: Forlinx OK3568-C Board
+[    0.000000] earlycon: xenboot0 at I/O port 0x0 (options '')
+[    0.000000] printk: bootconsole [xenboot0] enabled
+[    0.000000] printk: debug: ignoring loglevel setting.
+[    0.000000] Xen 4.20 support found
+[    0.000000] Zone ranges:
+[    0.000000]   DMA      [mem 0x0000000000110000-0x000000007ff07fff]
+[    0.000000]   DMA32    empty
+[    0.000000]   Normal   empty
+[    0.000000] Movable zone start for each node
+[    0.000000] Early memory node ranges
+[    0.000000]   node   0: [mem 0x0000000000110000-0x00000000001fffff]
+[    0.000000]   node   0: [mem 0x0000000009400000-0x0000000034ffffff]
+[    0.000000]   node   0: [mem 0x000000007df00000-0x000000007dfaefff]
+[    0.000000]   node   0: [mem 0x000000007ff00000-0x000000007ff07fff]
+[    0.000000] Initmem setup node 0 [mem 0x0000000000110000-0x000000007ff07fff]
+[    0.000000] On node 0 totalpages: 179623
+[    0.000000]   DMA zone: 2807 pages used for memmap
+[    0.000000]   DMA zone: 0 pages reserved
+[    0.000000]   DMA zone: 179623 pages, LIFO batch:63
+[    0.000000] cma: Reserved 16 MiB at 0x0000000031000000
+[    0.000000] psci: probing for conduit method from DT.
+[    0.000000] psci: PSCIv1.1 detected in firmware.
+[    0.000000] psci: Using standard PSCI v0.2 function IDs
+[    0.000000] psci: Trusted OS migration not required
+(XEN) d0v0 Unhandled SMC/HVC: 0x84000050
+[    0.000000] psci: SMC Calling Convention v1.2
+[    0.000000] percpu: Embedded 28 pages/cpu s75216 r8192 d31280 u114688
+[    0.000000] pcpu-alloc: s75216 r8192 d31280 u114688 alloc=28*4096
+[    0.000000] pcpu-alloc: [0] 0 [0] 1 [0] 2 [0] 3 
+[    0.000000] Detected VIPT I-cache on CPU0
+[    0.000000] CPU features: detected: GIC system register CPU interface
+[    0.000000] CPU features: detected: ARM errata 1165522, 1319367, or 1530923
+[    0.000000] Built 1 zonelists, mobility grouping on.  Total pages: 176816
+[    0.000000] NCTI Kernel command line: earlycon=xenboot earlyprintk console=ttyS2,115200 rw root=PARTUUID=614e0000-0000 rootwait init=/sbin/init irqchip.gicv3_pseudo_nmi=0 ignore_loglevel clk_ignore_unused loglvl=all guest_loglvl=all nokaslr
+[    0.000000] Dentry cache hash table entries: 131072 (order: 8, 1048576 bytes, linear)
+[    0.000000] Inode-cache hash table entries: 65536 (order: 7, 524288 bytes, linear)
+[    0.000000] mem auto-init: stack:all(zero), heap alloc:off, heap free:off
+[    0.000000] Memory: 627564K/718492K available (18110K kernel code, 3536K rwdata, 6264K rodata, 6528K init, 1127K bss, 74544K reserved, 16384K cma-reserved)
+[    0.000000] SLUB: HWalign=64, Order=0-3, MinObjects=0, CPUs=4, Nodes=1
+[    0.000000] ftrace: allocating 62076 entries in 243 pages
+[    0.000000] ftrace: allocated 243 pages with 6 groups
+[    0.000000] rcu: Preemptible hierarchical RCU implementation.
+[    0.000000] rcu: 	RCU event tracing is enabled.
+[    0.000000] rcu: 	RCU restricting CPUs from NR_CPUS=8 to nr_cpu_ids=4.
+[    0.000000] rcu: 	RCU priority boosting: priority 1 delay 500 ms.
+[    0.000000] rcu: 	RCU_SOFTIRQ processing moved to rcuc kthreads.
+[    0.000000] 	No expedited grace period (rcu_normal_after_boot).
+[    0.000000] 	Trampoline variant of Tasks RCU enabled.
+[    0.000000] 	Rude variant of Tasks RCU enabled.
+[    0.000000] rcu: RCU calculated value of scheduler-enlistment delay is 100 jiffies.
+[    0.000000] rcu: Adjusting geometry for rcu_fanout_leaf=16, nr_cpu_ids=4
+[    0.000000] NR_IRQS: 64, nr_irqs: 64, preallocated irqs: 0
+[    0.000000] GICv3: 320 SPIs implemented
+[    0.000000] GICv3: 0 Extended SPIs implemented
+(XEN) d0v0: vGICD: RAZ on reserved register offset 0x00000c
+[    0.000000] GICv3: Distributor has no Range Selector support
+[    0.000000] GICv3: 16 PPIs implemented
+(XEN) d0v0: vGICD: unhandled word write 0x000000ffffffff to ICACTIVER4
+(XEN) d0v0: vGICD: unhandled word write 0x000000ffffffff to ICACTIVER8
+(XEN) d0v0: vGICD: unhandled word write 0x000000ffffffff to ICACTIVER12
+(XEN) d0v0: vGICD: unhandled word write 0x000000ffffffff to ICACTIVER16
+(XEN) d0v0: vGICD: unhandled word write 0x000000ffffffff to ICACTIVER20
+(XEN) d0v0: vGICD: unhandled word write 0x000000ffffffff to ICACTIVER24
+(XEN) d0v0: vGICD: unhandled word write 0x000000ffffffff to ICACTIVER28
+(XEN) d0v0: vGICD: unhandled word write 0x000000ffffffff to ICACTIVER32
+(XEN) d0v0: vGICD: unhandled word write 0x000000ffffffff to ICACTIVER36
+(XEN) d0v0: vGICD: unhandled word write 0x000000ffffffff to ICACTIVER40
+[    0.000000] GICv3: CPU0: found redistributor 0 region 0:0x00000000fd460000
+(XEN) d0v0: vGICR: SGI: unhandled word write 0x000000ffffffff to ICACTIVER0
+[    0.000000] ITS [mem 0xfd440000-0xfd45ffff]
+[    0.000000] ITS@0x00000000fd440000: Devices doesn't stick: 890700000ba00207 990700000ba00207
+[    0.000000] ITS@0x00000000fd440000: failed probing (-6)
+[    0.000000] ITS: No ITS available, not enabling LPIs
+[    0.000000] rcu: 	Offload RCU callbacks from CPUs: (none).
+[    0.000000] arch_timer: cp15 timer(s) running at 24.00MHz (virt).
+[    0.000000] clocksource: arch_sys_counter: mask: 0xffffffffffffff max_cycles: 0x588fe9dc0, max_idle_ns: 440795202592 ns
+[    0.000001] sched_clock: 56 bits at 24MHz, resolution 41ns, wraps every 4398046511097ns
+[    0.001409] Console: colour dummy device 80x25
+[    0.001497] Calibrating delay loop (skipped), value calculated using timer frequency.. 48.00 BogoMIPS (lpj=24000)
+[    0.001522] pid_max: default: 32768 minimum: 301
+[    0.001760] Mount-cache hash table entries: 2048 (order: 2, 16384 bytes, linear)
+[    0.001790] Mountpoint-cache hash table entries: 2048 (order: 2, 16384 bytes, linear)
+[    0.004677] arm-pv: PV sched is not available
+[    0.006065] xen:grant_table: Grant tables using version 1 layout
+[    0.006132] Grant table initialized
+[    0.006173] xen:events: Using FIFO-based ABI
+[    0.006272] Xen: preempt_count synchronization enabled in vcpu_info
+[    0.006290] Xen: initializing cpu0
+[    0.006683] rcu: Hierarchical SRCU implementation.
+[    0.009083] interrupt-controller: unable to locate ITS domain
+[    0.009821] interrupt-controller: Unable to locate ITS domain
+[    0.011106] smp: Bringing up secondary CPUs ...
+[    0.012658] Detected VIPT I-cache on CPU1
+[    0.012837] GICv3: CPU1: found redistributor 1 region 0:0x00000000fd480000
+(XEN) d0v1: vGICR: SGI: unhandled word write 0x000000ffffffff to ICACTIVER0
+[    0.012971] Xen: initializing cpu1
+[    0.013068] CPU1: Booted secondary processor 0x0000000001 [0x412fd050]
+[    0.014999] Detected VIPT I-cache on CPU2
+[    0.015089] GICv3: CPU2: found redistributor 2 region 0:0x00000000fd4a0000
+(XEN) d0v2: vGICR: SGI: unhandled word write 0x000000ffffffff to ICACTIVER0
+[    0.015204] Xen: initializing cpu2
+[    0.015299] CPU2: Booted secondary processor 0x0000000002 [0x412fd050]
+[    0.017006] smp: Brought up 1 node, 3 CPUs
+[    0.017042] SMP: Total of 3 processors activated.
+[    0.017058] CPU features: detected: Privileged Access Never
+[    0.017072] CPU features: detected: LSE atomic instructions
+[    0.017084] CPU features: detected: 32-bit EL0 Support
+[    0.017186] CPU features: detected: Common not Private translations
+[    0.017208] CPU features: detected: Data cache clean to the PoU not required for I/D coherence
+[    0.017224] CPU features: detected: CRC32 instructions
+[    0.017236] CPU features: detected: Speculative Store Bypassing Safe (SSBS)
+[    0.053732] CPU: All CPU(s) started at EL1
+[    0.053864] alternatives: patching kernel code
+[    0.055920] devtmpfs: initialized
+[    0.060386] Duplicate name in interrupt-controller, renamed to "interrupt-controller#1"
+[    0.095310] clocksource: jiffies: mask: 0xffffffff max_cycles: 0xffffffff, max_idle_ns: 1911260446275000 ns
+[    0.095361] futex hash table entries: 1024 (order: 5, 131072 bytes, linear)
+[    0.096241] pinctrl core: initialized pinctrl subsystem
+[    0.096875] regulator-dummy: no parameters, enabled
+[    0.098180] NET: Registered protocol family 16
+[    0.101619] DMA: preallocated 128 KiB GFP_KERNEL pool for atomic allocations
+[    0.101876] DMA: preallocated 128 KiB GFP_KERNEL|GFP_DMA pool for atomic allocations
+[    0.102157] DMA: preallocated 128 KiB GFP_KERNEL|GFP_DMA32 pool for atomic allocations
+[    0.102303] audit: initializing netlink subsys (disabled)
+[    0.102757] audit: type=2000 audit(0.099:1): state=initialized audit_enabled=0 res=1
+[    0.107634] thermal_sys: Registered thermal governor 'fair_share'
+[    0.107646] thermal_sys: Registered thermal governor 'step_wise'
+[    0.108257] Registered FIQ tty driver
+[    0.109025] hw-breakpoint: found 6 breakpoint and 4 watchpoint registers.
+[    0.109369] ASID allocator initialised with 65536 entries
+[    0.109395] HugeTLB: can optimize 4095 vmemmap pages for hugepages-1048576kB
+[    0.109412] HugeTLB: can optimize 127 vmemmap pages for hugepages-32768kB
+[    0.109430] HugeTLB: can optimize 7 vmemmap pages for hugepages-2048kB
+[    0.109443] HugeTLB: can optimize 0 vmemmap pages for hugepages-64kB
+[    0.109491] xen:swiotlb_xen: Warning: only able to allocate 4 MB for software IO TLB
+[    0.112313] software IO TLB: mapped [mem 0x000000000c400000-0x000000000c800000] (4MB)
+[    0.216521] rockchip-gpio fdd60000.gpio: probed /pinctrl/gpio@fdd60000
+[    0.223132] rockchip-gpio fe740000.gpio: probed /pinctrl/gpio@fe740000
+[    0.229444] rockchip-gpio fe750000.gpio: probed /pinctrl/gpio@fe750000
+[    0.236154] rockchip-gpio fe760000.gpio: probed /pinctrl/gpio@fe760000
+[    0.241570] rockchip-gpio fe770000.gpio: probed /pinctrl/gpio@fe770000
+[    0.242006] rockchip-pinctrl pinctrl: probed pinctrl
+(XEN) d1v0: vGICD: RAZ on implementation defined register offset 0x00f014
+(XEN) d1v0: vGICD: WI on implementation defined register offset 0x00f014
+(XEN) d1v0: vGICD: RAZ on implementation defined register offset 0x00f014
+(XEN) d1v0: vGICR: RAZ on reserved register offset 0x000080
+(XEN) d1v0: vGICR: WI on reserved register offset 0x000080
+(XEN) d1v0: vGICR: RAZ on reserved register offset 0x000d00
+(XEN) d1v0: vGICR: WI on reserved register offset 0x000d00
+(XEN) d1v0: vGICR: RAZ on reserved register offset 0x000080
+(XEN) d1v0: vGICR: WI on reserved register offset 0x000080
+(XEN) d1v0: vGICR: RAZ on reserved register offset 0x000d00
+(XEN) d1v0: vGICR: WI on reserved register offset 0x000d00
+(XEN) d1v0: vGICR: RAZ on reserved register offset 0x000080
+(XEN) d1v0: vGICR: WI on reserved register offset 0x000080
+(XEN) d1v0: vGICR: RAZ on reserved register offset 0x000d00
+(XEN) d1v0: vGICR: WI on reserved register offset 0x000d00
+(XEN) d1v0: vGICR: RAZ on reserved register offset 0x000080
+(XEN) d1v0: vGICR: WI on reserved register offset 0x000080
+(XEN) d1v0: vGICR: RAZ on reserved register offset 0x000d00
+(XEN) d1v0: vGICR: WI on reserved register offset 0x000d00
+(XEN) d1v0: vGICR: RAZ on reserved register offset 0x000080
+(XEN) d1v0: vGICR: WI on reserved register offset 0x000080
+(XEN) d1v0: vGICR: RAZ on reserved register offset 0x000d00
+(XEN) d1v0: vGICR: WI on reserved register offset 0x000d00
+(XEN) d1v0: vGICR: RAZ on reserved register offset 0x000080
+(XEN) d1v0: vGICR: WI on reserved register offset 0x000080
+(XEN) d1v0: vGICR: RAZ on reserved register offset 0x000d00
+(XEN) d1v0: vGICR: WI on reserved register offset 0x000d00
+(XEN) d1v0: vGICR: RAZ on reserved register offset 0x000080
+(XEN) d1v0: vGICR: WI on reserved register offset 0x000080
+(XEN) d1v0: vGICR: RAZ on reserved register offset 0x000d00
+(XEN) d1v0: vGICR: WI on reserved register offset 0x000d00
+(XEN) d1v0: vGICR: RAZ on reserved register offset 0x000080
+(XEN) d1v0: vGICR: WI on reserved register offset 0x000080
+(XEN) d1v0: vGICR: RAZ on reserved register offset 0x000d00
+(XEN) d1v0: vGICR: WI on reserved register offset 0x000d00
+(XEN) d1v0: vGICR: RAZ on reserved register offset 0x000080
+(XEN) d1v0: vGICR: WI on reserved register offset 0x000080
+(XEN) d1v0: vGICR: RAZ on reserved register offset 0x000d00
+(XEN) d1v0: vGICR: WI on reserved register offset 0x000d00
+(XEN) d1v0: vGICR: RAZ on reserved register offset 0x000080
+(XEN) d1v0: vGICR: WI on reserved register offset 0x000080
+(XEN) d1v0: vGICR: RAZ on reserved register offset 0x000d00
+(XEN) d1v0: vGICR: WI on reserved register offset 0x000d00
+(XEN) d1v0: vGICR: RAZ on reserved register offset 0x000080
+(XEN) d1v0: vGICR: WI on reserved register offset 0x000080
+(XEN) d1v0: vGICR: RAZ on reserved register offset 0x000d00
+(XEN) d1v0: vGICR: WI on reserved register offset 0x000d00
+(XEN) d1v0: vGICR: RAZ on reserved register offset 0x000080
+(XEN) d1v0: vGICR: WI on reserved register offset 0x000080
+(XEN) d1v0: vGICR: RAZ on reserved register offset 0x000d00
+(XEN) d1v0: vGICR: WI on reserved register offset 0x000d00
+(XEN) d1v0: vGICR: RAZ on reserved register offset 0x000080
+(XEN) d1v0: vGICR: WI on reserved register offset 0x000080
+(XEN) d1v0: vGICR: RAZ on reserved register offset 0x000d00
+(XEN) d1v0: vGICR: WI on reserved register offset 0x000d00
+(XEN) d1v0: vGICR: RAZ on reserved register offset 0x000080
+(XEN) d1v0: vGICR: WI on reserved register offset 0x000080
+(XEN) d1v0: vGICR: RAZ on reserved register offset 0x000d00
+(XEN) d1v0: vGICR: WI on reserved register offset 0x000d00
+(XEN) d1v0: vGICR: RAZ on reserved register offset 0x000080
+(XEN) d1v0: vGICR: WI on reserved register offset 0x000080
+(XEN) d1v0: vGICR: RAZ on reserved register offset 0x000d00
+(XEN) d1v0: vGICR: WI on reserved register offset 0x000d00
+(XEN) d1v0: vGICR: RAZ on reserved register offset 0x000080
+(XEN) d1v0: vGICR: WI on reserved register offset 0x000080
+(XEN) d1v0: vGICR: RAZ on reserved register offset 0x000d00
+(XEN) d1v0: vGICR: WI on reserved register offset 0x000d00
+(XEN) d1v0: vGICR: RAZ on reserved register offset 0x000080
+(XEN) d1v0: vGICR: WI on reserved register offset 0x000080
+(XEN) d1v0: vGICR: RAZ on reserved register offset 0x000d00
+(XEN) d1v0: vGICR: WI on reserved register offset 0x000d00
+(XEN) d1v0: vGICR: RAZ on reserved register offset 0x000080
+(XEN) d1v0: vGICR: WI on reserved register offset 0x000080
+(XEN) d1v0: vGICR: RAZ on reserved register offset 0x000d00
+(XEN) d1v0: vGICR: WI on reserved register offset 0x000d00
+(XEN) d1v0: vGICR: RAZ on reserved register offset 0x000080
+(XEN) d1v0: vGICR: WI on reserved register offset 0x000080
+(XEN) d1v0: vGICR: RAZ on reserved register offset 0x000d00
+(XEN) d1v0: vGICR: WI on reserved register offset 0x000d00
+(XEN) d1v0: vGICR: RAZ on reserved register offset 0x000080
+(XEN) d1v0: vGICR: WI on reserved register offset 0x000080
+(XEN) d1v0: vGICR: RAZ on reserved register offset 0x000d00
+(XEN) d1v0: vGICR: WI on reserved register offset 0x000d00
+(XEN) d1v0: vGICR: RAZ on reserved register offset 0x000080
+(XEN) d1v0: vGICR: WI on reserved register offset 0x000080
+(XEN) d1v0: vGICR: RAZ on reserved register offset 0x000d00
+(XEN) d1v0: vGICR: WI on reserved register offset 0x000d00
+(XEN) d1v0: vGICR: RAZ on reserved register offset 0x000080
+(XEN) d1v0: vGICR: WI on reserved register offset 0x000080
+(XEN) d1v0: vGICR: RAZ on reserved register offset 0x000d00
+(XEN) d1v0: vGICR: WI on reserved register offset 0x000d00
+(XEN) d1v0: vGICR: RAZ on reserved register offset 0x000080
+(XEN) d1v0: vGICR: WI on reserved register offset 0x000080
+(XEN) d1v0: vGICR: RAZ on reserved register offset 0x000d00
+(XEN) d1v0: vGICR: WI on reserved register offset 0x000d00
+(XEN) d1v0: vGICR: RAZ on reserved register offset 0x000080
+(XEN) d1v0: vGICR: WI on reserved register offset 0x000080
+(XEN) d1v0: vGICR: RAZ on reserved register offset 0x000d00
+(XEN) d1v0: vGICR: WI on reserved register offset 0x000d00
+(XEN) d1v0: vGICR: RAZ on reserved register offset 0x000080
+(XEN) d1v0: vGICR: WI on reserved register offset 0x000080
+(XEN) d1v0: vGICR: RAZ on reserved register offset 0x000d00
+(XEN) d1v0: vGICR: WI on reserved register offset 0x000d00
+(XEN) d1v0: vGICR: RAZ on reserved register offset 0x000080
+(XEN) d1v0: vGICR: WI on reserved register offset 0x000080
+(XEN) d1v0: vGICR: RAZ on reserved register offset 0x000d00
+(XEN) d1v0: vGICR: WI on reserved register offset 0x000d00
+(XEN) d1v0: vGICR: RAZ on reserved register offset 0x000080
+(XEN) d1v0: vGICR: WI on reserved register offset 0x000080
+(XEN) d1v0: vGICR: RAZ on reserved register offset 0x000d00
+(XEN) d1v0: vGICR: WI on reserved register offset 0x000d00
+(XEN) d1v0: vGICR: RAZ on reserved register offset 0x000080
+(XEN) d1v0: vGICR: WI on reserved register offset 0x000080
+(XEN) d1v0: vGICR: RAZ on reserved register offset 0x000d00
+(XEN) d1v0: vGICR: WI on reserved register offset 0x000d00
+(XEN) d1v0: vGICR: RAZ on reserved register offset 0x000080
+(XEN) d1v0: vGICR: WI on reserved register offset 0x000080
+(XEN) d1v0: vGICR: RAZ on reserved register offset 0x000d00
+(XEN) d1v0: vGICR: WI on reserved register offset 0x000d00
+(XEN) d1v0: vGICR: RAZ on reserved register offset 0x000080
+(XEN) d1v0: vGICR: WI on reserved register offset 0x000080
+(XEN) d1v0: vGICR: RAZ on reserved register offset 0x000d00
+(XEN) d1v0: vGICR: WI on reserved register offset 0x000d00
+(XEN) d1v0: vGICR: RAZ on reserved register offset 0x000080
+(XEN) d1v0: vGICR: WI on reserved register offset 0x000080
+(XEN) d1v0: vGICR: RAZ on reserved register offset 0x000d00
+(XEN) d1v0: vGICR: WI on reserved register offset 0x000d00
+(XEN) d1v0: vGICR: RAZ on reserved register offset 0x000080
+(XEN) d1v0: vGICR: WI on reserved register offset 0x000080
+(XEN) d1v0: vGICR: RAZ on reserved register offset 0x000d00
+(XEN) d1v0: vGICR: WI on reserved register offset 0x000d00
+[    0.264117] HugeTLB registered 1.00 GiB page size, pre-allocated 0 pages
+[    0.264155] HugeTLB registered 32.0 MiB page size, pre-allocated 0 pages
+[    0.264170] HugeTLB registered 2.00 MiB page size, pre-allocated 0 pages
+[    0.264189] HugeTLB registered 64.0 KiB page size, pre-allocated 0 pages
+[    0.270443] cryptd: max_cpu_qlen set to 1000
+[    0.298311] raid6: neonx8   gen()  2320 MB/s
+[    0.315593] raid6: neonx8   xor()  1688 MB/s
+[    0.332892] raid6: neonx4   gen()  2203 MB/s
+[    0.350137] raid6: neonx4   xor()  1599 MB/s
+[    0.367441] raid6: neonx2   gen()  1957 MB/s
+[    0.384674] raid6: neonx2   xor()  1450 MB/s
+[    0.402028] raid6: neonx1   gen()  1579 MB/s
+[    0.419242] raid6: neonx1   xor()  1277 MB/s
+[    0.436503] raid6: int64x8  gen()   916 MB/s
+[    0.453724] raid6: int64x8  xor()   660 MB/s
+[    0.470984] raid6: int64x4  gen()  1571 MB/s
+[    0.488195] raid6: int64x4  xor()   863 MB/s
+[    0.505503] raid6: int64x2  gen()  1428 MB/s
+[    0.522729] raid6: int64x2  xor()   760 MB/s
+[    0.540018] raid6: int64x1  gen()   946 MB/s
+[    0.557217] raid6: int64x1  xor()   541 MB/s
+[    0.557236] raid6: using algorithm neonx8 gen() 2320 MB/s
+[    0.557249] raid6: .... xor() 1688 MB/s, rmw enabled
+[    0.557261] raid6: using neon recovery algorithm
+[    0.558003] has no qsemos-logo rsv mem.
+[    0.559363] rk-fiq-debugger: probe of fiq-debugger failed with error -22
+[    0.559507] xen:balloon: Initialising balloon driver
+[    0.560831] vcc12v: 12000 mV, enabled
+[    0.561195] reg-fixed-voltage vcc-12v: vcc12v supplying 12000000uV
+[    0.561425] reg-fixed-voltage vcc5v0-sys: Looking up vin-supply from device tree
+[    0.561456] vcc5v0_sys: supplied by vcc12v
+[    0.561476] vcc12v: could not add device link regulator.2: -ENOENT
+[    0.561578] vcc5v0_sys: 5000 mV, enabled
+[    0.561875] reg-fixed-voltage vcc5v0-sys: vcc5v0_sys supplying 5000000uV
+[    0.562292] reg-fixed-voltage vcc3v3-sys: Looking up vin-supply from device tree
+[    0.562330] vcc3v3_sys: supplied by vcc5v0_sys
+[    0.562509] vcc5v0_sys: could not add device link regulator.3: -ENOENT
+[    0.562615] vcc3v3_sys: 3300 mV, enabled
+[    0.562959] reg-fixed-voltage vcc3v3-sys: vcc3v3_sys supplying 3300000uV
+[    0.563278] reg-fixed-voltage vcc-3v3: Looking up vin-supply from device tree
+[    0.563308] vcc3v3: supplied by vcc5v0_sys
+[    0.563327] vcc5v0_sys: could not add device link regulator.4: -ENOENT
+[    0.563410] vcc3v3: 3300 mV, enabled
+[    0.563739] reg-fixed-voltage vcc-3v3: vcc3v3 supplying 3300000uV
+[    0.563996] reg-fixed-voltage vcc-1v8: Looking up vin-supply from device tree
+[    0.564026] vcc1v8: supplied by vcc3v3
+[    0.564045] vcc3v3: could not add device link regulator.5: -ENOENT
+[    0.564127] vcc1v8: 1800 mV, enabled
+[    0.564436] reg-fixed-voltage vcc-1v8: vcc1v8 supplying 1800000uV
+[    0.564735] reg-fixed-voltage vcc-1v2: Looking up vin-supply from device tree
+[    0.564766] vcc1v2: supplied by vcc3v3
+[    0.564798] vcc3v3: could not add device link regulator.6: -ENOENT
+[    0.564884] vcc1v2: 1200 mV, enabled
+[    0.565141] reg-fixed-voltage vcc-1v2: vcc1v2 supplying 1200000uV
+[    0.565382] reg-fixed-voltage vcc-2v8: Looking up vin-supply from device tree
+[    0.565412] vcc2v8: supplied by vcc3v3
+[    0.565430] vcc3v3: could not add device link regulator.7: -ENOENT
+[    0.565580] vcc2v8: 2800 mV, enabled
+[    0.565869] reg-fixed-voltage vcc-2v8: vcc2v8 supplying 2800000uV
+[    0.566197] reg-fixed-voltage vcc3v3-lcd2-n: Looking up vin-supply from device tree
+[    0.566229] vcc3v3_lcd2_n: supplied by vcc3v3_sys
+[    0.566247] vcc3v3_sys: could not add device link regulator.8: -ENOENT
+[    0.566365] vcc3v3_lcd2_n: 3300 mV, enabled
+[    0.566935] reg-fixed-voltage vcc3v3-lcd2-n: vcc3v3_lcd2_n supplying 3300000uV
+[    0.567447] reg-fixed-voltage vcc2v5-ddr: Looking up vin-supply from device tree
+[    0.567489] vcc2v5-sys: supplied by vcc3v3_sys
+[    0.567509] vcc3v3_sys: could not add device link regulator.9: -ENOENT
+[    0.567824] vcc2v5-sys: 2500 mV, enabled
+[    0.568160] reg-fixed-voltage vcc2v5-ddr: vcc2v5-sys supplying 2500000uV
+[    0.569189] 5g-rst: 3300 mV, enabled
+[    0.569572] reg-fixed-voltage 5g-rst: 5g-rst supplying 3300000uV
+[    0.570604] 5g-pwr: 3300 mV, enabled
+[    0.571029] reg-fixed-voltage 5g-pwr: 5g-pwr supplying 3300000uV
+[    0.572412] iommu: Default domain type: Translated 
+[    0.573274] rockchip-pm-domain fdd90000.power-management:power-controller: Looking up npu-supply from device tree
+[    0.573332] rockchip-pm-domain fdd90000.power-management:power-controller: Looking up npu-supply property in node /power-management@fdd90000/power-controller failed
+[    0.576603] rockchip-pm-domain fdd90000.power-management:power-controller: Looking up vpu-supply from device tree
+[    0.576668] rockchip-pm-domain fdd90000.power-management:power-controller: Looking up vpu-supply property in node /power-management@fdd90000/power-controller failed
+[    0.577121] rockchip-pm-domain fdd90000.power-management:power-controller: Looking up rga-supply from device tree
+[    0.577173] rockchip-pm-domain fdd90000.power-management:power-controller: Looking up rga-supply property in node /power-management@fdd90000/power-controller failed
+[    0.581867] rockchip-pm-domain fdd90000.power-management:power-controller: Looking up rkvenc-supply from device tree
+[    0.581931] rockchip-pm-domain fdd90000.power-management:power-controller: Looking up rkvenc-supply property in node /power-management@fdd90000/power-controller failed
+[    0.583476] rockchip-pm-domain fdd90000.power-management:power-controller: Looking up rkvdec-supply from device tree
+[    0.583538] rockchip-pm-domain fdd90000.power-management:power-controller: Looking up rkvdec-supply property in node /power-management@fdd90000/power-controller failed
+[    0.584898] rockchip-pm-domain fdd90000.power-management:power-controller: Looking up vi-supply from device tree
+[    0.584959] rockchip-pm-domain fdd90000.power-management:power-controller: Looking up vi-supply property in node /power-management@fdd90000/power-controller failed
+[    0.587478] SCSI subsystem initialized
+[    0.587558] libata version 3.00 loaded.
+[    0.587855] usbcore: registered new interface driver usbfs
+[    0.587935] usbcore: registered new interface driver hub
+[    0.588000] usbcore: registered new device driver usb
+[    0.588209] mc: Linux media interface: v0.10
+[    0.588260] videodev: Linux video capture interface: v2.00
+[    0.588412] pps_core: LinuxPPS API ver. 1 registered
+[    0.588429] pps_core: Software ver. 5.3.6 - Copyright 2005-2007 Rodolfo Giometti <giometti@linux.it>
+[    0.588462] PTP clock support registered
+[    0.589044] arm-scmi firmware:scmi: SCMI Notifications - Core Enabled.
+[    0.589166] arm-scmi firmware:scmi: SCMI Protocol v2.0 'rockchip:' Firmware version 0x0
+[    0.591833] Advanced Linux Sound Architecture Driver Initialized.
+[    0.592731] Bluetooth: Core ver 2.22
+[    0.592812] NET: Registered protocol family 31
+[    0.592827] Bluetooth: HCI device and connection manager initialized
+[    0.592856] Bluetooth: HCI socket layer initialized
+[    0.592883] Bluetooth: L2CAP socket layer initialized
+[    0.592924] Bluetooth: SCO socket layer initialized
+[    0.593704] rockchip-cpuinfo cpuinfo: SoC		: 35682000
+[    0.593731] rockchip-cpuinfo cpuinfo: Serial		: 98965b9492ac67c0
+[    0.595455] clocksource: Switched to clocksource arch_sys_counter
+[    1.194023] NET: Registered protocol family 2
+[    1.194332] IP idents hash table entries: 16384 (order: 5, 131072 bytes, linear)
+[    1.195780] tcp_listen_portaddr_hash hash table entries: 512 (order: 3, 40960 bytes, linear)
+[    1.195967] TCP established hash table entries: 8192 (order: 4, 65536 bytes, linear)
+[    1.196164] TCP bind hash table entries: 8192 (order: 7, 589824 bytes, linear)
+[    1.196912] TCP: Hash tables configured (established 8192 bind 8192)
+[    1.197273] UDP hash table entries: 512 (order: 4, 81920 bytes, linear)
+[    1.197504] UDP-Lite hash table entries: 512 (order: 4, 81920 bytes, linear)
+[    1.197970] NET: Registered protocol family 1
+[    1.199226] RPC: Registered named UNIX socket transport module.
+[    1.199256] RPC: Registered udp transport module.
+[    1.199270] RPC: Registered tcp transport module.
+[    1.199283] RPC: Registered tcp NFSv4.1 backchannel transport module.
+[    1.200958] PCI: CLS 0 bytes, default 64
+[    1.214730] Initialise system trusted keyrings
+[    1.215098] workingset: timestamp_bits=46 max_order=18 bucket_order=0
+[    1.226856] squashfs: version 4.0 (2009/01/31) Phillip Lougher
+[    1.228522] NFS: Registering the id_resolver key type
+[    1.228586] Key type id_resolver registered
+[    1.228603] Key type id_legacy registered
+[    1.228669] ntfs: driver 2.1.32 [Flags: R/O].
+[    1.229082] jffs2: version 2.2. (NAND) © 2001-2006 Red Hat, Inc.
+[    1.229545] fuse: init (API version 7.33)
+[    1.230187] SGI XFS with security attributes, no debug enabled
+[    1.267146] NET: Registered protocol family 38
+[    1.267192] xor: measuring software checksum speed
+[    1.271352]    8regs           :  2446 MB/sec
+[    1.274730]    32regs          :  3089 MB/sec
+[    1.279089]    arm64_neon      :  2308 MB/sec
+[    1.279111] xor: using function: 32regs (3089 MB/sec)
+[    1.279141] Key type asymmetric registered
+[    1.279157] Asymmetric key parser 'x509' registered
+[    1.279242] Block layer SCSI generic (bsg) driver version 0.4 loaded (major 242)
+[    1.279699] io scheduler mq-deadline registered
+[    1.279722] io scheduler kyber registered
+[    1.282021] phy phy-fe850000.phy.0: Looking up phy-supply from device tree
+[    1.282061] phy phy-fe850000.phy.0: Looking up phy-supply property in node /phy@fe850000 failed
+[    1.283062] phy phy-fe860000.phy.1: Looking up phy-supply from device tree
+[    1.283102] phy phy-fe860000.phy.1: Looking up phy-supply property in node /phy@fe860000 failed
+[    1.284847] phy phy-fe8a0000.usb2-phy.2: Looking up phy-supply from device tree
+[    1.284887] phy phy-fe8a0000.usb2-phy.2: Looking up phy-supply property in node /usb2-phy@fe8a0000/host-port failed
+[    1.285084] phy phy-fe8a0000.usb2-phy.3: Looking up phy-supply from device tree
+[    1.285110] phy phy-fe8a0000.usb2-phy.3: Looking up phy-supply property in node /usb2-phy@fe8a0000/otg-port failed
+[    1.285264] phy phy-fe8a0000.usb2-phy.3: Looking up vbus-supply from device tree
+[    1.285292] phy phy-fe8a0000.usb2-phy.3: Looking up vbus-supply property in node /usb2-phy@fe8a0000/otg-port failed
+[    1.287512] phy phy-fe8b0000.usb2-phy.4: Looking up phy-supply from device tree
+[    1.287556] phy phy-fe8b0000.usb2-phy.4: Looking up phy-supply property in node /usb2-phy@fe8b0000/host-port failed
+[    1.287754] phy phy-fe8b0000.usb2-phy.5: Looking up phy-supply from device tree
+[    1.287779] phy phy-fe8b0000.usb2-phy.5: Looking up phy-supply property in node /usb2-phy@fe8b0000/otg-port failed
+[    1.287940] phy phy-fe8b0000.usb2-phy.5: Looking up vbus-supply from device tree
+[    1.287964] phy phy-fe8b0000.usb2-phy.5: Looking up vbus-supply property in node /usb2-phy@fe8b0000/otg-port failed
+[    1.291878] phy phy-fe820000.phy.6: Looking up phy-supply from device tree
+[    1.291918] phy phy-fe820000.phy.6: Looking up phy-supply property in node /phy@fe820000 failed
+[    1.292668] phy phy-fe830000.phy.7: Looking up phy-supply from device tree
+[    1.292699] phy phy-fe830000.phy.7: Looking up phy-supply property in node /phy@fe830000 failed
+[    1.293395] phy phy-fe840000.phy.8: Looking up phy-supply from device tree
+[    1.293424] phy phy-fe840000.phy.8: Looking up phy-supply property in node /phy@fe840000 failed
+[    1.297906] Firefly gpio driver init!
+[    1.298262] Firefly gpio driver register return : 0 
+[    1.303229] pwm-backlight dsi1-backlight: Looking up power-supply from device tree
+[    1.303270] pwm-backlight dsi1-backlight: Looking up power-supply property in node /dsi1-backlight failed
+[    1.303325] pwm-backlight dsi1-backlight: supply power not found, using dummy regulator
+[    1.304152] pwm-backlight lvds-backlight: Looking up power-supply from device tree
+[    1.304186] pwm-backlight lvds-backlight: Looking up power-supply property in node /lvds-backlight failed
+[    1.304235] pwm-backlight lvds-backlight: supply power not found, using dummy regulator
+[    1.304972] pwm-backlight edp-backlight: Looking up power-supply from device tree
+[    1.305000] pwm-backlight edp-backlight: Looking up power-supply property in node /edp-backlight failed
+[    1.305043] pwm-backlight edp-backlight: supply power not found, using dummy regulator
+[    1.305696] mpp_service mpp-srv: ffbf2bdd9b9e6 author: zengwenzheng 2025-04-15 drivers/video: fix rga crash issue
+[    1.305721] mpp_service mpp-srv: probe start
+[    1.308699] mpp_rkvenc fdf40000.rkvenc: Adding to iommu group 5
+[    1.309114] mpp_rkvenc fdf40000.rkvenc: probing start
+[    1.309602] mpp_rkvenc fdf40000.rkvenc: Looking up venc-supply from device tree
+[    1.309647] mpp_rkvenc fdf40000.rkvenc: venc regulator not ready, retry
+[    1.309666] rkvenc_init:1217: failed to add venc devfreq
+[    1.315740] mpp_vdpu2 fdea0400.vdpu: Adding to iommu group 1
+[    1.316108] mpp_vdpu2 fdea0400.vdpu: probe device
+[    1.317567] mpp_vdpu2 fdea0400.vdpu: probing finish
+[    1.318843] mpp_vepu2 fdee0000.vepu: Adding to iommu group 3
+[    1.319212] mpp_vepu2 fdee0000.vepu: probing start
+[    1.320704] mpp_vepu2 fdee0000.vepu: probing finish
+[    1.321653] mpp-iep2 fdef0000.iep: Adding to iommu group 4
+[    1.321946] mpp-iep2 fdef0000.iep: probe device
+[    1.322872] mpp-iep2 fdef0000.iep: allocate roi buffer failed
+[    1.323750] mpp-iep2 fdef0000.iep: probing finish
+[    1.324800] mpp_jpgdec fded0000.jpegd: Adding to iommu group 2
+[    1.325159] mpp_jpgdec fded0000.jpegd: probe device
+[    1.326692] mpp_jpgdec fded0000.jpegd: probing finish
+[    1.327839] mpp_rkvdec2 fdf80200.rkvdec: Adding to iommu group 6
+[    1.328352] mpp_rkvdec2 fdf80200.rkvdec: rkvdec, probing start
+[    1.329165] mpp_rkvdec2 fdf80200.rkvdec: shared_niu_a is not found!
+[    1.329189] rkvdec2_init:1022: No niu aclk reset resource define
+[    1.329209] mpp_rkvdec2 fdf80200.rkvdec: shared_niu_h is not found!
+[    1.329222] rkvdec2_init:1025: No niu hclk reset resource define
+[    1.329301] mpp_rkvdec2 fdf80200.rkvdec: Looking up vdec-supply from device tree
+[    1.329327] mpp_rkvdec2 fdf80200.rkvdec: Looking up vdec-supply property in node /rkvdec@fdf80200 failed
+[    1.329383] mpp_rkvdec2 fdf80200.rkvdec: no regulator, devfreq is disabled
+[    1.329706] mpp_rkvdec2 fdf80200.rkvdec: sram_start 0x00000000fdcc0000
+[    1.329730] mpp_rkvdec2 fdf80200.rkvdec: rcb_iova 0x0000000010000000
+[    1.329746] mpp_rkvdec2 fdf80200.rkvdec: sram_size 45056
+[    1.329761] mpp_rkvdec2 fdf80200.rkvdec: rcb_size 65536
+[    1.329779] mpp_rkvdec2 fdf80200.rkvdec: min_width 512
+[    1.329976] mpp_rkvdec2 fdf80200.rkvdec: link mode probe finish
+[    1.330646] mpp_rkvdec2 fdf80200.rkvdec: probing finish
+[    1.331386] mpp_service mpp-srv: probe success
+[    1.342534] dma-pl330 fe530000.dmac: Loaded driver for PL330 DMAC-241330
+[    1.342573] dma-pl330 fe530000.dmac: 	DBUFF-128x8bytes Num_Chans-8 Num_Peri-32 Num_Events-16
+[    1.347023] dma-pl330 fe550000.dmac: Loaded driver for PL330 DMAC-241330
+[    1.347062] dma-pl330 fe550000.dmac: 	DBUFF-128x8bytes Num_Chans-8 Num_Peri-32 Num_Events-16
+[    1.347539] rockchip-iodomain fdc20000.syscon:io-domains: Looking up pmuio1-supply from device tree
+[    1.349024] rockchip-pvtm fde00000.pvtm: pvtm@0 probed
+[    1.349240] rockchip-pvtm fde80000.pvtm: pvtm@1 probed
+[    1.349420] rockchip-pvtm fde90000.pvtm: pvtm@2 probed
+[    1.350304] rockchip-system-monitor rockchip-system-monitor: system monitor probe
+[    1.352500] xen:xen_evtchn: Event-channel device installed
+[    1.357147] Serial: 8250/16550 driver, 10 ports, IRQ sharing disabled
+[    1.362162] fe690000.serial: ttyS5 at MMIO 0xfe690000 (irq = 65, base_baud = 1500000) is a 16550A
+[    1.364370] fe6c0000.serial: ttyS8 at MMIO 0xfe6c0000 (irq = 66, base_baud = 1500000) is a 16550A
+[    1.368923] random: crng init done
+[    1.370556] rockchip-vop2 fe040000.vop: Adding to iommu group 8
+[    1.386053] rockchip-vop2 fe040000.vop: [drm:vop2_bind] vp0 assign plane mask: 0x3f, primary plane phy id: 4
+[    1.386120] rockchip-vop2 fe040000.vop: [drm:vop2_bind] vp1 assign plane mask: 0x0, primary plane phy id: -1
+[    1.386145] rockchip-vop2 fe040000.vop: [drm:vop2_bind] vp2 assign plane mask: 0x0, primary plane phy id: -1
+[    1.386811] rockchip-vop2 fe040000.vop: [drm:vop2_bind] Cluster0-win0 as cursor plane for vp0
+[    1.386912] rockchip-vop2 fe040000.vop: [drm:vop2_bind] VP1 plane_mask is zero, so ignore register crtc
+[    1.386940] rockchip-vop2 fe040000.vop: [drm:vop2_bind] VP2 plane_mask is zero, so ignore register crtc
+[    1.387081] [drm] failed to init overlay plane Cluster0-win1
+[    1.387151] [drm] failed to init overlay plane Cluster1-win1
+[    1.387265] rockchip-drm display-subsystem: bound fe040000.vop (ops 0xffffffc0112c49e8)
+[    1.387854] dwhdmi-rockchip fe0a0000.hdmi: Detected HDMI TX controller v2.11a with HDCP (DWC HDMI 2.0 TX PHY)
+[    1.389056] dwhdmi-rockchip fe0a0000.hdmi: registered DesignWare HDMI I2C bus driver
+[    1.389478] dwhdmi-rockchip fe0a0000.hdmi: IRQ index 1 not found
+[    1.390135] rockchip-drm display-subsystem: bound fe0a0000.hdmi (ops 0xffffffc0112d3758)
+[    1.390793] [drm:init_loader_memory] *ERROR* Reserved logo memory should be aligned as:0x1000, cureent is:start[0x000000007df00000] size[0x00000000000afe76]
+[    1.391276] rockchip-drm display-subsystem: connector[HDMI-A-1] can't found any modes
+[    1.391317] rockchip-drm display-subsystem: can't not find any logo display
+[    1.391340] rockchip-drm display-subsystem: failed to show kernel logo
+[    1.391422] rockchip-drm display-subsystem: [drm] Cannot find any crtc or sizes
+[    1.393138] [drm] Initialized rockchip 3.0.0 20140818 for display-subsystem on minor 0
+[    1.400903] panel-simple edp-panel: Looking up power-supply from device tree
+[    1.400950] panel-simple edp-panel: Looking up power-supply property in node /edp-panel failed
+[    1.401006] panel-simple edp-panel: supply power not found, using dummy regulator
+[    1.402394] panel-simple panel: Looking up power-supply from device tree
+[    1.403617] panel-simple rgb-panel: Looking up power-supply from device tree
+[    1.408887] input: hdmi_cec_key as /devices/platform/fe0a0000.hdmi/dw-hdmi-cec.1.auto/input/input0
+[    1.410636] rockchip-pm-domain fdd90000.power-management:power-controller: Looking up gpu-supply from device tree
+[    1.410707] rockchip-pm-domain fdd90000.power-management:power-controller: Looking up gpu-supply property in node /power-management@fdd90000/power-controller failed
+[    1.410840] mali fde60000.gpu: Kernel DDK version g11p0-01eac0
+[    1.410928] mali fde60000.gpu: Looking up mali-supply from device tree
+[    1.410994] mali fde60000.gpu: Device initialization Deferred
+[    1.410997] cacheinfo: Unable to detect cache hierarchy for CPU 0
+[    1.412591] brd: module loaded
+[    1.425766] loop: module loaded
+[    1.425804] Invalid max_queues (4), will use default max: 3.
+[    1.427049] zram: Added device: zram0
+[    1.427640] lkdtm: No crash points registered, enable through debugfs
+[    1.440850] CAN device driver interface
+[    1.446224] e1000e: Intel(R) PRO/1000 Network Driver
+[    1.446258] e1000e: Copyright(c) 1999 - 2015 Intel Corporation.
+[    1.448005] rk_gmac-dwmac fe2a0000.ethernet: IRQ eth_lpi not found
+[    1.448362] rk_gmac-dwmac fe2a0000.ethernet: Looking up phy-supply from device tree
+[    1.448404] rk_gmac-dwmac fe2a0000.ethernet: Looking up phy-supply property in node /ethernet@fe2a0000 failed
+[    1.448514] rk_gmac-dwmac fe2a0000.ethernet: no regulator found
+[    1.448537] rk_gmac-dwmac fe2a0000.ethernet: clock input or output? (output).
+[    1.448556] rk_gmac-dwmac fe2a0000.ethernet: TX delay(0x2f).
+[    1.448573] rk_gmac-dwmac fe2a0000.ethernet: RX delay(0x0).
+[    1.448599] rk_gmac-dwmac fe2a0000.ethernet: integrated PHY? (no).
+[    1.449001] rk_gmac-dwmac fe2a0000.ethernet: init for RGMII
+[    1.449541] rk_gmac-dwmac fe2a0000.ethernet: User ID: 0x30, Synopsys ID: 0x51
+[    1.449572] rk_gmac-dwmac fe2a0000.ethernet: 	DWMAC4/5
+[    1.449590] rk_gmac-dwmac fe2a0000.ethernet: DMA HW capability register supported
+[    1.449606] rk_gmac-dwmac fe2a0000.ethernet: RX Checksum Offload Engine supported
+[    1.449620] rk_gmac-dwmac fe2a0000.ethernet: TX Checksum insertion supported
+[    1.449634] rk_gmac-dwmac fe2a0000.ethernet: Wake-Up On Lan supported
+[    1.449746] rk_gmac-dwmac fe2a0000.ethernet: TSO supported
+[    1.449764] rk_gmac-dwmac fe2a0000.ethernet: Enable RX Mitigation via HW Watchdog Timer
+[    1.449781] rk_gmac-dwmac fe2a0000.ethernet: TSO feature enabled
+[    1.449796] rk_gmac-dwmac fe2a0000.ethernet: Using 32 bits DMA width
+[    1.449886] rk_gmac-dwmac fe2a0000.ethernet: Unbalanced pm_runtime_enable!
+[    1.587150] rk_gmac-dwmac fe010000.ethernet: IRQ eth_lpi not found
+[    1.587637] rk_gmac-dwmac fe010000.ethernet: Looking up phy-supply from device tree
+[    1.587681] rk_gmac-dwmac fe010000.ethernet: Looking up phy-supply property in node /ethernet@fe010000 failed
+[    1.587741] rk_gmac-dwmac fe010000.ethernet: no regulator found
+[    1.587760] rk_gmac-dwmac fe010000.ethernet: clock input or output? (output).
+[    1.587777] rk_gmac-dwmac fe010000.ethernet: TX delay(0x35).
+[    1.587794] rk_gmac-dwmac fe010000.ethernet: RX delay(0x0).
+[    1.587821] rk_gmac-dwmac fe010000.ethernet: integrated PHY? (no).
+[    1.588268] rk_gmac-dwmac fe010000.ethernet: init for RGMII
+[    1.588817] rk_gmac-dwmac fe010000.ethernet: User ID: 0x30, Synopsys ID: 0x51
+[    1.588855] rk_gmac-dwmac fe010000.ethernet: 	DWMAC4/5
+[    1.588873] rk_gmac-dwmac fe010000.ethernet: DMA HW capability register supported
+[    1.588888] rk_gmac-dwmac fe010000.ethernet: RX Checksum Offload Engine supported
+[    1.588902] rk_gmac-dwmac fe010000.ethernet: TX Checksum insertion supported
+[    1.588916] rk_gmac-dwmac fe010000.ethernet: Wake-Up On Lan supported
+[    1.589032] rk_gmac-dwmac fe010000.ethernet: TSO supported
+[    1.589049] rk_gmac-dwmac fe010000.ethernet: Enable RX Mitigation via HW Watchdog Timer
+[    1.589066] rk_gmac-dwmac fe010000.ethernet: TSO feature enabled
+[    1.589082] rk_gmac-dwmac fe010000.ethernet: Using 32 bits DMA width
+[    1.589113] rk_gmac-dwmac fe010000.ethernet: Unbalanced pm_runtime_enable!
+[    1.723145] PPP generic driver version 2.4.2
+[    1.723703] usbcore: registered new interface driver rndis_wlan
+[    1.723733] xen_netfront: Initialising Xen virtual ethernet driver
+[    1.723973] usbcore: registered new interface driver rtl8150
+[    1.724040] usbcore: registered new interface driver r8152
+[    1.724102] usbcore: registered new interface driver asix
+[    1.724176] usbcore: registered new interface driver ax88179_178a
+[    1.724234] usbcore: registered new interface driver cdc_ether
+[    1.724289] usbcore: registered new interface driver cdc_eem
+[    1.724346] usbcore: registered new interface driver rndis_host
+[    1.724423] usbcore: registered new interface driver cdc_ncm
+[    1.724571] usbcore: registered new interface driver qmi_wwan
+[    1.724634] usbcore: registered new interface driver cdc_mbim
+[    1.746393] ehci_hcd: USB 2.0 'Enhanced' Host Controller (EHCI) Driver
+[    1.746545] ehci-pci: EHCI PCI platform driver
+[    1.746665] ehci-platform: EHCI generic platform driver
+[    1.747355] phy phy-fe8b0000.usb2-phy.5: illegal mode
+[    1.749799] ehci-platform fd800000.usb: EHCI Host Controller
+[    1.750170] ehci-platform fd800000.usb: new USB bus registered, assigned bus number 1
+[    1.750975] ehci-platform fd800000.usb: irq 13, io mem 0xfd800000
+[    1.757544] ehci-platform fd800000.usb: USB 2.0 started, EHCI 1.00
+[    1.757941] usb usb1: New USB device found, idVendor=1d6b, idProduct=0002, bcdDevice= 5.10
+[    1.757966] usb usb1: New USB device strings: Mfr=3, Product=2, SerialNumber=1
+[    1.757984] usb usb1: Product: EHCI Host Controller
+[    1.758002] usb usb1: Manufacturer: Linux 5.10.0+ ehci_hcd
+[    1.758017] usb usb1: SerialNumber: fd800000.usb
+[    1.759040] hub 1-0:1.0: USB hub found
+[    1.759117] hub 1-0:1.0: 1 port detected
+[    1.763045] ehci-platform fd880000.usb: EHCI Host Controller
+[    1.763498] ehci-platform fd880000.usb: new USB bus registered, assigned bus number 2
+[    1.764155] ehci-platform fd880000.usb: irq 15, io mem 0xfd880000
+[    1.770546] ehci-platform fd880000.usb: USB 2.0 started, EHCI 1.00
+[    1.770933] usb usb2: New USB device found, idVendor=1d6b, idProduct=0002, bcdDevice= 5.10
+[    1.770958] usb usb2: New USB device strings: Mfr=3, Product=2, SerialNumber=1
+[    1.770977] usb usb2: Product: EHCI Host Controller
+[    1.770992] usb usb2: Manufacturer: Linux 5.10.0+ ehci_hcd
+[    1.771008] usb usb2: SerialNumber: fd880000.usb
+[    1.771945] hub 2-0:1.0: USB hub found
+[    1.772016] hub 2-0:1.0: 1 port detected
+[    1.773537] ohci_hcd: USB 1.1 'Open' Host Controller (OHCI) Driver
+[    1.773603] ohci-platform: OHCI generic platform driver
+[    1.774070] phy phy-fe8b0000.usb2-phy.5: illegal mode
+[    1.774095] ohci-platform fd840000.usb: Generic Platform OHCI controller
+[    1.774476] ohci-platform fd840000.usb: new USB bus registered, assigned bus number 3
+[    1.775137] ohci-platform fd840000.usb: irq 14, io mem 0xfd840000
+[    1.830833] usb usb3: New USB device found, idVendor=1d6b, idProduct=0001, bcdDevice= 5.10
+[    1.830868] usb usb3: New USB device strings: Mfr=3, Product=2, SerialNumber=1
+[    1.830887] usb usb3: Product: Generic Platform OHCI controller
+[    1.830902] usb usb3: Manufacturer: Linux 5.10.0+ ohci_hcd
+[    1.830917] usb usb3: SerialNumber: fd840000.usb
+[    1.831827] hub 3-0:1.0: USB hub found
+[    1.831902] hub 3-0:1.0: 1 port detected
+[    1.833133] ohci-platform fd8c0000.usb: Generic Platform OHCI controller
+[    1.833652] ohci-platform fd8c0000.usb: new USB bus registered, assigned bus number 4
+[    1.834347] ohci-platform fd8c0000.usb: irq 16, io mem 0xfd8c0000
+[    1.889801] usb usb4: New USB device found, idVendor=1d6b, idProduct=0001, bcdDevice= 5.10
+[    1.889836] usb usb4: New USB device strings: Mfr=3, Product=2, SerialNumber=1
+[    1.889856] usb usb4: Product: Generic Platform OHCI controller
+[    1.889871] usb usb4: Manufacturer: Linux 5.10.0+ ohci_hcd
+[    1.889885] usb usb4: SerialNumber: fd8c0000.usb
+[    1.890868] hub 4-0:1.0: USB hub found
+[    1.890940] hub 4-0:1.0: 1 port detected
+[    1.893733] xhci-hcd xhci-hcd.4.auto: xHCI Host Controller
+[    1.894129] xhci-hcd xhci-hcd.4.auto: new USB bus registered, assigned bus number 5
+[    1.894369] xhci-hcd xhci-hcd.4.auto: hcc params 0x0220fe64 hci version 0x110 quirks 0x0000002002010010
+[    1.894936] xhci-hcd xhci-hcd.4.auto: irq 79, io mem 0xfd000000
+[    1.895699] usb usb5: New USB device found, idVendor=1d6b, idProduct=0002, bcdDevice= 5.10
+[    1.895730] usb usb5: New USB device strings: Mfr=3, Product=2, SerialNumber=1
+[    1.895748] usb usb5: Product: xHCI Host Controller
+[    1.895762] usb usb5: Manufacturer: Linux 5.10.0+ xhci-hcd
+[    1.895777] usb usb5: SerialNumber: xhci-hcd.4.auto
+[    1.896712] hub 5-0:1.0: USB hub found
+[    1.896786] hub 5-0:1.0: 1 port detected
+[    1.897345] xhci-hcd xhci-hcd.4.auto: xHCI Host Controller
+[    1.897720] xhci-hcd xhci-hcd.4.auto: new USB bus registered, assigned bus number 6
+[    1.897759] xhci-hcd xhci-hcd.4.auto: Host supports USB 3.0 SuperSpeed
+[    1.897895] usb usb6: We don't know the algorithms for LPM for this host, disabling LPM.
+[    1.898121] usb usb6: New USB device found, idVendor=1d6b, idProduct=0003, bcdDevice= 5.10
+[    1.898145] usb usb6: New USB device strings: Mfr=3, Product=2, SerialNumber=1
+[    1.898163] usb usb6: Product: xHCI Host Controller
+[    1.898178] usb usb6: Manufacturer: Linux 5.10.0+ xhci-hcd
+[    1.898192] usb usb6: SerialNumber: xhci-hcd.4.auto
+[    1.899201] hub 6-0:1.0: USB hub found
+[    1.899273] hub 6-0:1.0: 1 port detected
+[    1.900200] usbcore: registered new interface driver cdc_acm
+[    1.900225] cdc_acm: USB Abstract Control Model driver for USB modems and ISDN adapters
+[    1.900304] usbcore: registered new interface driver cdc_wdm
+[    1.900877] usbcore: registered new interface driver uas
+[    1.901073] usbcore: registered new interface driver usb-storage
+[    1.901269] usbcore: registered new interface driver usbserial_generic
+[    1.901314] usbserial: USB Serial support registered for generic
+[    1.901405] usbcore: registered new interface driver cp210x
+[    1.901549] usbserial: USB Serial support registered for cp210x
+[    1.901671] usbcore: registered new interface driver ftdi_sio
+[    1.901711] usbserial: USB Serial support registered for FTDI USB Serial Device
+[    1.901965] usbcore: registered new interface driver keyspan
+[    1.902007] usbserial: USB Serial support registered for Keyspan - (without firmware)
+[    1.902046] usbserial: USB Serial support registered for Keyspan 1 port adapter
+[    1.902085] usbserial: USB Serial support registered for Keyspan 2 port adapter
+[    1.902123] usbserial: USB Serial support registered for Keyspan 4 port adapter
+[    1.902217] usbcore: registered new interface driver option
+[    1.902259] usbserial: USB Serial support registered for GSM modem (1-port)
+[    1.902667] usbcore: registered new interface driver oti6858
+[    1.902715] usbserial: USB Serial support registered for oti6858
+[    1.902826] usbcore: registered new interface driver pl2303
+[    1.902868] usbserial: USB Serial support registered for pl2303
+[    1.902955] usbcore: registered new interface driver qcserial
+[    1.902995] usbserial: USB Serial support registered for Qualcomm USB modem
+[    1.903098] usbcore: registered new interface driver sierra
+[    1.903138] usbserial: USB Serial support registered for Sierra USB modem
+[    1.905732] usbcore: registered new interface driver usbtouchscreen
+[    1.906398] i2c /dev entries driver
+[    1.912497] fan53555-regulator 0-001c: FAN53555 Option[12] Rev[15] Detected!
+[    1.913215] vdd_cpu: override max_uV, 1390000 -> 1387500
+[    1.915003] fan53555-regulator 0-001c: Looking up vin-supply from device tree
+[    1.915041] vdd_cpu: supplied by vcc5v0_sys
+[    1.915064] vcc5v0_sys: could not add device link regulator.12: -ENOENT
+[    1.919567] vdd_cpu: 712 <--> 1387 mV at 900 mV, enabled
+[    1.928316] rk808 0-0020: chip id: 0x8090
+[    1.928390] rk808 0-0020: No cache defaults, reading back from HW
+[    1.952765] rk808 0-0020: source: on=0x40, off=0x00
+[    1.952804] rk808 0-0020: support dcdc3 fb mode:-22, 0
+[    1.952825] rk808 0-0020: support pmic reset mode:0,0
+[    1.959944] rk808-regulator rk808-regulator: there is no dvs0 gpio
+[    1.960002] rk808-regulator rk808-regulator: there is no dvs1 gpio
+[    1.960107] rk808 0-0020: Looking up vcc1-supply from device tree
+[    1.960143] vdd_logic: supplied by vcc3v3_sys
+[    1.960165] vcc3v3_sys: could not add device link regulator.13: -ENOENT
+[    1.960824] vdd_logic: 500 <--> 1350 mV at 900 mV, enabled
+[    1.961401] rk808 0-0020: Looking up vcc2-supply from device tree
+[    1.961520] vdd_gpu: supplied by vcc3v3_sys
+[    1.961544] vcc3v3_sys: could not add device link regulator.14: -ENOENT
+[    1.962155] vdd_gpu: 500 <--> 1350 mV at 900 mV, enabled
+[    1.962759] rk808 0-0020: Looking up vcc3-supply from device tree
+[    1.962793] vcc_ddr: supplied by vcc3v3_sys
+[    1.962813] vcc3v3_sys: could not add device link regulator.15: -ENOENT
+[    1.963410] vcc_ddr: at 500 mV, enabled
+[    1.963999] rk808 0-0020: Looking up vcc4-supply from device tree
+[    1.964032] vdd_npu: supplied by vcc3v3_sys
+[    1.964052] vcc3v3_sys: could not add device link regulator.16: -ENOENT
+[    1.964689] vdd_npu: 500 <--> 1350 mV at 900 mV, enabled
+[    1.965216] rk808 0-0020: Looking up vcc9-supply from device tree
+[    1.965249] vcc_1v8: supplied by vcc3v3_sys
+[    1.965269] vcc3v3_sys: could not add device link regulator.17: -ENOENT
+[    1.965924] vcc_1v8: 1800 mV, enabled
+[    1.966381] rk808 0-0020: Looking up vcc5-supply from device tree
+[    1.966413] vdda0v9_image: supplied by vcc3v3_sys
+[    1.966504] vcc3v3_sys: could not add device link regulator.18: -ENOENT
+[    1.967767] vdda0v9_image: 900 mV, enabled
+[    1.968308] rk808 0-0020: Looking up vcc5-supply from device tree
+[    1.968346] vdda_0v9: supplied by vcc3v3_sys
+[    1.968367] vcc3v3_sys: could not add device link regulator.19: -ENOENT
+[    1.969709] vdda_0v9: 900 mV, enabled
+[    1.970180] rk808 0-0020: Looking up vcc5-supply from device tree
+[    1.970215] vdda0v9_pmu: supplied by vcc3v3_sys
+[    1.970240] vcc3v3_sys: could not add device link regulator.20: -ENOENT
+[    1.971510] vdda0v9_pmu: 900 mV, enabled
+[    1.972042] rk808 0-0020: Looking up vcc6-supply from device tree
+[    1.972079] vccio_acodec: supplied by vcc3v3_sys
+[    1.972100] vcc3v3_sys: could not add device link regulator.21: -ENOENT
+[    1.973339] vccio_acodec: 3300 mV, enabled
+[    1.973928] rk808 0-0020: Looking up vcc6-supply from device tree
+[    1.973969] vccio_sd: supplied by vcc3v3_sys
+[    1.973991] vcc3v3_sys: could not add device link regulator.22: -ENOENT
+[    1.975247] vccio_sd: 1800 <--> 3300 mV at 3300 mV, enabled
+[    1.975836] rk808 0-0020: Looking up vcc6-supply from device tree
+[    1.975874] vcc3v3_pmu: supplied by vcc3v3_sys
+[    1.975894] vcc3v3_sys: could not add device link regulator.23: -ENOENT
+[    1.977155] vcc3v3_pmu: 3300 mV, enabled
+[    1.977776] rk808 0-0020: Looking up vcc7-supply from device tree
+[    1.977813] vcca_1v8: supplied by vcc3v3_sys
+[    1.977831] vcc3v3_sys: could not add device link regulator.24: -ENOENT
+[    1.979131] vcca_1v8: 1800 mV, enabled
+[    1.979696] rk808 0-0020: Looking up vcc7-supply from device tree
+[    1.979733] vcca1v8_pmu: supplied by vcc3v3_sys
+[    1.979753] vcc3v3_sys: could not add device link regulator.25: -ENOENT
+[    1.981002] vcca1v8_pmu: 1800 mV, enabled
+[    1.981603] rk808 0-0020: Looking up vcc7-supply from device tree
+[    1.981642] vcca1v8_image: supplied by vcc3v3_sys
+[    1.981663] vcc3v3_sys: could not add device link regulator.26: -ENOENT
+[    1.982940] vcca1v8_image: 1800 mV, enabled
+[    1.983513] rk808 0-0020: Looking up vcc9-supply from device tree
+[    1.983551] vcc_3v3: supplied by vcc3v3_sys
+[    1.983571] vcc3v3_sys: could not add device link regulator.27: -ENOENT
+[    1.984200] vcc_3v3: at 3300 mV, enabled
+[    1.984786] rk808 0-0020: Looking up vcc8-supply from device tree
+[    1.984825] vcc3v3_sd: supplied by vcc3v3_sys
+[    1.984846] vcc3v3_sys: could not add device link regulator.28: -ENOENT
+[    1.985481] vcc3v3_sd: at 3300 mV, enabled
+[    1.985969] rk817-battery: Failed to locate of_node [id: -1]
+[    1.986246] rk817-charger: Failed to locate of_node [id: -1]
+[    1.991259] input: rk805 pwrkey as /devices/platform/fdd40000.i2c/i2c-0/0-0020/rk805-pwrkey/input/input1
+[    1.998336] Goodix-TS 2-005d: Looking up AVDD28-supply from device tree
+[    1.998378] Goodix-TS 2-005d: Looking up AVDD28-supply property in node /i2c@fe5b0000/gt9xx@5d failed
+[    1.998521] Goodix-TS 2-005d: supply AVDD28 not found, using dummy regulator
+[    1.998789] Goodix-TS 2-005d: Looking up VDDIO-supply from device tree
+[    1.998817] Goodix-TS 2-005d: Looking up VDDIO-supply property in node /i2c@fe5b0000/gt9xx@5d failed
+[    1.998882] Goodix-TS 2-005d: supply VDDIO not found, using dummy regulator
+[    2.084890] Goodix-TS 2-005d: i2c test failed attempt 1: -6
+[    2.106864] Goodix-TS 2-005d: i2c test failed attempt 2: -6
+[    2.128533] Goodix-TS 2-005d: I2C communication failure: -6
+[    2.130361] Goodix-TS 2-0014: Looking up AVDD28-supply from device tree
+[    2.130398] Goodix-TS 2-0014: Looking up AVDD28-supply property in node /i2c@fe5b0000/gt9xx@14 failed
+[    2.130576] Goodix-TS 2-0014: supply AVDD28 not found, using dummy regulator
+[    2.130843] Goodix-TS 2-0014: Looking up VDDIO-supply from device tree
+[    2.130869] Goodix-TS 2-0014: Looking up VDDIO-supply property in node /i2c@fe5b0000/gt9xx@14 failed
+[    2.130932] Goodix-TS 2-0014: supply VDDIO not found, using dummy regulator
+[    2.216916] Goodix-TS 2-0014: i2c test failed attempt 1: -6
+[    2.238862] Goodix-TS 2-0014: i2c test failed attempt 2: -6
+[    2.260511] Goodix-TS 2-0014: I2C communication failure: -6
+[    2.263548] edt_ft5x06 2-0038: Looking up vcc-supply from device tree
+[    2.263590] edt_ft5x06 2-0038: Looking up vcc-supply property in node /i2c@fe5b0000/edt-ft5x06@38 failed
+[    2.263706] edt_ft5x06 2-0038: supply vcc not found, using dummy regulator
+[    2.264368] edt_ft5x06 2-0038: touchscreen probe failed
+[    2.272535] rtc-pcf8563 3-0051: registered as rtc0
+[    2.273991] rtc-pcf8563 3-0051: setting system clock to 1970-01-23T09:13:56 UTC (1934036)
+[    2.276416] usbcore: registered new interface driver uvcvideo
+[    2.276562] USB Video Class driver (1.1.1)
+[    2.282072] rockchip-thermal fe710000.tsadc: tsadc is probed successfully!
+[    2.285092] Bluetooth: HCI UART driver ver 2.3
+[    2.285127] Bluetooth: HCI UART protocol H4 registered
+[    2.285142] Bluetooth: HCI UART protocol ATH3K registered
+[    2.285263] usbcore: registered new interface driver bfusb
+[    2.285372] usbcore: registered new interface driver btusb
+[    2.285863] cpu cpu0: bin=0
+[    2.286106] cpu cpu0: leakage=29
+[    2.286230] cpu cpu0: pvtm = 88240, from nvmem
+[    2.286259] cpu cpu0: pvtm-volt-sel=1
+[    2.286810] cpu cpu0: Looking up cpu-supply from device tree
+[    2.289691] cpu cpu0: EM: OPP:600000 is inefficient
+[    2.290107] cpu cpu0: EM: created perf domain
+[    2.290222] cpu cpu0: l=0 h=2147483647 hyst=5000 l_limit=0 h_limit=0 h_table=0
+[    2.300664] sdhci: Secure Digital Host Controller Interface driver
+[    2.300693] sdhci: Copyright(c) Pierre Ossman
+[    2.300701] Synopsys Designware Multimedia Card Interface Driver
+[    2.302221] sdhci-pltfm: SDHCI platform and OF driver helper
+[    2.303182] dwmmc_rockchip fe2b0000.dwmmc: IDMAC supports 32-bit address mode.
+[    2.303239] dwmmc_rockchip fe2b0000.dwmmc: Using internal DMA controller.
+[    2.303254] dwmmc_rockchip fe2b0000.dwmmc: Version ID is 270a
+[    2.303309] dwmmc_rockchip fe000000.dwmmc: IDMAC supports 32-bit address mode.
+[    2.303335] dwmmc_rockchip fe000000.dwmmc: Using internal DMA controller.
+[    2.303350] dwmmc_rockchip fe000000.dwmmc: Version ID is 270a
+[    2.303631] dwmmc_rockchip fe2b0000.dwmmc: DW MMC controller at irq 49,32 bit host data width,256 deep fifo
+[    2.303788] dwmmc_rockchip fe2b0000.dwmmc: Looking up vmmc-supply from device tree
+[    2.304007] dwmmc_rockchip fe2b0000.dwmmc: Looking up vqmmc-supply from device tree
+[    2.304286] dwmmc_rockchip fe000000.dwmmc: DW MMC controller at irq 47,32 bit host data width,256 deep fifo
+[    2.304405] dwmmc_rockchip fe000000.dwmmc: Looking up vmmc-supply from device tree
+[    2.304501] dwmmc_rockchip fe000000.dwmmc: Looking up vmmc-supply property in node /dwmmc@fe000000 failed
+[    2.304576] dwmmc_rockchip fe000000.dwmmc: Looking up vqmmc-supply from device tree
+[    2.304593] dwmmc_rockchip fe000000.dwmmc: Looking up vqmmc-supply property in node /dwmmc@fe000000 failed
+[    2.304939] dwmmc_rockchip fe000000.dwmmc: allocated mmc-pwrseq
+[    2.304967] mmc_host mmc3: card is non-removable.
+[    2.305376] SMCCC: SOC_ID: ARCH_SOC_ID not implemented, skipping ....
+[    2.306119] hid: raw HID events driver (C) Jiri Kosina
+[    2.307857] sdhci-dwcmshc fe310000.sdhci: Looking up vmmc-supply from device tree
+[    2.307887] sdhci-dwcmshc fe310000.sdhci: Looking up vmmc-supply property in node /sdhci@fe310000 failed
+[    2.307954] sdhci-dwcmshc fe310000.sdhci: Looking up vqmmc-supply from device tree
+[    2.307969] sdhci-dwcmshc fe310000.sdhci: Looking up vqmmc-supply property in node /sdhci@fe310000 failed
+[    2.308030] ====mylog==== host quirks 0x00001060
+[    2.308100] usbcore: registered new interface driver usbhid
+[    2.308114] usbhid: USB HID core driver
+[    2.308564] rockchip,bus bus-npu: Looking up bus-supply from device tree
+[    2.308853] rockchip,bus bus-npu: bin=0
+[    2.308883] rockchip,bus bus-npu: Failed to get leakage
+[    2.308965] rockchip,bus bus-npu: pvtm = 88240, from nvmem
+[    2.308986] rockchip,bus bus-npu: pvtm-volt-sel=1
+[    2.309477] rockchip,bus bus-npu: avs=0
+[    2.314360] rockchip-saradc fe720000.saradc: Looking up vref-supply from device tree
+[    2.315052] mmc_host mmc1: Bus speed (slot 0) = 375000Hz (slot req 400000Hz, actual 375000HZ div = 0)
+[    2.316978] optee: probing for conduit method.
+(XEN) d0v1 Unhandled SMC/HVC: 0xbf00ff01
+[    2.317021] optee: api uid mismatch
+[    2.317041] optee: probe of firmware:optee failed with error -22
+[    2.317402] rksfc_base v1.1 2016-01-08
+[    2.318299] rksfc fe300000.sfc: rksfc_probe clk rate = 99000000
+[    2.318810] rkflash_dev_init enter
+[    2.318841] sfc nor id: ff ff ff
+[    2.318851] rkflash[1] is invalid
+[    2.318853] rkflash_dev_init enter
+[    2.318873] sfc_nand id: ff ff ff
+[    2.318882] rkflash[2] is invalid
+[    2.319937] usbcore: registered new interface driver snd-usb-audio
+[    2.322742] rk817-codec rk817-codec: DMA mask not set
+[    2.334604] input: rockchip,hdmi rockchip,hdmi as /devices/platform/hdmi-sound/sound/card0/input3
+[    2.336789] rk-multicodecs rk809-sound: Failed to get ADC channel
+[    2.337083] rk-multicodecs rk809-sound: ASoC: Property 'rockchip,audio-routing' does not exist or its length is not even
+[    2.338558] rk817-codec rk817-codec: rk817_probe: chip_name:0x80, chip_ver:0x94
+[    2.340626] mmc0: SDHCI controller on fe310000.sdhci [fe310000.sdhci] using PIO
+[    2.346728] input: rockchip-rk809 Headset as /devices/platform/rk809-sound/sound/card1/input4
+[    2.349109] IPVS: Registered protocols (TCP, UDP)
+[    2.349197] IPVS: Connection hash table configured (size=4096, memory=32Kbytes)
+[    2.349392] IPVS: ipvs loaded.
+[    2.349855] Initializing XFRM netlink socket
+[    2.350347] NET: Registered protocol family 10
+[    2.351838] Segment Routing with IPv6
+[    2.351961] NET: Registered protocol family 17
+[    2.351999] NET: Registered protocol family 15
+[    2.352065] Bridge firewalling registered
+[    2.352080] can: controller area network core
+[    2.352179] NET: Registered protocol family 29
+[    2.352192] can: raw protocol
+[    2.352205] can: broadcast manager protocol
+[    2.352225] can: netlink gateway - max_hops=1
+[    2.352645] Bluetooth: RFCOMM socket layer initialized
+[    2.352716] Bluetooth: RFCOMM ver 1.11
+[    2.352739] Bluetooth: HIDP (Human Interface Emulation) ver 1.2
+[    2.352760] Bluetooth: HIDP socket layer initialized
+[    2.352835] 8021q: 802.1Q VLAN Support v1.8
+[    2.352884] [BT_RFKILL]: Enter rfkill_rk_init
+[    2.352897] [WLAN_RFKILL]: Enter rfkill_wlan_init
+[    2.354062] Key type dns_resolver registered
+[    2.354574] flash vendor_init_thread!
+[    2.354598] flash vendor storage:20170308 ret = -1
+[    2.356108] printk: bootconsole [xenboot0]: printing thread started
+[    2.356188] Loading compiled-in X.509 certificates
+[    2.359912] Loaded X.509 cert 'QsemOS: lkm signing key: 2eea68b16202bb663b0dd9b7f00b2da0eb2a0b02'
+[    2.363694] Btrfs loaded, crc32c=crc32c-generic
+[    2.365840] rga2: Driver loaded successfully ver:3.2.63318
+[    2.366374] rga2: Module initialized.
+[    2.387024] mmc0: new HS200 MMC card at address 0001
+[    2.388771] mmcblk0: mmc0:0001 DG4016 14.7 GiB 
+[    2.389220] mmcblk0boot0: mmc0:0001 DG4016 partition 1 4.00 MiB
+[    2.389902] mmcblk0boot1: mmc0:0001 DG4016 partition 2 4.00 MiB
+[    2.390218] mmcblk0rpmb: mmc0:0001 DG4016 partition 3 4.00 MiB, chardev (235:0)
+[    2.399341]  mmcblk0: p1 p2 p3 p4 p5 p6 p7 p8
+[    2.419081] mpp_rkvenc fdf40000.rkvenc: probing start
+[    2.419618] mpp_rkvenc fdf40000.rkvenc: Looking up venc-supply from device tree
+[    2.419898] mpp_rkvenc fdf40000.rkvenc: bin=0
+[    2.419929] mpp_rkvenc fdf40000.rkvenc: Failed to get leakage
+[    2.419997] mpp_rkvenc fdf40000.rkvenc: pvtm = 88240, from nvmem
+[    2.420010] mpp_rkvenc fdf40000.rkvenc: pvtm-volt-sel=1
+[    2.420299] mpp_rkvenc fdf40000.rkvenc: avs=0
+[    2.420614] mpp_rkvenc fdf40000.rkvenc: failed to find power_model node
+[    2.420622] mpp_rkvenc fdf40000.rkvenc: failed to initialize power model
+[    2.420626] mpp_rkvenc fdf40000.rkvenc: failed to get dynamic-coefficient
+[    2.421416] mpp_rkvenc fdf40000.rkvenc: probing finish
+[    2.421980] rockchip-iodomain fdc20000.syscon:io-domains: Looking up pmuio1-supply from device tree
+[    2.422275] rockchip-iodomain fdc20000.syscon:io-domains: Looking up pmuio2-supply from device tree[    3.941832] systemd[1]: Configuration file /usr/lib/systemd/system/xenstored.service is marked world-inaccessible. This has no effect as configuration data is accessible via APIs without restrictions. Proceeding anyway.
+[    4.271054] systemd[1]: Configuration file /usr/lib/systemd/system/proc-xen.mount is marked world-inaccessible. This has no effect as configuration data is accessible via APIs without restrictions. Proceeding anyway.
+[    4.274088] systemd[1]: Configuration file /usr/lib/systemd/system/xendriverdomain.service is marked world-inaccessible. This has no effect as configuration data is accessible via APIs without restrictions. Proceeding anyway.
+[    4.276732] systemd[1]: Configuration file /usr/lib/systemd/system/xendomains.service is marked world-inaccessible. This has no effect as configuration data is accessible via APIs without restrictions. Proceeding anyway.
+[    4.279960] systemd[1]: Configuration file /usr/lib/systemd/system/xenconsoled.service is marked world-inaccessible. This has no effect as configuration data is accessible via APIs without restrictions. Proceeding anyway.
+[    4.282880] systemd[1]: Configuration file /usr/lib/systemd/system/xen-watchdog.service is marked world-inaccessible. This has no effect as configuration data is accessible via APIs without restrictions. Proceeding anyway.
+[    4.285752] systemd[1]: Configuration file /usr/lib/systemd/system/xen-qemu-dom0-disk-backend.service is marked world-inaccessible. This has no effect as configuration data is accessible via APIs without restrictions. Proceeding anyway.
+[    4.288189] systemd[1]: /usr/lib/systemd/system/xen-qemu-dom0-disk-backend.service:11: PIDFile= references a path below legacy directory /var/run/, updating /var/run/xen/qemu-dom0.pid → /run/xen/qemu-dom0.pid; please update the unit file accordingly.
+[    4.290492] systemd[1]: Configuration file /usr/lib/systemd/system/xen-init-dom0.service is marked world-inaccessible. This has no effect as configuration data is accessible via APIs without restrictions. Proceeding anyway.
+[    4.382825] systemd[1]: Configuration file /etc/systemd/system/dmc-performance.service is marked world-inaccessible. This has no effect as configuration data is accessible via APIs without restrictions. Proceeding anyway.
+[    4.450939] dwmmc_rockchip fe000000.dwmmc: All phases bad!
+[    4.450984] mmc3: tuning execution failed: -5
+[    4.451022] mmc3: error -5 whilst initialising SDIO card
+[    4.483749] systemd[1]: Queued start job for default target Multi-User System.
+[    4.538568] dwmmc_rockchip fe000000.dwmmc: Unexpected xfer timeout, state 0
+[    4.649150] systemd[1]: Created slice Slice /system/getty.
+[    4.657151] systemd[1]: Created slice Slice /system/modprobe.
+[    4.664404] systemd[1]: Created slice Slice /system/serial-getty.
+[    4.670161] systemd[1]: Created slice User and Session Slice.
+[    4.671869] systemd[1]: Started Dispatch Password Requests to Console Directory Watch.
+[    4.672812] systemd[1]: Started Forward Password Requests to Wall Directory Watch.
+[    4.673600] systemd[1]: Reached target Remote File Systems.
+[    4.673972] systemd[1]: Reached target Slice Units.
+[    4.674162] systemd[1]: Reached target Swaps.
+[    4.680099] systemd[1]: Listening on RPCbind Server Activation Socket.
+[    4.680786] systemd[1]: Reached target RPC Port Mapper.
+[    4.682937] mmc_host mmc3: Bus speed (slot 0) = 375000Hz (slot req 375000Hz, actual 375000HZ div = 0)
+[    4.683235] systemd[1]: Listening on Syslog Socket.
+[    4.684716] systemd[1]: Listening on initctl Compatibility Named Pipe.
+[    4.687127] systemd[1]: Listening on Journal Audit Socket.
+[    4.688976] systemd[1]: Listening on Journal Socket (/dev/log).
+[    4.691161] systemd[1]: Listening on Journal Socket.
+[    4.693517] systemd[1]: Listening on Network Service Netlink Socket.
+[    4.697769] systemd[1]: Listening on udev Control Socket.
+[    4.700196] systemd[1]: Listening on udev Kernel Socket.
+[    4.702389] systemd[1]: Listening on User Database Manager Socket.
+[    4.725752] systemd[1]: Mounting Huge Pages File System...
+[    4.744619] systemd[1]: Mounting POSIX Message Queue File System...
+[    4.764308] mmc_host mmc3: Bus speed (slot 0) = 148500000Hz (slot req 150000000Hz, actual 148500000HZ div = 0)
+[    4.773315] systemd[1]: Mounting Mount /proc/xen files...
+[    4.798012] systemd[1]: Mounting Kernel Debug File System...
+[    4.817205] systemd[1]: Mounting Kernel Trace File System...
+[    4.819057] systemd[1]: Create List of Static Device Nodes was skipped because of an unmet condition check (ConditionFileNotEmpty=/lib/modules/5.10.0+/modules.devname).
+[    4.834786] systemd[1]: Starting Load Kernel Module configfs...
+[    4.849000] systemd[1]: Starting Load Kernel Module drm...
+[    4.859019] systemd[1]: Starting Load Kernel Module fuse...
+[    4.881975] systemd[1]: Starting RPC Bind...
+[    4.903696] systemd[1]: Starting Do depmod Before Load Kernel Modules...
+[    4.905410] systemd[1]: systemd-journald.service: unit configures an IP firewall, but the local system does not support BPF/cgroup firewalling.
+[    4.905507] systemd[1]: (This warning is only shown for the first unit using IP firewalling.)
+[    4.916931] systemd[1]: Starting Journal Service...
+[    4.927766] systemd[1]: Starting Generate network units from Kernel command line...
+[    4.947555] systemd[1]: Starting Remount Root and Kernel File Systems...
+[    4.965733] systemd[1]: Starting Coldplug All udev Devices...
+[    4.992066] systemd[1]: Mounted Huge Pages File System.
+[    4.994119] systemd[1]: Mounted POSIX Message Queue File System.
+[    4.996967] systemd[1]: Mounted Mount /proc/xen files.
+[    4.998543] systemd[1]: Mounted Kernel Debug File System.
+[    4.999924] systemd[1]: Mounted Kernel Trace File System.
+[    5.002865] systemd[1]: modprobe@configfs.service: Deactivated successfully.
+[    5.008210] systemd[1]: Finished Load Kernel Module configfs.
+[    5.012598] systemd[1]: modprobe@drm.service: Deactivated successfully.
+[    5.019353] systemd[1]: Finished Load Kernel Module drm.
+[    5.022133] systemd[1]: modprobe@fuse.service: Deactivated successfully.
+[    5.025547] systemd[1]: Finished Load Kernel Module fuse.
+[    5.029160] systemd[1]: Started RPC Bind.
+[    5.030752] systemd[1]: systemd-depmod.service: Main process exited, code=exited, status=1/FAILURE
+[    5.031883] systemd[1]: systemd-depmod.service: Failed with result 'exit-code'.
+[    5.036615] systemd[1]: Failed to start Do depmod Before Load Kernel Modules.
+[    5.042672] systemd[1]: Finished Generate network units from Kernel command line.
+[    5.053409] systemd-journald[278]: Collecting audit messages is enabled.
+[    5.074109] systemd[1]: Mounting FUSE Control File System...
+[    5.083984] systemd[1]: Mounting Kernel Configuration File System...
+[    5.094366] systemd[1]: Starting Load Kernel Modules...
+[    5.103779] systemd[1]: Finished Remount Root and Kernel File Systems.
+[    5.110328] systemd[1]: Mounted FUSE Control File System.
+[    5.129662] systemd[1]: Rebuild Hardware Database was skipped because of an unmet condition check (ConditionNeedsUpdate=/etc).
+[    5.130297] systemd[1]: Create System Users was skipped because no trigger condition checks were met.
+[    5.153506] systemd[1]: Starting Create Static Device Nodes in /dev...
+[    5.171602] systemd[1]: Mounted Kernel Configuration File System.
+[    5.219148] systemd[1]: Finished Load Kernel Modules.
+[    5.269043] systemd[1]: Starting Apply Kernel Variables...
+[    5.308928] systemd[1]: Finished Create Static Device Nodes in /dev.
+[    5.318639] systemd[1]: Reached target Preparation for Local File Systems.
+[    5.354853] systemd[1]: Mounting /tmp...
+[    5.409970] systemd[1]: Mounting /var/volatile...
+[    5.450769] systemd[1]: Starting Rule-based Manager for Device Events and Files...
+[    5.522194] systemd[1]: Finished Apply Kernel Variables.
+[    5.533863] systemd[1]: Mounted /tmp.
+[    5.536355] systemd[1]: Mounted /var/volatile.
+[    5.539682] systemd[1]: Bind mount volatile /var/cache was skipped because of an unmet condition check (ConditionPathIsReadWrite=!/var/cache).
+[    5.540086] systemd[1]: Bind mount volatile /var/lib was skipped because of an unmet condition check (ConditionPathIsReadWrite=!/var/lib).
+[    5.612634] systemd[1]: Starting Load/Save OS Random Seed...
+[    5.613210] systemd[1]: Bind mount volatile /var/spool was skipped because of an unmet condition check (ConditionPathIsReadWrite=!/var/spool).
+[    5.613967] systemd[1]: Bind mount volatile /srv was skipped because of an unmet condition check (ConditionPathIsReadWrite=!/srv).
+[    5.614251] systemd[1]: Reached target Local File Systems.
+[    5.616001] systemd[1]: Rebuild Dynamic Linker Cache was skipped because no trigger condition checks were met.
+[    5.691891] systemd[1]: Finished Load/Save OS Random Seed.
+[    5.693018] systemd[1]: First Boot Complete was skipped because of an unmet condition check (ConditionFirstBoot=yes).
+[    5.693254] systemd[1]: Commit a transient machine-id on disk was skipped because of an unmet condition check (ConditionPathIsMountPoint=/etc/machine-id).
+[    5.822852] systemd[1]: Started Rule-based Manager for Device Events and Files.
+[    6.254317] systemd[1]: Started Journal Service.
+[    6.328989] systemd-journald[278]: Received client request to flush runtime journal.
+[    6.442690] dwmmc_rockchip fe000000.dwmmc: All phases bad!
+[    6.442715] mmc3: tuning execution failed: -5
+[    6.442736] mmc3: error -5 whilst initialising SDIO card
+[    6.530543] dwmmc_rockchip fe000000.dwmmc: Unexpected xfer timeout, state 0
+[    6.666641] mmc_host mmc3: Bus speed (slot 0) = 375000Hz (slot req 375000Hz, actual 375000HZ div = 0)
+[    6.761367] audit: type=1305 audit(1934040.986:2): op=set audit_enabled=1 old=1 auid=4294967295 ses=4294967295 res=1
+[    6.762116] mmc_host mmc3: Bus speed (slot 0) = 148500000Hz (slot req 150000000Hz, actual 148500000HZ div = 0)
+[    8.570699] dwmmc_rockchip fe000000.dwmmc: All phases bad!
+[    8.570720] mmc3: tuning execution failed: -5
+[    8.570747] mmc3: error -5 whilst initialising SDIO card
+[    8.658539] dwmmc_rockchip fe000000.dwmmc: Unexpected xfer timeout, state 0
+[    8.794664] mmc_host mmc3: Bus speed (slot 0) = 375000Hz (slot req 375000Hz, actual 375000HZ div = 0)
+[    8.861597] mmc_host mmc3: Bus speed (slot 0) = 148500000Hz (slot req 150000000Hz, actual 148500000HZ div = 0)
+[   10.650713] dwmmc_rockchip fe000000.dwmmc: All phases bad!
+[   10.650732] mmc3: tuning execution failed: -5
+[   10.650749] mmc3: error -5 whilst initialising SDIO card
+[   10.738558] dwmmc_rockchip fe000000.dwmmc: Unexpected xfer timeout, state 0
+[   19.001441] sched: RT throttling activated
+[   23.557558] rk_gmac-dwmac fe2a0000.ethernet eth0: PHY [stmmac-0:00] driver [RTL8211F Gigabit Ethernet] (irq=POLL)
+[   23.586762] dwmac4: Master AXI performs any burst length
+[   23.586795] rk_gmac-dwmac fe2a0000.ethernet eth0: No Safety Features support found
+[   23.586835] rk_gmac-dwmac fe2a0000.ethernet eth0: IEEE 1588-2008 Advanced Timestamp supported
+[   23.587159] rk_gmac-dwmac fe2a0000.ethernet eth0: registered PTP clock
+[   23.631811] rk_gmac-dwmac fe2a0000.ethernet eth0: configuring for phy/rgmii link mode
+[   23.791669] rk_gmac-dwmac fe010000.ethernet eth1: PHY [stmmac-1:00] driver [RTL8211F Gigabit Ethernet] (irq=POLL)
+[   23.809096] dwmac4: Master AXI performs any burst length
+[   23.809127] rk_gmac-dwmac fe010000.ethernet eth1: No Safety Features support found
+[   23.809160] rk_gmac-dwmac fe010000.ethernet eth1: IEEE 1588-2008 Advanced Timestamp supported
+[   23.812129] rk_gmac-dwmac fe010000.ethernet eth1: registered PTP clock
+[   23.840631] rk_gmac-dwmac fe010000.ethernet eth1: configuring for phy/rgmii link mode
+(XEN) !!!!!!!!!!!!!set gicv3 interrupt passthrough
+(XEN) old mdcr_el2=0xe00
+(XEN) new mdcr_el2=0xe0f
+(XEN) origin hcr_el2=0x807c663f
+(XEN) cur hcr_el2=0x807c060f
+[   26.933404] rk_gmac-dwmac fe010000.ethernet eth1: Link is Up - 1Gbps/Full - flow control rx/tx
+[   26.933569] IPv6: ADDRCONF(NETDEV_CHANGE): eth1: link becomes ready
+
+openEuler Embedded(openEuler Embedded Reference Distro) 24.03-LTS ok3568 hvc0
+
+                         ______      _
+                        |  ____|    | |
+   ___  ____   ___ _____| |__  _   _| | ___ _ __ 
+  / _ \|  _ \ / _ \  _  |  __|| | | | |/ _ \ '__|
+ | (_) | |_) |  __/ | | | |___| |_| | |  __/ |
+  \___/|  __/ \___|_| |_|______\____|_|\___|_|
+       | |   _____       _         _   _       _
+       |_|  |   __|_____| |_ ___ _| |_| |___ _| |
+            |   __|     | . | -_| . | . | -_| . |
+            |_____|_|_|_|___|___|___|___|___|___|
+
+
+Authorized uses only. All activity may be monitored and reported.
+
+ok3568 login: root
+
+[32mok3568 ~[m # 
+[32mok3568 ~[m # export TMOUT=0
+ifc[32mok3568 ~[m # [K
+fi[32mok3568 ~[m # ifconfig eth1 down
+
+[   32.737682] rk_gmac-dwmac fe010000.ethernet eth1: Link is Down
+[32mok3568 ~[m # [K
+[32mok3568 ~[m # [   32.754669] vcc3v3_lcd2_n: disabling
+echo __WORKLOAD_START__20260729_232831_256M; ./stress-ng --vm 3 --vm- bytes 256M --vm-keep --metrics-brief --timeout 6000000s & STRESS_PID=$!; echo __ WORKLOAD_PID__20260729_232831_256M=$STRESS_PID
+__WORKLOAD_START__20260729_232831_256M
+[1] 591
+__WORKLOAD_PID__20260729_232831_256M=591
+[32mok3568 ~[m # [K
+[32mok3568 ~[m # stress-ng: info:  [591] setting to a 6000000 second (69 days, 10 hours, 40 mins, 0.00 secs) run per stressor
+stress-ng: info:  [591] dispatching hogs: 3 vm
+if kill -0 591 2>/dev/null; then echo __WORKLOAD_ALIVE__20260729_2328 31_256M=1; else echo __WORKLOAD_ALIVE__20260729_232831_256M=0; fi
+__WORKLOAD_ALIVE__20260729_232831_256M=1
+[32mok3568 ~[m # [K
+[32mok3568 ~[m # if(XEN) !!!!!!!!!!!!!set gicv3 interrupt injection
+ kill -0 591 2>/dev/null; then kill -INT 591; wait 591; STRESS_RC=$ ?; else STRESS_RC=127; fi; echo __STRESS_DONE__20260729_232831_256M=$STRESS_RC
+
+stress-ng: info:  [591] stressor       bogo ops real time  usr time  sys time   bogo ops/s     bogo ops/s
+stress-ng: info:  [591]                           (secs)    (secs)    (secs)   (real time) (usr+sys time)
+stress-ng: info:  [591] vm              1941180    593.30   1770.81      1.25      3271.83        1095.44
+stress-ng: info:  [591] successful run completed in 593.31s (9 mins, 53.31 secs)
+[1]+  Done                    ./stress-ng --vm 3 --vm-bytes 256M --vm-keep --metrics-brief --timeout 6000000s
+__STRESS_DONE__20260729_232831_256M=0
+[32mok3568 ~[m # [K
+[32mok3568 ~[m # ^C
+[32mok3568 ~[m # 
+
+[32mok3568 ~[m # 
+[32mok3568 ~[m # reboot
+
+[32mok3568 ~[m # 
+[32mok3568 ~[m # [  630.852767] audit: type=1305 audit(1934665.078:108): op=set audit_pid=0 old=307 auid=4294967295 ses=4294967295 res=1
+[  630.943693] audit: type=1305 audit(1934665.169:109): auid=4294967295 ses=4294967295op=remove_rule path="/var/log/wtmp" key="session" list=4 res=1
+[  630.943777] audit: type=1305 audit(1934665.169:110): auid=4294967295 ses=4294967295op=remove_rule path="/var/log/faillog2" key="logins" list=4 res=1
+[  630.943835] audit: type=1305 audit(1934665.169:111): auid=4294967295 ses=4294967295op=remove_rule path="/var/log/btmp" key="session" list=4 res=1
+[  630.943892] audit: type=1305 audit(1934665.169:112): auid=4294967295 ses=4294967295op=remove_rule path="/var/log/tallylog" key="logins" list=4 res=1
+[  630.943951] audit: type=1305 audit(1934665.169:113): auid=4294967295 ses=4294967295op=remove_rule path="/var/log/lastlog" key="logins" list=4 res=1
+[  631.034703] watchdog: watchdog0: watchdog did not stop!
+[  631.060077] systemd-shutdown[1]: Using hardware watchdog 'Synopsys DesignWare Watchdog', version 0, device /dev/watchdog0
+[  631.060110] systemd-shutdown[1]: Watchdog running with a timeout of 1min 29s.
+[  631.095531] systemd-shutdown[1]: Syncing filesystems and block devices.
+[  631.113018] systemd-shutdown[1]: Sending SIGTERM to remaining processes...
+[  631.135000] systemd-journald[278]: Received SIGTERM from PID 1 (systemd-shutdow).
+[  631.137249] audit: type=1335 audit(1934665.362:114): pid=278 uid=0 auid=4294967295 tty=(none) ses=4294967295 comm="systemd-journal" exe="/lib/systemd/systemd-journald" nl-mcgrp=1 op=disconnect res=1
+[  631.149269] systemd-shutdown[1]: Sending SIGKILL to remaining processes...
+[  631.202079] systemd-shutdown[1]: Unmounting file systems.
+[  631.205057] (sd-remount)[702]: Remounting '/' read-only with options ''.
+[  631.239197] EXT4-fs (mmcblk0p6): re-mounted. Opts: (null)
+[  631.248255] systemd-shutdown[1]: All filesystems unmounted.
+[  631.248278] systemd-shutdown[1]: Deactivating swaps.
+[  631.248618] systemd-shutdown[1]: All swaps deactivated.
+[  631.248633] systemd-shutdown[1]: Detaching loop devices.
+[  631.252262] systemd-shutdown[1]: All loop devices detached.
+[  631.252283] systemd-shutdown[1]: Stopping MD devices.
+[  631.252763] systemd-shutdown[1]: All MD devices stopped.
+[  631.252779] systemd-shutdown[1]: Detaching DM devices.
+[  631.253062] systemd-shutdown[1]: All DM devices detached.
+[  631.253074] systemd-shutdown[1]: All filesystems, swaps, loop devices, MD devices and DM devices detached.
+[  631.253102] watchdog: watchdog0: watchdog did not stop!
+[  631.271380] systemd-shutdown[1]: Syncing filesystems and block devices.
+[  631.273125] systemd-shutdown[1]: Rebooting.
+[  631.274972] rk808 0-0020: reboot: not restore POWER_EN
+[  631.284569] mpp_rkvenc fdf40000.rkvenc: shutdown device
+[  631.284592] mpp_rkvenc fdf40000.rkvenc: shutdown success
+[  631.312266] fan53555-regulator 0-001c: fan53555..... reset
+[  631.313642] fan53555-regulator 0-001c: reset: force fan53555_reset ok!
+[  631.315006] mpp_rkvdec2 fdf80200.rkvdec: shutdown device
+[  631.315025] mpp_rkvdec2 fdf80200.rkvdec: shutdown success
+[  631.315044] mpp_jpgdec fded0000.jpegd: shutdown device
+[  631.315052] mpp_jpgdec fded0000.jpegd: shutdown success
+[  631.315068] mpp-iep2 fdef0000.iep: shutdown device
+[  631.315076] mpp-iep2 fdef0000.iep: shutdown success
+[  631.315093] mpp_vepu2 fdee0000.vepu: shutdown device
+[  631.315101] mpp_vepu2 fdee0000.vepu: shutdown success
+[  631.315116] mpp_vdpu2 fdea0400.vdpu: shutdown device
+[  631.315123] mpp_vdpu2 fdea0400.vdpu: shutdown success
+[  631.319351] xhci-hcd xhci-hcd.4.auto: remove, state 4
+[  631.319395] usb usb6: USB disconnect, device number 1
+[  631.321234] xhci-hcd xhci-hcd.4.auto: USB bus 6 deregistered
+[  631.321919] xhci-hcd xhci-hcd.4.auto: remove, state 4
+[  631.321951] usb usb5: USB disconnect, device number 1
+[  631.324784] xhci-hcd xhci-hcd.4.auto: USB bus 5 deregistered
+[  631.332741] rockchip-pm-domain fdd90000.power-management:power-controller: Looking up pipe-supply from device tree
+[  631.332810] rockchip-pm-domain fdd90000.power-management:power-controller: Looking up pipe-supply property in node /power-management@fdd90000/power-controller failed
+[  631.334152] reboot: Restarting system
+(XEN) Hardware Dom0 shutdown: rebooting machine
+Έk?J
+R
+ZZ
+
+t87ݚ:&
+ݚ:rt{JjrdݪXXhYmXxilyX؎xֺJIZzHXXyۊzxZz{ZZڋxxzXzzzzzZZZxxxڋzZzxZzXzXzxZh
+.)]k(zJ?j9JJ+k
++~g}y,k[v;
+KRk*?(Cq}LpHL!چUXa0X4l O!!h<"1mZ[Jj`|
+Jҋxk"*K
+JE@ ǆJzت9YZتJ2(
+
+:JRB**mmipi or edp default off
+lvds or rgb default off
+Could not find baseparameter partition
+Model: Forlinx OK3568-C Board
+Rockchip UBOOT DRM driver version: v1.0.1
+VOP have 1 active VP
+vp0 have layer nr:6[0 2 4 1 3 5 ], primary plane: 4
+vp1 have layer nr:0[], primary plane: 0
+vp2 have layer nr:0[], primary plane: 0
+hdmi@fe0a0000 disconnected
+CLK: (sync kernel. arm: enter 816000 KHz, init 816000 KHz, kernel 0N/A)
+  apll 1416000 KHz
+  dpll 780000 KHz
+  gpll 1188000 KHz
+  cpll 1000000 KHz
+  npll 1200000 KHz
+  vpll 24000 KHz
+  hpll 24000 KHz
+  ppll 200000 KHz
+  armclk 1416000 KHz
+  aclk_bus 150000 KHz
+  pclk_bus 100000 KHz
+  aclk_top_high 500000 KHz
+  aclk_top_low 400000 KHz
+  hclk_top 150000 KHz
+  pclk_top 100000 KHz
+  aclk_perimid 300000 KHz
+  hclk_perimid 150000 KHz
+  pclk_pmu 100000 KHz
+Rockchip watchdog stop
+Net:   eth0: ethernet@fe2a0000, eth1: ethernet@fe010000
+Hit key to stop autoboot('Spacebar'):  1 

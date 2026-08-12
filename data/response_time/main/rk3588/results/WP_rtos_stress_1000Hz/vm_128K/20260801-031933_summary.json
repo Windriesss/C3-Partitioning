@@ -1,0 +1,21 @@
+{
+  "platform": "rk3588",
+  "experiment": "WP_rtos_stress_1000Hz",
+  "vm_bytes": "128K",
+  "stress_ng": true,
+  "workload": "stress-ng",
+  "started_at": "2026-08-01T03:19:33+0800",
+  "elapsed_seconds": 915.266,
+  "sample_hz": 1000,
+  "expected_pmu_samples": 0,
+  "minimum_pmu_samples": 0,
+  "last_pmu_samples": 0,
+  "bogo_ops": null,
+  "stress_pid": null,
+  "stress_exit_code": null,
+  "status": "failed",
+  "error": "Linux boot did not reach login/shell after 5 attempts (last status=timeout)",
+  "post_run_warning": null,
+  "rtos_log": "20260801-031933_rtos.log",
+  "oee_log": "20260801-031933_oee.log"
+}

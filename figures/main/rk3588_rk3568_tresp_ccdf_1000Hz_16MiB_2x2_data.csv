@@ -1,0 +1,559 @@
+﻿Platform,Interference,Pressure size,Method,T_resp bin center (us),Bin count,CCDF P(T_resp >= x),Runs,Samples
+RK3588,Inter-core interference,16 MiB,Native,30.500,390576,1,5,3000000
+RK3588,Inter-core interference,16 MiB,Native,31.500,634754,0.869808,5,3000000
+RK3588,Inter-core interference,16 MiB,Native,32.500,827310,0.658223333333,5,3000000
+RK3588,Inter-core interference,16 MiB,Native,33.500,829598,0.382453333333,5,3000000
+RK3588,Inter-core interference,16 MiB,Native,34.500,266205,0.105920666667,5,3000000
+RK3588,Inter-core interference,16 MiB,Native,35.500,45469,0.0171856666667,5,3000000
+RK3588,Inter-core interference,16 MiB,Native,36.500,5603,0.00202933333333,5,3000000
+RK3588,Inter-core interference,16 MiB,Native,37.500,451,0.000161666666667,5,3000000
+RK3588,Inter-core interference,16 MiB,Native,38.500,21,1.13333333333e-05,5,3000000
+RK3588,Inter-core interference,16 MiB,Native,39.500,10,4.33333333333e-06,5,3000000
+RK3588,Inter-core interference,16 MiB,Native,40.500,2,1e-06,5,3000000
+RK3588,Inter-core interference,16 MiB,Native,42.500,1,3.33333333333e-07,5,3000000
+RK3588,Inter-core interference,16 MiB,WP,30.500,468250,1,5,3000000
+RK3588,Inter-core interference,16 MiB,WP,31.500,519479,0.843916666667,5,3000000
+RK3588,Inter-core interference,16 MiB,WP,32.500,754479,0.670757,5,3000000
+RK3588,Inter-core interference,16 MiB,WP,33.500,883924,0.419264,5,3000000
+RK3588,Inter-core interference,16 MiB,WP,34.500,311142,0.124622666667,5,3000000
+RK3588,Inter-core interference,16 MiB,WP,35.500,54927,0.0209086666667,5,3000000
+RK3588,Inter-core interference,16 MiB,WP,36.500,7123,0.00259966666667,5,3000000
+RK3588,Inter-core interference,16 MiB,WP,37.500,617,0.000225333333333,5,3000000
+RK3588,Inter-core interference,16 MiB,WP,38.500,43,1.96666666667e-05,5,3000000
+RK3588,Inter-core interference,16 MiB,WP,39.500,4,5.33333333333e-06,5,3000000
+RK3588,Inter-core interference,16 MiB,WP,40.500,8,4e-06,5,3000000
+RK3588,Inter-core interference,16 MiB,WP,41.500,2,1.33333333333e-06,5,3000000
+RK3588,Inter-core interference,16 MiB,WP,42.500,1,6.66666666667e-07,5,3000000
+RK3588,Inter-core interference,16 MiB,WP,43.500,1,3.33333333333e-07,5,3000000
+RK3588,Inter-core interference,16 MiB,SP,29.500,1,1,5,3000000
+RK3588,Inter-core interference,16 MiB,SP,30.500,2683328,0.999999666667,5,3000000
+RK3588,Inter-core interference,16 MiB,SP,31.500,316649,0.105557,5,3000000
+RK3588,Inter-core interference,16 MiB,SP,32.500,20,7.33333333333e-06,5,3000000
+RK3588,Inter-core interference,16 MiB,SP,33.500,1,6.66666666667e-07,5,3000000
+RK3588,Inter-core interference,16 MiB,SP,34.500,1,3.33333333333e-07,5,3000000
+RK3588,Inter-core interference,16 MiB,HCP4-16,30.500,2276095,1,5,3000000
+RK3588,Inter-core interference,16 MiB,HCP4-16,31.500,723801,0.241301666667,5,3000000
+RK3588,Inter-core interference,16 MiB,HCP4-16,32.500,104,3.46666666667e-05,5,3000000
+RK3588,Inter-core + intra-core interference,16 MiB,Native,30.500,39741,1,5,3000000
+RK3588,Inter-core + intra-core interference,16 MiB,Native,31.500,279235,0.986753,5,3000000
+RK3588,Inter-core + intra-core interference,16 MiB,Native,32.500,501224,0.893674666667,5,3000000
+RK3588,Inter-core + intra-core interference,16 MiB,Native,33.500,662800,0.7266,5,3000000
+RK3588,Inter-core + intra-core interference,16 MiB,Native,34.500,781093,0.505666666667,5,3000000
+RK3588,Inter-core + intra-core interference,16 MiB,Native,35.500,485898,0.245302333333,5,3000000
+RK3588,Inter-core + intra-core interference,16 MiB,Native,36.500,166447,0.0833363333333,5,3000000
+RK3588,Inter-core + intra-core interference,16 MiB,Native,37.500,58025,0.027854,5,3000000
+RK3588,Inter-core + intra-core interference,16 MiB,Native,38.500,18974,0.00851233333333,5,3000000
+RK3588,Inter-core + intra-core interference,16 MiB,Native,39.500,4539,0.00218766666667,5,3000000
+RK3588,Inter-core + intra-core interference,16 MiB,Native,40.500,1359,0.000674666666667,5,3000000
+RK3588,Inter-core + intra-core interference,16 MiB,Native,41.500,520,0.000221666666667,5,3000000
+RK3588,Inter-core + intra-core interference,16 MiB,Native,42.500,117,4.83333333333e-05,5,3000000
+RK3588,Inter-core + intra-core interference,16 MiB,Native,43.500,25,9.33333333333e-06,5,3000000
+RK3588,Inter-core + intra-core interference,16 MiB,Native,44.500,3,1e-06,5,3000000
+RK3588,Inter-core + intra-core interference,16 MiB,WP,30.500,41206,1,5,3000000
+RK3588,Inter-core + intra-core interference,16 MiB,WP,31.500,286812,0.986264666667,5,3000000
+RK3588,Inter-core + intra-core interference,16 MiB,WP,32.500,442151,0.890660666667,5,3000000
+RK3588,Inter-core + intra-core interference,16 MiB,WP,33.500,645095,0.743277,5,3000000
+RK3588,Inter-core + intra-core interference,16 MiB,WP,34.500,830287,0.528245333333,5,3000000
+RK3588,Inter-core + intra-core interference,16 MiB,WP,35.500,518742,0.251483,5,3000000
+RK3588,Inter-core + intra-core interference,16 MiB,WP,36.500,168918,0.078569,5,3000000
+RK3588,Inter-core + intra-core interference,16 MiB,WP,37.500,48841,0.022263,5,3000000
+RK3588,Inter-core + intra-core interference,16 MiB,WP,38.500,14191,0.00598266666667,5,3000000
+RK3588,Inter-core + intra-core interference,16 MiB,WP,39.500,3133,0.00125233333333,5,3000000
+RK3588,Inter-core + intra-core interference,16 MiB,WP,40.500,530,0.000208,5,3000000
+RK3588,Inter-core + intra-core interference,16 MiB,WP,41.500,75,3.13333333333e-05,5,3000000
+RK3588,Inter-core + intra-core interference,16 MiB,WP,42.500,9,6.33333333333e-06,5,3000000
+RK3588,Inter-core + intra-core interference,16 MiB,WP,43.500,5,3.33333333333e-06,5,3000000
+RK3588,Inter-core + intra-core interference,16 MiB,WP,44.500,1,1.66666666667e-06,5,3000000
+RK3588,Inter-core + intra-core interference,16 MiB,WP,45.500,4,1.33333333333e-06,5,3000000
+RK3588,Inter-core + intra-core interference,16 MiB,SP,30.500,510690,1,5,3000000
+RK3588,Inter-core + intra-core interference,16 MiB,SP,31.500,1594529,0.82977,5,3000000
+RK3588,Inter-core + intra-core interference,16 MiB,SP,32.500,687624,0.298260333333,5,3000000
+RK3588,Inter-core + intra-core interference,16 MiB,SP,33.500,122225,0.0690523333333,5,3000000
+RK3588,Inter-core + intra-core interference,16 MiB,SP,34.500,36844,0.0283106666667,5,3000000
+RK3588,Inter-core + intra-core interference,16 MiB,SP,35.500,29025,0.0160293333333,5,3000000
+RK3588,Inter-core + intra-core interference,16 MiB,SP,36.500,13378,0.00635433333333,5,3000000
+RK3588,Inter-core + intra-core interference,16 MiB,SP,37.500,3765,0.001895,5,3000000
+RK3588,Inter-core + intra-core interference,16 MiB,SP,38.500,1350,0.00064,5,3000000
+RK3588,Inter-core + intra-core interference,16 MiB,SP,39.500,444,0.00019,5,3000000
+RK3588,Inter-core + intra-core interference,16 MiB,SP,40.500,97,4.2e-05,5,3000000
+RK3588,Inter-core + intra-core interference,16 MiB,SP,41.500,26,9.66666666667e-06,5,3000000
+RK3588,Inter-core + intra-core interference,16 MiB,SP,42.500,2,1e-06,5,3000000
+RK3588,Inter-core + intra-core interference,16 MiB,SP,43.500,1,3.33333333333e-07,5,3000000
+RK3588,Inter-core + intra-core interference,16 MiB,HCP4-16,30.500,842323,1,5,3000000
+RK3588,Inter-core + intra-core interference,16 MiB,HCP4-16,31.500,1949441,0.719225666667,5,3000000
+RK3588,Inter-core + intra-core interference,16 MiB,HCP4-16,32.500,171918,0.069412,5,3000000
+RK3588,Inter-core + intra-core interference,16 MiB,HCP4-16,33.500,32454,0.012106,5,3000000
+RK3588,Inter-core + intra-core interference,16 MiB,HCP4-16,34.500,3573,0.001288,5,3000000
+RK3588,Inter-core + intra-core interference,16 MiB,HCP4-16,35.500,280,9.7e-05,5,3000000
+RK3588,Inter-core + intra-core interference,16 MiB,HCP4-16,36.500,11,3.66666666667e-06,5,3000000
+RK3568,Inter-core interference,16 MiB,Native,96.500,711,1,5,3000000
+RK3568,Inter-core interference,16 MiB,Native,97.500,53987,0.999763,5,3000000
+RK3568,Inter-core interference,16 MiB,Native,98.500,2388751,0.981767333333,5,3000000
+RK3568,Inter-core interference,16 MiB,Native,99.500,437366,0.185517,5,3000000
+RK3568,Inter-core interference,16 MiB,Native,100.500,61221,0.0397283333333,5,3000000
+RK3568,Inter-core interference,16 MiB,Native,101.500,28171,0.0193213333333,5,3000000
+RK3568,Inter-core interference,16 MiB,Native,102.500,13721,0.009931,5,3000000
+RK3568,Inter-core interference,16 MiB,Native,103.500,7389,0.00535733333333,5,3000000
+RK3568,Inter-core interference,16 MiB,Native,104.500,3734,0.00289433333333,5,3000000
+RK3568,Inter-core interference,16 MiB,Native,105.500,1926,0.00164966666667,5,3000000
+RK3568,Inter-core interference,16 MiB,Native,106.500,1000,0.00100766666667,5,3000000
+RK3568,Inter-core interference,16 MiB,Native,107.500,543,0.000674333333333,5,3000000
+RK3568,Inter-core interference,16 MiB,Native,108.500,350,0.000493333333333,5,3000000
+RK3568,Inter-core interference,16 MiB,Native,109.500,219,0.000376666666667,5,3000000
+RK3568,Inter-core interference,16 MiB,Native,110.500,167,0.000303666666667,5,3000000
+RK3568,Inter-core interference,16 MiB,Native,111.500,138,0.000248,5,3000000
+RK3568,Inter-core interference,16 MiB,Native,112.500,108,0.000202,5,3000000
+RK3568,Inter-core interference,16 MiB,Native,113.500,95,0.000166,5,3000000
+RK3568,Inter-core interference,16 MiB,Native,114.500,69,0.000134333333333,5,3000000
+RK3568,Inter-core interference,16 MiB,Native,115.500,68,0.000111333333333,5,3000000
+RK3568,Inter-core interference,16 MiB,Native,116.500,50,8.86666666667e-05,5,3000000
+RK3568,Inter-core interference,16 MiB,Native,117.500,34,7.2e-05,5,3000000
+RK3568,Inter-core interference,16 MiB,Native,118.500,32,6.06666666667e-05,5,3000000
+RK3568,Inter-core interference,16 MiB,Native,119.500,25,5e-05,5,3000000
+RK3568,Inter-core interference,16 MiB,Native,120.500,19,4.16666666667e-05,5,3000000
+RK3568,Inter-core interference,16 MiB,Native,121.500,18,3.53333333333e-05,5,3000000
+RK3568,Inter-core interference,16 MiB,Native,122.500,14,2.93333333333e-05,5,3000000
+RK3568,Inter-core interference,16 MiB,Native,123.500,10,2.46666666667e-05,5,3000000
+RK3568,Inter-core interference,16 MiB,Native,124.500,13,2.13333333333e-05,5,3000000
+RK3568,Inter-core interference,16 MiB,Native,125.500,11,1.7e-05,5,3000000
+RK3568,Inter-core interference,16 MiB,Native,126.500,9,1.33333333333e-05,5,3000000
+RK3568,Inter-core interference,16 MiB,Native,127.500,6,1.03333333333e-05,5,3000000
+RK3568,Inter-core interference,16 MiB,Native,128.500,4,8.33333333333e-06,5,3000000
+RK3568,Inter-core interference,16 MiB,Native,129.500,4,7e-06,5,3000000
+RK3568,Inter-core interference,16 MiB,Native,130.500,6,5.66666666667e-06,5,3000000
+RK3568,Inter-core interference,16 MiB,Native,131.500,1,3.66666666667e-06,5,3000000
+RK3568,Inter-core interference,16 MiB,Native,132.500,3,3.33333333333e-06,5,3000000
+RK3568,Inter-core interference,16 MiB,Native,133.500,1,2.33333333333e-06,5,3000000
+RK3568,Inter-core interference,16 MiB,Native,135.500,1,2e-06,5,3000000
+RK3568,Inter-core interference,16 MiB,Native,136.500,1,1.66666666667e-06,5,3000000
+RK3568,Inter-core interference,16 MiB,Native,138.500,1,1.33333333333e-06,5,3000000
+RK3568,Inter-core interference,16 MiB,Native,142.500,1,1e-06,5,3000000
+RK3568,Inter-core interference,16 MiB,Native,145.500,1,6.66666666667e-07,5,3000000
+RK3568,Inter-core interference,16 MiB,Native,148.500,1,3.33333333333e-07,5,3000000
+RK3568,Inter-core interference,16 MiB,WP,97.500,29091,1,5,3000000
+RK3568,Inter-core interference,16 MiB,WP,98.500,2724461,0.990303,5,3000000
+RK3568,Inter-core interference,16 MiB,WP,99.500,227612,0.0821493333333,5,3000000
+RK3568,Inter-core interference,16 MiB,WP,100.500,10004,0.00627866666667,5,3000000
+RK3568,Inter-core interference,16 MiB,WP,101.500,4691,0.002944,5,3000000
+RK3568,Inter-core interference,16 MiB,WP,102.500,2241,0.00138033333333,5,3000000
+RK3568,Inter-core interference,16 MiB,WP,103.500,1101,0.000633333333333,5,3000000
+RK3568,Inter-core interference,16 MiB,WP,104.500,428,0.000266333333333,5,3000000
+RK3568,Inter-core interference,16 MiB,WP,105.500,196,0.000123666666667,5,3000000
+RK3568,Inter-core interference,16 MiB,WP,106.500,91,5.83333333333e-05,5,3000000
+RK3568,Inter-core interference,16 MiB,WP,107.500,53,2.8e-05,5,3000000
+RK3568,Inter-core interference,16 MiB,WP,108.500,17,1.03333333333e-05,5,3000000
+RK3568,Inter-core interference,16 MiB,WP,109.500,7,4.66666666667e-06,5,3000000
+RK3568,Inter-core interference,16 MiB,WP,110.500,4,2.33333333333e-06,5,3000000
+RK3568,Inter-core interference,16 MiB,WP,112.500,1,1e-06,5,3000000
+RK3568,Inter-core interference,16 MiB,WP,113.500,1,6.66666666667e-07,5,3000000
+RK3568,Inter-core interference,16 MiB,WP,118.500,1,3.33333333333e-07,5,3000000
+RK3568,Inter-core interference,16 MiB,SP,97.500,30385,1,5,3000000
+RK3568,Inter-core interference,16 MiB,SP,98.500,2779307,0.989871666667,5,3000000
+RK3568,Inter-core interference,16 MiB,SP,99.500,183619,0.063436,5,3000000
+RK3568,Inter-core interference,16 MiB,SP,100.500,4939,0.00222966666667,5,3000000
+RK3568,Inter-core interference,16 MiB,SP,101.500,1246,0.000583333333333,5,3000000
+RK3568,Inter-core interference,16 MiB,SP,102.500,349,0.000168,5,3000000
+RK3568,Inter-core interference,16 MiB,SP,103.500,100,5.16666666667e-05,5,3000000
+RK3568,Inter-core interference,16 MiB,SP,104.500,35,1.83333333333e-05,5,3000000
+RK3568,Inter-core interference,16 MiB,SP,105.500,14,6.66666666667e-06,5,3000000
+RK3568,Inter-core interference,16 MiB,SP,106.500,3,2e-06,5,3000000
+RK3568,Inter-core interference,16 MiB,SP,107.500,2,1e-06,5,3000000
+RK3568,Inter-core interference,16 MiB,SP,109.500,1,3.33333333333e-07,5,3000000
+RK3568,Inter-core interference,16 MiB,HCP4-16,96.500,856,1,5,3000000
+RK3568,Inter-core interference,16 MiB,HCP4-16,97.500,95894,0.999714666667,5,3000000
+RK3568,Inter-core interference,16 MiB,HCP4-16,98.500,2736377,0.96775,5,3000000
+RK3568,Inter-core interference,16 MiB,HCP4-16,99.500,160933,0.0556243333333,5,3000000
+RK3568,Inter-core interference,16 MiB,HCP4-16,100.500,4366,0.00198,5,3000000
+RK3568,Inter-core interference,16 MiB,HCP4-16,101.500,1175,0.000524666666667,5,3000000
+RK3568,Inter-core interference,16 MiB,HCP4-16,102.500,291,0.000133,5,3000000
+RK3568,Inter-core interference,16 MiB,HCP4-16,103.500,77,3.6e-05,5,3000000
+RK3568,Inter-core interference,16 MiB,HCP4-16,104.500,21,1.03333333333e-05,5,3000000
+RK3568,Inter-core interference,16 MiB,HCP4-16,105.500,4,3.33333333333e-06,5,3000000
+RK3568,Inter-core interference,16 MiB,HCP4-16,106.500,5,2e-06,5,3000000
+RK3568,Inter-core interference,16 MiB,HCP4-16,107.500,1,3.33333333333e-07,5,3000000
+RK3568,Inter-core + intra-core interference,16 MiB,Native,97.500,1434,1,5,3000000
+RK3568,Inter-core + intra-core interference,16 MiB,Native,98.500,86166,0.999522,5,3000000
+RK3568,Inter-core + intra-core interference,16 MiB,Native,99.500,311581,0.9708,5,3000000
+RK3568,Inter-core + intra-core interference,16 MiB,Native,100.500,818904,0.866939666667,5,3000000
+RK3568,Inter-core + intra-core interference,16 MiB,Native,101.500,785270,0.593971666667,5,3000000
+RK3568,Inter-core + intra-core interference,16 MiB,Native,102.500,403388,0.332215,5,3000000
+RK3568,Inter-core + intra-core interference,16 MiB,Native,103.500,189077,0.197752333333,5,3000000
+RK3568,Inter-core + intra-core interference,16 MiB,Native,104.500,87450,0.134726666667,5,3000000
+RK3568,Inter-core + intra-core interference,16 MiB,Native,105.500,42252,0.105576666667,5,3000000
+RK3568,Inter-core + intra-core interference,16 MiB,Native,106.500,25134,0.0914926666667,5,3000000
+RK3568,Inter-core + intra-core interference,16 MiB,Native,107.500,18223,0.0831146666667,5,3000000
+RK3568,Inter-core + intra-core interference,16 MiB,Native,108.500,15341,0.0770403333333,5,3000000
+RK3568,Inter-core + intra-core interference,16 MiB,Native,109.500,13566,0.0719266666667,5,3000000
+RK3568,Inter-core + intra-core interference,16 MiB,Native,110.500,13614,0.0674046666667,5,3000000
+RK3568,Inter-core + intra-core interference,16 MiB,Native,111.500,13248,0.0628666666667,5,3000000
+RK3568,Inter-core + intra-core interference,16 MiB,Native,112.500,12843,0.0584506666667,5,3000000
+RK3568,Inter-core + intra-core interference,16 MiB,Native,113.500,13188,0.0541696666667,5,3000000
+RK3568,Inter-core + intra-core interference,16 MiB,Native,114.500,17873,0.0497736666667,5,3000000
+RK3568,Inter-core + intra-core interference,16 MiB,Native,115.500,25516,0.043816,5,3000000
+RK3568,Inter-core + intra-core interference,16 MiB,Native,116.500,29480,0.0353106666667,5,3000000
+RK3568,Inter-core + intra-core interference,16 MiB,Native,117.500,22301,0.025484,5,3000000
+RK3568,Inter-core + intra-core interference,16 MiB,Native,118.500,14241,0.0180503333333,5,3000000
+RK3568,Inter-core + intra-core interference,16 MiB,Native,119.500,9972,0.0133033333333,5,3000000
+RK3568,Inter-core + intra-core interference,16 MiB,Native,120.500,8198,0.00997933333333,5,3000000
+RK3568,Inter-core + intra-core interference,16 MiB,Native,121.500,6240,0.00724666666667,5,3000000
+RK3568,Inter-core + intra-core interference,16 MiB,Native,122.500,3865,0.00516666666667,5,3000000
+RK3568,Inter-core + intra-core interference,16 MiB,Native,123.500,2421,0.00387833333333,5,3000000
+RK3568,Inter-core + intra-core interference,16 MiB,Native,124.500,1485,0.00307133333333,5,3000000
+RK3568,Inter-core + intra-core interference,16 MiB,Native,125.500,1066,0.00257633333333,5,3000000
+RK3568,Inter-core + intra-core interference,16 MiB,Native,126.500,940,0.002221,5,3000000
+RK3568,Inter-core + intra-core interference,16 MiB,Native,127.500,715,0.00190766666667,5,3000000
+RK3568,Inter-core + intra-core interference,16 MiB,Native,128.500,668,0.00166933333333,5,3000000
+RK3568,Inter-core + intra-core interference,16 MiB,Native,129.500,571,0.00144666666667,5,3000000
+RK3568,Inter-core + intra-core interference,16 MiB,Native,130.500,487,0.00125633333333,5,3000000
+RK3568,Inter-core + intra-core interference,16 MiB,Native,131.500,401,0.001094,5,3000000
+RK3568,Inter-core + intra-core interference,16 MiB,Native,132.500,366,0.000960333333333,5,3000000
+RK3568,Inter-core + intra-core interference,16 MiB,Native,133.500,325,0.000838333333333,5,3000000
+RK3568,Inter-core + intra-core interference,16 MiB,Native,134.500,238,0.00073,5,3000000
+RK3568,Inter-core + intra-core interference,16 MiB,Native,135.500,232,0.000650666666667,5,3000000
+RK3568,Inter-core + intra-core interference,16 MiB,Native,136.500,206,0.000573333333333,5,3000000
+RK3568,Inter-core + intra-core interference,16 MiB,Native,137.500,165,0.000504666666667,5,3000000
+RK3568,Inter-core + intra-core interference,16 MiB,Native,138.500,161,0.000449666666667,5,3000000
+RK3568,Inter-core + intra-core interference,16 MiB,Native,139.500,131,0.000396,5,3000000
+RK3568,Inter-core + intra-core interference,16 MiB,Native,140.500,114,0.000352333333333,5,3000000
+RK3568,Inter-core + intra-core interference,16 MiB,Native,141.500,107,0.000314333333333,5,3000000
+RK3568,Inter-core + intra-core interference,16 MiB,Native,142.500,73,0.000278666666667,5,3000000
+RK3568,Inter-core + intra-core interference,16 MiB,Native,143.500,69,0.000254333333333,5,3000000
+RK3568,Inter-core + intra-core interference,16 MiB,Native,144.500,66,0.000231333333333,5,3000000
+RK3568,Inter-core + intra-core interference,16 MiB,Native,145.500,40,0.000209333333333,5,3000000
+RK3568,Inter-core + intra-core interference,16 MiB,Native,146.500,57,0.000196,5,3000000
+RK3568,Inter-core + intra-core interference,16 MiB,Native,147.500,33,0.000177,5,3000000
+RK3568,Inter-core + intra-core interference,16 MiB,Native,148.500,35,0.000166,5,3000000
+RK3568,Inter-core + intra-core interference,16 MiB,Native,149.500,23,0.000154333333333,5,3000000
+RK3568,Inter-core + intra-core interference,16 MiB,Native,150.500,31,0.000146666666667,5,3000000
+RK3568,Inter-core + intra-core interference,16 MiB,Native,151.500,22,0.000136333333333,5,3000000
+RK3568,Inter-core + intra-core interference,16 MiB,Native,152.500,16,0.000129,5,3000000
+RK3568,Inter-core + intra-core interference,16 MiB,Native,153.500,18,0.000123666666667,5,3000000
+RK3568,Inter-core + intra-core interference,16 MiB,Native,154.500,17,0.000117666666667,5,3000000
+RK3568,Inter-core + intra-core interference,16 MiB,Native,155.500,12,0.000112,5,3000000
+RK3568,Inter-core + intra-core interference,16 MiB,Native,156.500,14,0.000108,5,3000000
+RK3568,Inter-core + intra-core interference,16 MiB,Native,157.500,11,0.000103333333333,5,3000000
+RK3568,Inter-core + intra-core interference,16 MiB,Native,158.500,12,9.96666666667e-05,5,3000000
+RK3568,Inter-core + intra-core interference,16 MiB,Native,159.500,12,9.56666666667e-05,5,3000000
+RK3568,Inter-core + intra-core interference,16 MiB,Native,160.500,14,9.16666666667e-05,5,3000000
+RK3568,Inter-core + intra-core interference,16 MiB,Native,161.500,9,8.7e-05,5,3000000
+RK3568,Inter-core + intra-core interference,16 MiB,Native,162.500,7,8.4e-05,5,3000000
+RK3568,Inter-core + intra-core interference,16 MiB,Native,163.500,10,8.16666666667e-05,5,3000000
+RK3568,Inter-core + intra-core interference,16 MiB,Native,164.500,7,7.83333333333e-05,5,3000000
+RK3568,Inter-core + intra-core interference,16 MiB,Native,165.500,6,7.6e-05,5,3000000
+RK3568,Inter-core + intra-core interference,16 MiB,Native,166.500,6,7.4e-05,5,3000000
+RK3568,Inter-core + intra-core interference,16 MiB,Native,167.500,6,7.2e-05,5,3000000
+RK3568,Inter-core + intra-core interference,16 MiB,Native,168.500,7,7e-05,5,3000000
+RK3568,Inter-core + intra-core interference,16 MiB,Native,169.500,5,6.76666666667e-05,5,3000000
+RK3568,Inter-core + intra-core interference,16 MiB,Native,170.500,7,6.6e-05,5,3000000
+RK3568,Inter-core + intra-core interference,16 MiB,Native,171.500,11,6.36666666667e-05,5,3000000
+RK3568,Inter-core + intra-core interference,16 MiB,Native,172.500,7,6e-05,5,3000000
+RK3568,Inter-core + intra-core interference,16 MiB,Native,173.500,3,5.76666666667e-05,5,3000000
+RK3568,Inter-core + intra-core interference,16 MiB,Native,174.500,4,5.66666666667e-05,5,3000000
+RK3568,Inter-core + intra-core interference,16 MiB,Native,175.500,12,5.53333333333e-05,5,3000000
+RK3568,Inter-core + intra-core interference,16 MiB,Native,176.500,8,5.13333333333e-05,5,3000000
+RK3568,Inter-core + intra-core interference,16 MiB,Native,177.500,4,4.86666666667e-05,5,3000000
+RK3568,Inter-core + intra-core interference,16 MiB,Native,178.500,5,4.73333333333e-05,5,3000000
+RK3568,Inter-core + intra-core interference,16 MiB,Native,179.500,10,4.56666666667e-05,5,3000000
+RK3568,Inter-core + intra-core interference,16 MiB,Native,180.500,5,4.23333333333e-05,5,3000000
+RK3568,Inter-core + intra-core interference,16 MiB,Native,181.500,5,4.06666666667e-05,5,3000000
+RK3568,Inter-core + intra-core interference,16 MiB,Native,182.500,4,3.9e-05,5,3000000
+RK3568,Inter-core + intra-core interference,16 MiB,Native,183.500,5,3.76666666667e-05,5,3000000
+RK3568,Inter-core + intra-core interference,16 MiB,Native,184.500,9,3.6e-05,5,3000000
+RK3568,Inter-core + intra-core interference,16 MiB,Native,185.500,5,3.3e-05,5,3000000
+RK3568,Inter-core + intra-core interference,16 MiB,Native,186.500,8,3.13333333333e-05,5,3000000
+RK3568,Inter-core + intra-core interference,16 MiB,Native,187.500,4,2.86666666667e-05,5,3000000
+RK3568,Inter-core + intra-core interference,16 MiB,Native,189.500,3,2.73333333333e-05,5,3000000
+RK3568,Inter-core + intra-core interference,16 MiB,Native,190.500,5,2.63333333333e-05,5,3000000
+RK3568,Inter-core + intra-core interference,16 MiB,Native,191.500,2,2.46666666667e-05,5,3000000
+RK3568,Inter-core + intra-core interference,16 MiB,Native,192.500,3,2.4e-05,5,3000000
+RK3568,Inter-core + intra-core interference,16 MiB,Native,193.500,2,2.3e-05,5,3000000
+RK3568,Inter-core + intra-core interference,16 MiB,Native,194.500,6,2.23333333333e-05,5,3000000
+RK3568,Inter-core + intra-core interference,16 MiB,Native,195.500,2,2.03333333333e-05,5,3000000
+RK3568,Inter-core + intra-core interference,16 MiB,Native,196.500,5,1.96666666667e-05,5,3000000
+RK3568,Inter-core + intra-core interference,16 MiB,Native,197.500,2,1.8e-05,5,3000000
+RK3568,Inter-core + intra-core interference,16 MiB,Native,198.500,1,1.73333333333e-05,5,3000000
+RK3568,Inter-core + intra-core interference,16 MiB,Native,199.500,4,1.7e-05,5,3000000
+RK3568,Inter-core + intra-core interference,16 MiB,Native,200.500,3,1.56666666667e-05,5,3000000
+RK3568,Inter-core + intra-core interference,16 MiB,Native,201.500,4,1.46666666667e-05,5,3000000
+RK3568,Inter-core + intra-core interference,16 MiB,Native,202.500,1,1.33333333333e-05,5,3000000
+RK3568,Inter-core + intra-core interference,16 MiB,Native,203.500,1,1.3e-05,5,3000000
+RK3568,Inter-core + intra-core interference,16 MiB,Native,204.500,2,1.26666666667e-05,5,3000000
+RK3568,Inter-core + intra-core interference,16 MiB,Native,205.500,3,1.2e-05,5,3000000
+RK3568,Inter-core + intra-core interference,16 MiB,Native,206.500,2,1.1e-05,5,3000000
+RK3568,Inter-core + intra-core interference,16 MiB,Native,207.500,1,1.03333333333e-05,5,3000000
+RK3568,Inter-core + intra-core interference,16 MiB,Native,208.500,1,1e-05,5,3000000
+RK3568,Inter-core + intra-core interference,16 MiB,Native,209.500,1,9.66666666667e-06,5,3000000
+RK3568,Inter-core + intra-core interference,16 MiB,Native,210.500,3,9.33333333333e-06,5,3000000
+RK3568,Inter-core + intra-core interference,16 MiB,Native,211.500,1,8.33333333333e-06,5,3000000
+RK3568,Inter-core + intra-core interference,16 MiB,Native,213.500,4,8e-06,5,3000000
+RK3568,Inter-core + intra-core interference,16 MiB,Native,214.500,3,6.66666666667e-06,5,3000000
+RK3568,Inter-core + intra-core interference,16 MiB,Native,215.500,2,5.66666666667e-06,5,3000000
+RK3568,Inter-core + intra-core interference,16 MiB,Native,218.500,4,5e-06,5,3000000
+RK3568,Inter-core + intra-core interference,16 MiB,Native,219.500,1,3.66666666667e-06,5,3000000
+RK3568,Inter-core + intra-core interference,16 MiB,Native,220.500,4,3.33333333333e-06,5,3000000
+RK3568,Inter-core + intra-core interference,16 MiB,Native,225.500,1,2e-06,5,3000000
+RK3568,Inter-core + intra-core interference,16 MiB,Native,232.500,3,1.66666666667e-06,5,3000000
+RK3568,Inter-core + intra-core interference,16 MiB,Native,234.500,1,6.66666666667e-07,5,3000000
+RK3568,Inter-core + intra-core interference,16 MiB,Native,238.500,1,3.33333333333e-07,5,3000000
+RK3568,Inter-core + intra-core interference,16 MiB,WP,97.500,1332,1,5,3000000
+RK3568,Inter-core + intra-core interference,16 MiB,WP,98.500,252354,0.999556,5,3000000
+RK3568,Inter-core + intra-core interference,16 MiB,WP,99.500,122187,0.915438,5,3000000
+RK3568,Inter-core + intra-core interference,16 MiB,WP,100.500,347854,0.874709,5,3000000
+RK3568,Inter-core + intra-core interference,16 MiB,WP,101.500,572240,0.758757666667,5,3000000
+RK3568,Inter-core + intra-core interference,16 MiB,WP,102.500,430465,0.568011,5,3000000
+RK3568,Inter-core + intra-core interference,16 MiB,WP,103.500,385000,0.424522666667,5,3000000
+RK3568,Inter-core + intra-core interference,16 MiB,WP,104.500,309781,0.296189333333,5,3000000
+RK3568,Inter-core + intra-core interference,16 MiB,WP,105.500,215089,0.192929,5,3000000
+RK3568,Inter-core + intra-core interference,16 MiB,WP,106.500,118708,0.121232666667,5,3000000
+RK3568,Inter-core + intra-core interference,16 MiB,WP,107.500,58708,0.0816633333333,5,3000000
+RK3568,Inter-core + intra-core interference,16 MiB,WP,108.500,28298,0.062094,5,3000000
+RK3568,Inter-core + intra-core interference,16 MiB,WP,109.500,14058,0.0526613333333,5,3000000
+RK3568,Inter-core + intra-core interference,16 MiB,WP,110.500,8443,0.0479753333333,5,3000000
+RK3568,Inter-core + intra-core interference,16 MiB,WP,111.500,5886,0.045161,5,3000000
+RK3568,Inter-core + intra-core interference,16 MiB,WP,112.500,4369,0.043199,5,3000000
+RK3568,Inter-core + intra-core interference,16 MiB,WP,113.500,3706,0.0417426666667,5,3000000
+RK3568,Inter-core + intra-core interference,16 MiB,WP,114.500,4562,0.0405073333333,5,3000000
+RK3568,Inter-core + intra-core interference,16 MiB,WP,115.500,7709,0.0389866666667,5,3000000
+RK3568,Inter-core + intra-core interference,16 MiB,WP,116.500,13849,0.036417,5,3000000
+RK3568,Inter-core + intra-core interference,16 MiB,WP,117.500,21898,0.0318006666667,5,3000000
+RK3568,Inter-core + intra-core interference,16 MiB,WP,118.500,24214,0.0245013333333,5,3000000
+RK3568,Inter-core + intra-core interference,16 MiB,WP,119.500,16330,0.01643,5,3000000
+RK3568,Inter-core + intra-core interference,16 MiB,WP,120.500,8234,0.0109866666667,5,3000000
+RK3568,Inter-core + intra-core interference,16 MiB,WP,121.500,5655,0.008242,5,3000000
+RK3568,Inter-core + intra-core interference,16 MiB,WP,122.500,5435,0.006357,5,3000000
+RK3568,Inter-core + intra-core interference,16 MiB,WP,123.500,4069,0.00454533333333,5,3000000
+RK3568,Inter-core + intra-core interference,16 MiB,WP,124.500,2429,0.003189,5,3000000
+RK3568,Inter-core + intra-core interference,16 MiB,WP,125.500,1246,0.00237933333333,5,3000000
+RK3568,Inter-core + intra-core interference,16 MiB,WP,126.500,828,0.001964,5,3000000
+RK3568,Inter-core + intra-core interference,16 MiB,WP,127.500,632,0.001688,5,3000000
+RK3568,Inter-core + intra-core interference,16 MiB,WP,128.500,513,0.00147733333333,5,3000000
+RK3568,Inter-core + intra-core interference,16 MiB,WP,129.500,408,0.00130633333333,5,3000000
+RK3568,Inter-core + intra-core interference,16 MiB,WP,130.500,302,0.00117033333333,5,3000000
+RK3568,Inter-core + intra-core interference,16 MiB,WP,131.500,304,0.00106966666667,5,3000000
+RK3568,Inter-core + intra-core interference,16 MiB,WP,132.500,256,0.000968333333333,5,3000000
+RK3568,Inter-core + intra-core interference,16 MiB,WP,133.500,244,0.000883,5,3000000
+RK3568,Inter-core + intra-core interference,16 MiB,WP,134.500,201,0.000801666666667,5,3000000
+RK3568,Inter-core + intra-core interference,16 MiB,WP,135.500,181,0.000734666666667,5,3000000
+RK3568,Inter-core + intra-core interference,16 MiB,WP,136.500,146,0.000674333333333,5,3000000
+RK3568,Inter-core + intra-core interference,16 MiB,WP,137.500,152,0.000625666666667,5,3000000
+RK3568,Inter-core + intra-core interference,16 MiB,WP,138.500,153,0.000575,5,3000000
+RK3568,Inter-core + intra-core interference,16 MiB,WP,139.500,127,0.000524,5,3000000
+RK3568,Inter-core + intra-core interference,16 MiB,WP,140.500,139,0.000481666666667,5,3000000
+RK3568,Inter-core + intra-core interference,16 MiB,WP,141.500,118,0.000435333333333,5,3000000
+RK3568,Inter-core + intra-core interference,16 MiB,WP,142.500,101,0.000396,5,3000000
+RK3568,Inter-core + intra-core interference,16 MiB,WP,143.500,83,0.000362333333333,5,3000000
+RK3568,Inter-core + intra-core interference,16 MiB,WP,144.500,97,0.000334666666667,5,3000000
+RK3568,Inter-core + intra-core interference,16 MiB,WP,145.500,80,0.000302333333333,5,3000000
+RK3568,Inter-core + intra-core interference,16 MiB,WP,146.500,77,0.000275666666667,5,3000000
+RK3568,Inter-core + intra-core interference,16 MiB,WP,147.500,78,0.00025,5,3000000
+RK3568,Inter-core + intra-core interference,16 MiB,WP,148.500,57,0.000224,5,3000000
+RK3568,Inter-core + intra-core interference,16 MiB,WP,149.500,39,0.000205,5,3000000
+RK3568,Inter-core + intra-core interference,16 MiB,WP,150.500,46,0.000192,5,3000000
+RK3568,Inter-core + intra-core interference,16 MiB,WP,151.500,54,0.000176666666667,5,3000000
+RK3568,Inter-core + intra-core interference,16 MiB,WP,152.500,47,0.000158666666667,5,3000000
+RK3568,Inter-core + intra-core interference,16 MiB,WP,153.500,29,0.000143,5,3000000
+RK3568,Inter-core + intra-core interference,16 MiB,WP,154.500,26,0.000133333333333,5,3000000
+RK3568,Inter-core + intra-core interference,16 MiB,WP,155.500,22,0.000124666666667,5,3000000
+RK3568,Inter-core + intra-core interference,16 MiB,WP,156.500,21,0.000117333333333,5,3000000
+RK3568,Inter-core + intra-core interference,16 MiB,WP,157.500,27,0.000110333333333,5,3000000
+RK3568,Inter-core + intra-core interference,16 MiB,WP,158.500,20,0.000101333333333,5,3000000
+RK3568,Inter-core + intra-core interference,16 MiB,WP,159.500,26,9.46666666667e-05,5,3000000
+RK3568,Inter-core + intra-core interference,16 MiB,WP,160.500,19,8.6e-05,5,3000000
+RK3568,Inter-core + intra-core interference,16 MiB,WP,161.500,14,7.96666666667e-05,5,3000000
+RK3568,Inter-core + intra-core interference,16 MiB,WP,162.500,11,7.5e-05,5,3000000
+RK3568,Inter-core + intra-core interference,16 MiB,WP,163.500,19,7.13333333333e-05,5,3000000
+RK3568,Inter-core + intra-core interference,16 MiB,WP,164.500,6,6.5e-05,5,3000000
+RK3568,Inter-core + intra-core interference,16 MiB,WP,165.500,5,6.3e-05,5,3000000
+RK3568,Inter-core + intra-core interference,16 MiB,WP,166.500,5,6.13333333333e-05,5,3000000
+RK3568,Inter-core + intra-core interference,16 MiB,WP,167.500,8,5.96666666667e-05,5,3000000
+RK3568,Inter-core + intra-core interference,16 MiB,WP,168.500,3,5.7e-05,5,3000000
+RK3568,Inter-core + intra-core interference,16 MiB,WP,169.500,3,5.6e-05,5,3000000
+RK3568,Inter-core + intra-core interference,16 MiB,WP,170.500,5,5.5e-05,5,3000000
+RK3568,Inter-core + intra-core interference,16 MiB,WP,171.500,6,5.33333333333e-05,5,3000000
+RK3568,Inter-core + intra-core interference,16 MiB,WP,172.500,2,5.13333333333e-05,5,3000000
+RK3568,Inter-core + intra-core interference,16 MiB,WP,173.500,11,5.06666666667e-05,5,3000000
+RK3568,Inter-core + intra-core interference,16 MiB,WP,174.500,6,4.7e-05,5,3000000
+RK3568,Inter-core + intra-core interference,16 MiB,WP,175.500,4,4.5e-05,5,3000000
+RK3568,Inter-core + intra-core interference,16 MiB,WP,176.500,3,4.36666666667e-05,5,3000000
+RK3568,Inter-core + intra-core interference,16 MiB,WP,177.500,3,4.26666666667e-05,5,3000000
+RK3568,Inter-core + intra-core interference,16 MiB,WP,178.500,5,4.16666666667e-05,5,3000000
+RK3568,Inter-core + intra-core interference,16 MiB,WP,179.500,5,4e-05,5,3000000
+RK3568,Inter-core + intra-core interference,16 MiB,WP,180.500,1,3.83333333333e-05,5,3000000
+RK3568,Inter-core + intra-core interference,16 MiB,WP,181.500,6,3.8e-05,5,3000000
+RK3568,Inter-core + intra-core interference,16 MiB,WP,182.500,2,3.6e-05,5,3000000
+RK3568,Inter-core + intra-core interference,16 MiB,WP,183.500,2,3.53333333333e-05,5,3000000
+RK3568,Inter-core + intra-core interference,16 MiB,WP,184.500,6,3.46666666667e-05,5,3000000
+RK3568,Inter-core + intra-core interference,16 MiB,WP,185.500,8,3.26666666667e-05,5,3000000
+RK3568,Inter-core + intra-core interference,16 MiB,WP,186.500,1,3e-05,5,3000000
+RK3568,Inter-core + intra-core interference,16 MiB,WP,187.500,1,2.96666666667e-05,5,3000000
+RK3568,Inter-core + intra-core interference,16 MiB,WP,188.500,1,2.93333333333e-05,5,3000000
+RK3568,Inter-core + intra-core interference,16 MiB,WP,189.500,2,2.9e-05,5,3000000
+RK3568,Inter-core + intra-core interference,16 MiB,WP,190.500,9,2.83333333333e-05,5,3000000
+RK3568,Inter-core + intra-core interference,16 MiB,WP,191.500,2,2.53333333333e-05,5,3000000
+RK3568,Inter-core + intra-core interference,16 MiB,WP,192.500,4,2.46666666667e-05,5,3000000
+RK3568,Inter-core + intra-core interference,16 MiB,WP,193.500,1,2.33333333333e-05,5,3000000
+RK3568,Inter-core + intra-core interference,16 MiB,WP,194.500,5,2.3e-05,5,3000000
+RK3568,Inter-core + intra-core interference,16 MiB,WP,195.500,9,2.13333333333e-05,5,3000000
+RK3568,Inter-core + intra-core interference,16 MiB,WP,196.500,2,1.83333333333e-05,5,3000000
+RK3568,Inter-core + intra-core interference,16 MiB,WP,197.500,2,1.76666666667e-05,5,3000000
+RK3568,Inter-core + intra-core interference,16 MiB,WP,198.500,2,1.7e-05,5,3000000
+RK3568,Inter-core + intra-core interference,16 MiB,WP,199.500,1,1.63333333333e-05,5,3000000
+RK3568,Inter-core + intra-core interference,16 MiB,WP,200.500,1,1.6e-05,5,3000000
+RK3568,Inter-core + intra-core interference,16 MiB,WP,201.500,3,1.56666666667e-05,5,3000000
+RK3568,Inter-core + intra-core interference,16 MiB,WP,202.500,4,1.46666666667e-05,5,3000000
+RK3568,Inter-core + intra-core interference,16 MiB,WP,203.500,6,1.33333333333e-05,5,3000000
+RK3568,Inter-core + intra-core interference,16 MiB,WP,204.500,3,1.13333333333e-05,5,3000000
+RK3568,Inter-core + intra-core interference,16 MiB,WP,205.500,1,1.03333333333e-05,5,3000000
+RK3568,Inter-core + intra-core interference,16 MiB,WP,206.500,2,1e-05,5,3000000
+RK3568,Inter-core + intra-core interference,16 MiB,WP,207.500,4,9.33333333333e-06,5,3000000
+RK3568,Inter-core + intra-core interference,16 MiB,WP,208.500,2,8e-06,5,3000000
+RK3568,Inter-core + intra-core interference,16 MiB,WP,210.500,1,7.33333333333e-06,5,3000000
+RK3568,Inter-core + intra-core interference,16 MiB,WP,211.500,1,7e-06,5,3000000
+RK3568,Inter-core + intra-core interference,16 MiB,WP,212.500,1,6.66666666667e-06,5,3000000
+RK3568,Inter-core + intra-core interference,16 MiB,WP,213.500,1,6.33333333333e-06,5,3000000
+RK3568,Inter-core + intra-core interference,16 MiB,WP,214.500,2,6e-06,5,3000000
+RK3568,Inter-core + intra-core interference,16 MiB,WP,215.500,1,5.33333333333e-06,5,3000000
+RK3568,Inter-core + intra-core interference,16 MiB,WP,217.500,1,5e-06,5,3000000
+RK3568,Inter-core + intra-core interference,16 MiB,WP,218.500,1,4.66666666667e-06,5,3000000
+RK3568,Inter-core + intra-core interference,16 MiB,WP,219.500,1,4.33333333333e-06,5,3000000
+RK3568,Inter-core + intra-core interference,16 MiB,WP,221.500,1,4e-06,5,3000000
+RK3568,Inter-core + intra-core interference,16 MiB,WP,223.500,2,3.66666666667e-06,5,3000000
+RK3568,Inter-core + intra-core interference,16 MiB,WP,224.500,1,3e-06,5,3000000
+RK3568,Inter-core + intra-core interference,16 MiB,WP,225.500,1,2.66666666667e-06,5,3000000
+RK3568,Inter-core + intra-core interference,16 MiB,WP,227.500,1,2.33333333333e-06,5,3000000
+RK3568,Inter-core + intra-core interference,16 MiB,WP,233.500,1,2e-06,5,3000000
+RK3568,Inter-core + intra-core interference,16 MiB,WP,249.500,2,1.66666666667e-06,5,3000000
+RK3568,Inter-core + intra-core interference,16 MiB,WP,251.500,1,1e-06,5,3000000
+RK3568,Inter-core + intra-core interference,16 MiB,WP,254.500,1,6.66666666667e-07,5,3000000
+RK3568,Inter-core + intra-core interference,16 MiB,WP,270.500,1,3.33333333333e-07,5,3000000
+RK3568,Inter-core + intra-core interference,16 MiB,SP,97.500,2071,1,5,3000000
+RK3568,Inter-core + intra-core interference,16 MiB,SP,98.500,254389,0.999309666667,5,3000000
+RK3568,Inter-core + intra-core interference,16 MiB,SP,99.500,166261,0.914513333333,5,3000000
+RK3568,Inter-core + intra-core interference,16 MiB,SP,100.500,647404,0.859093,5,3000000
+RK3568,Inter-core + intra-core interference,16 MiB,SP,101.500,813327,0.643291666667,5,3000000
+RK3568,Inter-core + intra-core interference,16 MiB,SP,102.500,552885,0.372182666667,5,3000000
+RK3568,Inter-core + intra-core interference,16 MiB,SP,103.500,225585,0.187887666667,5,3000000
+RK3568,Inter-core + intra-core interference,16 MiB,SP,104.500,108262,0.112692666667,5,3000000
+RK3568,Inter-core + intra-core interference,16 MiB,SP,105.500,49661,0.0766053333333,5,3000000
+RK3568,Inter-core + intra-core interference,16 MiB,SP,106.500,19022,0.0600516666667,5,3000000
+RK3568,Inter-core + intra-core interference,16 MiB,SP,107.500,8001,0.053711,5,3000000
+RK3568,Inter-core + intra-core interference,16 MiB,SP,108.500,4757,0.051044,5,3000000
+RK3568,Inter-core + intra-core interference,16 MiB,SP,109.500,3852,0.0494583333333,5,3000000
+RK3568,Inter-core + intra-core interference,16 MiB,SP,110.500,3620,0.0481743333333,5,3000000
+RK3568,Inter-core + intra-core interference,16 MiB,SP,111.500,3341,0.0469676666667,5,3000000
+RK3568,Inter-core + intra-core interference,16 MiB,SP,112.500,3076,0.045854,5,3000000
+RK3568,Inter-core + intra-core interference,16 MiB,SP,113.500,2951,0.0448286666667,5,3000000
+RK3568,Inter-core + intra-core interference,16 MiB,SP,114.500,3892,0.043845,5,3000000
+RK3568,Inter-core + intra-core interference,16 MiB,SP,115.500,6492,0.0425476666667,5,3000000
+RK3568,Inter-core + intra-core interference,16 MiB,SP,116.500,11927,0.0403836666667,5,3000000
+RK3568,Inter-core + intra-core interference,16 MiB,SP,117.500,19113,0.036408,5,3000000
+RK3568,Inter-core + intra-core interference,16 MiB,SP,118.500,24559,0.030037,5,3000000
+RK3568,Inter-core + intra-core interference,16 MiB,SP,119.500,22371,0.0218506666667,5,3000000
+RK3568,Inter-core + intra-core interference,16 MiB,SP,120.500,15185,0.0143936666667,5,3000000
+RK3568,Inter-core + intra-core interference,16 MiB,SP,121.500,8166,0.009332,5,3000000
+RK3568,Inter-core + intra-core interference,16 MiB,SP,122.500,5325,0.00661,5,3000000
+RK3568,Inter-core + intra-core interference,16 MiB,SP,123.500,4680,0.004835,5,3000000
+RK3568,Inter-core + intra-core interference,16 MiB,SP,124.500,3603,0.003275,5,3000000
+RK3568,Inter-core + intra-core interference,16 MiB,SP,125.500,2172,0.002074,5,3000000
+RK3568,Inter-core + intra-core interference,16 MiB,SP,126.500,1140,0.00135,5,3000000
+RK3568,Inter-core + intra-core interference,16 MiB,SP,127.500,594,0.00097,5,3000000
+RK3568,Inter-core + intra-core interference,16 MiB,SP,128.500,350,0.000772,5,3000000
+RK3568,Inter-core + intra-core interference,16 MiB,SP,129.500,284,0.000655333333333,5,3000000
+RK3568,Inter-core + intra-core interference,16 MiB,SP,130.500,239,0.000560666666667,5,3000000
+RK3568,Inter-core + intra-core interference,16 MiB,SP,131.500,184,0.000481,5,3000000
+RK3568,Inter-core + intra-core interference,16 MiB,SP,132.500,163,0.000419666666667,5,3000000
+RK3568,Inter-core + intra-core interference,16 MiB,SP,133.500,117,0.000365333333333,5,3000000
+RK3568,Inter-core + intra-core interference,16 MiB,SP,134.500,100,0.000326333333333,5,3000000
+RK3568,Inter-core + intra-core interference,16 MiB,SP,135.500,60,0.000293,5,3000000
+RK3568,Inter-core + intra-core interference,16 MiB,SP,136.500,50,0.000273,5,3000000
+RK3568,Inter-core + intra-core interference,16 MiB,SP,137.500,57,0.000256333333333,5,3000000
+RK3568,Inter-core + intra-core interference,16 MiB,SP,138.500,55,0.000237333333333,5,3000000
+RK3568,Inter-core + intra-core interference,16 MiB,SP,139.500,44,0.000219,5,3000000
+RK3568,Inter-core + intra-core interference,16 MiB,SP,140.500,44,0.000204333333333,5,3000000
+RK3568,Inter-core + intra-core interference,16 MiB,SP,141.500,49,0.000189666666667,5,3000000
+RK3568,Inter-core + intra-core interference,16 MiB,SP,142.500,53,0.000173333333333,5,3000000
+RK3568,Inter-core + intra-core interference,16 MiB,SP,143.500,53,0.000155666666667,5,3000000
+RK3568,Inter-core + intra-core interference,16 MiB,SP,144.500,34,0.000138,5,3000000
+RK3568,Inter-core + intra-core interference,16 MiB,SP,145.500,36,0.000126666666667,5,3000000
+RK3568,Inter-core + intra-core interference,16 MiB,SP,146.500,32,0.000114666666667,5,3000000
+RK3568,Inter-core + intra-core interference,16 MiB,SP,147.500,27,0.000104,5,3000000
+RK3568,Inter-core + intra-core interference,16 MiB,SP,148.500,24,9.5e-05,5,3000000
+RK3568,Inter-core + intra-core interference,16 MiB,SP,149.500,20,8.7e-05,5,3000000
+RK3568,Inter-core + intra-core interference,16 MiB,SP,150.500,24,8.03333333333e-05,5,3000000
+RK3568,Inter-core + intra-core interference,16 MiB,SP,151.500,20,7.23333333333e-05,5,3000000
+RK3568,Inter-core + intra-core interference,16 MiB,SP,152.500,24,6.56666666667e-05,5,3000000
+RK3568,Inter-core + intra-core interference,16 MiB,SP,153.500,19,5.76666666667e-05,5,3000000
+RK3568,Inter-core + intra-core interference,16 MiB,SP,154.500,17,5.13333333333e-05,5,3000000
+RK3568,Inter-core + intra-core interference,16 MiB,SP,155.500,13,4.56666666667e-05,5,3000000
+RK3568,Inter-core + intra-core interference,16 MiB,SP,156.500,8,4.13333333333e-05,5,3000000
+RK3568,Inter-core + intra-core interference,16 MiB,SP,157.500,9,3.86666666667e-05,5,3000000
+RK3568,Inter-core + intra-core interference,16 MiB,SP,158.500,16,3.56666666667e-05,5,3000000
+RK3568,Inter-core + intra-core interference,16 MiB,SP,159.500,10,3.03333333333e-05,5,3000000
+RK3568,Inter-core + intra-core interference,16 MiB,SP,160.500,7,2.7e-05,5,3000000
+RK3568,Inter-core + intra-core interference,16 MiB,SP,161.500,3,2.46666666667e-05,5,3000000
+RK3568,Inter-core + intra-core interference,16 MiB,SP,162.500,3,2.36666666667e-05,5,3000000
+RK3568,Inter-core + intra-core interference,16 MiB,SP,163.500,4,2.26666666667e-05,5,3000000
+RK3568,Inter-core + intra-core interference,16 MiB,SP,164.500,10,2.13333333333e-05,5,3000000
+RK3568,Inter-core + intra-core interference,16 MiB,SP,165.500,3,1.8e-05,5,3000000
+RK3568,Inter-core + intra-core interference,16 MiB,SP,166.500,2,1.7e-05,5,3000000
+RK3568,Inter-core + intra-core interference,16 MiB,SP,167.500,3,1.63333333333e-05,5,3000000
+RK3568,Inter-core + intra-core interference,16 MiB,SP,168.500,3,1.53333333333e-05,5,3000000
+RK3568,Inter-core + intra-core interference,16 MiB,SP,169.500,4,1.43333333333e-05,5,3000000
+RK3568,Inter-core + intra-core interference,16 MiB,SP,171.500,3,1.3e-05,5,3000000
+RK3568,Inter-core + intra-core interference,16 MiB,SP,172.500,1,1.2e-05,5,3000000
+RK3568,Inter-core + intra-core interference,16 MiB,SP,173.500,1,1.16666666667e-05,5,3000000
+RK3568,Inter-core + intra-core interference,16 MiB,SP,174.500,3,1.13333333333e-05,5,3000000
+RK3568,Inter-core + intra-core interference,16 MiB,SP,175.500,1,1.03333333333e-05,5,3000000
+RK3568,Inter-core + intra-core interference,16 MiB,SP,176.500,2,1e-05,5,3000000
+RK3568,Inter-core + intra-core interference,16 MiB,SP,177.500,2,9.33333333333e-06,5,3000000
+RK3568,Inter-core + intra-core interference,16 MiB,SP,179.500,3,8.66666666667e-06,5,3000000
+RK3568,Inter-core + intra-core interference,16 MiB,SP,180.500,3,7.66666666667e-06,5,3000000
+RK3568,Inter-core + intra-core interference,16 MiB,SP,181.500,1,6.66666666667e-06,5,3000000
+RK3568,Inter-core + intra-core interference,16 MiB,SP,182.500,2,6.33333333333e-06,5,3000000
+RK3568,Inter-core + intra-core interference,16 MiB,SP,183.500,1,5.66666666667e-06,5,3000000
+RK3568,Inter-core + intra-core interference,16 MiB,SP,184.500,1,5.33333333333e-06,5,3000000
+RK3568,Inter-core + intra-core interference,16 MiB,SP,185.500,1,5e-06,5,3000000
+RK3568,Inter-core + intra-core interference,16 MiB,SP,186.500,1,4.66666666667e-06,5,3000000
+RK3568,Inter-core + intra-core interference,16 MiB,SP,188.500,1,4.33333333333e-06,5,3000000
+RK3568,Inter-core + intra-core interference,16 MiB,SP,191.500,4,4e-06,5,3000000
+RK3568,Inter-core + intra-core interference,16 MiB,SP,192.500,2,2.66666666667e-06,5,3000000
+RK3568,Inter-core + intra-core interference,16 MiB,SP,197.500,1,2e-06,5,3000000
+RK3568,Inter-core + intra-core interference,16 MiB,SP,198.500,1,1.66666666667e-06,5,3000000
+RK3568,Inter-core + intra-core interference,16 MiB,SP,199.500,1,1.33333333333e-06,5,3000000
+RK3568,Inter-core + intra-core interference,16 MiB,SP,201.500,1,1e-06,5,3000000
+RK3568,Inter-core + intra-core interference,16 MiB,SP,217.500,1,6.66666666667e-07,5,3000000
+RK3568,Inter-core + intra-core interference,16 MiB,SP,218.500,1,3.33333333333e-07,5,3000000
+RK3568,Inter-core + intra-core interference,16 MiB,HCP4-16,96.500,18,1,5,3000000
+RK3568,Inter-core + intra-core interference,16 MiB,HCP4-16,97.500,3148,0.999994,5,3000000
+RK3568,Inter-core + intra-core interference,16 MiB,HCP4-16,98.500,224918,0.998944666667,5,3000000
+RK3568,Inter-core + intra-core interference,16 MiB,HCP4-16,99.500,464312,0.923972,5,3000000
+RK3568,Inter-core + intra-core interference,16 MiB,HCP4-16,100.500,997269,0.769201333333,5,3000000
+RK3568,Inter-core + intra-core interference,16 MiB,HCP4-16,101.500,643471,0.436778333333,5,3000000
+RK3568,Inter-core + intra-core interference,16 MiB,HCP4-16,102.500,326063,0.222288,5,3000000
+RK3568,Inter-core + intra-core interference,16 MiB,HCP4-16,103.500,151536,0.113600333333,5,3000000
+RK3568,Inter-core + intra-core interference,16 MiB,HCP4-16,104.500,75698,0.0630883333333,5,3000000
+RK3568,Inter-core + intra-core interference,16 MiB,HCP4-16,105.500,52140,0.0378556666667,5,3000000
+RK3568,Inter-core + intra-core interference,16 MiB,HCP4-16,106.500,28821,0.0204756666667,5,3000000
+RK3568,Inter-core + intra-core interference,16 MiB,HCP4-16,107.500,17039,0.0108686666667,5,3000000
+RK3568,Inter-core + intra-core interference,16 MiB,HCP4-16,108.500,9011,0.005189,5,3000000
+RK3568,Inter-core + intra-core interference,16 MiB,HCP4-16,109.500,3623,0.00218533333333,5,3000000
+RK3568,Inter-core + intra-core interference,16 MiB,HCP4-16,110.500,1430,0.000977666666667,5,3000000
+RK3568,Inter-core + intra-core interference,16 MiB,HCP4-16,111.500,581,0.000501,5,3000000
+RK3568,Inter-core + intra-core interference,16 MiB,HCP4-16,112.500,287,0.000307333333333,5,3000000
+RK3568,Inter-core + intra-core interference,16 MiB,HCP4-16,113.500,195,0.000211666666667,5,3000000
+RK3568,Inter-core + intra-core interference,16 MiB,HCP4-16,114.500,123,0.000146666666667,5,3000000
+RK3568,Inter-core + intra-core interference,16 MiB,HCP4-16,115.500,102,0.000105666666667,5,3000000
+RK3568,Inter-core + intra-core interference,16 MiB,HCP4-16,116.500,71,7.16666666667e-05,5,3000000
+RK3568,Inter-core + intra-core interference,16 MiB,HCP4-16,117.500,43,4.8e-05,5,3000000
+RK3568,Inter-core + intra-core interference,16 MiB,HCP4-16,118.500,33,3.36666666667e-05,5,3000000
+RK3568,Inter-core + intra-core interference,16 MiB,HCP4-16,119.500,15,2.26666666667e-05,5,3000000
+RK3568,Inter-core + intra-core interference,16 MiB,HCP4-16,120.500,23,1.76666666667e-05,5,3000000
+RK3568,Inter-core + intra-core interference,16 MiB,HCP4-16,121.500,12,1e-05,5,3000000
+RK3568,Inter-core + intra-core interference,16 MiB,HCP4-16,122.500,5,6e-06,5,3000000
+RK3568,Inter-core + intra-core interference,16 MiB,HCP4-16,123.500,3,4.33333333333e-06,5,3000000
+RK3568,Inter-core + intra-core interference,16 MiB,HCP4-16,124.500,4,3.33333333333e-06,5,3000000
+RK3568,Inter-core + intra-core interference,16 MiB,HCP4-16,125.500,2,2e-06,5,3000000
+RK3568,Inter-core + intra-core interference,16 MiB,HCP4-16,126.500,1,1.33333333333e-06,5,3000000
+RK3568,Inter-core + intra-core interference,16 MiB,HCP4-16,128.500,1,1e-06,5,3000000
+RK3568,Inter-core + intra-core interference,16 MiB,HCP4-16,130.500,1,6.66666666667e-07,5,3000000
+RK3568,Inter-core + intra-core interference,16 MiB,HCP4-16,131.500,1,3.33333333333e-07,5,3000000

@@ -1,0 +1,2144 @@
+Hello, QSemOS-RT 24.03-LTS @ v1.3.4-unknown git time-unknown git ID
+OsMainTask apps_entry done!
+TL3588-EVM @ Jul 18 2026 07:49:12
+timer_rt_test_demo running ...
+Starting timer_rt_test_demo...sleep 25s
+open interrupt and realtime performance control
+HRTIMER NOSTRESS TEST Demo
+OsSysGetClock():24000000
+task_cycles:1000 
+=======begin========
+
+cache_partitioning_task_stack done
+pressurTaskEntry start 
+src addr: 0x0x41587000
+dst addr: 0x0x40b86000 
+TEST_MEMSIZE: 0xa00000 
+
+===========================================================
+taskpendcnt:1990
+t0:791 ns
+t1:1500 ns
+t2:30791 ns
+benchmark: Franka-derived Cartesian-impedance kernel, input trace:8, timer period:1.000 ms
+controller source: franka_ros2 jazzy@73a1501d, updates:2013, SVD sweeps:5
+pose error:[0.010000 0.015000 0.010000 -0.000000 0.049979 -0.000000]
+tau[0:6]:[-0.567483 -0.552304 -0.482512 -0.231067 -0.297494 -0.656094 -0.085004]
+kernel exec min/avg/max: 28.58 / 29.19 / 30.92 us, samples:2022
+pressure status:1, copy rounds total/window:15/15, 7.50 rounds/s
+pressure logical copy:150.00 MiB total, approx 75.00 MiB/s, checksum:19975372800
+pressure report window:2.000000 s
+t0_region>
+[0]:1921
+[1]:118
+[2]:6
+
+t1_region>
+[1]:1896
+[2]:132
+[3]:17
+[4]:3
+
+t2_region>
+[30]:1567
+[31]:445
+[32]:30
+[33]:7
+[34]:3
+
+t0_min: 0.58 us, round:160
+t0_max: 2.25 us, round:843
+t0_jitter: 1.67 us
+
+t1_min: 1.38 us, round:2026
+t1_max: 4.67 us, round:937
+t1_jitter: 3.29 us
+
+t2_min: 30.29 us, round:155
+t2_max: 34.58 us, round:453
+t2_jitter: 4.29 us
+
+PMU diff samples: 2077
+AVG DIFF LL_CACHE_RD: 29.69
+AVG DIFF LL_CACHE_MISS_RD: 5.41
+AVG DIFF L2D_CACHE_REFILL: 1.87
+AVG DIFF L2D_CACHE_INVAL: 96.52
+[cur diff] DIFF LL_CACHE_RD: 0, DIFF LL_CACHE_MISS_RD: 0, MISS_RATE: 0.00%
+[cur diff] DIFF L2D_CACHE_REFILL: 0
+[cur diff] DIFF L2D_CACHE_INVAL: 7
+[max diff] DIFF LL_CACHE_RD: 53, DIFF LL_CACHE_MISS_RD: 49, MISS_RATE: 92.45%
+[max diff] DIFF L2D_CACHE_REFILL: 29
+[max diff] DIFF L2D_CACHE_INVAL: 3975
+
+===========================================================
+taskpendcnt:4117
+t0:958 ns
+t1:1666 ns
+t2:30666 ns
+benchmark: Franka-derived Cartesian-impedance kernel, input trace:8, timer period:1.000 ms
+controller source: franka_ros2 jazzy@73a1501d, updates:4139, SVD sweeps:5
+pose error:[0.010000 0.015000 0.010000 -0.000000 0.049979 -0.000000]
+tau[0:6]:[1.376914 -0.104433 0.790225 0.843903 0.642107 -0.956178 0.423547]
+kernel exec min/avg/max: 28.58 / 29.21 / 32.08 us, samples:4149
+pressure status:1, copy rounds total/window:31/16, 7.52 rounds/s
+pressure logical copy:310.00 MiB total, approx 75.25 MiB/s, checksum:41282437120
+pressure report window:2.126358 s
+t0_region>
+[0]:3878
+[1]:282
+[2]:12
+
+t1_region>
+[1]:3817
+[2]:310
+[3]:38
+[4]:8
+[5]:2
+
+t2_region>
+[30]:3052
+[31]:1028
+[32]:74
+[33]:17
+[34]:7
+[35]:1
+
+t0_min: 0.58 us, round:160
+t0_max: 2.88 us, round:3865
+t0_jitter: 2.29 us
+
+t1_min: 1.38 us, round:2026
+t1_max: 5.21 us, round:3494
+t1_jitter: 3.83 us
+
+t2_min: 30.25 us, round:2474
+t2_max: 35.46 us, round:2812
+t2_jitter: 5.21 us
+
+PMU diff samples: 4205
+AVG DIFF LL_CACHE_RD: 30.57
+AVG DIFF LL_CACHE_MISS_RD: 5.81
+AVG DIFF L2D_CACHE_REFILL: 2.13
+AVG DIFF L2D_CACHE_INVAL: 117.83
+[cur diff] DIFF LL_CACHE_RD: 1, DIFF LL_CACHE_MISS_RD: 1, MISS_RATE: 100.00%
+[cur diff] DIFF L2D_CACHE_REFILL: 2
+[cur diff] DIFF L2D_CACHE_INVAL: 0
+[max diff] DIFF LL_CACHE_RD: 47, DIFF LL_CACHE_MISS_RD: 49, MISS_RATE: 104.26%
+[max diff] DIFF L2D_CACHE_REFILL: 31
+[max diff] DIFF L2D_CACHE_INVAL: 3975
+
+===========================================================
+taskpendcnt:6246
+t0:791 ns
+t1:1791 ns
+t2:30791 ns
+benchmark: Franka-derived Cartesian-impedance kernel, input trace:8, timer period:1.000 ms
+controller source: franka_ros2 jazzy@73a1501d, updates:6268, SVD sweeps:5
+pose error:[0.010000 0.015000 0.010000 -0.000000 0.049979 -0.000000]
+tau[0:6]:[-0.567483 -0.552304 -0.482512 -0.231067 -0.297494 -0.656094 -0.085004]
+kernel exec min/avg/max: 28.58 / 29.23 / 32.08 us, samples:6278
+pressure status:1, copy rounds total/window:47/16, 7.51 rounds/s
+pressure logical copy:470.00 MiB total, approx 75.14 MiB/s, checksum:62589501440
+pressure report window:2.129294 s
+t0_region>
+[0]:5822
+[1]:460
+[2]:18
+
+t1_region>
+[1]:5764
+[2]:459
+[3]:69
+[4]:11
+[5]:2
+
+t2_region>
+[30]:4445
+[31]:1689
+[32]:134
+[33]:30
+[34]:9
+[35]:2
+
+t0_min: 0.58 us, round:160
+t0_max: 2.88 us, round:3865
+t0_jitter: 2.29 us
+
+t1_min: 1.38 us, round:2026
+t1_max: 5.21 us, round:3494
+t1_jitter: 3.83 us
+
+t2_min: 30.25 us, round:2474
+t2_max: 35.46 us, round:2812
+t2_jitter: 5.21 us
+
+PMU diff samples: 6335
+AVG DIFF LL_CACHE_RD: 30.06
+AVG DIFF LL_CACHE_MISS_RD: 5.58
+AVG DIFF L2D_CACHE_REFILL: 2.23
+AVG DIFF L2D_CACHE_INVAL: 122.71
+[cur diff] DIFF LL_CACHE_RD: 26, DIFF LL_CACHE_MISS_RD: 26, MISS_RATE: 100.00%
+[cur diff] DIFF L2D_CACHE_REFILL: 2
+[cur diff] DIFF L2D_CACHE_INVAL: 0
+[max diff] DIFF LL_CACHE_RD: 47, DIFF LL_CACHE_MISS_RD: 49, MISS_RATE: 104.26%
+[max diff] DIFF L2D_CACHE_REFILL: 31
+[max diff] DIFF L2D_CACHE_INVAL: 3975
+
+===========================================================
+taskpendcnt:8375
+t0:916 ns
+t1:1625 ns
+t2:30625 ns
+benchmark: Franka-derived Cartesian-impedance kernel, input trace:8, timer period:1.000 ms
+controller source: franka_ros2 jazzy@73a1501d, updates:8397, SVD sweeps:5
+pose error:[0.010000 0.015000 0.010000 -0.000000 0.049979 -0.000000]
+tau[0:6]:[-2.781770 -1.613002 -1.930139 -1.581803 -1.382951 -0.390599 -0.663394]
+kernel exec min/avg/max: 28.58 / 29.24 / 32.67 us, samples:8407
+pressure status:1, copy rounds total/window:62/15, 7.05 rounds/s
+pressure logical copy:620.00 MiB total, approx 70.46 MiB/s, checksum:82564874240
+pressure report window:2.128833 s
+t0_region>
+[0]:7802
+[1]:604
+[2]:23
+
+t1_region>
+[1]:7721
+[2]:609
+[3]:86
+[4]:14
+[5]:3
+
+t2_region>
+[30]:5894
+[31]:2312
+[32]:179
+[33]:36
+[34]:14
+[35]:2
+[37]:1
+
+t0_min: 0.58 us, round:160
+t0_max: 2.88 us, round:3865
+t0_jitter: 2.29 us
+
+t1_min: 1.38 us, round:2026
+t1_max: 5.21 us, round:3494
+t1_jitter: 3.83 us
+
+t2_min: 30.25 us, round:2474
+t2_max: 37.46 us, round:7959
+t2_jitter: 7.21 us
+
+PMU diff samples: 8464
+AVG DIFF LL_CACHE_RD: 30.13
+AVG DIFF LL_CACHE_MISS_RD: 5.60
+AVG DIFF L2D_CACHE_REFILL: 2.21
+AVG DIFF L2D_CACHE_INVAL: 124.45
+[cur diff] DIFF LL_CACHE_RD: 0, DIFF LL_CACHE_MISS_RD: 0, MISS_RATE: 0.00%
+[cur diff] DIFF L2D_CACHE_REFILL: 0
+[cur diff] DIFF L2D_CACHE_INVAL: 406
+[max diff] DIFF LL_CACHE_RD: 47, DIFF LL_CACHE_MISS_RD: 49, MISS_RATE: 104.26%
+[max diff] DIFF L2D_CACHE_REFILL: 31
+[max diff] DIFF L2D_CACHE_INVAL: 3975
+
+===========================================================
+taskpendcnt:10505
+t0:875 ns
+t1:1583 ns
+t2:31458 ns
+benchmark: Franka-derived Cartesian-impedance kernel, input trace:8, timer period:1.000 ms
+controller source: franka_ros2 jazzy@73a1501d, updates:10527, SVD sweeps:5
+pose error:[0.010000 0.015000 0.010000 -0.000000 0.049979 -0.000000]
+tau[0:6]:[-1.839419 -0.921560 -1.193198 -1.195971 -0.861243 0.113634 -0.461388]
+kernel exec min/avg/max: 28.58 / 29.24 / 32.67 us, samples:10537
+pressure status:1, copy rounds total/window:78/16, 7.51 rounds/s
+pressure logical copy:780.00 MiB total, approx 75.12 MiB/s, checksum:103871938560
+pressure report window:2.130054 s
+t0_region>
+[0]:9766
+[1]:765
+[2]:26
+[3]:2
+
+t1_region>
+[1]:9665
+[2]:772
+[3]:103
+[4]:18
+[5]:5
+[6]:1
+
+t2_region>
+[30]:7393
+[31]:2890
+[32]:219
+[33]:43
+[34]:18
+[35]:4
+[36]:1
+[37]:1
+
+t0_min: 0.58 us, round:160
+t0_max: 3.75 us, round:9388
+t0_jitter: 3.17 us
+
+t1_min: 1.38 us, round:2026
+t1_max: 6.08 us, round:9388
+t1_jitter: 4.71 us
+
+t2_min: 30.25 us, round:2474
+t2_max: 37.46 us, round:7959
+t2_jitter: 7.21 us
+
+PMU diff samples: 10596
+AVG DIFF LL_CACHE_RD: 30.11
+AVG DIFF LL_CACHE_MISS_RD: 5.69
+AVG DIFF L2D_CACHE_REFILL: 2.23
+AVG DIFF L2D_CACHE_INVAL: 127.41
+[cur diff] DIFF LL_CACHE_RD: 0, DIFF LL_CACHE_MISS_RD: 0, MISS_RATE: 0.00%
+[cur diff] DIFF L2D_CACHE_REFILL: 0
+[cur diff] DIFF L2D_CACHE_INVAL: 0
+[max diff] DIFF LL_CACHE_RD: 107, DIFF LL_CACHE_MISS_RD: 59, MISS_RATE: 55.14%
+[max diff] DIFF L2D_CACHE_REFILL: 52
+[max diff] DIFF L2D_CACHE_INVAL: 4438
+
+===========================================================
+taskpendcnt:12636
+t0:791 ns
+t1:1500 ns
+t2:30791 ns
+benchmark: Franka-derived Cartesian-impedance kernel, input trace:8, timer period:1.000 ms
+controller source: franka_ros2 jazzy@73a1501d, updates:12659, SVD sweeps:5
+pose error:[0.010000 0.015000 0.010000 -0.000000 0.049979 -0.000000]
+tau[0:6]:[1.228026 0.081850 0.819520 0.875435 0.745706 -0.833381 0.398995]
+kernel exec min/avg/max: 28.58 / 29.24 / 32.67 us, samples:12668
+pressure status:1, copy rounds total/window:94/16, 7.51 rounds/s
+pressure logical copy:940.00 MiB total, approx 75.07 MiB/s, checksum:125179002880
+pressure report window:2.131349 s
+t0_region>
+[0]:11727
+[1]:931
+[2]:30
+[3]:3
+
+t1_region>
+[1]:11596
+[2]:942
+[3]:128
+[4]:22
+[5]:6
+[6]:1
+
+t2_region>
+[30]:8955
+[31]:3398
+[32]:267
+[33]:53
+[34]:23
+[35]:4
+[36]:1
+[37]:1
+
+t0_min: 0.58 us, round:160
+t0_max: 3.75 us, round:9388
+t0_jitter: 3.17 us
+
+t1_min: 1.38 us, round:2026
+t1_max: 6.08 us, round:9388
+t1_jitter: 4.71 us
+
+t2_min: 30.21 us, round:10624
+t2_max: 37.46 us, round:7959
+t2_jitter: 7.25 us
+
+PMU diff samples: 12728
+AVG DIFF LL_CACHE_RD: 29.78
+AVG DIFF LL_CACHE_MISS_RD: 5.71
+AVG DIFF L2D_CACHE_REFILL: 2.25
+AVG DIFF L2D_CACHE_INVAL: 129.44
+[cur diff] DIFF LL_CACHE_RD: 0, DIFF LL_CACHE_MISS_RD: 0, MISS_RATE: 0.00%
+[cur diff] DIFF L2D_CACHE_REFILL: 0
+[cur diff] DIFF L2D_CACHE_INVAL: 1
+[max diff] DIFF LL_CACHE_RD: 107, DIFF LL_CACHE_MISS_RD: 59, MISS_RATE: 55.14%
+[max diff] DIFF L2D_CACHE_REFILL: 52
+[max diff] DIFF L2D_CACHE_INVAL: 4438
+
+===========================================================
+taskpendcnt:14768
+t0:708 ns
+t1:1583 ns
+t2:30708 ns
+benchmark: Franka-derived Cartesian-impedance kernel, input trace:8, timer period:1.000 ms
+controller source: franka_ros2 jazzy@73a1501d, updates:14791, SVD sweeps:5
+pose error:[0.010000 0.015000 0.010000 -0.000000 0.049979 -0.000000]
+tau[0:6]:[-2.379368 -1.292411 -1.655224 -1.570015 -1.185234 -0.066588 -0.610247]
+kernel exec min/avg/max: 28.58 / 29.24 / 32.67 us, samples:14800
+pressure status:1, copy rounds total/window:109/15, 7.03 rounds/s
+pressure logical copy:1090.00 MiB total, approx 70.35 MiB/s, checksum:145154375680
+pressure report window:2.132340 s
+t0_region>
+[0]:13676
+[1]:1112
+[2]:32
+[3]:3
+
+t1_region>
+[1]:13539
+[2]:1102
+[3]:154
+[4]:26
+[5]:6
+[6]:1
+
+t2_region>
+[30]:10472
+[31]:3947
+[32]:321
+[33]:61
+[34]:26
+[35]:4
+[36]:1
+[37]:1
+
+t0_min: 0.58 us, round:160
+t0_max: 3.75 us, round:9388
+t0_jitter: 3.17 us
+
+t1_min: 1.38 us, round:2026
+t1_max: 6.08 us, round:9388
+t1_jitter: 4.71 us
+
+t2_min: 30.21 us, round:10624
+t2_max: 37.46 us, round:7959
+t2_jitter: 7.25 us
+
+PMU diff samples: 14861
+AVG DIFF LL_CACHE_RD: 29.95
+AVG DIFF LL_CACHE_MISS_RD: 5.75
+AVG DIFF L2D_CACHE_REFILL: 2.26
+AVG DIFF L2D_CACHE_INVAL: 130.88
+[cur diff] DIFF LL_CACHE_RD: 0, DIFF LL_CACHE_MISS_RD: 0, MISS_RATE: 0.00%
+[cur diff] DIFF L2D_CACHE_REFILL: 0
+[cur diff] DIFF L2D_CACHE_INVAL: 0
+[max diff] DIFF LL_CACHE_RD: 107, DIFF LL_CACHE_MISS_RD: 59, MISS_RATE: 55.14%
+[max diff] DIFF L2D_CACHE_REFILL: 52
+[max diff] DIFF L2D_CACHE_INVAL: 4438
+
+===========================================================
+taskpendcnt:16901
+t0:916 ns
+t1:1625 ns
+t2:31208 ns
+benchmark: Franka-derived Cartesian-impedance kernel, input trace:8, timer period:1.000 ms
+controller source: franka_ros2 jazzy@73a1501d, updates:16923, SVD sweeps:5
+pose error:[0.010000 0.015000 0.010000 -0.000000 0.049979 -0.000000]
+tau[0:6]:[1.376914 -0.104433 0.790225 0.843903 0.642107 -0.956178 0.423547]
+kernel exec min/avg/max: 28.58 / 29.24 / 32.67 us, samples:16933
+pressure status:1, copy rounds total/window:125/16, 7.50 rounds/s
+pressure logical copy:1250.00 MiB total, approx 75.03 MiB/s, checksum:166461440000
+pressure report window:2.132376 s
+t0_region>
+[0]:15639
+[1]:1279
+[2]:36
+[3]:3
+
+t1_region>
+[1]:15478
+[2]:1264
+[3]:181
+[4]:30
+[5]:6
+[6]:1
+
+t2_region>
+[30]:11929
+[31]:4559
+[32]:369
+[33]:74
+[34]:28
+[35]:4
+[36]:2
+[37]:1
+
+t0_min: 0.58 us, round:160
+t0_max: 3.75 us, round:9388
+t0_jitter: 3.17 us
+
+t1_min: 1.38 us, round:2026
+t1_max: 6.08 us, round:9388
+t1_jitter: 4.71 us
+
+t2_min: 30.21 us, round:10624
+t2_max: 37.46 us, round:7959
+t2_jitter: 7.25 us
+
+PMU diff samples: 16993
+AVG DIFF LL_CACHE_RD: 30.13
+AVG DIFF LL_CACHE_MISS_RD: 5.80
+AVG DIFF L2D_CACHE_REFILL: 2.27
+AVG DIFF L2D_CACHE_INVAL: 131.72
+[cur diff] DIFF LL_CACHE_RD: 0, DIFF LL_CACHE_MISS_RD: 0, MISS_RATE: 0.00%
+[cur diff] DIFF L2D_CACHE_REFILL: 0
+[cur diff] DIFF L2D_CACHE_INVAL: 6
+[max diff] DIFF LL_CACHE_RD: 107, DIFF LL_CACHE_MISS_RD: 59, MISS_RATE: 55.14%
+[max diff] DIFF L2D_CACHE_REFILL: 52
+[max diff] DIFF L2D_CACHE_INVAL: 4438
+
+===========================================================
+taskpendcnt:19033
+t0:833 ns
+t1:1541 ns
+t2:30833 ns
+benchmark: Franka-derived Cartesian-impedance kernel, input trace:8, timer period:1.000 ms
+controller source: franka_ros2 jazzy@73a1501d, updates:19055, SVD sweeps:5
+pose error:[0.010000 0.015000 0.010000 -0.000000 0.049979 -0.000000]
+tau[0:6]:[-1.839419 -0.921560 -1.193198 -1.195971 -0.861243 0.113634 -0.461388]
+kernel exec min/avg/max: 28.58 / 29.24 / 32.67 us, samples:19065
+pressure status:1, copy rounds total/window:141/16, 7.50 rounds/s
+pressure logical copy:1410.00 MiB total, approx 75.04 MiB/s, checksum:187768504320
+pressure report window:2.132180 s
+t0_region>
+[0]:17597
+[1]:1449
+[2]:39
+[3]:3
+
+t1_region>
+[1]:17419
+[2]:1424
+[3]:205
+[4]:37
+[5]:6
+[6]:1
+
+t2_region>
+[30]:13362
+[31]:5183
+[32]:429
+[33]:84
+[34]:33
+[35]:4
+[36]:2
+[37]:1
+
+t0_min: 0.58 us, round:160
+t0_max: 3.75 us, round:9388
+t0_jitter: 3.17 us
+
+t1_min: 1.33 us, round:19094
+t1_max: 6.08 us, round:9388
+t1_jitter: 4.75 us
+
+t2_min: 30.21 us, round:10624
+t2_max: 37.46 us, round:7959
+t2_jitter: 7.25 us
+
+PMU diff samples: 19125
+AVG DIFF LL_CACHE_RD: 30.00
+AVG DIFF LL_CACHE_MISS_RD: 5.73
+AVG DIFF L2D_CACHE_REFILL: 2.27
+AVG DIFF L2D_CACHE_INVAL: 132.43
+[cur diff] DIFF LL_CACHE_RD: 0, DIFF LL_CACHE_MISS_RD: 0, MISS_RATE: 0.00%
+[cur diff] DIFF L2D_CACHE_REFILL: 8
+[cur diff] DIFF L2D_CACHE_INVAL: 0
+[max diff] DIFF LL_CACHE_RD: 107, DIFF LL_CACHE_MISS_RD: 59, MISS_RATE: 55.14%
+[max diff] DIFF L2D_CACHE_REFILL: 52
+[max diff] DIFF L2D_CACHE_INVAL: 5238
+
+===========================================================
+taskpendcnt:21166
+t0:875 ns
+t1:1583 ns
+t2:30875 ns
+benchmark: Franka-derived Cartesian-impedance kernel, input trace:8, timer period:1.000 ms
+controller source: franka_ros2 jazzy@73a1501d, updates:21188, SVD sweeps:5
+pose error:[0.010000 0.015000 0.010000 -0.000000 0.049979 -0.000000]
+tau[0:6]:[-0.567483 -0.552304 -0.482512 -0.231067 -0.297494 -0.656094 -0.085004]
+kernel exec min/avg/max: 28.58 / 29.24 / 32.67 us, samples:21198
+pressure status:1, copy rounds total/window:156/15, 7.03 rounds/s
+pressure logical copy:1560.00 MiB total, approx 70.32 MiB/s, checksum:207743877120
+pressure report window:2.132962 s
+t0_region>
+[0]:19573
+[1]:1603
+[2]:42
+[3]:4
+
+t1_region>
+[1]:19358
+[2]:1593
+[3]:226
+[4]:39
+[5]:7
+[6]:2
+
+t2_region>
+[30]:14810
+[31]:5803
+[32]:482
+[33]:93
+[34]:35
+[35]:5
+[36]:2
+[37]:2
+
+t0_min: 0.58 us, round:160
+t0_max: 3.75 us, round:9388
+t0_jitter: 3.17 us
+
+t1_min: 1.33 us, round:19094
+t1_max: 6.21 us, round:19238
+t1_jitter: 4.88 us
+
+t2_min: 30.21 us, round:10624
+t2_max: 37.46 us, round:7959
+t2_jitter: 7.25 us
+
+PMU diff samples: 21258
+AVG DIFF LL_CACHE_RD: 29.96
+AVG DIFF LL_CACHE_MISS_RD: 5.74
+AVG DIFF L2D_CACHE_REFILL: 2.27
+AVG DIFF L2D_CACHE_INVAL: 132.30
+[cur diff] DIFF LL_CACHE_RD: 0, DIFF LL_CACHE_MISS_RD: 0, MISS_RATE: 0.00%
+[cur diff] DIFF L2D_CACHE_REFILL: 0
+[cur diff] DIFF L2D_CACHE_INVAL: 30
+[max diff] DIFF LL_CACHE_RD: 95, DIFF LL_CACHE_MISS_RD: 61, MISS_RATE: 64.21%
+[max diff] DIFF L2D_CACHE_REFILL: 39
+[max diff] DIFF L2D_CACHE_INVAL: 5238
+
+===========================================================
+taskpendcnt:23299
+t0:916 ns
+t1:1625 ns
+t2:32083 ns
+benchmark: Franka-derived Cartesian-impedance kernel, input trace:8, timer period:1.000 ms
+controller source: franka_ros2 jazzy@73a1501d, updates:23321, SVD sweeps:5
+pose error:[0.010000 0.015000 0.010000 -0.000000 0.049979 -0.000000]
+tau[0:6]:[0.839771 0.130674 0.617691 0.624912 0.653099 -0.592692 0.265887]
+kernel exec min/avg/max: 28.58 / 29.25 / 32.67 us, samples:23330
+pressure status:1, copy rounds total/window:172/16, 7.50 rounds/s
+pressure logical copy:1720.00 MiB total, approx 75.03 MiB/s, checksum:229050941440
+pressure report window:2.132354 s
+t0_region>
+[0]:21560
+[1]:1742
+[2]:47
+[3]:4
+
+t1_region>
+[1]:21330
+[2]:1731
+[3]:243
+[4]:41
+[5]:9
+[6]:4
+
+t2_region>
+[30]:16190
+[31]:6498
+[32]:524
+[33]:103
+[34]:36
+[35]:5
+[36]:4
+[37]:2
+[39]:1
+
+t0_min: 0.58 us, round:160
+t0_max: 3.75 us, round:9388
+t0_jitter: 3.17 us
+
+t1_min: 1.33 us, round:19094
+t1_max: 6.83 us, round:23261
+t1_jitter: 5.50 us
+
+t2_min: 30.21 us, round:10624
+t2_max: 39.21 us, round:23261
+t2_jitter: 9.00 us
+
+PMU diff samples: 23392
+AVG DIFF LL_CACHE_RD: 29.92
+AVG DIFF LL_CACHE_MISS_RD: 5.76
+AVG DIFF L2D_CACHE_REFILL: 2.25
+AVG DIFF L2D_CACHE_INVAL: 132.29
+[cur diff] DIFF LL_CACHE_RD: 0, DIFF LL_CACHE_MISS_RD: 0, MISS_RATE: 0.00%
+[cur diff] DIFF L2D_CACHE_REFILL: 0
+[cur diff] DIFF L2D_CACHE_INVAL: 0
+[max diff] DIFF LL_CACHE_RD: 127, DIFF LL_CACHE_MISS_RD: 74, MISS_RATE: 58.27%
+[max diff] DIFF L2D_CACHE_REFILL: 42
+[max diff] DIFF L2D_CACHE_INVAL: 5238
+
+===========================================================
+taskpendcnt:25431
+t0:958 ns
+t1:1666 ns
+t2:30666 ns
+benchmark: Franka-derived Cartesian-impedance kernel, input trace:8, timer period:1.000 ms
+controller source: franka_ros2 jazzy@73a1501d, updates:25454, SVD sweeps:5
+pose error:[0.010000 0.015000 0.010000 -0.000000 0.049979 -0.000000]
+tau[0:6]:[-2.379368 -1.292411 -1.655224 -1.570015 -1.185234 -0.066588 -0.610247]
+kernel exec min/avg/max: 28.58 / 29.25 / 32.67 us, samples:25464
+pressure status:1, copy rounds total/window:188/16, 7.50 rounds/s
+pressure logical copy:1880.00 MiB total, approx 75.00 MiB/s, checksum:250358005760
+pressure report window:2.133347 s
+t0_region>
+[0]:23524
+[1]:1905
+[2]:51
+[3]:6
+[4]:1
+
+t1_region>
+[1]:23282
+[2]:1880
+[3]:268
+[4]:44
+[5]:10
+[6]:6
+[7]:1
+
+t2_region>
+[30]:17684
+[31]:7077
+[32]:571
+[33]:112
+[34]:38
+[35]:6
+[36]:6
+[37]:3
+[39]:1
+
+t0_min: 0.58 us, round:160
+t0_max: 4.13 us, round:24350
+t0_jitter: 3.54 us
+
+t1_min: 1.33 us, round:19094
+t1_max: 7.46 us, round:24351
+t1_jitter: 6.13 us
+
+t2_min: 30.21 us, round:10624
+t2_max: 39.21 us, round:23261
+t2_jitter: 9.00 us
+
+PMU diff samples: 25526
+AVG DIFF LL_CACHE_RD: 29.85
+AVG DIFF LL_CACHE_MISS_RD: 5.75
+AVG DIFF L2D_CACHE_REFILL: 2.25
+AVG DIFF L2D_CACHE_INVAL: 132.88
+[cur diff] DIFF LL_CACHE_RD: 0, DIFF LL_CACHE_MISS_RD: 0, MISS_RATE: 0.00%
+[cur diff] DIFF L2D_CACHE_REFILL: 0
+[cur diff] DIFF L2D_CACHE_INVAL: 40
+[max diff] DIFF LL_CACHE_RD: 126, DIFF LL_CACHE_MISS_RD: 66, MISS_RATE: 52.38%
+[max diff] DIFF L2D_CACHE_REFILL: 64
+[max diff] DIFF L2D_CACHE_INVAL: 5238
+
+===========================================================
+taskpendcnt:27566
+t0:666 ns
+t1:1666 ns
+t2:30666 ns
+benchmark: Franka-derived Cartesian-impedance kernel, input trace:8, timer period:1.000 ms
+controller source: franka_ros2 jazzy@73a1501d, updates:27589, SVD sweeps:5
+pose error:[0.010000 0.015000 0.010000 -0.000000 0.049979 -0.000000]
+tau[0:6]:[-0.567483 -0.552304 -0.482512 -0.231067 -0.297494 -0.656094 -0.085004]
+kernel exec min/avg/max: 28.58 / 29.25 / 32.67 us, samples:27598
+pressure status:1, copy rounds total/window:203/15, 7.03 rounds/s
+pressure logical copy:2030.00 MiB total, approx 70.26 MiB/s, checksum:270333378560
+pressure report window:2.134795 s
+t0_region>
+[0]:25461
+[1]:2095
+[2]:58
+[3]:6
+[4]:1
+
+t1_region>
+[1]:25210
+[2]:2047
+[3]:302
+[4]:50
+[5]:10
+[6]:6
+[7]:1
+
+t2_region>
+[30]:19101
+[31]:7715
+[32]:631
+[33]:129
+[34]:41
+[35]:6
+[36]:6
+[37]:3
+[39]:1
+
+t0_min: 0.58 us, round:160
+t0_max: 4.13 us, round:24350
+t0_jitter: 3.54 us
+
+t1_min: 1.33 us, round:19094
+t1_max: 7.46 us, round:24351
+t1_jitter: 6.13 us
+
+t2_min: 30.21 us, round:10624
+t2_max: 39.21 us, round:23261
+t2_jitter: 9.00 us
+
+PMU diff samples: 27661
+AVG DIFF LL_CACHE_RD: 29.96
+AVG DIFF LL_CACHE_MISS_RD: 5.78
+AVG DIFF L2D_CACHE_REFILL: 2.26
+AVG DIFF L2D_CACHE_INVAL: 133.81
+[cur diff] DIFF LL_CACHE_RD: 0, DIFF LL_CACHE_MISS_RD: 0, MISS_RATE: 0.00%
+[cur diff] DIFF L2D_CACHE_REFILL: 0
+[cur diff] DIFF L2D_CACHE_INVAL: 0
+[max diff] DIFF LL_CACHE_RD: 126, DIFF LL_CACHE_MISS_RD: 66, MISS_RATE: 52.38%
+[max diff] DIFF L2D_CACHE_REFILL: 64
+[max diff] DIFF L2D_CACHE_INVAL: 5356
+
+===========================================================
+taskpendcnt:29701
+t0:1125 ns
+t1:1541 ns
+t2:30833 ns
+benchmark: Franka-derived Cartesian-impedance kernel, input trace:8, timer period:1.000 ms
+controller source: franka_ros2 jazzy@73a1501d, updates:29724, SVD sweeps:5
+pose error:[0.010000 0.015000 0.010000 -0.000000 0.049979 -0.000000]
+tau[0:6]:[1.376914 -0.104433 0.790225 0.843903 0.642107 -0.956178 0.423547]
+kernel exec min/avg/max: 28.58 / 29.25 / 32.67 us, samples:29733
+pressure status:1, copy rounds total/window:219/16, 7.50 rounds/s
+pressure logical copy:2190.00 MiB total, approx 74.96 MiB/s, checksum:291640442880
+pressure report window:2.134481 s
+t0_region>
+[0]:27435
+[1]:2251
+[2]:63
+[3]:6
+[4]:1
+
+t1_region>
+[1]:27144
+[2]:2224
+[3]:320
+[4]:55
+[5]:10
+[6]:7
+[7]:1
+
+t2_region>
+[30]:20501
+[31]:8394
+[32]:676
+[33]:135
+[34]:44
+[35]:7
+[36]:6
+[37]:3
+[39]:1
+
+t0_min: 0.58 us, round:160
+t0_max: 4.13 us, round:24350
+t0_jitter: 3.54 us
+
+t1_min: 1.33 us, round:19094
+t1_max: 7.46 us, round:24351
+t1_jitter: 6.13 us
+
+t2_min: 30.21 us, round:10624
+t2_max: 39.21 us, round:23261
+t2_jitter: 9.00 us
+
+PMU diff samples: 29796
+AVG DIFF LL_CACHE_RD: 30.18
+AVG DIFF LL_CACHE_MISS_RD: 5.80
+AVG DIFF L2D_CACHE_REFILL: 2.28
+AVG DIFF L2D_CACHE_INVAL: 134.53
+[cur diff] DIFF LL_CACHE_RD: 1, DIFF LL_CACHE_MISS_RD: 1, MISS_RATE: 100.00%
+[cur diff] DIFF L2D_CACHE_REFILL: 0
+[cur diff] DIFF L2D_CACHE_INVAL: 0
+[max diff] DIFF LL_CACHE_RD: 126, DIFF LL_CACHE_MISS_RD: 66, MISS_RATE: 52.38%
+[max diff] DIFF L2D_CACHE_REFILL: 64
+[max diff] DIFF L2D_CACHE_INVAL: 5356
+
+===========================================================
+taskpendcnt:31836
+t0:833 ns
+t1:3000 ns
+t2:30833 ns
+benchmark: Franka-derived Cartesian-impedance kernel, input trace:8, timer period:1.000 ms
+controller source: franka_ros2 jazzy@73a1501d, updates:31858, SVD sweeps:5
+pose error:[0.010000 0.015000 0.010000 -0.000000 0.049979 -0.000000]
+tau[0:6]:[1.228026 0.081850 0.819520 0.875435 0.745706 -0.833381 0.398995]
+kernel exec min/avg/max: 28.58 / 29.25 / 32.67 us, samples:31868
+pressure status:1, copy rounds total/window:235/16, 7.50 rounds/s
+pressure logical copy:2350.00 MiB total, approx 74.95 MiB/s, checksum:312947507200
+pressure report window:2.134660 s
+t0_region>
+[0]:29398
+[1]:2416
+[2]:69
+[3]:6
+[4]:1
+
+t1_region>
+[1]:29088
+[2]:2384
+[3]:347
+[4]:57
+[5]:11
+[6]:7
+[7]:1
+
+t2_region>
+[30]:21976
+[31]:8992
+[32]:723
+[33]:147
+[34]:47
+[35]:7
+[36]:6
+[37]:3
+[39]:1
+
+t0_min: 0.58 us, round:160
+t0_max: 4.13 us, round:24350
+t0_jitter: 3.54 us
+
+t1_min: 1.33 us, round:19094
+t1_max: 7.46 us, round:24351
+t1_jitter: 6.13 us
+
+t2_min: 30.21 us, round:10624
+t2_max: 39.21 us, round:23261
+t2_jitter: 9.00 us
+
+PMU diff samples: 31930
+AVG DIFF LL_CACHE_RD: 30.12
+AVG DIFF LL_CACHE_MISS_RD: 5.76
+AVG DIFF L2D_CACHE_REFILL: 2.27
+AVG DIFF L2D_CACHE_INVAL: 134.81
+[cur diff] DIFF LL_CACHE_RD: 0, DIFF LL_CACHE_MISS_RD: 0, MISS_RATE: 0.00%
+[cur diff] DIFF L2D_CACHE_REFILL: 0
+[cur diff] DIFF L2D_CACHE_INVAL: 0
+[max diff] DIFF LL_CACHE_RD: 126, DIFF LL_CACHE_MISS_RD: 66, MISS_RATE: 52.38%
+[max diff] DIFF L2D_CACHE_REFILL: 64
+[max diff] DIFF L2D_CACHE_INVAL: 5356
+
+===========================================================
+taskpendcnt:33971
+t0:833 ns
+t1:1541 ns
+t2:30833 ns
+benchmark: Franka-derived Cartesian-impedance kernel, input trace:8, timer period:1.000 ms
+controller source: franka_ros2 jazzy@73a1501d, updates:33993, SVD sweeps:5
+pose error:[0.010000 0.015000 0.010000 -0.000000 0.049979 -0.000000]
+tau[0:6]:[0.839771 0.130674 0.617691 0.624912 0.653099 -0.592692 0.265887]
+kernel exec min/avg/max: 28.58 / 29.25 / 32.67 us, samples:34002
+pressure status:1, copy rounds total/window:250/15, 7.03 rounds/s
+pressure logical copy:2500.00 MiB total, approx 70.26 MiB/s, checksum:332922880000
+pressure report window:2.134864 s
+t0_region>
+[0]:31373
+[1]:2570
+[2]:76
+[3]:6
+[4]:1
+
+t1_region>
+[1]:31040
+[2]:2543
+[3]:368
+[4]:60
+[5]:12
+[6]:7
+[7]:1
+
+t2_region>
+[30]:23476
+[31]:9568
+[32]:769
+[33]:155
+[34]:51
+[35]:8
+[36]:6
+[37]:3
+[39]:1
+
+t0_min: 0.58 us, round:160
+t0_max: 4.13 us, round:24350
+t0_jitter: 3.54 us
+
+t1_min: 1.33 us, round:19094
+t1_max: 7.46 us, round:24351
+t1_jitter: 6.13 us
+
+t2_min: 30.21 us, round:10624
+t2_max: 39.21 us, round:23261
+t2_jitter: 9.00 us
+
+PMU diff samples: 34065
+AVG DIFF LL_CACHE_RD: 30.20
+AVG DIFF LL_CACHE_MISS_RD: 5.76
+AVG DIFF L2D_CACHE_REFILL: 2.28
+AVG DIFF L2D_CACHE_INVAL: 134.93
+[cur diff] DIFF LL_CACHE_RD: 0, DIFF LL_CACHE_MISS_RD: 0, MISS_RATE: 0.00%
+[cur diff] DIFF L2D_CACHE_REFILL: 0
+[cur diff] DIFF L2D_CACHE_INVAL: 0
+[max diff] DIFF LL_CACHE_RD: 126, DIFF LL_CACHE_MISS_RD: 66, MISS_RATE: 52.38%
+[max diff] DIFF L2D_CACHE_REFILL: 64
+[max diff] DIFF L2D_CACHE_INVAL: 5356
+
+===========================================================
+taskpendcnt:36106
+t0:833 ns
+t1:1541 ns
+t2:30833 ns
+benchmark: Franka-derived Cartesian-impedance kernel, input trace:8, timer period:1.000 ms
+controller source: franka_ros2 jazzy@73a1501d, updates:36128, SVD sweeps:5
+pose error:[0.010000 0.015000 0.010000 -0.000000 0.049979 -0.000000]
+tau[0:6]:[-0.274004 -0.324180 0.001577 -0.231466 0.050986 -0.328952 0.010844]
+kernel exec min/avg/max: 28.58 / 29.25 / 32.67 us, samples:36138
+pressure status:1, copy rounds total/window:266/16, 7.49 rounds/s
+pressure logical copy:2660.00 MiB total, approx 74.94 MiB/s, checksum:354229944320
+pressure report window:2.135130 s
+t0_region>
+[0]:33345
+[1]:2726
+[2]:82
+[3]:6
+[4]:1
+
+t1_region>
+[1]:32974
+[2]:2711
+[3]:395
+[4]:64
+[5]:13
+[6]:7
+[7]:1
+
+t2_region>
+[30]:25066
+[31]:10044
+[32]:819
+[33]:172
+[34]:52
+[35]:9
+[36]:6
+[37]:3
+[39]:1
+
+t0_min: 0.58 us, round:160
+t0_max: 4.13 us, round:24350
+t0_jitter: 3.54 us
+
+t1_min: 1.33 us, round:19094
+t1_max: 7.46 us, round:24351
+t1_jitter: 6.13 us
+
+t2_min: 30.21 us, round:10624
+t2_max: 39.21 us, round:23261
+t2_jitter: 9.00 us
+
+PMU diff samples: 36200
+AVG DIFF LL_CACHE_RD: 30.21
+AVG DIFF LL_CACHE_MISS_RD: 5.78
+AVG DIFF L2D_CACHE_REFILL: 2.29
+AVG DIFF L2D_CACHE_INVAL: 134.96
+[cur diff] DIFF LL_CACHE_RD: 1, DIFF LL_CACHE_MISS_RD: 1, MISS_RATE: 100.00%
+[cur diff] DIFF L2D_CACHE_REFILL: 0
+[cur diff] DIFF L2D_CACHE_INVAL: 143
+[max diff] DIFF LL_CACHE_RD: 126, DIFF LL_CACHE_MISS_RD: 66, MISS_RATE: 52.38%
+[max diff] DIFF L2D_CACHE_REFILL: 64
+[max diff] DIFF L2D_CACHE_INVAL: 5356
+
+===========================================================
+taskpendcnt:38240
+t0:833 ns
+t1:2708 ns
+t2:31416 ns
+benchmark: Franka-derived Cartesian-impedance kernel, input trace:8, timer period:1.000 ms
+controller source: franka_ros2 jazzy@73a1501d, updates:38263, SVD sweeps:5
+pose error:[0.010000 0.015000 0.010000 -0.000000 0.049979 -0.000000]
+tau[0:6]:[-1.839419 -0.921560 -1.193198 -1.195971 -0.861243 0.113634 -0.461388]
+kernel exec min/avg/max: 28.58 / 29.24 / 32.67 us, samples:38273
+pressure status:1, copy rounds total/window:282/16, 7.49 rounds/s
+pressure logical copy:2820.00 MiB total, approx 74.94 MiB/s, checksum:375537008640
+pressure report window:2.135002 s
+t0_region>
+[0]:35321
+[1]:2877
+[2]:90
+[3]:6
+[4]:1
+
+t1_region>
+[1]:34925
+[2]:2860
+[3]:425
+[4]:68
+[5]:14
+[6]:7
+[7]:1
+
+t2_region>
+[30]:26681
+[31]:10504
+[32]:864
+[33]:182
+[34]:56
+[35]:10
+[36]:6
+[37]:3
+[39]:1
+
+t0_min: 0.58 us, round:160
+t0_max: 4.13 us, round:24350
+t0_jitter: 3.54 us
+
+t1_min: 1.33 us, round:19094
+t1_max: 7.46 us, round:24351
+t1_jitter: 6.13 us
+
+t2_min: 30.21 us, round:10624
+t2_max: 39.21 us, round:23261
+t2_jitter: 9.00 us
+
+PMU diff samples: 38335
+AVG DIFF LL_CACHE_RD: 30.24
+AVG DIFF LL_CACHE_MISS_RD: 5.78
+AVG DIFF L2D_CACHE_REFILL: 2.30
+AVG DIFF L2D_CACHE_INVAL: 134.96
+[cur diff] DIFF LL_CACHE_RD: 0, DIFF LL_CACHE_MISS_RD: 0, MISS_RATE: 0.00%
+[cur diff] DIFF L2D_CACHE_REFILL: 0
+[cur diff] DIFF L2D_CACHE_INVAL: 7
+[max diff] DIFF LL_CACHE_RD: 126, DIFF LL_CACHE_MISS_RD: 66, MISS_RATE: 52.38%
+[max diff] DIFF L2D_CACHE_REFILL: 64
+[max diff] DIFF L2D_CACHE_INVAL: 5356
+
+===========================================================
+taskpendcnt:40375
+t0:1125 ns
+t1:1833 ns
+t2:30833 ns
+benchmark: Franka-derived Cartesian-impedance kernel, input trace:8, timer period:1.000 ms
+controller source: franka_ros2 jazzy@73a1501d, updates:40398, SVD sweeps:5
+pose error:[0.010000 0.015000 0.010000 -0.000000 0.049979 -0.000000]
+tau[0:6]:[-2.781770 -1.613002 -1.930139 -1.581803 -1.382951 -0.390599 -0.663394]
+kernel exec min/avg/max: 28.58 / 29.24 / 32.67 us, samples:40408
+pressure status:1, copy rounds total/window:297/15, 7.03 rounds/s
+pressure logical copy:2970.00 MiB total, approx 70.26 MiB/s, checksum:395512381440
+pressure report window:2.135004 s
+t0_region>
+[0]:37290
+[1]:3034
+[2]:99
+[3]:6
+[4]:1
+
+t1_region>
+[1]:36858
+[2]:3030
+[3]:449
+[4]:74
+[5]:16
+[6]:7
+[7]:1
+
+t2_region>
+[30]:28263
+[31]:10996
+[32]:911
+[33]:190
+[34]:60
+[35]:11
+[36]:6
+[37]:4
+[39]:1
+
+t0_min: 0.58 us, round:160
+t0_max: 4.13 us, round:24350
+t0_jitter: 3.54 us
+
+t1_min: 1.33 us, round:19094
+t1_max: 7.46 us, round:24351
+t1_jitter: 6.13 us
+
+t2_min: 30.21 us, round:10624
+t2_max: 39.21 us, round:23261
+t2_jitter: 9.00 us
+
+PMU diff samples: 40470
+AVG DIFF LL_CACHE_RD: 30.29
+AVG DIFF LL_CACHE_MISS_RD: 5.78
+AVG DIFF L2D_CACHE_REFILL: 2.30
+AVG DIFF L2D_CACHE_INVAL: 135.10
+[cur diff] DIFF LL_CACHE_RD: 2, DIFF LL_CACHE_MISS_RD: 2, MISS_RATE: 100.00%
+[cur diff] DIFF L2D_CACHE_REFILL: 0
+[cur diff] DIFF L2D_CACHE_INVAL: 22
+[max diff] DIFF LL_CACHE_RD: 126, DIFF LL_CACHE_MISS_RD: 66, MISS_RATE: 52.38%
+[max diff] DIFF L2D_CACHE_REFILL: 64
+[max diff] DIFF L2D_CACHE_INVAL: 5356
+
+===========================================================
+taskpendcnt:42511
+t0:833 ns
+t1:1541 ns
+t2:30541 ns
+benchmark: Franka-derived Cartesian-impedance kernel, input trace:8, timer period:1.000 ms
+controller source: franka_ros2 jazzy@73a1501d, updates:42534, SVD sweeps:5
+pose error:[0.010000 0.015000 0.010000 -0.000000 0.049979 -0.000000]
+tau[0:6]:[-2.781770 -1.613002 -1.930139 -1.581803 -1.382951 -0.390599 -0.663394]
+kernel exec min/avg/max: 28.58 / 29.24 / 32.67 us, samples:42543
+pressure status:1, copy rounds total/window:313/16, 7.49 rounds/s
+pressure logical copy:3130.00 MiB total, approx 74.92 MiB/s, checksum:416819445760
+pressure report window:2.135727 s
+t0_region>
+[0]:39232
+[1]:3221
+[2]:107
+[3]:6
+[4]:1
+
+t1_region>
+[1]:38800
+[2]:3189
+[3]:475
+[4]:82
+[5]:17
+[6]:7
+[7]:1
+
+t2_region>
+[30]:29815
+[31]:11512
+[32]:966
+[33]:197
+[34]:65
+[35]:12
+[36]:7
+[37]:4
+[39]:1
+
+t0_min: 0.58 us, round:160
+t0_max: 4.13 us, round:24350
+t0_jitter: 3.54 us
+
+t1_min: 1.33 us, round:19094
+t1_max: 7.46 us, round:24351
+t1_jitter: 6.13 us
+
+t2_min: 30.21 us, round:10624
+t2_max: 39.21 us, round:23261
+t2_jitter: 9.00 us
+
+PMU diff samples: 42606
+AVG DIFF LL_CACHE_RD: 30.37
+AVG DIFF LL_CACHE_MISS_RD: 5.80
+AVG DIFF L2D_CACHE_REFILL: 2.30
+AVG DIFF L2D_CACHE_INVAL: 135.39
+[cur diff] DIFF LL_CACHE_RD: 2, DIFF LL_CACHE_MISS_RD: 2, MISS_RATE: 100.00%
+[cur diff] DIFF L2D_CACHE_REFILL: 0
+[cur diff] DIFF L2D_CACHE_INVAL: 36
+[max diff] DIFF LL_CACHE_RD: 126, DIFF LL_CACHE_MISS_RD: 66, MISS_RATE: 52.38%
+[max diff] DIFF L2D_CACHE_REFILL: 64
+[max diff] DIFF L2D_CACHE_INVAL: 5356
+
+===========================================================
+taskpendcnt:44647
+t0:958 ns
+t1:1666 ns
+t2:30375 ns
+benchmark: Franka-derived Cartesian-impedance kernel, input trace:8, timer period:1.000 ms
+controller source: franka_ros2 jazzy@73a1501d, updates:44669, SVD sweeps:5
+pose error:[0.010000 0.015000 0.010000 -0.000000 0.049979 -0.000000]
+tau[0:6]:[-2.781770 -1.613002 -1.930139 -1.581803 -1.382951 -0.390599 -0.663394]
+kernel exec min/avg/max: 28.58 / 29.24 / 32.96 us, samples:44679
+pressure status:1, copy rounds total/window:329/16, 7.49 rounds/s
+pressure logical copy:3290.00 MiB total, approx 74.91 MiB/s, checksum:438126510080
+pressure report window:2.135825 s
+t0_region>
+[0]:41194
+[1]:3390
+[2]:112
+[3]:6
+[4]:1
+
+t1_region>
+[1]:40741
+[2]:3356
+[3]:498
+[4]:87
+[5]:17
+[6]:7
+[7]:1
+
+t2_region>
+[30]:31362
+[31]:12043
+[32]:1009
+[33]:208
+[34]:66
+[35]:12
+[36]:7
+[37]:5
+[39]:1
+
+t0_min: 0.58 us, round:160
+t0_max: 4.13 us, round:24350
+t0_jitter: 3.54 us
+
+t1_min: 1.33 us, round:19094
+t1_max: 7.46 us, round:24351
+t1_jitter: 6.13 us
+
+t2_min: 30.17 us, round:44716
+t2_max: 39.21 us, round:23261
+t2_jitter: 9.04 us
+
+PMU diff samples: 44742
+AVG DIFF LL_CACHE_RD: 30.27
+AVG DIFF LL_CACHE_MISS_RD: 5.77
+AVG DIFF L2D_CACHE_REFILL: 2.30
+AVG DIFF L2D_CACHE_INVAL: 135.68
+[cur diff] DIFF LL_CACHE_RD: 0, DIFF LL_CACHE_MISS_RD: 0, MISS_RATE: 0.00%
+[cur diff] DIFF L2D_CACHE_REFILL: 0
+[cur diff] DIFF L2D_CACHE_INVAL: 0
+[max diff] DIFF LL_CACHE_RD: 126, DIFF LL_CACHE_MISS_RD: 66, MISS_RATE: 52.38%
+[max diff] DIFF L2D_CACHE_REFILL: 64
+[max diff] DIFF L2D_CACHE_INVAL: 5356
+
+===========================================================
+taskpendcnt:46783
+t0:1083 ns
+t1:1791 ns
+t2:31083 ns
+benchmark: Franka-derived Cartesian-impedance kernel, input trace:8, timer period:1.000 ms
+controller source: franka_ros2 jazzy@73a1501d, updates:46805, SVD sweeps:5
+pose error:[0.010000 0.015000 0.010000 -0.000000 0.049979 -0.000000]
+tau[0:6]:[-2.781770 -1.613002 -1.930139 -1.581803 -1.382951 -0.390599 -0.663394]
+kernel exec min/avg/max: 28.58 / 29.24 / 32.96 us, samples:46815
+pressure status:1, copy rounds total/window:344/15, 7.02 rounds/s
+pressure logical copy:3440.00 MiB total, approx 70.23 MiB/s, checksum:458101882880
+pressure report window:2.135949 s
+t0_region>
+[0]:43161
+[1]:3555
+[2]:114
+[3]:7
+[4]:1
+
+t1_region>
+[1]:42685
+[2]:3527
+[3]:515
+[4]:89
+[5]:17
+[6]:8
+[7]:2
+
+t2_region>
+[30]:33009
+[31]:12480
+[32]:1052
+[33]:211
+[34]:70
+[35]:12
+[36]:7
+[37]:7
+[39]:1
+
+t0_min: 0.58 us, round:160
+t0_max: 4.13 us, round:24350
+t0_jitter: 3.54 us
+
+t1_min: 1.33 us, round:19094
+t1_max: 7.92 us, round:46176
+t1_jitter: 6.58 us
+
+t2_min: 30.17 us, round:44716
+t2_max: 39.21 us, round:23261
+t2_jitter: 9.04 us
+
+PMU diff samples: 46878
+AVG DIFF LL_CACHE_RD: 30.20
+AVG DIFF LL_CACHE_MISS_RD: 5.76
+AVG DIFF L2D_CACHE_REFILL: 2.29
+AVG DIFF L2D_CACHE_INVAL: 135.83
+[cur diff] DIFF LL_CACHE_RD: 0, DIFF LL_CACHE_MISS_RD: 0, MISS_RATE: 0.00%
+[cur diff] DIFF L2D_CACHE_REFILL: 15
+[cur diff] DIFF L2D_CACHE_INVAL: 0
+[max diff] DIFF LL_CACHE_RD: 110, DIFF LL_CACHE_MISS_RD: 73, MISS_RATE: 66.36%
+[max diff] DIFF L2D_CACHE_REFILL: 45
+[max diff] DIFF L2D_CACHE_INVAL: 5356
+
+===========================================================
+taskpendcnt:48919
+t0:916 ns
+t1:1625 ns
+t2:30916 ns
+benchmark: Franka-derived Cartesian-impedance kernel, input trace:8, timer period:1.000 ms
+controller source: franka_ros2 jazzy@73a1501d, updates:48941, SVD sweeps:5
+pose error:[0.010000 0.015000 0.010000 -0.000000 0.049979 -0.000000]
+tau[0:6]:[-2.781770 -1.613002 -1.930139 -1.581803 -1.382951 -0.390599 -0.663394]
+kernel exec min/avg/max: 28.58 / 29.23 / 32.96 us, samples:48951
+pressure status:1, copy rounds total/window:360/16, 7.49 rounds/s
+pressure logical copy:3600.00 MiB total, approx 74.91 MiB/s, checksum:479408947200
+pressure report window:2.135796 s
+t0_region>
+[0]:45147
+[1]:3702
+[2]:116
+[3]:8
+[4]:1
+
+t1_region>
+[1]:44640
+[2]:3684
+[3]:538
+[4]:89
+[5]:18
+[6]:8
+[7]:3
+
+t2_region>
+[30]:34636
+[31]:12936
+[32]:1091
+[33]:222
+[34]:72
+[35]:12
+[36]:7
+[37]:7
+[39]:2
+
+t0_min: 0.50 us, round:48688
+t0_max: 4.13 us, round:24350
+t0_jitter: 3.63 us
+
+t1_min: 1.33 us, round:19094
+t1_max: 7.92 us, round:46176
+t1_jitter: 6.58 us
+
+t2_min: 30.17 us, round:44716
+t2_max: 39.38 us, round:48719
+t2_jitter: 9.21 us
+
+PMU diff samples: 49014
+AVG DIFF LL_CACHE_RD: 30.24
+AVG DIFF LL_CACHE_MISS_RD: 5.78
+AVG DIFF L2D_CACHE_REFILL: 2.30
+AVG DIFF L2D_CACHE_INVAL: 135.89
+[cur diff] DIFF LL_CACHE_RD: 0, DIFF LL_CACHE_MISS_RD: 0, MISS_RATE: 0.00%
+[cur diff] DIFF L2D_CACHE_REFILL: 0
+[cur diff] DIFF L2D_CACHE_INVAL: 3
+[max diff] DIFF LL_CACHE_RD: 110, DIFF LL_CACHE_MISS_RD: 73, MISS_RATE: 66.36%
+[max diff] DIFF L2D_CACHE_REFILL: 45
+[max diff] DIFF L2D_CACHE_INVAL: 5356
+
+===========================================================
+taskpendcnt:51054
+t0:1041 ns
+t1:1750 ns
+t2:30750 ns
+benchmark: Franka-derived Cartesian-impedance kernel, input trace:8, timer period:1.000 ms
+controller source: franka_ros2 jazzy@73a1501d, updates:51077, SVD sweeps:5
+pose error:[0.010000 0.015000 0.010000 -0.000000 0.049979 -0.000000]
+tau[0:6]:[-2.781770 -1.613002 -1.930139 -1.581803 -1.382951 -0.390599 -0.663394]
+kernel exec min/avg/max: 28.58 / 29.23 / 32.96 us, samples:51087
+pressure status:1, copy rounds total/window:376/16, 7.49 rounds/s
+pressure logical copy:3760.00 MiB total, approx 74.91 MiB/s, checksum:500716011520
+pressure report window:2.135972 s
+t0_region>
+[0]:47127
+[1]:3855
+[2]:119
+[3]:8
+[4]:1
+
+t1_region>
+[1]:46581
+[2]:3844
+[3]:566
+[4]:95
+[5]:18
+[6]:8
+[7]:3
+
+t2_region>
+[30]:36300
+[31]:13345
+[32]:1136
+[33]:235
+[34]:77
+[35]:12
+[36]:7
+[37]:7
+[39]:2
+
+t0_min: 0.50 us, round:48688
+t0_max: 4.13 us, round:24350
+t0_jitter: 3.63 us
+
+t1_min: 1.33 us, round:19094
+t1_max: 7.92 us, round:46176
+t1_jitter: 6.58 us
+
+t2_min: 30.17 us, round:44716
+t2_max: 39.38 us, round:48719
+t2_jitter: 9.21 us
+
+PMU diff samples: 51150
+AVG DIFF LL_CACHE_RD: 30.20
+AVG DIFF LL_CACHE_MISS_RD: 5.78
+AVG DIFF L2D_CACHE_REFILL: 2.30
+AVG DIFF L2D_CACHE_INVAL: 135.73
+[cur diff] DIFF LL_CACHE_RD: 0, DIFF LL_CACHE_MISS_RD: 0, MISS_RATE: 0.00%
+[cur diff] DIFF L2D_CACHE_REFILL: 0
+[cur diff] DIFF L2D_CACHE_INVAL: 27
+[max diff] DIFF LL_CACHE_RD: 110, DIFF LL_CACHE_MISS_RD: 73, MISS_RATE: 66.36%
+[max diff] DIFF L2D_CACHE_REFILL: 45
+[max diff] DIFF L2D_CACHE_INVAL: 5356
+
+===========================================================
+taskpendcnt:53190
+t0:875 ns
+t1:1875 ns
+t2:30875 ns
+benchmark: Franka-derived Cartesian-impedance kernel, input trace:8, timer period:1.000 ms
+controller source: franka_ros2 jazzy@73a1501d, updates:53213, SVD sweeps:5
+pose error:[0.010000 0.015000 0.010000 -0.000000 0.049979 -0.000000]
+tau[0:6]:[-0.567483 -0.552304 -0.482512 -0.231067 -0.297494 -0.656094 -0.085004]
+kernel exec min/avg/max: 28.58 / 29.23 / 32.96 us, samples:53223
+pressure status:1, copy rounds total/window:391/15, 7.02 rounds/s
+pressure logical copy:3910.00 MiB total, approx 70.23 MiB/s, checksum:520691384320
+pressure report window:2.135701 s
+t0_region>
+[0]:49078
+[1]:4028
+[2]:130
+[3]:8
+[4]:1
+
+t1_region>
+[1]:48530
+[2]:3998
+[3]:590
+[4]:102
+[5]:19
+[6]:8
+[7]:3
+
+t2_region>
+[30]:37892
+[31]:13833
+[32]:1177
+[33]:246
+[34]:82
+[35]:12
+[36]:7
+[37]:7
+[39]:2
+
+t0_min: 0.50 us, round:48688
+t0_max: 4.13 us, round:24350
+t0_jitter: 3.63 us
+
+t1_min: 1.33 us, round:19094
+t1_max: 7.92 us, round:46176
+t1_jitter: 6.58 us
+
+t2_min: 30.17 us, round:44716
+t2_max: 39.38 us, round:48719
+t2_jitter: 9.21 us
+
+PMU diff samples: 53286
+AVG DIFF LL_CACHE_RD: 30.12
+AVG DIFF LL_CACHE_MISS_RD: 5.77
+AVG DIFF L2D_CACHE_REFILL: 2.29
+AVG DIFF L2D_CACHE_INVAL: 135.57
+[cur diff] DIFF LL_CACHE_RD: 1, DIFF LL_CACHE_MISS_RD: 1, MISS_RATE: 100.00%
+[cur diff] DIFF L2D_CACHE_REFILL: 0
+[cur diff] DIFF L2D_CACHE_INVAL: 0
+[max diff] DIFF LL_CACHE_RD: 110, DIFF LL_CACHE_MISS_RD: 73, MISS_RATE: 66.36%
+[max diff] DIFF L2D_CACHE_REFILL: 45
+[max diff] DIFF L2D_CACHE_INVAL: 5356
+
+===========================================================
+taskpendcnt:55326
+t0:1000 ns
+t1:1708 ns
+t2:31000 ns
+benchmark: Franka-derived Cartesian-impedance kernel, input trace:8, timer period:1.000 ms
+controller source: franka_ros2 jazzy@73a1501d, updates:55349, SVD sweeps:5
+pose error:[0.010000 0.015000 0.010000 -0.000000 0.049979 -0.000000]
+tau[0:6]:[-0.567483 -0.552304 -0.482512 -0.231067 -0.297494 -0.656094 -0.085004]
+kernel exec min/avg/max: 28.58 / 29.23 / 32.96 us, samples:55358
+pressure status:1, copy rounds total/window:407/16, 7.49 rounds/s
+pressure logical copy:4070.00 MiB total, approx 74.91 MiB/s, checksum:541998448640
+pressure report window:2.135928 s
+t0_region>
+[0]:51051
+[1]:4186
+[2]:136
+[3]:8
+[4]:1
+
+t1_region>
+[1]:50484
+[2]:4154
+[3]:612
+[4]:103
+[5]:22
+[6]:8
+[7]:3
+
+t2_region>
+[30]:39497
+[31]:14308
+[32]:1218
+[33]:255
+[34]:84
+[35]:14
+[36]:7
+[37]:8
+[39]:2
+
+t0_min: 0.50 us, round:48688
+t0_max: 4.13 us, round:24350
+t0_jitter: 3.63 us
+
+t1_min: 1.33 us, round:19094
+t1_max: 7.92 us, round:46176
+t1_jitter: 6.58 us
+
+t2_min: 30.17 us, round:44716
+t2_max: 39.38 us, round:48719
+t2_jitter: 9.21 us
+
+PMU diff samples: 55422
+AVG DIFF LL_CACHE_RD: 30.16
+AVG DIFF LL_CACHE_MISS_RD: 5.78
+AVG DIFF L2D_CACHE_REFILL: 2.29
+AVG DIFF L2D_CACHE_INVAL: 135.48
+[cur diff] DIFF LL_CACHE_RD: 0, DIFF LL_CACHE_MISS_RD: 0, MISS_RATE: 0.00%
+[cur diff] DIFF L2D_CACHE_REFILL: 1
+[cur diff] DIFF L2D_CACHE_INVAL: 0
+[max diff] DIFF LL_CACHE_RD: 110, DIFF LL_CACHE_MISS_RD: 73, MISS_RATE: 66.36%
+[max diff] DIFF L2D_CACHE_REFILL: 45
+[max diff] DIFF L2D_CACHE_INVAL: 5356
+
+===========================================================
+taskpendcnt:57462
+t0:1000 ns
+t1:1708 ns
+t2:30708 ns
+benchmark: Franka-derived Cartesian-impedance kernel, input trace:8, timer period:1.000 ms
+controller source: franka_ros2 jazzy@73a1501d, updates:57485, SVD sweeps:5
+pose error:[0.010000 0.015000 0.010000 -0.000000 0.049979 -0.000000]
+tau[0:6]:[-0.567483 -0.552304 -0.482512 -0.231067 -0.297494 -0.656094 -0.085004]
+kernel exec min/avg/max: 28.58 / 29.23 / 32.96 us, samples:57494
+pressure status:1, copy rounds total/window:423/16, 7.49 rounds/s
+pressure logical copy:4230.00 MiB total, approx 74.91 MiB/s, checksum:563305512960
+pressure report window:2.135835 s
+t0_region>
+[0]:53022
+[1]:4339
+[2]:143
+[3]:12
+[4]:1
+
+t1_region>
+[1]:52430
+[2]:4315
+[3]:632
+[4]:108
+[5]:25
+[6]:9
+[7]:3
+
+t2_region>
+[30]:41080
+[31]:14796
+[32]:1263
+[33]:268
+[34]:89
+[35]:16
+[36]:7
+[37]:8
+[39]:2
+
+t0_min: 0.50 us, round:48688
+t0_max: 4.13 us, round:24350
+t0_jitter: 3.63 us
+
+t1_min: 1.33 us, round:19094
+t1_max: 7.92 us, round:46176
+t1_jitter: 6.58 us
+
+t2_min: 30.17 us, round:44716
+t2_max: 39.38 us, round:48719
+t2_jitter: 9.21 us
+
+PMU diff samples: 57558
+AVG DIFF LL_CACHE_RD: 30.21
+AVG DIFF LL_CACHE_MISS_RD: 5.79
+AVG DIFF L2D_CACHE_REFILL: 2.30
+AVG DIFF L2D_CACHE_INVAL: 135.64
+[cur diff] DIFF LL_CACHE_RD: 0, DIFF LL_CACHE_MISS_RD: 0, MISS_RATE: 0.00%
+[cur diff] DIFF L2D_CACHE_REFILL: 0
+[cur diff] DIFF L2D_CACHE_INVAL: 13
+[max diff] DIFF LL_CACHE_RD: 110, DIFF LL_CACHE_MISS_RD: 73, MISS_RATE: 66.36%
+[max diff] DIFF L2D_CACHE_REFILL: 45
+[max diff] DIFF L2D_CACHE_INVAL: 5356
+
+===========================================================
+taskpendcnt:59598
+t0:833 ns
+t1:1541 ns
+t2:30541 ns
+benchmark: Franka-derived Cartesian-impedance kernel, input trace:8, timer period:1.000 ms
+controller source: franka_ros2 jazzy@73a1501d, updates:59620, SVD sweeps:5
+pose error:[0.010000 0.015000 0.010000 -0.000000 0.049979 -0.000000]
+tau[0:6]:[-0.567483 -0.552304 -0.482512 -0.231067 -0.297494 -0.656094 -0.085004]
+kernel exec min/avg/max: 28.58 / 29.23 / 32.96 us, samples:59630
+pressure status:1, copy rounds total/window:438/15, 7.02 rounds/s
+pressure logical copy:4380.00 MiB total, approx 70.23 MiB/s, checksum:583280885760
+pressure report window:2.135756 s
+t0_region>
+[0]:54987
+[1]:4506
+[2]:148
+[3]:12
+[4]:1
+
+t1_region>
+[1]:54372
+[2]:4477
+[3]:659
+[4]:112
+[5]:26
+[6]:9
+[7]:3
+
+t2_region>
+[30]:42671
+[31]:15280
+[32]:1310
+[33]:278
+[34]:91
+[35]:18
+[36]:7
+[37]:8
+[39]:2
+
+t0_min: 0.50 us, round:48688
+t0_max: 4.13 us, round:24350
+t0_jitter: 3.63 us
+
+t1_min: 1.33 us, round:19094
+t1_max: 7.92 us, round:46176
+t1_jitter: 6.58 us
+
+t2_min: 30.17 us, round:44716
+t2_max: 39.38 us, round:48719
+t2_jitter: 9.21 us
+
+PMU diff samples: 59693
+AVG DIFF LL_CACHE_RD: 30.16
+AVG DIFF LL_CACHE_MISS_RD: 5.77
+AVG DIFF L2D_CACHE_REFILL: 2.30
+AVG DIFF L2D_CACHE_INVAL: 135.97
+[cur diff] DIFF LL_CACHE_RD: 0, DIFF LL_CACHE_MISS_RD: 0, MISS_RATE: 0.00%
+[cur diff] DIFF L2D_CACHE_REFILL: 0
+[cur diff] DIFF L2D_CACHE_INVAL: 1
+[max diff] DIFF LL_CACHE_RD: 110, DIFF LL_CACHE_MISS_RD: 73, MISS_RATE: 66.36%
+[max diff] DIFF L2D_CACHE_REFILL: 45
+[max diff] DIFF L2D_CACHE_INVAL: 5356
+
+===========================================================
+taskpendcnt:61734
+t0:666 ns
+t1:1375 ns
+t2:31250 ns
+benchmark: Franka-derived Cartesian-impedance kernel, input trace:8, timer period:1.000 ms
+controller source: franka_ros2 jazzy@73a1501d, updates:61756, SVD sweeps:5
+pose error:[0.010000 0.015000 0.010000 -0.000000 0.049979 -0.000000]
+tau[0:6]:[-0.567483 -0.552304 -0.482512 -0.231067 -0.297494 -0.656094 -0.085004]
+kernel exec min/avg/max: 28.58 / 29.23 / 32.96 us, samples:61766
+pressure status:1, copy rounds total/window:454/16, 7.49 rounds/s
+pressure logical copy:4540.00 MiB total, approx 74.91 MiB/s, checksum:604587950080
+pressure report window:2.135880 s
+t0_region>
+[0]:56948
+[1]:4679
+[2]:149
+[3]:12
+[4]:1
+
+t1_region>
+[1]:56327
+[2]:4631
+[3]:679
+[4]:119
+[5]:26
+[6]:9
+[7]:3
+
+t2_region>
+[30]:44277
+[31]:15749
+[32]:1353
+[33]:293
+[34]:92
+[35]:19
+[36]:7
+[37]:8
+[39]:2
+
+t0_min: 0.50 us, round:48688
+t0_max: 4.13 us, round:24350
+t0_jitter: 3.63 us
+
+t1_min: 1.33 us, round:19094
+t1_max: 7.92 us, round:46176
+t1_jitter: 6.58 us
+
+t2_min: 30.17 us, round:44716
+t2_max: 39.38 us, round:48719
+t2_jitter: 9.21 us
+
+PMU diff samples: 61829
+AVG DIFF LL_CACHE_RD: 30.13
+AVG DIFF LL_CACHE_MISS_RD: 5.77
+AVG DIFF L2D_CACHE_REFILL: 2.30
+AVG DIFF L2D_CACHE_INVAL: 135.96
+[cur diff] DIFF LL_CACHE_RD: 0, DIFF LL_CACHE_MISS_RD: 0, MISS_RATE: 0.00%
+[cur diff] DIFF L2D_CACHE_REFILL: 1
+[cur diff] DIFF L2D_CACHE_INVAL: 0
+[max diff] DIFF LL_CACHE_RD: 110, DIFF LL_CACHE_MISS_RD: 73, MISS_RATE: 66.36%
+[max diff] DIFF L2D_CACHE_REFILL: 45
+[max diff] DIFF L2D_CACHE_INVAL: 5356
+
+===========================================================
+taskpendcnt:63870
+t0:1083 ns
+t1:1791 ns
+t2:31083 ns
+benchmark: Franka-derived Cartesian-impedance kernel, input trace:8, timer period:1.000 ms
+controller source: franka_ros2 jazzy@73a1501d, updates:63892, SVD sweeps:5
+pose error:[0.010000 0.015000 0.010000 -0.000000 0.049979 -0.000000]
+tau[0:6]:[-0.567483 -0.552304 -0.482512 -0.231067 -0.297494 -0.656094 -0.085004]
+kernel exec min/avg/max: 28.58 / 29.23 / 32.96 us, samples:63902
+pressure status:1, copy rounds total/window:470/16, 7.49 rounds/s
+pressure logical copy:4700.00 MiB total, approx 74.91 MiB/s, checksum:625895014400
+pressure report window:2.135974 s
+t0_region>
+[0]:58918
+[1]:4834
+[2]:160
+[3]:12
+[4]:1
+
+t1_region>
+[1]:58275
+[2]:4783
+[3]:704
+[4]:128
+[5]:28
+[6]:9
+[7]:3
+
+t2_region>
+[30]:45712
+[31]:16378
+[32]:1405
+[33]:304
+[34]:99
+[35]:21
+[36]:7
+[37]:8
+[39]:2
+
+t0_min: 0.50 us, round:48688
+t0_max: 4.13 us, round:24350
+t0_jitter: 3.63 us
+
+t1_min: 1.33 us, round:19094
+t1_max: 7.92 us, round:46176
+t1_jitter: 6.58 us
+
+t2_min: 30.17 us, round:44716
+t2_max: 39.38 us, round:48719
+t2_jitter: 9.21 us
+
+PMU diff samples: 63965
+AVG DIFF LL_CACHE_RD: 30.17
+AVG DIFF LL_CACHE_MISS_RD: 5.78
+AVG DIFF L2D_CACHE_REFILL: 2.31
+AVG DIFF L2D_CACHE_INVAL: 136.16
+[cur diff] DIFF LL_CACHE_RD: 0, DIFF LL_CACHE_MISS_RD: 0, MISS_RATE: 0.00%
+[cur diff] DIFF L2D_CACHE_REFILL: 0
+[cur diff] DIFF L2D_CACHE_INVAL: 0
+[max diff] DIFF LL_CACHE_RD: 110, DIFF LL_CACHE_MISS_RD: 73, MISS_RATE: 66.36%
+[max diff] DIFF L2D_CACHE_REFILL: 45
+[max diff] DIFF L2D_CACHE_INVAL: 5356
+
+===========================================================
+taskpendcnt:66005
+t0:625 ns
+t1:1625 ns
+t2:30625 ns
+benchmark: Franka-derived Cartesian-impedance kernel, input trace:8, timer period:1.000 ms
+controller source: franka_ros2 jazzy@73a1501d, updates:66028, SVD sweeps:5
+pose error:[0.010000 0.015000 0.010000 -0.000000 0.049979 -0.000000]
+tau[0:6]:[-0.567483 -0.552304 -0.482512 -0.231067 -0.297494 -0.656094 -0.085004]
+kernel exec min/avg/max: 28.58 / 29.23 / 32.96 us, samples:66038
+pressure status:1, copy rounds total/window:485/15, 7.02 rounds/s
+pressure logical copy:4850.00 MiB total, approx 70.23 MiB/s, checksum:645870387200
+pressure report window:2.135769 s
+t0_region>
+[0]:60877
+[1]:5006
+[2]:165
+[3]:12
+[4]:1
+
+t1_region>
+[1]:60211
+[2]:4952
+[3]:731
+[4]:131
+[5]:29
+[6]:9
+[7]:3
+
+t2_region>
+[30]:47337
+[31]:16832
+[32]:1452
+[33]:313
+[34]:100
+[35]:22
+[36]:7
+[37]:8
+[39]:2
+
+t0_min: 0.50 us, round:48688
+t0_max: 4.13 us, round:24350
+t0_jitter: 3.63 us
+
+t1_min: 1.33 us, round:19094
+t1_max: 7.92 us, round:46176
+t1_jitter: 6.58 us
+
+t2_min: 30.17 us, round:44716
+t2_max: 39.38 us, round:48719
+t2_jitter: 9.21 us
+
+PMU diff samples: 66101
+AVG DIFF LL_CACHE_RD: 30.10
+AVG DIFF LL_CACHE_MISS_RD: 5.76
+AVG DIFF L2D_CACHE_REFILL: 2.30
+AVG DIFF L2D_CACHE_INVAL: 136.01
+[cur diff] DIFF LL_CACHE_RD: 1, DIFF LL_CACHE_MISS_RD: 1, MISS_RATE: 100.00%
+[cur diff] DIFF L2D_CACHE_REFILL: 0
+[cur diff] DIFF L2D_CACHE_INVAL: 0
+[max diff] DIFF LL_CACHE_RD: 110, DIFF LL_CACHE_MISS_RD: 73, MISS_RATE: 66.36%
+[max diff] DIFF L2D_CACHE_REFILL: 45
+[max diff] DIFF L2D_CACHE_INVAL: 5356
+
+===========================================================
+taskpendcnt:68141
+t0:750 ns
+t1:1750 ns
+t2:30750 ns
+benchmark: Franka-derived Cartesian-impedance kernel, input trace:8, timer period:1.000 ms
+controller source: franka_ros2 jazzy@73a1501d, updates:68164, SVD sweeps:5
+pose error:[0.010000 0.015000 0.010000 -0.000000 0.049979 -0.000000]
+tau[0:6]:[1.376914 -0.104433 0.790225 0.843903 0.642107 -0.956178 0.423547]
+kernel exec min/avg/max: 28.58 / 29.23 / 32.96 us, samples:68173
+pressure status:1, copy rounds total/window:501/16, 7.49 rounds/s
+pressure logical copy:5010.00 MiB total, approx 74.93 MiB/s, checksum:667177451520
+pressure report window:2.135391 s
+t0_region>
+[0]:62825
+[1]:5189
+[2]:168
+[3]:13
+[4]:1
+
+t1_region>
+[1]:62152
+[2]:5117
+[3]:755
+[4]:134
+[5]:31
+[6]:9
+[7]:3
+
+t2_region>
+[30]:48864
+[31]:17373
+[32]:1506
+[33]:324
+[34]:102
+[35]:22
+[36]:7
+[37]:8
+[39]:2
+
+t0_min: 0.50 us, round:48688
+t0_max: 4.13 us, round:24350
+t0_jitter: 3.63 us
+
+t1_min: 1.33 us, round:19094
+t1_max: 7.92 us, round:46176
+t1_jitter: 6.58 us
+
+t2_min: 30.17 us, round:44716
+t2_max: 39.38 us, round:48719
+t2_jitter: 9.21 us
+
+PMU diff samples: 68237
+AVG DIFF LL_CACHE_RD: 30.13
+AVG DIFF LL_CACHE_MISS_RD: 5.77
+AVG DIFF L2D_CACHE_REFILL: 2.31
+AVG DIFF L2D_CACHE_INVAL: 135.86
+[cur diff] DIFF LL_CACHE_RD: 14, DIFF LL_CACHE_MISS_RD: 15, MISS_RATE: 107.14%
+[cur diff] DIFF L2D_CACHE_REFILL: 0
+[cur diff] DIFF L2D_CACHE_INVAL: 0
+[max diff] DIFF LL_CACHE_RD: 110, DIFF LL_CACHE_MISS_RD: 73, MISS_RATE: 66.36%
+[max diff] DIFF L2D_CACHE_REFILL: 45
+[max diff] DIFF L2D_CACHE_INVAL: 5356
+
+===========================================================
+taskpendcnt:70277
+t0:1333 ns
+t1:1750 ns
+t2:31166 ns
+benchmark: Franka-derived Cartesian-impedance kernel, input trace:8, timer period:1.000 ms
+controller source: franka_ros2 jazzy@73a1501d, updates:70300, SVD sweeps:5
+pose error:[0.010000 0.015000 0.010000 -0.000000 0.049979 -0.000000]
+tau[0:6]:[1.376914 -0.104433 0.790225 0.843903 0.642107 -0.956178 0.423547]
+kernel exec min/avg/max: 28.58 / 29.23 / 32.96 us, samples:70309
+pressure status:1, copy rounds total/window:517/16, 7.49 rounds/s
+pressure logical copy:5170.00 MiB total, approx 74.91 MiB/s, checksum:688484515840
+pressure report window:2.135906 s
+t0_region>
+[0]:64789
+[1]:5353
+[2]:176
+[3]:13
+[4]:1
+
+t1_region>
+[1]:64102
+[2]:5271
+[3]:784
+[4]:134
+[5]:33
+[6]:10
+[7]:3
+
+t2_region>
+[30]:50393
+[31]:17919
+[32]:1555
+[33]:333
+[34]:103
+[35]:24
+[36]:8
+[37]:8
+[39]:2
+
+t0_min: 0.50 us, round:48688
+t0_max: 4.13 us, round:24350
+t0_jitter: 3.63 us
+
+t1_min: 1.33 us, round:19094
+t1_max: 7.92 us, round:46176
+t1_jitter: 6.58 us
+
+t2_min: 30.17 us, round:44716
+t2_max: 39.38 us, round:48719
+t2_jitter: 9.21 us
+
+PMU diff samples: 70373
+AVG DIFF LL_CACHE_RD: 30.18
+AVG DIFF LL_CACHE_MISS_RD: 5.78
+AVG DIFF L2D_CACHE_REFILL: 2.31
+AVG DIFF L2D_CACHE_INVAL: 135.86
+[cur diff] DIFF LL_CACHE_RD: 0, DIFF LL_CACHE_MISS_RD: 0, MISS_RATE: 0.00%
+[cur diff] DIFF L2D_CACHE_REFILL: 0
+[cur diff] DIFF L2D_CACHE_INVAL: 0
+[max diff] DIFF LL_CACHE_RD: 110, DIFF LL_CACHE_MISS_RD: 73, MISS_RATE: 66.36%
+[max diff] DIFF L2D_CACHE_REFILL: 45
+[max diff] DIFF L2D_CACHE_INVAL: 5356
+
+===========================================================
+taskpendcnt:72413
+t0:875 ns
+t1:1875 ns
+t2:31166 ns
+benchmark: Franka-derived Cartesian-impedance kernel, input trace:8, timer period:1.000 ms
+controller source: franka_ros2 jazzy@73a1501d, updates:72435, SVD sweeps:5
+pose error:[0.010000 0.015000 0.010000 -0.000000 0.049979 -0.000000]
+tau[0:6]:[1.376914 -0.104433 0.790225 0.843903 0.642107 -0.956178 0.423547]
+kernel exec min/avg/max: 28.58 / 29.23 / 32.96 us, samples:72445
+pressure status:1, copy rounds total/window:532/15, 7.02 rounds/s
+pressure logical copy:5320.00 MiB total, approx 70.23 MiB/s, checksum:708459888640
+pressure report window:2.135748 s
+t0_region>
+[0]:66745
+[1]:5526
+[2]:182
+[3]:14
+[4]:1
+
+t1_region>
+[1]:66048
+[2]:5426
+[3]:814
+[4]:137
+[5]:35
+[6]:10
+[7]:3
+
+t2_region>
+[30]:51944
+[31]:18437
+[32]:1606
+[33]:342
+[34]:105
+[35]:26
+[36]:9
+[37]:8
+[39]:2
+
+t0_min: 0.50 us, round:48688
+t0_max: 4.13 us, round:24350
+t0_jitter: 3.63 us
+
+t1_min: 1.33 us, round:19094
+t1_max: 7.92 us, round:46176
+t1_jitter: 6.58 us
+
+t2_min: 30.17 us, round:44716
+t2_max: 39.38 us, round:48719
+t2_jitter: 9.21 us
+
+PMU diff samples: 72508
+AVG DIFF LL_CACHE_RD: 30.16
+AVG DIFF LL_CACHE_MISS_RD: 5.78
+AVG DIFF L2D_CACHE_REFILL: 2.31
+AVG DIFF L2D_CACHE_INVAL: 136.00
+[cur diff] DIFF LL_CACHE_RD: 0, DIFF LL_CACHE_MISS_RD: 0, MISS_RATE: 0.00%
+[cur diff] DIFF L2D_CACHE_REFILL: 0
+[cur diff] DIFF L2D_CACHE_INVAL: 0
+[max diff] DIFF LL_CACHE_RD: 110, DIFF LL_CACHE_MISS_RD: 73, MISS_RATE: 66.36%
+[max diff] DIFF L2D_CACHE_REFILL: 45
+[max diff] DIFF L2D_CACHE_INVAL: 5356
+ 

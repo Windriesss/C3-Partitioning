@@ -1,0 +1,159 @@
+[  641.320249] audit: type=1305 audit(641.060:117): auid=4294967295 ses=4294967295op=remove_rule path="/var/log/wtmp" key="session" list=4 res=1
+[  641.320259] audit: type=1305 audit(641.060:118): auid=4294967295 ses=4294967295op=remove_rule path="/var/log/faillog2" key="logins" list=4 res=1
+[  641.320265] audit: type=1305 audit(641.060:119): auid=4294967295 ses=4294967295op=remove_rule path="/var/log/btmp" key="session" list=4 res=1
+[  641.320271] audit: type=1305 audit(641.060:120): auid=4294967295 ses=4294967295op=remove_rule path="/var/log/tallylog" key="logins" list=4 res=1
+[  641.320275] audit: type=1305 audit(641.060:121): auid=4294967295 ses=4294967295op=remove_rule path="/var/log/lastlog" key="logins" list=4 res=1
+[  641.355727] audit: type=1334 audit(641.095:122): prog-id=8 op=UNLOAD
+[  641.355747] audit: type=1334 audit(641.095:123): prog-id=7 op=UNLOAD
+[  641.356029] audit: type=1334 audit(641.096:124): prog-id=6 op=UNLOAD
+[  641.356059] audit: type=1334 audit(641.096:125): prog-id=5 op=UNLOAD
+[  641.356947] audit: type=1334 audit(641.097:126): prog-id=10 op=UNLOAD
+[  641.411205] systemd-shutdown[1]: Syncing filesystems and block devices.
+[  641.419713] systemd-shutdown[1]: Sending SIGTERM to remaining processes...
+[  641.432600] systemd-journald[372]: Received SIGTERM from PID 1 (systemd-shutdow).
+[  641.445308] systemd-shutdown[1]: Sending SIGKILL to remaining processes...
+[  641.495898] systemd-shutdown[1]: Unmounting file systems.
+[  641.498084] (sd-remount)[816]: Remounting '/' read-only with options ''.
+[  641.544158] EXT4-fs (mmcblk0p5): re-mounted. Opts: (null)
+[  641.548848] systemd-shutdown[1]: All filesystems unmounted.
+[  641.548854] systemd-shutdown[1]: Deactivating swaps.
+[  641.548928] systemd-shutdown[1]: All swaps deactivated.
+[  641.548930] systemd-shutdown[1]: Detaching loop devices.
+[  641.550613] systemd-shutdown[1]: All loop devices detached.
+[  641.550618] systemd-shutdown[1]: Stopping MD devices.
+[  641.550798] systemd-shutdown[1]: All MD devices stopped.
+[  641.550802] systemd-shutdown[1]: Detaching DM devices.
+[  641.550946] systemd-shutdown[1]: All DM devices detached.
+[  641.550950] systemd-shutdown[1]: All filesystems, swaps, loop devices, MD devices and DM devices detached.
+[  641.564094] systemd-shutdown[1]: Syncing filesystems and block devices.
+[  641.566494] systemd-shutdown[1]: Rebooting.
+[  641.690864] rk860-regulator 1-0042: rk860..... reset
+[  641.691847] rk860-regulator 1-0042: force rk860x_reset ok!
+[  641.691870] rk860-regulator 0-0043: rk860..... reset
+[  641.692862] rk860-regulator 0-0043: force rk860x_reset ok!
+[  641.692868] rk860-regulator 0-0042: rk860..... reset
+[  641.693847] rk860-regulator 0-0042: force rk860x_reset ok!
+[  641.694446] mpp_av1dec av1d-master: shutdown device
+[  641.694448] mpp_av1dec av1d-master: shutdown success
+[  641.694458] mpp_rkvenc2 fdbe0000.rkvenc-core: shutdown device
+[  641.694460] mpp_rkvenc2 fdbe0000.rkvenc-core: shutdown success
+[  641.694465] mpp_rkvenc2 fdbd0000.rkvenc-core: shutdown device
+[  641.694467] mpp_rkvenc2 fdbd0000.rkvenc-core: shutdown success
+[  641.694472] mpp_rkvdec2 fdc48100.rkvdec-core: shutdown device
+[  641.694474] mpp_rkvdec2 fdc48100.rkvdec-core: shutdown success
+[  641.694479] mpp_rkvdec2 fdc38100.rkvdec-core: shutdown device
+[  641.694480] mpp_rkvdec2 fdc38100.rkvdec-core: shutdown success
+[  641.694487] mpp_jpgdec fdb90000.jpegd: shutdown device
+[  641.694488] mpp_jpgdec fdb90000.jpegd: shutdown success
+[  641.694493] mpp-iep2 fdbb0000.iep: shutdown device
+[  641.694495] mpp-iep2 fdbb0000.iep: shutdown success
+[  641.694500] mpp_vepu2 fdbac000.jpege-core: shutdown device
+[  641.694502] mpp_vepu2 fdbac000.jpege-core: shutdown success
+[  641.694507] mpp_vepu2 fdba8000.jpege-core: shutdown device
+[  641.694508] mpp_vepu2 fdba8000.jpege-core: shutdown success
+[  641.694513] mpp_vepu2 fdba4000.jpege-core: shutdown device
+[  641.694514] mpp_vepu2 fdba4000.jpege-core: shutdown success
+[  641.694519] mpp_vepu2 fdba0000.jpege-core: shutdown device
+[  641.694520] mpp_vepu2 fdba0000.jpege-core: shutdown success
+[  641.694525] mpp_vepu2 fdb50000.vepu: shutdown device
+[  641.694527] mpp_vepu2 fdb50000.vepu: shutdown success
+[  641.694531] mpp_vdpu2 fdb50400.vdpu: shutdown device
+[  641.694533] mpp_vdpu2 fdb50400.vdpu: shutdown success
+[  641.695074] xhci-hcd xhci-hcd.4.auto: remove, state 4
+[  641.695082] usb usb8: USB disconnect, device number 1
+[  641.695724] xhci-hcd xhci-hcd.4.auto: USB bus 8 deregistered
+[  641.695982] xhci-hcd xhci-hcd.4.auto: remove, state 4
+[  641.695988] usb usb7: USB disconnect, device number 1
+[  641.696965] xhci-hcd xhci-hcd.4.auto: USB bus 7 deregistered
+[  641.701667] xhci-hcd xhci-hcd.3.auto: remove, state 4
+[  641.701675] usb usb6: USB disconnect, device number 1
+[  641.702279] xhci-hcd xhci-hcd.3.auto: USB bus 6 deregistered
+[  641.702489] xhci-hcd xhci-hcd.3.auto: remove, state 4
+[  641.702494] usb usb5: USB disconnect, device number 1
+[  641.703483] xhci-hcd xhci-hcd.3.auto: USB bus 5 deregistered
+[  641.706413] reboot: Restarting system
+(XEN) Hardware Dom0 shutdown: rebooting machine
+`zaYdk-z (qSQ6qQ0(<NSQd5yLYY*ٽ"JYū[_\U4i$`)*KQAv};g6տ˙(.ó[ck涶kVw"3^cˤg#G/SNgCW&S;W
+
+U-Boot 2024.07-00114-g1fcb78edf1 (Apr 02 2026 - 11:52:05 +0800)
+
+Model: Ncti rk3588 evb
+DRAM:  4 GiB
+Core:  315 devices, 28 uclasses, devicetree: separate
+MMC:   mmc@fe2e0000: 0
+Loading Environment from MMC... *** Warning - !read failed, using default environment
+
+In:    serial@feb50000
+Out:   serial@feb50000
+Err:   serial@feb50000
+Model: Ncti rk3588 evb
+lt8912b id: [0xb212]
+Net:   eth0: ethernet@fe1b0000
+Warning: partition logo not found on mmc 0
+Hit any key to stop autoboot:  0 
+## Booting FIT Image 
+prepare_image... 
+No boot partition
+=> 
+=> 
+=> boot
+## Booting FIT Image 
+prepare_image... 
+No boot partition
+=> 
+## Booting FIT Image 
+prepare_image... 
+No boot partition
+=> 
+## Booting FIT Image 
+prepare_image... 
+No boot partition
+=> 
+## Booting FIT Image 
+prepare_image... 
+No boot partition
+=> boot
+## Booting FIT Image 
+prepare_image... 
+No boot partition
+=> 
+## Booting FIT Image 
+prepare_image... 
+No boot partition
+=> 
+## Booting FIT Image 
+prepare_image... 
+No boot partition
+=> 
+## Booting FIT Image 
+prepare_image... 
+No boot partition
+=> boot
+## Booting FIT Image 
+prepare_image... 
+No boot partition
+=> 
+## Booting FIT Image 
+prepare_image... 
+No boot partition
+=> 
+## Booting FIT Image 
+prepare_image... 
+No boot partition
+=> 
+## Booting FIT Image 
+prepare_image... 
+No boot partition
+=> boot
+## Booting FIT Image 
+prepare_image... 
+No boot partition
+=> 
+## Booting FIT Image 
+prepare_image... 
+No boot partition
+=> if [ -n "$STRESS_PID" ]; then kill -INT "$STRESS_PID"; fi
+Unknown command '[' - try 'help'
+=> 
+Unknown command '[' - try 'help'
+=> 

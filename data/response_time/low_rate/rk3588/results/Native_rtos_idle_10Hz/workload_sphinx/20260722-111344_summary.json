@@ -1,0 +1,19 @@
+{
+  "platform": "rk3588",
+  "experiment": "Native_rtos_idle_10Hz",
+  "vm_bytes": "sphinx",
+  "stress_ng": false,
+  "started_at": "2026-07-22T11:13:44+0800",
+  "elapsed_seconds": 836.197,
+  "sample_hz": 10,
+  "expected_pmu_samples": 6000,
+  "minimum_pmu_samples": 6000,
+  "last_pmu_samples": 6000,
+  "bogo_ops": null,
+  "stress_pid": 711,
+  "stress_exit_code": null,
+  "status": "failed",
+  "error": "sphinx forced cleanup acknowledgement was not returned by the OEE shell",
+  "rtos_log": "20260722-111344_rtos.log",
+  "oee_log": "20260722-111344_oee.log"
+}

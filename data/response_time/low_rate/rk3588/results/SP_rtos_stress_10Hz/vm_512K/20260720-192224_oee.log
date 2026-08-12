@@ -1,0 +1,82 @@
+<INTERRUPT>
+=> 
+=> 
+=> 
+=> 
+=> boot
+## Booting FIT Image 
+prepare_image... 
+No boot partition
+=> 
+## Booting FIT Image 
+prepare_image... 
+No boot partition
+=> 
+## Booting FIT Image 
+prepare_image... 
+No boot partition
+=> 
+## Booting FIT Image 
+prepare_image... 
+No boot partition
+=> boot
+## Booting FIT Image 
+prepare_image... 
+No boot partition
+=> 
+## Booting FIT Image 
+prepare_image... 
+No boot partition
+=> 
+## Booting FIT Image 
+prepare_image... 
+No boot partition
+=> 
+## Booting FIT Image 
+prepare_image... 
+No boot partition
+=> boot
+## Booting FIT Image 
+prepare_image... 
+No boot partition
+=> 
+## Booting FIT Image 
+prepare_image... 
+No boot partition
+=> 
+## Booting FIT Image 
+prepare_image... 
+No boot partition
+=> 
+## Booting FIT Image 
+prepare_image... 
+No boot partition
+=> boot
+## Booting FIT Image 
+prepare_image... 
+No boot partition
+=> 
+## Booting FIT Image 
+prepare_image... 
+No boot partition
+=> 
+## Booting FIT Image 
+prepare_image... 
+No boot partition
+=> 
+## Booting FIT Image 
+prepare_image... 
+No boot partition
+=> boot
+## Booting FIT Image 
+prepare_image... 
+No boot partition
+=> 
+## Booting FIT Image 
+prepare_image... 
+No boot partition
+=> if [ -n "$STRESS_PID" ]; then kill -INT "$STRESS_PID"; fi
+Unknown command '[' - try 'help'
+=> 
+Unknown command '[' - try 'help'
+=> 

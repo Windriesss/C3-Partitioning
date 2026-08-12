@@ -1,0 +1,19 @@
+{
+  "platform": "rk3568",
+  "experiment": "WP_rtos_idle_10Hz",
+  "vm_bytes": "1M",
+  "stress_ng": true,
+  "started_at": "2026-07-21T23:09:31+0800",
+  "elapsed_seconds": 743.134,
+  "sample_hz": 10,
+  "expected_pmu_samples": 6000,
+  "minimum_pmu_samples": 6000,
+  "last_pmu_samples": 6000,
+  "bogo_ops": null,
+  "stress_pid": 588,
+  "stress_exit_code": null,
+  "status": "failed",
+  "error": "stress-ng did not stop or emit final metrics before timeout",
+  "rtos_log": "20260721-230931_rtos.log",
+  "oee_log": "20260721-230931_oee.log"
+}

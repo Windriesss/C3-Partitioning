@@ -1,0 +1,21 @@
+{
+  "platform": "rk3568",
+  "experiment": "HCP_rtos_stress_1000Hz",
+  "vm_bytes": "512K",
+  "stress_ng": true,
+  "workload": "stress-ng",
+  "started_at": "2026-07-28T05:33:03+0800",
+  "elapsed_seconds": 693.953,
+  "sample_hz": 1000,
+  "expected_pmu_samples": 600000,
+  "minimum_pmu_samples": 600000,
+  "last_pmu_samples": 600000,
+  "bogo_ops": null,
+  "stress_pid": 595,
+  "stress_exit_code": null,
+  "status": "failed",
+  "error": "stress-ng did not stop or emit final metrics before timeout",
+  "post_run_warning": null,
+  "rtos_log": "20260728-053303_rtos.log",
+  "oee_log": "20260728-053303_oee.log"
+}

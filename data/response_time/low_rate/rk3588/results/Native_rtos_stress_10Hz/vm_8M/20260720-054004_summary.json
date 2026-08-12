@@ -1,0 +1,19 @@
+{
+  "platform": "rk3588",
+  "experiment": "Native_rtos_stress_10Hz",
+  "vm_bytes": "8M",
+  "stress_ng": true,
+  "started_at": "2026-07-20T05:40:04+0800",
+  "elapsed_seconds": 729.144,
+  "sample_hz": 10,
+  "expected_pmu_samples": 6000,
+  "minimum_pmu_samples": 6000,
+  "last_pmu_samples": 6000,
+  "bogo_ops": 58636833.0,
+  "stress_pid": 710,
+  "stress_exit_code": 0,
+  "status": "complete",
+  "error": null,
+  "rtos_log": "20260720-054004_rtos.log",
+  "oee_log": "20260720-054004_oee.log"
+}

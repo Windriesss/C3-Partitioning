@@ -1,0 +1,10 @@
+﻿frequency_hz,condition,method,avg_l2_inval,avg_l2_refill,avg_ll_miss_rd,t2_jitter_us,source
+1000,Idle,Native,0.000,0.000,0.000,1.790,data/response_time/main/rk3588/result_yolov8n/Native_oee_idle_rtos_idle_1000Hz/20260727-094215_summary.json
+1000,Idle,WP,0.000,0.000,0.000,1.880,data/response_time/main/rk3588/result_yolov8n/WP_oee_idle_rtos_idle_1000Hz/20260724-162555_summary.json
+1000,Idle,SP,0.000,0.000,0.000,1.880,data/response_time/main/rk3588/result_yolov8n/SP_oee_idle_rtos_idle_1000Hz/20260727-090444_summary.json
+1000,Inter-core interference,Native,1.787,0.381,0.587,6.170,data/response_time/main/rk3588/result_yolov8n/Native_oee_yolov8n_rtos_idle_1000Hz/20260724-182605_summary.json
+1000,Inter-core interference,WP,2.223,0.489,0.785,5.670,data/response_time/main/rk3588/result_yolov8n/WP_oee_yolov8n_rtos_idle_1000Hz/20260724-165901_summary.json
+1000,Inter-core interference,SP,0.004,0.000,0.000,1.960,data/response_time/main/rk3588/result_yolov8n/SP_oee_yolov8n_rtos_idle_1000Hz/20260724-183719_summary.json
+1000,Inter-core + intra-core interference,Native,148.790,2.670,18.590,9.880,data/response_time/main/rk3588/result_yolov8n/Native_oee_yolov8n_rtos_stress_1000Hz/20260724-013058_summary.json
+1000,Inter-core + intra-core interference,WP,152.110,2.740,6.530,9.710,data/response_time/main/rk3588/result_yolov8n/WP_oee_yolov8n_rtos_stress_1000Hz/20260723-174659_summary.json
+1000,Inter-core + intra-core interference,SP,28.070,1.380,3.970,8.670,data/response_time/main/rk3588/result_yolov8n/SP_oee_yolov8n_rtos_stress_1000Hz/20260724-031113_summary.json

@@ -1,0 +1,329 @@
+# module,rk3588_sf_bitscan
+# schema_version,18
+# experiment_run_id,run03_cpu2_to_cpu3_matrix_allocation10
+# experiment,owned_address_color_matrix
+# scan_order,4
+# allocation_scope,one_module_load_one_fresh_owned_page_pool
+# owned_pages_only,true
+# computed_physical_addresses_are_lookup_keys_only,true
+# arbitrary_physical_address_mapping,false
+# counter,pmccntr_cycles
+# counter_calibration_delta,749
+# counter_calibration_method,civac_then_single_touch_of_one_owned_line
+# counter_calibration_usage,counter_sanity_check_only_not_subtracted_from_probe_ticks
+# probe_pmu_events_available,true
+# ll_cache_events_available,true
+# l1d_tlb_refill_event_available,true
+# probe_pmu_event_l1d_tlb_refill,0x05
+# probe_pmu_event_ll_cache_rd,0x36
+# probe_pmu_event_ll_cache_miss_rd,0x37
+# probe_pmu_event_source,Arm_architected_common_event_numbers
+# probe_cpu,3
+# stimulus_cpus,2
+# same_core_binding,probe_and_candidate_accesses_execute_on_probe_cpu
+# cross_core_binding,probe_executes_on_probe_cpu_and_candidate_accesses_execute_on_stimulus_cpus
+# pool_pages,329376
+# candidate_target_masked,0x38e900
+# addrmask,0x7fffff
+# owned_candidate_pool,160
+# stimulus_mask,0xfffff
+# initial_candidate_items,20
+# target_candidate_items,16
+# active_candidates,16
+# candidate_selection,online_random_validated
+# candidate_search_attempt,25
+# search_groups,2000
+# search_repetitions,20
+# baseline_repetitions,1000
+# reduction_repetitions,20
+# reduction_validation_repetitions,200
+# scan_passes,3
+# color_bit0,13
+# color_bit1,14
+# color_repetitions,1000
+# base_probe_pa,0x4f38e900
+# bit_first,13
+# bit_last,14
+# fill_rounds,1000
+# fill_rounds_scope,candidate_search_reduction_validation_and_bit_tests
+# bit_repetitions,1000
+# item_sweep_first,0
+# item_sweep_last,20
+# item_count_definition,stimulus_addresses_excluding_probe
+# item_sweep_repetitions,200
+# item_sweep_rounds,1;10;100;1000
+# item_sweep_rounds_scope,effective_values_for_item_sweep_each_row_records_one_as_fill_rounds
+# item_sweep_order,descending_from_item_sweep_last_to_item_sweep_first
+# bit_item_sweep_conditions,same_original_matching;same_probe_only_flipped;cross_original_matching;cross_probe_only_flipped
+# bit_item_sweep_candidate_order,one_random_permutation_per_scan_pass_with_nested_prefixes_within_each_pass
+# attribution_control_repetitions,100
+# attribution_cross_only_bits,false
+# joint_rescue_mask,0x30000
+# pair_screen_repetitions,100
+# pair_screen_percent,80
+# single_max_percent,20
+# triple_screen_repetitions,100
+# triple_screen_percent,80
+# pair_max_percent,20
+# trigger_threshold,150
+# stable_percent,95
+# latency_bins,0..89;90..129;130..219;220..inf
+# cache_line_bytes,64
+# intra_line_negative_control_bits,0..5
+# cross_bit_conditions,original_matching;probe_only_flipped
+# joint_bit_conditions,joint_group_flipped_for_joint_rescue_mask
+# selector_rescue_rule,original_and_joint_at_least_stable_percent_and_probe_only_at_most_single_max_percent
+# selection_validation,matching_candidate_set_before_scan
+# unrelated_control,same_owned_page_control_bit_not_in_changed_mask
+# idle_control,stimulus_handshake_with_zero_address_accesses
+record,scan_pass,test_bit,test_bit2,test_bit3,variant,available,lookup_status,active_candidates,fill_rounds,successes,repetitions,success_percent,stable,mean_ticks,median_ticks,p90_ticks,min_ticks,max_ticks,probe_l1d_refill_total,probe_l1d_tlb_refill_total,probe_l2d_refill_total,probe_bus_access_total,probe_l1d_refill_samples,probe_l1d_tlb_refill_samples,probe_l2d_refill_samples,probe_ll_cache_rd_total,probe_ll_cache_miss_total,probe_ll_cache_rd_samples,probe_ll_cache_miss_samples,latency_lt_bin1,latency_bin1_bin2,latency_bin2_bin3,latency_ge_bin3,probe_pa,paired_probe_pa,changed_mask
+candidate_member,0,0,64,64,stimulus,1,owned_exact,16,1000,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0x33b8e900,0x4f38e900,0x0
+candidate_member,0,1,64,64,stimulus,1,owned_exact,16,1000,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0x37b8e900,0x4f38e900,0x0
+candidate_member,0,2,64,64,stimulus,1,owned_exact,16,1000,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0x4338e900,0x4f38e900,0x0
+candidate_member,0,3,64,64,stimulus,1,owned_exact,16,1000,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0x4738e900,0x4f38e900,0x0
+candidate_member,0,4,64,64,stimulus,1,owned_exact,16,1000,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0x6538e900,0x4f38e900,0x0
+candidate_member,0,5,64,64,stimulus,1,owned_exact,16,1000,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0x1738e900,0x4f38e900,0x0
+candidate_member,0,6,64,64,stimulus,1,owned_exact,16,1000,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0x3b38e900,0x4f38e900,0x0
+candidate_member,0,7,64,64,stimulus,1,owned_exact,16,1000,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0x5d38e900,0x4f38e900,0x0
+candidate_member,0,8,64,64,stimulus,1,owned_exact,16,1000,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0x1db8e900,0x4f38e900,0x0
+candidate_member,0,9,64,64,stimulus,1,owned_exact,16,1000,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0x2f38e900,0x4f38e900,0x0
+candidate_member,0,10,64,64,stimulus,1,owned_exact,16,1000,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0x1ab8e900,0x4f38e900,0x0
+candidate_member,0,11,64,64,stimulus,1,owned_exact,16,1000,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0x5ab8e900,0x4f38e900,0x0
+candidate_member,0,12,64,64,stimulus,1,owned_exact,16,1000,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0x3ab8e900,0x4f38e900,0x0
+candidate_member,0,13,64,64,stimulus,1,owned_exact,16,1000,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0x2538e900,0x4f38e900,0x0
+candidate_member,0,14,64,64,stimulus,1,owned_exact,16,1000,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0x60b8e900,0x4f38e900,0x0
+candidate_member,0,15,64,64,stimulus,1,owned_exact,16,1000,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0x5f38e900,0x4f38e900,0x0
+selection_validation,0,0,64,64,initial_matching,1,owned_exact,20,1000,1000,1000,100,1,290,258,262,227,923,1234,0,998,8760,1000,0,998,2123,998,1000,998,0,0,0,1000,0x4f38e900,0x4f38e900,0x0
+candidate_reduction,0,1,64,64,drop_short_20_to_19,1,removed_owned_candidate,19,1000,20,20,100,1,280,258,264,254,693,27,0,21,236,20,0,20,52,21,20,20,0,0,0,20,0x2d38e900,0x4f38e900,0x0
+candidate_reduction,0,1,64,64,drop_validation_20_to_19,1,removed_owned_candidate,19,1000,200,200,100,1,292,258,262,232,920,257,0,201,1720,200,0,200,420,201,200,200,0,0,0,200,0x2d38e900,0x4f38e900,0x0
+candidate_reduction,0,2,64,64,drop_short_19_to_18,1,removed_owned_candidate,18,1000,20,20,100,1,332,258,726,256,806,25,0,21,221,20,0,20,46,21,20,20,0,0,0,20,0x3438e900,0x4f38e900,0x0
+candidate_reduction,0,2,64,64,drop_validation_19_to_18,1,removed_owned_candidate,18,1000,200,200,100,1,293,258,262,253,919,248,0,200,1777,200,0,200,427,200,200,200,0,0,0,200,0x3438e900,0x4f38e900,0x0
+candidate_reduction,0,3,64,64,drop_short_18_to_17,1,removed_owned_candidate,17,1000,20,20,100,1,293,257,300,253,627,26,0,22,251,20,0,20,56,22,20,20,0,0,0,20,0x4438e900,0x4f38e900,0x0
+candidate_reduction,0,3,64,64,drop_validation_18_to_17,1,removed_owned_candidate,17,1000,200,200,100,1,284,258,262,230,918,248,0,199,1599,200,0,199,392,199,200,199,0,0,0,200,0x4438e900,0x4f38e900,0x0
+candidate_reduction,0,4,64,64,drop_short_17_to_16,1,removed_owned_candidate,16,1000,19,20,95,1,331,258,613,62,894,24,0,21,207,19,0,19,48,21,20,19,1,0,0,19,0x2eb8e900,0x4f38e900,0x0
+candidate_reduction,0,4,64,64,drop_validation_17_to_16,1,removed_owned_candidate,16,1000,194,200,97,1,284,258,262,27,1005,250,0,194,1515,196,0,194,373,194,197,194,6,0,0,194,0x2eb8e900,0x4f38e900,0x0
+selection_validation,0,0,64,64,reduced_matching,1,owned_exact,16,1000,970,1000,97,1,288,258,264,27,923,1147,0,971,7432,983,0,969,1830,971,993,969,30,0,0,970,0x4f38e900,0x4f38e900,0x0
+color_diagonal_validation,0,0,0,0,joint_color_matching,1,owned_exact,16,1000,974,1000,97,1,285,258,262,27,1016,1197,0,977,7311,979,0,972,1788,977,992,972,26,0,0,974,0x4f388900,0x4f388900,0x0
+color_candidate_member,0,0,0,0,stimulus,1,owned_exact,16,1000,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0x33b88900,0x4f388900,0x0
+color_candidate_member,0,0,1,0,stimulus,1,owned_exact,16,1000,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0x37b88900,0x4f388900,0x0
+color_candidate_member,0,0,2,0,stimulus,1,owned_exact,16,1000,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0x43388900,0x4f388900,0x0
+color_candidate_member,0,0,3,0,stimulus,1,owned_exact,16,1000,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0x47388900,0x4f388900,0x0
+color_candidate_member,0,0,4,0,stimulus,1,owned_exact,16,1000,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0x65388900,0x4f388900,0x0
+color_candidate_member,0,0,5,0,stimulus,1,owned_exact,16,1000,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0x17388900,0x4f388900,0x0
+color_candidate_member,0,0,6,0,stimulus,1,owned_exact,16,1000,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0x3b388900,0x4f388900,0x0
+color_candidate_member,0,0,7,0,stimulus,1,owned_exact,16,1000,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0x5d388900,0x4f388900,0x0
+color_candidate_member,0,0,8,0,stimulus,1,owned_exact,16,1000,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0x1db88900,0x4f388900,0x0
+color_candidate_member,0,0,9,0,stimulus,1,owned_exact,16,1000,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0x2f388900,0x4f388900,0x0
+color_candidate_member,0,0,10,0,stimulus,1,owned_exact,16,1000,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0x1ab88900,0x4f388900,0x0
+color_candidate_member,0,0,11,0,stimulus,1,owned_exact,16,1000,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0x5ab88900,0x4f388900,0x0
+color_candidate_member,0,0,12,0,stimulus,1,owned_exact,16,1000,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0x3ab88900,0x4f388900,0x0
+color_candidate_member,0,0,13,0,stimulus,1,owned_exact,16,1000,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0x25388900,0x4f388900,0x0
+color_candidate_member,0,0,14,0,stimulus,1,owned_exact,16,1000,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0x60b88900,0x4f388900,0x0
+color_candidate_member,0,0,15,0,stimulus,1,owned_exact,16,1000,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0x5f388900,0x4f388900,0x0
+color_diagonal_validation,0,1,1,0,joint_color_matching,1,owned_exact,16,1000,982,1000,98,1,283,258,262,27,1016,1180,0,980,7436,986,0,979,1828,980,994,979,18,0,0,982,0x4f38a900,0x4f38a900,0x0
+color_candidate_member,0,1,0,0,stimulus,1,owned_exact,16,1000,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0x33b8a900,0x4f38a900,0x0
+color_candidate_member,0,1,1,0,stimulus,1,owned_exact,16,1000,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0x37b8a900,0x4f38a900,0x0
+color_candidate_member,0,1,2,0,stimulus,1,owned_exact,16,1000,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0x4338a900,0x4f38a900,0x0
+color_candidate_member,0,1,3,0,stimulus,1,owned_exact,16,1000,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0x4738a900,0x4f38a900,0x0
+color_candidate_member,0,1,4,0,stimulus,1,owned_exact,16,1000,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0x6538a900,0x4f38a900,0x0
+color_candidate_member,0,1,5,0,stimulus,1,owned_exact,16,1000,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0x1738a900,0x4f38a900,0x0
+color_candidate_member,0,1,6,0,stimulus,1,owned_exact,16,1000,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0x3b38a900,0x4f38a900,0x0
+color_candidate_member,0,1,7,0,stimulus,1,owned_exact,16,1000,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0x5d38a900,0x4f38a900,0x0
+color_candidate_member,0,1,8,0,stimulus,1,owned_exact,16,1000,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0x1db8a900,0x4f38a900,0x0
+color_candidate_member,0,1,9,0,stimulus,1,owned_exact,16,1000,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0x2f38a900,0x4f38a900,0x0
+color_candidate_member,0,1,10,0,stimulus,1,owned_exact,16,1000,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0x1ab8a900,0x4f38a900,0x0
+color_candidate_member,0,1,11,0,stimulus,1,owned_exact,16,1000,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0x5ab8a900,0x4f38a900,0x0
+color_candidate_member,0,1,12,0,stimulus,1,owned_exact,16,1000,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0x3ab8a900,0x4f38a900,0x0
+color_candidate_member,0,1,13,0,stimulus,1,owned_exact,16,1000,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0x2538a900,0x4f38a900,0x0
+color_candidate_member,0,1,14,0,stimulus,1,owned_exact,16,1000,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0x60b8a900,0x4f38a900,0x0
+color_candidate_member,0,1,15,0,stimulus,1,owned_exact,16,1000,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0x5f38a900,0x4f38a900,0x0
+color_diagonal_validation,0,2,2,0,joint_color_matching,1,owned_exact,16,1000,973,1000,97,1,294,258,371,27,1017,1173,0,971,7359,979,0,971,1811,971,988,971,27,0,0,973,0x4f38c900,0x4f38c900,0x0
+color_candidate_member,0,2,0,0,stimulus,1,owned_exact,16,1000,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0x33b8c900,0x4f38c900,0x0
+color_candidate_member,0,2,1,0,stimulus,1,owned_exact,16,1000,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0x37b8c900,0x4f38c900,0x0
+color_candidate_member,0,2,2,0,stimulus,1,owned_exact,16,1000,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0x4338c900,0x4f38c900,0x0
+color_candidate_member,0,2,3,0,stimulus,1,owned_exact,16,1000,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0x4738c900,0x4f38c900,0x0
+color_candidate_member,0,2,4,0,stimulus,1,owned_exact,16,1000,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0x6538c900,0x4f38c900,0x0
+color_candidate_member,0,2,5,0,stimulus,1,owned_exact,16,1000,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0x1738c900,0x4f38c900,0x0
+color_candidate_member,0,2,6,0,stimulus,1,owned_exact,16,1000,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0x3b38c900,0x4f38c900,0x0
+color_candidate_member,0,2,7,0,stimulus,1,owned_exact,16,1000,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0x5d38c900,0x4f38c900,0x0
+color_candidate_member,0,2,8,0,stimulus,1,owned_exact,16,1000,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0x1db8c900,0x4f38c900,0x0
+color_candidate_member,0,2,9,0,stimulus,1,owned_exact,16,1000,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0x2f38c900,0x4f38c900,0x0
+color_candidate_member,0,2,10,0,stimulus,1,owned_exact,16,1000,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0x1ab8c900,0x4f38c900,0x0
+color_candidate_member,0,2,11,0,stimulus,1,owned_exact,16,1000,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0x5ab8c900,0x4f38c900,0x0
+color_candidate_member,0,2,12,0,stimulus,1,owned_exact,16,1000,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0x3ab8c900,0x4f38c900,0x0
+color_candidate_member,0,2,13,0,stimulus,1,owned_exact,16,1000,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0x2538c900,0x4f38c900,0x0
+color_candidate_member,0,2,14,0,stimulus,1,owned_exact,16,1000,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0x60b8c900,0x4f38c900,0x0
+color_candidate_member,0,2,15,0,stimulus,1,owned_exact,16,1000,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0x5f38c900,0x4f38c900,0x0
+color_diagonal_validation,0,3,3,0,joint_color_matching,1,owned_exact,16,1000,970,1000,97,1,288,258,264,27,923,1147,0,971,7432,983,0,969,1830,971,993,969,30,0,0,970,0x4f38e900,0x4f38e900,0x0
+color_candidate_member,0,3,0,0,stimulus,1,owned_exact,16,1000,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0x33b8e900,0x4f38e900,0x0
+color_candidate_member,0,3,1,0,stimulus,1,owned_exact,16,1000,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0x37b8e900,0x4f38e900,0x0
+color_candidate_member,0,3,2,0,stimulus,1,owned_exact,16,1000,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0x4338e900,0x4f38e900,0x0
+color_candidate_member,0,3,3,0,stimulus,1,owned_exact,16,1000,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0x4738e900,0x4f38e900,0x0
+color_candidate_member,0,3,4,0,stimulus,1,owned_exact,16,1000,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0x6538e900,0x4f38e900,0x0
+color_candidate_member,0,3,5,0,stimulus,1,owned_exact,16,1000,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0x1738e900,0x4f38e900,0x0
+color_candidate_member,0,3,6,0,stimulus,1,owned_exact,16,1000,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0x3b38e900,0x4f38e900,0x0
+color_candidate_member,0,3,7,0,stimulus,1,owned_exact,16,1000,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0x5d38e900,0x4f38e900,0x0
+color_candidate_member,0,3,8,0,stimulus,1,owned_exact,16,1000,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0x1db8e900,0x4f38e900,0x0
+color_candidate_member,0,3,9,0,stimulus,1,owned_exact,16,1000,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0x2f38e900,0x4f38e900,0x0
+color_candidate_member,0,3,10,0,stimulus,1,owned_exact,16,1000,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0x1ab8e900,0x4f38e900,0x0
+color_candidate_member,0,3,11,0,stimulus,1,owned_exact,16,1000,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0x5ab8e900,0x4f38e900,0x0
+color_candidate_member,0,3,12,0,stimulus,1,owned_exact,16,1000,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0x3ab8e900,0x4f38e900,0x0
+color_candidate_member,0,3,13,0,stimulus,1,owned_exact,16,1000,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0x2538e900,0x4f38e900,0x0
+color_candidate_member,0,3,14,0,stimulus,1,owned_exact,16,1000,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0x60b8e900,0x4f38e900,0x0
+color_candidate_member,0,3,15,0,stimulus,1,owned_exact,16,1000,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0x5f38e900,0x4f38e900,0x0
+color_matrix,1,0,0,0,diagonal,1,owned_exact,16,1000,974,1000,97,1,284,258,265,27,1013,1157,0,982,7318,978,0,973,1799,982,986,973,26,0,0,974,0x4f388900,0x4f388900,0x0
+color_reference,1,0,1,1,diagonal_paired,1,owned_exact,16,1000,970,1000,97,1,284,258,262,27,1010,1178,0,969,7067,978,0,968,1734,969,983,968,30,0,0,970,0x4f388900,0x4f38a900,0x2000
+color_matrix,1,0,1,1,off_diagonal,1,owned_exact,16,1000,0,1000,0,0,37,27,62,27,68,225,0,4,3676,225,0,4,879,5,551,4,1000,0,0,0,0x4f38a900,0x4f388900,0x2000
+color_idle,1,0,1,1,idle_reference,1,owned_exact,0,1000,1,1000,0,0,27,27,27,27,257,4,0,1,147,4,0,1,13,1,7,1,999,0,0,1,0x4f388900,0x4f38a900,0x2000
+color_idle,1,0,1,1,idle_cell,1,owned_exact,0,1000,0,1000,0,0,27,27,27,27,63,2,0,0,90,2,0,0,4,0,2,0,1000,0,0,0,0x4f38a900,0x4f388900,0x2000
+color_reference,1,0,2,1,diagonal_paired,1,owned_exact,16,1000,973,1000,97,1,278,258,262,27,921,1200,0,974,7089,980,0,972,1736,974,986,972,27,0,0,973,0x4f388900,0x4f38c900,0x4000
+color_matrix,1,0,2,1,off_diagonal,1,owned_exact,16,1000,1,1000,0,0,38,27,63,27,261,225,0,2,3855,225,0,2,938,2,576,2,999,0,0,1,0x4f38c900,0x4f388900,0x4000
+color_idle,1,0,2,1,idle_reference,1,owned_exact,0,1000,0,1000,0,0,27,27,27,27,63,7,0,0,120,7,0,0,14,0,6,0,1000,0,0,0,0x4f388900,0x4f38c900,0x4000
+color_idle,1,0,2,1,idle_cell,1,owned_exact,0,1000,0,1000,0,0,27,27,27,27,63,3,0,0,135,3,0,0,15,0,9,0,1000,0,0,0,0x4f38c900,0x4f388900,0x4000
+color_reference,1,0,3,2,diagonal_paired,1,owned_exact,16,1000,984,1000,98,1,296,258,342,27,1007,1186,0,985,7065,985,0,984,1730,985,993,984,16,0,0,984,0x4f388900,0x4f38e900,0x6000
+color_matrix,1,0,3,2,off_diagonal,1,owned_exact,16,1000,0,1000,0,0,37,27,63,27,69,197,0,1,3935,197,0,1,957,1,581,1,1000,0,0,0,0x4f38e900,0x4f388900,0x6000
+color_idle,1,0,3,2,idle_reference,1,owned_exact,0,1000,1,1000,0,0,27,27,27,27,316,8,0,2,143,8,0,1,24,2,10,1,999,0,0,1,0x4f388900,0x4f38e900,0x6000
+color_idle,1,0,3,2,idle_cell,1,owned_exact,0,1000,0,1000,0,0,27,27,27,27,65,5,0,0,110,5,0,0,13,0,8,0,1000,0,0,0,0x4f38e900,0x4f388900,0x6000
+color_matrix,1,1,1,0,diagonal,1,owned_exact,16,1000,974,1000,97,1,287,258,305,27,1021,1202,0,978,7339,982,0,974,1801,978,988,974,26,0,0,974,0x4f38a900,0x4f38a900,0x0
+color_reference,1,1,0,1,diagonal_paired,1,owned_exact,16,1000,985,1000,98,1,288,258,263,27,1015,1182,0,982,6987,987,0,982,1723,982,990,982,15,0,0,985,0x4f38a900,0x4f388900,0x2000
+color_matrix,1,1,0,1,off_diagonal,1,owned_exact,16,1000,0,1000,0,0,37,27,62,27,69,195,0,2,3635,195,0,2,882,2,557,2,1000,0,0,0,0x4f388900,0x4f38a900,0x2000
+color_idle,1,1,0,1,idle_reference,1,owned_exact,0,1000,0,1000,0,0,27,27,27,27,62,6,0,0,113,6,0,0,13,0,10,0,1000,0,0,0,0x4f38a900,0x4f388900,0x2000
+color_idle,1,1,0,1,idle_cell,1,owned_exact,0,1000,0,1000,0,0,27,27,27,27,63,4,0,0,117,4,0,0,12,0,6,0,1000,0,0,0,0x4f388900,0x4f38a900,0x2000
+color_reference,1,1,2,2,diagonal_paired,1,owned_exact,16,1000,977,1000,97,1,286,258,262,27,1010,1189,0,974,7085,982,0,973,1751,974,991,973,23,0,0,977,0x4f38a900,0x4f38c900,0x6000
+color_matrix,1,1,2,2,off_diagonal,1,owned_exact,16,1000,0,1000,0,0,38,27,62,27,69,180,0,0,3773,180,0,0,911,0,573,0,1000,0,0,0,0x4f38c900,0x4f38a900,0x6000
+color_idle,1,1,2,2,idle_reference,1,owned_exact,0,1000,0,1000,0,0,27,27,27,27,70,10,0,0,124,10,0,0,12,0,5,0,1000,0,0,0,0x4f38a900,0x4f38c900,0x6000
+color_idle,1,1,2,2,idle_cell,1,owned_exact,0,1000,0,1000,0,0,27,27,27,27,63,3,0,0,102,3,0,0,12,0,6,0,1000,0,0,0,0x4f38c900,0x4f38a900,0x6000
+color_reference,1,1,3,1,diagonal_paired,1,owned_exact,16,1000,975,1000,97,1,293,258,363,27,1008,1165,0,979,6778,980,0,972,1671,979,989,972,25,0,0,975,0x4f38a900,0x4f38e900,0x4000
+color_matrix,1,1,3,1,off_diagonal,1,owned_exact,16,1000,0,1000,0,0,37,27,62,27,70,218,0,3,3682,218,0,3,889,3,566,3,1000,0,0,0,0x4f38e900,0x4f38a900,0x4000
+color_idle,1,1,3,1,idle_reference,1,owned_exact,0,1000,0,1000,0,0,27,27,27,27,61,6,0,0,66,6,0,0,9,0,6,0,1000,0,0,0,0x4f38a900,0x4f38e900,0x4000
+color_idle,1,1,3,1,idle_cell,1,owned_exact,0,1000,0,1000,0,0,27,27,27,27,63,1,0,0,79,1,0,0,10,0,6,0,1000,0,0,0,0x4f38e900,0x4f38a900,0x4000
+color_matrix,1,2,2,0,diagonal,1,owned_exact,16,1000,972,1000,97,1,285,258,263,27,1007,1184,0,970,7041,978,0,969,1730,970,996,969,28,0,0,972,0x4f38c900,0x4f38c900,0x0
+color_reference,1,2,0,1,diagonal_paired,1,owned_exact,16,1000,980,1000,98,1,288,258,262,27,1007,1198,0,979,6926,987,0,978,1704,979,993,978,20,0,0,980,0x4f38c900,0x4f388900,0x4000
+color_matrix,1,2,0,1,off_diagonal,1,owned_exact,16,1000,0,1000,0,0,37,27,63,27,66,239,0,0,3648,239,0,0,887,0,556,0,1000,0,0,0,0x4f388900,0x4f38c900,0x4000
+color_idle,1,2,0,1,idle_reference,1,owned_exact,0,1000,0,1000,0,0,27,27,27,27,63,4,0,0,165,4,0,0,15,0,11,0,1000,0,0,0,0x4f38c900,0x4f388900,0x4000
+color_idle,1,2,0,1,idle_cell,1,owned_exact,0,1000,0,1000,0,0,27,27,27,27,63,7,0,0,150,7,0,0,16,0,7,0,1000,0,0,0,0x4f388900,0x4f38c900,0x4000
+color_reference,1,2,1,2,diagonal_paired,1,owned_exact,16,1000,963,1000,96,1,282,258,262,27,1018,1170,0,963,7109,971,0,963,1755,963,986,963,37,0,0,963,0x4f38c900,0x4f38a900,0x6000
+color_matrix,1,2,1,2,off_diagonal,1,owned_exact,16,1000,0,1000,0,0,38,27,63,27,71,222,0,1,3914,222,0,1,951,1,559,1,1000,0,0,0,0x4f38a900,0x4f38c900,0x6000
+color_idle,1,2,1,2,idle_reference,1,owned_exact,0,1000,0,1000,0,0,27,27,27,27,66,1,0,0,183,1,0,0,17,0,8,0,1000,0,0,0,0x4f38c900,0x4f38a900,0x6000
+color_idle,1,2,1,2,idle_cell,1,owned_exact,0,1000,0,1000,0,0,27,27,27,27,62,2,0,0,98,2,0,0,7,0,5,0,1000,0,0,0,0x4f38a900,0x4f38c900,0x6000
+color_reference,1,2,3,1,diagonal_paired,1,owned_exact,16,1000,971,1000,97,1,289,258,264,27,1021,1184,0,973,6943,980,0,971,1707,973,990,971,29,0,0,971,0x4f38c900,0x4f38e900,0x2000
+color_matrix,1,2,3,1,off_diagonal,1,owned_exact,16,1000,0,1000,0,0,38,27,63,27,69,216,0,1,4017,216,0,1,977,1,590,1,1000,0,0,0,0x4f38e900,0x4f38c900,0x2000
+color_idle,1,2,3,1,idle_reference,1,owned_exact,0,1000,0,1000,0,0,27,27,27,27,70,4,0,0,144,4,0,0,14,0,9,0,1000,0,0,0,0x4f38c900,0x4f38e900,0x2000
+color_idle,1,2,3,1,idle_cell,1,owned_exact,0,1000,0,1000,0,0,27,27,27,27,59,6,0,0,88,6,0,0,6,0,6,0,1000,0,0,0,0x4f38e900,0x4f38c900,0x2000
+color_matrix,1,3,3,0,diagonal,1,owned_exact,16,1000,960,1000,96,1,290,258,366,27,1017,1151,0,962,7097,970,0,958,1741,962,981,958,40,0,0,960,0x4f38e900,0x4f38e900,0x0
+color_reference,1,3,0,2,diagonal_paired,1,owned_exact,16,1000,974,1000,97,1,290,258,319,27,1010,1179,0,973,7056,983,0,972,1742,973,994,972,26,0,0,974,0x4f38e900,0x4f388900,0x6000
+color_matrix,1,3,0,2,off_diagonal,1,owned_exact,16,1000,0,1000,0,0,38,27,63,27,70,181,0,0,3876,181,0,0,947,0,562,0,1000,0,0,0,0x4f388900,0x4f38e900,0x6000
+color_idle,1,3,0,2,idle_reference,1,owned_exact,0,1000,0,1000,0,0,27,27,27,27,61,4,0,0,85,4,0,0,11,0,7,0,1000,0,0,0,0x4f38e900,0x4f388900,0x6000
+color_idle,1,3,0,2,idle_cell,1,owned_exact,0,1000,0,1000,0,0,27,27,27,27,63,7,0,1,121,7,0,1,14,1,7,1,1000,0,0,0,0x4f388900,0x4f38e900,0x6000
+color_reference,1,3,1,1,diagonal_paired,1,owned_exact,16,1000,986,1000,98,1,290,258,267,27,1007,1217,0,986,7219,992,0,986,1768,986,993,986,14,0,0,986,0x4f38e900,0x4f38a900,0x4000
+color_matrix,1,3,1,1,off_diagonal,1,owned_exact,16,1000,0,1000,0,0,39,27,63,27,66,200,0,0,4096,200,0,0,993,1,603,1,1000,0,0,0,0x4f38a900,0x4f38e900,0x4000
+color_idle,1,3,1,1,idle_reference,1,owned_exact,0,1000,0,1000,0,0,27,27,27,27,69,2,0,0,109,2,0,0,12,0,7,0,1000,0,0,0,0x4f38e900,0x4f38a900,0x4000
+color_idle,1,3,1,1,idle_cell,1,owned_exact,0,1000,0,1000,0,0,27,27,27,27,27,2,0,0,58,2,0,0,2,0,2,0,1000,0,0,0,0x4f38a900,0x4f38e900,0x4000
+color_reference,1,3,2,1,diagonal_paired,1,owned_exact,16,1000,977,1000,97,1,287,258,273,27,1020,1194,0,979,7235,982,0,976,1780,979,989,976,23,0,0,977,0x4f38e900,0x4f38c900,0x2000
+color_matrix,1,3,2,1,off_diagonal,1,owned_exact,16,1000,0,1000,0,0,38,27,62,27,69,194,0,1,3655,194,0,1,873,1,557,1,1000,0,0,0,0x4f38c900,0x4f38e900,0x2000
+color_idle,1,3,2,1,idle_reference,1,owned_exact,0,1000,0,1000,0,0,27,27,27,27,70,3,0,0,166,3,0,0,17,0,9,0,1000,0,0,0,0x4f38e900,0x4f38c900,0x2000
+color_idle,1,3,2,1,idle_cell,1,owned_exact,0,1000,0,1000,0,0,27,27,27,27,63,5,0,0,99,5,0,0,8,0,6,0,1000,0,0,0,0x4f38c900,0x4f38e900,0x2000
+color_matrix,2,0,0,0,diagonal,1,owned_exact,16,1000,990,1000,99,1,295,258,346,27,1010,1195,0,990,7359,992,0,987,1797,990,996,987,10,0,0,990,0x4f388900,0x4f388900,0x0
+color_reference,2,0,1,1,diagonal_paired,1,owned_exact,16,1000,980,1000,98,1,291,258,305,27,1008,1196,0,979,6967,984,0,979,1710,979,993,979,20,0,0,980,0x4f388900,0x4f38a900,0x2000
+color_matrix,2,0,1,1,off_diagonal,1,owned_exact,16,1000,0,1000,0,0,38,27,62,27,66,212,0,0,3969,212,0,0,956,0,587,0,1000,0,0,0,0x4f38a900,0x4f388900,0x2000
+color_idle,2,0,1,1,idle_reference,1,owned_exact,0,1000,0,1000,0,0,27,27,27,27,63,4,0,0,174,4,0,0,17,0,6,0,1000,0,0,0,0x4f388900,0x4f38a900,0x2000
+color_idle,2,0,1,1,idle_cell,1,owned_exact,0,1000,0,1000,0,0,27,27,27,27,63,3,0,0,127,3,0,0,12,0,5,0,1000,0,0,0,0x4f38a900,0x4f388900,0x2000
+color_reference,2,0,2,1,diagonal_paired,1,owned_exact,16,1000,969,1000,96,1,290,258,384,27,1016,1156,0,969,7106,976,0,968,1748,969,987,968,31,0,0,969,0x4f388900,0x4f38c900,0x4000
+color_matrix,2,0,2,1,off_diagonal,1,owned_exact,16,1000,0,1000,0,0,38,27,63,27,69,215,0,0,3923,215,0,0,947,0,581,0,1000,0,0,0,0x4f38c900,0x4f388900,0x4000
+color_idle,2,0,2,1,idle_reference,1,owned_exact,0,1000,0,1000,0,0,27,27,27,27,69,4,0,1,106,4,0,1,10,1,5,1,1000,0,0,0,0x4f388900,0x4f38c900,0x4000
+color_idle,2,0,2,1,idle_cell,1,owned_exact,0,1000,0,1000,0,0,27,27,27,27,62,1,0,0,127,1,0,0,12,0,6,0,1000,0,0,0,0x4f38c900,0x4f388900,0x4000
+color_reference,2,0,3,2,diagonal_paired,1,owned_exact,16,1000,984,1000,98,1,288,258,262,27,1007,1188,0,982,7040,988,0,982,1732,982,992,982,16,0,0,984,0x4f388900,0x4f38e900,0x6000
+color_matrix,2,0,3,2,off_diagonal,1,owned_exact,16,1000,0,1000,0,0,38,27,62,27,69,211,0,1,3679,211,0,1,890,1,549,1,1000,0,0,0,0x4f38e900,0x4f388900,0x6000
+color_idle,2,0,3,2,idle_reference,1,owned_exact,0,1000,0,1000,0,0,27,27,27,27,69,3,0,0,101,3,0,0,15,0,9,0,1000,0,0,0,0x4f388900,0x4f38e900,0x6000
+color_idle,2,0,3,2,idle_cell,1,owned_exact,0,1000,0,1000,0,0,27,27,27,27,62,2,0,0,76,2,0,0,7,0,5,0,1000,0,0,0,0x4f38e900,0x4f388900,0x6000
+color_matrix,2,1,1,0,diagonal,1,owned_exact,16,1000,985,1000,98,1,301,258,425,27,1010,1202,0,987,7473,987,0,981,1828,987,997,981,15,0,0,985,0x4f38a900,0x4f38a900,0x0
+color_reference,2,1,0,1,diagonal_paired,1,owned_exact,16,1000,985,1000,98,1,283,258,262,27,924,1215,0,987,6990,990,0,985,1715,987,994,985,15,0,0,985,0x4f38a900,0x4f388900,0x2000
+color_matrix,2,1,0,1,off_diagonal,1,owned_exact,16,1000,1,1000,0,0,38,27,63,27,362,225,0,4,3971,225,0,4,959,4,583,4,999,0,0,1,0x4f388900,0x4f38a900,0x2000
+color_idle,2,1,0,1,idle_reference,1,owned_exact,0,1000,1,1000,0,0,27,27,27,27,263,6,0,1,87,6,0,1,10,1,4,1,999,0,0,1,0x4f38a900,0x4f388900,0x2000
+color_idle,2,1,0,1,idle_cell,1,owned_exact,0,1000,0,1000,0,0,27,27,27,27,64,6,0,0,96,6,0,0,14,0,8,0,1000,0,0,0,0x4f388900,0x4f38a900,0x2000
+color_reference,2,1,2,2,diagonal_paired,1,owned_exact,16,1000,981,1000,98,1,291,258,309,27,1021,1216,0,978,6994,983,0,978,1717,978,989,978,19,0,0,981,0x4f38a900,0x4f38c900,0x6000
+color_matrix,2,1,2,2,off_diagonal,1,owned_exact,16,1000,0,1000,0,0,38,27,62,27,68,201,0,0,4118,201,0,0,995,0,608,0,1000,0,0,0,0x4f38c900,0x4f38a900,0x6000
+color_idle,2,1,2,2,idle_reference,1,owned_exact,0,1000,0,1000,0,0,27,27,27,27,63,7,0,0,149,7,0,0,18,0,9,0,1000,0,0,0,0x4f38a900,0x4f38c900,0x6000
+color_idle,2,1,2,2,idle_cell,1,owned_exact,0,1000,0,1000,0,0,27,27,27,27,63,2,0,0,110,2,0,0,10,0,5,0,1000,0,0,0,0x4f38c900,0x4f38a900,0x6000
+color_reference,2,1,3,1,diagonal_paired,1,owned_exact,16,1000,981,1000,98,1,288,258,262,27,1010,1196,0,981,7267,986,0,981,1788,981,995,981,19,0,0,981,0x4f38a900,0x4f38e900,0x4000
+color_matrix,2,1,3,1,off_diagonal,1,owned_exact,16,1000,0,1000,0,0,38,27,63,27,69,202,0,2,3953,202,0,1,947,2,575,1,1000,0,0,0,0x4f38e900,0x4f38a900,0x4000
+color_idle,2,1,3,1,idle_reference,1,owned_exact,0,1000,1,1000,0,0,27,27,27,27,704,5,0,1,140,5,0,1,15,1,8,1,999,0,0,1,0x4f38a900,0x4f38e900,0x4000
+color_idle,2,1,3,1,idle_cell,1,owned_exact,0,1000,0,1000,0,0,27,27,27,27,63,6,0,0,153,6,0,0,13,0,9,0,1000,0,0,0,0x4f38e900,0x4f38a900,0x4000
+color_matrix,2,2,2,0,diagonal,1,owned_exact,16,1000,978,1000,97,1,296,258,406,27,1010,1177,0,979,7562,983,0,977,1850,979,992,977,22,0,0,978,0x4f38c900,0x4f38c900,0x0
+color_reference,2,2,0,1,diagonal_paired,1,owned_exact,16,1000,969,1000,96,1,285,258,262,27,1015,1185,0,972,7008,976,0,969,1720,972,988,969,31,0,0,969,0x4f38c900,0x4f388900,0x4000
+color_matrix,2,2,0,1,off_diagonal,1,owned_exact,16,1000,0,1000,0,0,37,27,63,27,65,190,0,2,3773,190,0,1,913,2,575,1,1000,0,0,0,0x4f388900,0x4f38c900,0x4000
+color_idle,2,2,0,1,idle_reference,1,owned_exact,0,1000,0,1000,0,0,27,27,27,27,63,4,0,0,119,4,0,0,14,0,10,0,1000,0,0,0,0x4f38c900,0x4f388900,0x4000
+color_idle,2,2,0,1,idle_cell,1,owned_exact,0,1000,0,1000,0,0,27,27,27,27,63,5,0,0,74,5,0,0,8,0,3,0,1000,0,0,0,0x4f388900,0x4f38c900,0x4000
+color_reference,2,2,1,2,diagonal_paired,1,owned_exact,16,1000,981,1000,98,1,287,258,262,27,1021,1201,0,982,7060,985,0,980,1733,982,990,980,19,0,0,981,0x4f38c900,0x4f38a900,0x6000
+color_matrix,2,2,1,2,off_diagonal,1,owned_exact,16,1000,0,1000,0,0,37,27,62,27,66,215,0,0,3684,215,0,0,894,0,589,0,1000,0,0,0,0x4f38a900,0x4f38c900,0x6000
+color_idle,2,2,1,2,idle_reference,1,owned_exact,0,1000,0,1000,0,0,27,27,27,27,63,4,0,0,127,4,0,0,12,0,4,0,1000,0,0,0,0x4f38c900,0x4f38a900,0x6000
+color_idle,2,2,1,2,idle_cell,1,owned_exact,0,1000,0,1000,0,0,27,27,27,27,59,2,0,0,97,2,0,0,4,0,4,0,1000,0,0,0,0x4f38a900,0x4f38c900,0x6000
+color_reference,2,2,3,1,diagonal_paired,1,owned_exact,16,1000,965,1000,96,1,284,258,264,27,1008,1161,0,963,7024,970,0,962,1723,963,985,962,35,0,0,965,0x4f38c900,0x4f38e900,0x2000
+color_matrix,2,2,3,1,off_diagonal,1,owned_exact,16,1000,1,1000,0,0,37,27,62,27,297,193,0,5,3679,193,0,5,883,5,538,5,999,0,0,1,0x4f38e900,0x4f38c900,0x2000
+color_idle,2,2,3,1,idle_reference,1,owned_exact,0,1000,0,1000,0,0,27,27,27,27,62,6,0,0,113,6,0,0,15,0,8,0,1000,0,0,0,0x4f38c900,0x4f38e900,0x2000
+color_idle,2,2,3,1,idle_cell,1,owned_exact,0,1000,1,1000,0,0,27,27,27,27,269,5,0,1,101,5,0,1,12,1,6,1,999,0,0,1,0x4f38e900,0x4f38c900,0x2000
+color_matrix,2,3,3,0,diagonal,1,owned_exact,16,1000,977,1000,97,1,287,258,303,27,1015,1196,0,976,7435,981,0,975,1825,976,988,975,23,0,0,977,0x4f38e900,0x4f38e900,0x0
+color_reference,2,3,0,2,diagonal_paired,1,owned_exact,16,1000,976,1000,97,1,282,258,262,27,921,1191,0,975,7292,979,0,975,1794,975,990,975,24,0,0,976,0x4f38e900,0x4f388900,0x6000
+color_matrix,2,3,0,2,off_diagonal,1,owned_exact,16,1000,0,1000,0,0,38,27,62,27,70,224,0,0,3865,224,0,0,934,1,587,1,1000,0,0,0,0x4f388900,0x4f38e900,0x6000
+color_idle,2,3,0,2,idle_reference,1,owned_exact,0,1000,0,1000,0,0,27,27,27,27,58,4,0,0,86,4,0,0,6,0,5,0,1000,0,0,0,0x4f38e900,0x4f388900,0x6000
+color_idle,2,3,0,2,idle_cell,1,owned_exact,0,1000,0,1000,0,0,27,27,27,27,63,1,0,0,121,1,0,0,10,0,6,0,1000,0,0,0,0x4f388900,0x4f38e900,0x6000
+color_reference,2,3,1,1,diagonal_paired,1,owned_exact,16,1000,965,1000,96,1,280,258,262,27,1017,1183,0,962,7059,972,0,962,1733,962,989,962,35,0,0,965,0x4f38e900,0x4f38a900,0x4000
+color_matrix,2,3,1,1,off_diagonal,1,owned_exact,16,1000,0,1000,0,0,39,27,63,27,70,231,0,0,4159,231,0,0,1009,1,587,1,1000,0,0,0,0x4f38a900,0x4f38e900,0x4000
+color_idle,2,3,1,1,idle_reference,1,owned_exact,0,1000,0,1000,0,0,27,27,27,27,62,7,0,0,146,7,0,0,18,0,10,0,1000,0,0,0,0x4f38e900,0x4f38a900,0x4000
+color_idle,2,3,1,1,idle_cell,1,owned_exact,0,1000,0,1000,0,0,27,27,27,27,63,5,0,0,119,5,0,0,8,0,5,0,1000,0,0,0,0x4f38a900,0x4f38e900,0x4000
+color_reference,2,3,2,1,diagonal_paired,1,owned_exact,16,1000,968,1000,96,1,284,258,262,27,923,1168,0,968,7090,975,0,966,1742,968,991,966,32,0,0,968,0x4f38e900,0x4f38c900,0x2000
+color_matrix,2,3,2,1,off_diagonal,1,owned_exact,16,1000,0,1000,0,0,38,27,63,27,69,220,0,0,3814,220,0,0,926,1,567,1,1000,0,0,0,0x4f38c900,0x4f38e900,0x2000
+color_idle,2,3,2,1,idle_reference,1,owned_exact,0,1000,1,1000,0,0,27,27,27,27,297,7,0,1,157,7,0,1,22,1,10,1,999,0,0,1,0x4f38e900,0x4f38c900,0x2000
+color_idle,2,3,2,1,idle_cell,1,owned_exact,0,1000,0,1000,0,0,27,27,27,27,62,4,0,0,81,4,0,0,8,0,4,0,1000,0,0,0,0x4f38c900,0x4f38e900,0x2000
+color_matrix,3,0,0,0,diagonal,1,owned_exact,16,1000,985,1000,98,1,293,258,269,27,1020,1185,0,985,7335,990,0,985,1803,985,995,985,15,0,0,985,0x4f388900,0x4f388900,0x0
+color_reference,3,0,1,1,diagonal_paired,1,owned_exact,16,1000,976,1000,97,1,285,258,262,27,1004,1197,0,975,7101,984,0,975,1749,975,994,975,24,0,0,976,0x4f388900,0x4f38a900,0x2000
+color_matrix,3,0,1,1,off_diagonal,1,owned_exact,16,1000,0,1000,0,0,38,27,62,27,70,218,0,0,3989,218,0,0,971,0,589,0,1000,0,0,0,0x4f38a900,0x4f388900,0x2000
+color_idle,3,0,1,1,idle_reference,1,owned_exact,0,1000,0,1000,0,0,27,27,27,27,68,6,0,0,100,6,0,0,12,0,8,0,1000,0,0,0,0x4f388900,0x4f38a900,0x2000
+color_idle,3,0,1,1,idle_cell,1,owned_exact,0,1000,0,1000,0,0,27,27,27,27,62,4,0,0,106,4,0,0,9,0,5,0,1000,0,0,0,0x4f38a900,0x4f388900,0x2000
+color_reference,3,0,2,1,diagonal_paired,1,owned_exact,16,1000,982,1000,98,1,290,258,262,27,1017,1185,0,982,7086,986,0,981,1739,982,992,981,18,0,0,982,0x4f388900,0x4f38c900,0x4000
+color_matrix,3,0,2,1,off_diagonal,1,owned_exact,16,1000,0,1000,0,0,38,27,63,27,70,200,0,3,3998,200,0,3,967,4,555,3,1000,0,0,0,0x4f38c900,0x4f388900,0x4000
+color_idle,3,0,2,1,idle_reference,1,owned_exact,0,1000,0,1000,0,0,27,27,27,27,63,3,0,0,141,3,0,0,13,0,7,0,1000,0,0,0,0x4f388900,0x4f38c900,0x4000
+color_idle,3,0,2,1,idle_cell,1,owned_exact,0,1000,0,1000,0,0,27,27,27,27,59,5,0,0,107,5,0,0,6,0,6,0,1000,0,0,0,0x4f38c900,0x4f388900,0x4000
+color_reference,3,0,3,2,diagonal_paired,1,owned_exact,16,1000,978,1000,97,1,287,258,262,27,1019,1205,0,977,7161,981,0,977,1758,977,995,977,22,0,0,978,0x4f388900,0x4f38e900,0x6000
+color_matrix,3,0,3,2,off_diagonal,1,owned_exact,16,1000,0,1000,0,0,38,27,63,27,107,206,0,1,3976,206,0,1,966,1,583,1,999,1,0,0,0x4f38e900,0x4f388900,0x6000
+color_idle,3,0,3,2,idle_reference,1,owned_exact,0,1000,0,1000,0,0,27,27,27,27,59,4,0,0,75,4,0,0,7,0,4,0,1000,0,0,0,0x4f388900,0x4f38e900,0x6000
+color_idle,3,0,3,2,idle_cell,1,owned_exact,0,1000,0,1000,0,0,27,27,27,27,63,8,0,0,91,8,0,0,10,0,6,0,1000,0,0,0,0x4f38e900,0x4f388900,0x6000
+color_matrix,3,1,1,0,diagonal,1,owned_exact,16,1000,980,1000,98,1,285,258,262,27,1017,1158,0,982,7342,985,0,980,1798,982,995,980,20,0,0,980,0x4f38a900,0x4f38a900,0x0
+color_reference,3,1,0,1,diagonal_paired,1,owned_exact,16,1000,983,1000,98,1,286,258,262,27,1011,1187,0,984,7210,989,0,983,1772,984,994,983,17,0,0,983,0x4f38a900,0x4f388900,0x2000
+color_matrix,3,1,0,1,off_diagonal,1,owned_exact,16,1000,0,1000,0,0,38,27,63,27,66,213,0,0,3856,213,0,0,944,0,574,0,1000,0,0,0,0x4f388900,0x4f38a900,0x2000
+color_idle,3,1,0,1,idle_reference,1,owned_exact,0,1000,0,1000,0,0,27,27,27,27,63,2,0,0,128,2,0,0,13,0,6,0,1000,0,0,0,0x4f38a900,0x4f388900,0x2000
+color_idle,3,1,0,1,idle_cell,1,owned_exact,0,1000,0,1000,0,0,27,27,27,27,64,6,0,0,142,6,0,0,14,0,8,0,1000,0,0,0,0x4f388900,0x4f38a900,0x2000
+color_reference,3,1,2,2,diagonal_paired,1,owned_exact,16,1000,980,1000,98,1,289,258,264,27,920,1177,0,983,7193,984,0,980,1772,983,996,980,20,0,0,980,0x4f38a900,0x4f38c900,0x6000
+color_matrix,3,1,2,2,off_diagonal,1,owned_exact,16,1000,0,1000,0,0,38,27,62,27,70,213,0,1,4045,213,0,1,983,1,593,1,1000,0,0,0,0x4f38c900,0x4f38a900,0x6000
+color_idle,3,1,2,2,idle_reference,1,owned_exact,0,1000,0,1000,0,0,27,27,27,27,61,0,0,1,105,0,0,1,5,1,2,1,1000,0,0,0,0x4f38a900,0x4f38c900,0x6000
+color_idle,3,1,2,2,idle_cell,1,owned_exact,0,1000,1,1000,0,0,27,27,27,27,267,3,0,1,147,3,0,1,15,1,7,1,998,1,0,1,0x4f38c900,0x4f38a900,0x6000
+color_reference,3,1,3,1,diagonal_paired,1,owned_exact,16,1000,977,1000,97,1,289,258,277,27,1018,1194,0,977,7252,981,0,975,1786,977,993,975,23,0,0,977,0x4f38a900,0x4f38e900,0x4000
+color_matrix,3,1,3,1,off_diagonal,1,owned_exact,16,1000,0,1000,0,0,37,27,62,27,66,231,0,1,3729,231,0,1,901,1,572,1,1000,0,0,0,0x4f38e900,0x4f38a900,0x4000
+color_idle,3,1,3,1,idle_reference,1,owned_exact,0,1000,1,1000,0,0,27,27,27,27,239,3,0,2,121,3,0,1,13,2,6,1,999,0,0,1,0x4f38a900,0x4f38e900,0x4000
+color_idle,3,1,3,1,idle_cell,1,owned_exact,0,1000,0,1000,0,0,27,27,27,27,63,5,0,0,96,5,0,0,5,0,3,0,1000,0,0,0,0x4f38e900,0x4f38a900,0x4000
+color_matrix,3,2,2,0,diagonal,1,owned_exact,16,1000,978,1000,97,1,283,258,262,27,1011,1191,0,979,7281,982,0,976,1790,979,997,976,22,0,0,978,0x4f38c900,0x4f38c900,0x0
+color_reference,3,2,0,1,diagonal_paired,1,owned_exact,16,1000,981,1000,98,1,292,258,265,27,1018,1203,0,980,7042,984,0,979,1737,980,991,979,19,0,0,981,0x4f38c900,0x4f388900,0x4000
+color_matrix,3,2,0,1,off_diagonal,1,owned_exact,16,1000,0,1000,0,0,38,27,62,27,75,210,0,1,4014,210,0,1,970,1,572,1,1000,0,0,0,0x4f388900,0x4f38c900,0x4000
+color_idle,3,2,0,1,idle_reference,1,owned_exact,0,1000,0,1000,0,0,27,27,27,27,62,4,0,2,105,4,0,1,10,2,5,1,1000,0,0,0,0x4f38c900,0x4f388900,0x4000
+color_idle,3,2,0,1,idle_cell,1,owned_exact,0,1000,0,1000,0,0,27,27,27,27,62,1,0,0,120,1,0,0,12,0,10,0,1000,0,0,0,0x4f388900,0x4f38c900,0x4000
+color_reference,3,2,1,2,diagonal_paired,1,owned_exact,16,1000,973,1000,97,1,291,258,315,27,1011,1183,0,972,6950,982,0,971,1712,972,992,971,27,0,0,973,0x4f38c900,0x4f38a900,0x6000
+color_matrix,3,2,1,2,off_diagonal,1,owned_exact,16,1000,0,1000,0,0,38,27,63,27,76,214,0,1,3943,214,0,1,950,2,601,1,1000,0,0,0,0x4f38a900,0x4f38c900,0x6000
+color_idle,3,2,1,2,idle_reference,1,owned_exact,0,1000,0,1000,0,0,27,27,27,27,62,6,0,0,93,6,0,0,7,0,3,0,1000,0,0,0,0x4f38c900,0x4f38a900,0x6000
+color_idle,3,2,1,2,idle_cell,1,owned_exact,0,1000,0,1000,0,0,27,27,27,27,62,3,0,0,142,3,0,0,17,0,12,0,1000,0,0,0,0x4f38a900,0x4f38c900,0x6000
+color_reference,3,2,3,1,diagonal_paired,1,owned_exact,16,1000,981,1000,98,1,286,258,262,27,1006,1219,0,980,7176,986,0,979,1770,980,991,979,19,0,0,981,0x4f38c900,0x4f38e900,0x2000
+color_matrix,3,2,3,1,off_diagonal,1,owned_exact,16,1000,0,1000,0,0,38,27,63,27,68,222,0,0,4023,222,0,0,974,0,576,0,1000,0,0,0,0x4f38e900,0x4f38c900,0x2000
+color_idle,3,2,3,1,idle_reference,1,owned_exact,0,1000,0,1000,0,0,27,27,27,27,63,7,0,0,151,7,0,0,21,0,9,0,1000,0,0,0,0x4f38c900,0x4f38e900,0x2000
+color_idle,3,2,3,1,idle_cell,1,owned_exact,0,1000,0,1000,0,0,27,27,27,27,62,3,0,0,110,3,0,0,8,0,5,0,1000,0,0,0,0x4f38e900,0x4f38c900,0x2000
+color_matrix,3,3,3,0,diagonal,1,owned_exact,16,1000,970,1000,97,1,279,258,262,27,1011,1173,0,968,7324,972,0,967,1800,968,992,967,30,0,0,970,0x4f38e900,0x4f38e900,0x0
+color_reference,3,3,0,2,diagonal_paired,1,owned_exact,16,1000,974,1000,97,1,284,258,262,27,1006,1178,0,976,6981,980,0,973,1716,976,995,973,26,0,0,974,0x4f38e900,0x4f388900,0x6000
+color_matrix,3,3,0,2,off_diagonal,1,owned_exact,16,1000,0,1000,0,0,39,27,62,27,66,199,0,0,3913,199,0,0,949,0,598,0,1000,0,0,0,0x4f388900,0x4f38e900,0x6000
+color_idle,3,3,0,2,idle_reference,1,owned_exact,0,1000,0,1000,0,0,27,27,27,27,70,6,0,0,121,6,0,0,10,0,5,0,1000,0,0,0,0x4f38e900,0x4f388900,0x6000
+color_idle,3,3,0,2,idle_cell,1,owned_exact,0,1000,0,1000,0,0,27,27,27,27,29,5,0,0,123,5,0,0,6,0,6,0,1000,0,0,0,0x4f388900,0x4f38e900,0x6000
+color_reference,3,3,1,1,diagonal_paired,1,owned_exact,16,1000,971,1000,97,1,286,258,262,27,1010,1188,0,971,7155,978,0,970,1755,971,988,970,29,0,0,971,0x4f38e900,0x4f38a900,0x4000
+color_matrix,3,3,1,1,off_diagonal,1,owned_exact,16,1000,1,1000,0,0,37,27,62,27,263,194,0,3,3749,194,0,2,901,5,548,4,999,0,0,1,0x4f38a900,0x4f38e900,0x4000
+color_idle,3,3,1,1,idle_reference,1,owned_exact,0,1000,0,1000,0,0,27,27,27,27,63,3,0,0,118,3,0,0,15,0,8,0,1000,0,0,0,0x4f38e900,0x4f38a900,0x4000
+color_idle,3,3,1,1,idle_cell,1,owned_exact,0,1000,0,1000,0,0,27,27,27,27,59,5,0,0,68,5,0,0,6,0,6,0,1000,0,0,0,0x4f38a900,0x4f38e900,0x4000
+color_reference,3,3,2,1,diagonal_paired,1,owned_exact,16,1000,977,1000,97,1,280,258,262,27,1006,1199,0,975,7013,983,0,974,1723,975,991,974,23,0,0,977,0x4f38e900,0x4f38c900,0x2000
+color_matrix,3,3,2,1,off_diagonal,1,owned_exact,16,1000,0,1000,0,0,38,27,63,27,70,218,0,0,4006,218,0,0,971,0,587,0,1000,0,0,0,0x4f38c900,0x4f38e900,0x2000
+color_idle,3,3,2,1,idle_reference,1,owned_exact,0,1000,1,1000,0,0,27,27,27,27,235,6,0,1,155,6,0,1,20,1,10,1,999,0,0,1,0x4f38e900,0x4f38c900,0x2000
+color_idle,3,3,2,1,idle_cell,1,owned_exact,0,1000,0,1000,0,0,27,27,27,27,62,2,0,0,86,2,0,0,3,0,1,0,1000,0,0,0,0x4f38c900,0x4f38e900,0x2000

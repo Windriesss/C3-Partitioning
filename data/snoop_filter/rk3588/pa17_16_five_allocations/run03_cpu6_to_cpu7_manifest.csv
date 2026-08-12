@@ -1,0 +1,3 @@
+run_id,stimulus_cpu,probe_cpu,allocation,kind,pool_pages,candidate_items,target_candidate_items,search_groups,search_repetitions,baseline_repetitions,reduction_repetitions,reduction_validation_repetitions,measurement_repetitions,fill_rounds,scan_passes,trigger_threshold,stable_percent,item_sweep_first,item_sweep_last,bit_first,bit_last,attribution_cross_only_bits,joint_rescue_mask,result_path,matrix_allocation_attempt
+run03,6,7,1,attribution,655360,24,16,2000,20,1000,20,200,1000,1000,3,150,95,0,20,0,24,1,0x30000,/root/sf-motivation-v16-test2/run03_cpu6_to_cpu7_attribution.csv,
+run03,6,7,2,color_matrix,655360,24,16,2000,20,1000,20,200,1000,1000,3,150,95,,,,,,,/root/sf-motivation-v16-test2/run03_cpu6_to_cpu7_matrix.csv,1

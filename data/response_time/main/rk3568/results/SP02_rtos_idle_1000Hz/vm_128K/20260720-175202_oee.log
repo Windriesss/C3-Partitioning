@@ -1,0 +1,46 @@
+h(K?*I:+':~>+
+
+ʢ^ʺ[n:)%^f{J< |ZzZ<z?4Jh(K?*I:*ڊ:>>*
+
+ˢ^[˻Zҫ[:}%_)-q~]n	[{j\۲V-Z<[ 1370.018074] rcu: INFO: rcu_preempt detected stalls on CPUs/tasks:
+[ 1370.018089] rcu: 	Tasks blocked on level-0 rcu_node (CPUs 0-3): P278/1:b..l
+[ 1370.018106] 	(detected by 2, t=1320037 jiffies, g=16065, q=1179)
+[ 1370.018113] task:systemd-journal state:R  running task     stack:    0 pid:  278 ppid:     1 flags:0x00000804
+[ 1370.018122] Call trace:
+[ 1370.018124]  __switch_to+0xec/0x100
+[ 1370.018139]  __schedule+0x70c/0x800
+[ 1370.018147]  preempt_schedule_lock+0x28/0x50
+[ 1370.018152]  rt_spin_lock_slowlock_locked+0xf0/0x1dc
+[ 1370.018157]  rt_spin_lock_slowlock+0x70/0xac
+[ 1370.018162]  rt_spin_lock+0x44/0x68
+[ 1370.018167]  __local_bh_disable_ip+0x90/0x1f4
+[ 1370.018174]  unix_release_sock+0x8c/0x2c8
+[ 1370.018182]  unix_release+0x2c/0x44
+[ 1370.018188]  __sock_release+0xa8/0xc0
+[ 1370.018196]  sock_close+0x20/0x30
+[ 1370.018200]  __fput+0xe8/0x208
+[ 1370.018207]  ____fput+0x18/0x24
+[ 1370.018213]  task_work_run+0x9c/0x140
+[ 1370.018219]  do_notify_resume+0xbec/0xcd4
+[ 1370.018225]  work_pending+0xc/0x7c
+[ 1550.023073] rcu: INFO: rcu_preempt detected stalls on CPUs/tasks:
+[ 1550.023089] rcu: 	Tasks blocked on level-0 rcu_node (CPUs 0-3): P278/1:b..l
+[ 1550.023105] 	(detected by 1, t=1500042 jiffies, g=16065, q=1204)
+[ 1550.023112] task:systemd-journal state:R  running task     stack:    0 pid:  278 ppid:     1 flags:0x00000804
+[ 1550.023121] Call trace:
+[ 1550.023123]  __switch_to+0xec/0x100
+[ 1550.023138]  __schedule+0x70c/0x800
+[ 1550.023146]  preempt_schedule_lock+0x28/0x50
+[ 1550.023152]  rt_spin_lock_slowlock_locked+0xf0/0x1dc
+[ 1550.023157]  rt_spin_lock_slowlock+0x70/0xac
+[ 1550.023162]  rt_spin_lock+0x44/0x68
+[ 1550.023167]  __local_bh_disable_ip+0x90/0x1f4
+[ 1550.023174]  unix_release_sock+0x8c/0x2c8
+[ 1550.023182]  unix_release+0x2c/0x44
+[ 1550.023187]  __sock_release+0xa8/0xc0
+[ 1550.023194]  sock_close+0x20/0x30
+[ 1550.023199]  __fput+0xe8/0x208
+[ 1550.023206]  ____fput+0x18/0x24
+[ 1550.023211]  task_work_run+0x9c/0x140
+[ 1550.023218]  do_notify_resume+0xbec/0xcd4
+[ 1550.023225]  work_pending+0xc/0x7c

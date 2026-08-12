@@ -1,0 +1,76 @@
+========================================================
+ FFT Cache Benchmark: 32K/64K/128K fixed-point FFT
+ Working set ~= data[N] + twiddle[N/2], mem_pt=0
+========================================================
+[FFT] N= 32768 | workset=  384 KB | avg=    2066 us | ns/bfly=   8 | sink=0x430f80f1
+[FFT] N= 65536 | workset=  768 KB | avg=    4567 us | ns/bfly=   8 | sink=0x5da7196
+[FFT] N=131072 | workset= 1536 KB | avg=   11792 us | ns/bfly=  10 | sink=0x0
+========================================================
+ FFT Benchmark Round End
+========================================================
+
+========================================================
+ FFT Cache Benchmark: 32K/64K/128K fixed-point FFT
+ Working set ~= data[N] + twiddle[N/2], mem_pt=0
+========================================================
+[FFT] N= 32768 | workset=  384 KB | avg=    2042 us | ns/bfly=   8 | sink=0x38efc75
+[FFT] N= 65536 | workset=  768 KB | avg=    4441 us | ns/bfly=   8 | sink=0x455b0d12
+[FFT] N=131072 | workset= 1536 KB | avg=   11500 us | ns/bfly=  10 | sink=0x40817c84
+========================================================
+ FFT Benchmark Round End
+========================================================
+
+========================================================
+ FFT Cache Benchmark: 32K/64K/128K fixed-point FFT
+ Working set ~= data[N] + twiddle[N/2], mem_pt=0
+========================================================
+[FFT] N= 32768 | workset=  384 KB | avg=    2057 us | ns/bfly=   8 | sink=0x430f80f1
+[FFT] N= 65536 | workset=  768 KB | avg=    4544 us | ns/bfly=   8 | sink=0x5da7196
+[FFT] N=131072 | workset= 1536 KB | avg=   11779 us | ns/bfly=  10 | sink=0x0
+========================================================
+ FFT Benchmark Round End
+========================================================
+
+========================================================
+ FFT Cache Benchmark: 32K/64K/128K fixed-point FFT
+ Working set ~= data[N] + twiddle[N/2], mem_pt=0
+========================================================
+[FFT] N= 32768 | workset=  384 KB | avg=    2063 us | ns/bfly=   8 | sink=0x38efc75
+[FFT] N= 65536 | workset=  768 KB | avg=    4546 us | ns/bfly=   8 | sink=0x455b0d12
+[FFT] N=131072 | workset= 1536 KB | avg=   11606 us | ns/bfly=  10 | sink=0x40817c84
+========================================================
+ FFT Benchmark Round End
+========================================================
+
+========================================================
+ FFT Cache Benchmark: 32K/64K/128K fixed-point FFT
+ Working set ~= data[N] + twiddle[N/2], mem_pt=0
+========================================================
+[FFT] N= 32768 | workset=  384 KB | avg=    2063 us | ns/bfly=   8 | sink=0x430f80f1
+[FFT] N= 65536 | workset=  768 KB | avg=    4522 us | ns/bfly=   8 | sink=0x5da7196
+[FFT] N=131072 | workset= 1536 KB | avg=   11839 us | ns/bfly=  10 | sink=0x0
+========================================================
+ FFT Benchmark Round End
+========================================================
+
+========================================================
+ FFT Cache Benchmark: 32K/64K/128K fixed-point FFT
+ Working set ~= data[N] + twiddle[N/2], mem_pt=0
+========================================================
+[FFT] N= 32768 | workset=  384 KB | avg=    2043 us | ns/bfly=   8 | sink=0x38efc75
+[FFT] N= 65536 | workset=  768 KB | avg=    4466 us | ns/bfly=   8 | sink=0x455b0d12
+[FFT] N=131072 | workset= 1536 KB | avg=   11647 us | ns/bfly=  10 | sink=0x40817c84
+========================================================
+ FFT Benchmark Round End
+========================================================
+
+========================================================
+ FFT Cache Benchmark: 32K/64K/128K fixed-point FFT
+ Working set ~= data[N] + twiddle[N/2], mem_pt=0
+========================================================
+[FFT] N= 32768 | workset=  384 KB | avg=    2038 us | ns/bfly=   8 | sink=0x430f80f1
+[FFT] N= 65536 | workset=  768 KB | avg=    4490 us | ns/bfly=   8 | sink=0x5da7196
+[FFT] N=131072 | workset= 1536 KB | avg=   11900 us | ns/bfly=  10 | sink=0x0
+========================================================
+ FFT Benchmark Round End
+========================================================

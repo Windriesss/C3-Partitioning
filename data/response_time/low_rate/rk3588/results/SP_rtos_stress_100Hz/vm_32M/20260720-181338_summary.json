@@ -1,0 +1,20 @@
+{
+  "platform": "rk3588",
+  "experiment": "SP_rtos_stress_100Hz",
+  "vm_bytes": "32M",
+  "stress_ng": true,
+  "started_at": "2026-07-20T18:13:38+0800",
+  "elapsed_seconds": 674.74,
+  "sample_hz": 100,
+  "expected_pmu_samples": 60000,
+  "minimum_pmu_samples": 60000,
+  "last_pmu_samples": 60000,
+  "bogo_ops": 20933580.0,
+  "stress_pid": 693,
+  "stress_exit_code": 0,
+  "status": "rerun_consumed",
+  "error": null,
+  "rtos_log": "20260720-181338_rtos.log",
+  "oee_log": "20260720-181338_oee.log",
+  "rerun_completed_by": "20260722-033807_summary.json"
+}
